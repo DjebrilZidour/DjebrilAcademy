@@ -10,8 +10,7 @@ const Login = (props) => {
       <div className="  flex justify-center gap-4 flex-col items-center border-2 border-black p-4 rounded-2xl">
         <h1 className="text-3xl text-white">Log in</h1>
         <input
-        style={{border: "px solid #f19c12"}}
-          className=" p-4"
+          className=" border-2 border-black p-4"
           value={typedEmail}
           placeholder="e-mail"
           type="email"
@@ -20,7 +19,6 @@ const Login = (props) => {
           }}
         />
         <input
-        
           value={typedPassword}
           className="border-2 border-black p-4"
           placeholder="password"
@@ -48,9 +46,8 @@ const Login = (props) => {
 function App() {
   return (
     <section id="app">
-      {/* <Navbar /> */}
-      {/* <Login /> */}
-      {/* <header>
+      <Navbar />
+      <header className="flex justify-between p-4 ">
         <div>
           <h1>Remember that your success is between your hands !!! </h1>
           <p>
@@ -68,10 +65,8 @@ function App() {
             alt=""
           />
         </div>
-      </header> */}
-      <main>
-        <Login />
-      </main>
+      </header>
+      <main>{/* <Login /> */}</main>
     </section>
   );
 }
