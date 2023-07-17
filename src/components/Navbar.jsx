@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 
 const Navbar = () => {
@@ -5,7 +6,9 @@ const Navbar = () => {
     <nav className="bg-amber-50 shadow-lg px-16 py-2 rounded-bl-3xl  ">
       <ul className="list-none flex justify-between items-center">
         <li>
-          <img className="h-12 w-12" src={Logo} />
+          <Link to="/">
+            <img className="h-12 w-12" src={Logo} />
+          </Link>
         </li>
 
         <div className="flex justify-between items-center text-black-100">
@@ -16,12 +19,16 @@ const Navbar = () => {
           </li>
 
           <div className="flex justify-between items-center ml-4">
-            <button className="border-2 border-white rounded-2xl py-1 px-4 mx-2 hover:bg-white hover:text-amber-400">
-              Log in
-            </button>
-            <button className="border-2 border-white rounded-2xl py-1 px-4 hover:bg-white hover:text-amber-400">
-              Sing up
-            </button>
+            <Link to="/login">
+              <button className="border-2 border-white rounded-2xl py-1 px-4 mx-2 hover:bg-white hover:text-amber-400">
+                Log in
+              </button>
+            </Link>
+            <Link to="/signup">
+              <button className="border-2 border-white rounded-2xl py-1 px-4 hover:bg-white hover:text-amber-400">
+                Sing up
+              </button>
+            </Link>
           </div>
         </div>
       </ul>

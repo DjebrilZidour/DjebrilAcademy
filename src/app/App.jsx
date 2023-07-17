@@ -7,11 +7,6 @@ import Footer from "../components/Footer";
 function App() {
   return (
     <section id="app">
-      <Navbar />
-      {/* <Login /> */}
-      {/* <Login/> */}
-      <SingUp/>
-      <Footer/>
     </section>
   );
 }

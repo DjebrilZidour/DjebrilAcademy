@@ -1,12 +1,15 @@
 import { useState } from "react";
 import Input from "../../../components/Atomic/Input";
 import Btn from "../../../components/Atomic/Btn";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
 
 const Login = () => {
   const [typedEmail, setTypedEmail] = useState("");
   const [typedPassword, setTypedPassword] = useState("");
   return (
     <div>
+      <Navbar />
       <main className="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
         <section>
           <h3 className="font-bold text-2xl text-center">Welcome to Startup</h3>
@@ -66,6 +69,7 @@ const Login = () => {
           .
         </p>
       </div>
+      <Footer />
     </div>
   );
 };
