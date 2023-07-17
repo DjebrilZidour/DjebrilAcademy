@@ -1,6 +1,6 @@
 const Footer =()=>{
     return(
-        <footer className="max-w-lg mx-auto flex justify-center pb-8">
+        <footer className="w-5/6 mx-auto flex justify-center py-6 border-t-2 ">
         <a href="#" className="hover:underline">
           Contact
         </a>

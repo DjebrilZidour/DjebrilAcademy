@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Input from "../../../components/Atomic/Input";
 
 const SignUp = () => {
   const [typedName, setTypedName] = useState("");
@@ -17,48 +18,29 @@ const SignUp = () => {
 
         <section className="mt-10">
           <form className="flex flex-col" method="POST" action="#">
-            <div className="mb-6 pt-3 rounded bg-gray-200">
-              <label className="block text-gray-700 text-sm font-bold mb-2 ml-3">
-                Name
-              </label>
-
-              <input
-                type="text"
-                id="text"
-                className="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3"
-              />
-
-            </div>
-
-            <div className="mb-6 pt-3 rounded bg-gray-200">
-              <label className="block text-gray-700 text-sm font-bold mb-2 ml-3">
-                Email
-              </label>
-
-              <input
-                type="text"
-                id="email"
-                className="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3"
-              />
-            </div>
-
-            <div className="mb-6 pt-3 rounded bg-gray-200">
-
-              <label className="block text-gray-700 text-sm font-bold mb-2 ml-3">
-                Password
-              </label>
-              <input
-                type="password"
-                id="password"
-                className="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3"
-              />
-            </div>
-
-
-
+            <Input
+              label="Full name"
+              type="text"
+              value={typedName}
+              setValue={setTypedName}
+            />
+            <Input
+              label="Email"
+              type="email"
+              value={typedEmail}
+              setValue={setTypedEmail}
+            />
+            <Input
+              label="Password"
+              type="password"
+              value={typedPassword}
+              setValue={setTypedPassword}
+            />
             <button
               className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200"
-              type="submit"
+              onClick={() => {
+                console.log(typedName, typedEmail, typedPassword);
+              }}
             >
               Sign Up
             </button>
@@ -79,4 +61,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp
+export default SignUp;
