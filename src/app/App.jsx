@@ -9,6 +9,7 @@ function App() {
     <section id="app">
       <Navbar />
       {/* <Login /> */}
+      {/* <Login/> */}
       <SingUp/>
       <Footer/>
     </section>

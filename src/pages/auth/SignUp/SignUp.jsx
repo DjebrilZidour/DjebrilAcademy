@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Input from "../../../components/Atomic/Input";
+import Btn from "../../../components/Atomic/Btn"
 
 const SignUp = () => {
   const [typedName, setTypedName] = useState("");
@@ -36,14 +37,20 @@ const SignUp = () => {
               value={typedPassword}
               setValue={setTypedPassword}
             />
-            <button
+            {/* <button
               className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200"
               onClick={() => {
                 console.log(typedName, typedEmail, typedPassword);
               }}
             >
               Sign Up
-            </button>
+            </button> */}
+            <Btn 
+            value="sing up"
+            onClick={()=>{
+                console.log("NAME:",typedName,"Email",typedEmail,"PASSWORD:",typedPassword)
+            }}
+            />
           </form>
         </section>
       </main>
