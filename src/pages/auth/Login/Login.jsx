@@ -41,15 +41,7 @@ const Login = () => {
                 Forgot your password?
               </a>
             </div>
-            {/* <button
-              className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200"
-              type="submit"
-              onClick={() => {
-                console.log(typedEmail, typedPassword);
-              }}
-            >
-              Sign In
-            </button> */}
+
             <Btn
               value="sing in"
               onClick={() => {
