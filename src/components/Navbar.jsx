@@ -12,7 +12,7 @@ const Navbar = () => {
         </li>
 
         <div className="flex justify-between items-center text-black-100">
-          <li className="px-4 hover:text-black cursor-pointer">home</li>
+          <Link to="/"><li className="px-4 hover:text-black cursor-pointer">home</li></Link>
           <li className="px-4 hover:text-black cursor-pointer">about us</li>
           <li className="px-4 hover:text-black cursor-pointer">
             start learning
@@ -25,7 +25,7 @@ const Navbar = () => {
               </button>
             </Link>
             <Link to="/signup">
-              <button className="border-2 border-white rounded-2xl py-1 px-4 hover:bg-white hover:text-amber-400">
+              <button  className="border-2 border-white rounded-2xl py-1 px-4 hover:bg-white hover:text-amber-400">
                 Sing up
               </button>
             </Link>

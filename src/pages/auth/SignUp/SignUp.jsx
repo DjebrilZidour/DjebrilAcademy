@@ -3,6 +3,7 @@ import Input from "../../../components/Atomic/Input";
 import Btn from "../../../components/Atomic/Btn";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [typedName, setTypedName] = useState("");
@@ -60,10 +61,11 @@ const SignUp = () => {
       <div className="text-black max-w-lg mx-auto text-center mt-12 mb-6">
         <p>
           Already have an account?{" "}
-          <a href="#" className="font-bold hover:underline">
-            Sign in
-          </a>
-          .
+          <Link to="/login">
+            <a href="#" className="font-bold hover:underline">
+              Sign in .
+            </a>
+          </Link>
         </p>
       </div>
       <Footer />

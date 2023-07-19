@@ -3,6 +3,7 @@ import Input from "../../../components/Atomic/Input";
 import Btn from "../../../components/Atomic/Btn";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [typedEmail, setTypedEmail] = useState("");
@@ -55,9 +56,11 @@ const Login = () => {
       <div className="text-black max-w-lg mx-auto text-center mt-12 mb-6">
         <p>
           Don't have an account?{" "}
-          <a href="#" className="font-bold hover:underline">
-            Sign up
-          </a>
+          <Link to="/signup">
+            <a href="#" className="font-bold hover:underline">
+              Sign up
+            </a>
+          </Link>
           .
         </p>
       </div>
