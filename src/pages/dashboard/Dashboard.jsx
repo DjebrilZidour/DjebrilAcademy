@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Dashboard_side_bar from "../../components/Dashboard_side_bar";
-const Dashboard = ()=>{
-    return(
-        <section>
-            <Dashboard_side_bar/>
-        </section>
-    )
+import DashboardSideBar from "./components/DashboardSideBar";
 
-}
+const Dashboard = () => {
+  return (
+    <section>
+      <DashboardSideBar />
+    </section>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
-import { useState } from "react";
-const Dashboard_side_bar = () => {
+import Navbar from "../../../components/Navbar";
+
+const DashboardSideBar = () => {
   return (
     <section id="dashboard-side-bar" className="">
+      <Navbar />
       <div>
-        <i class="fi fi-sr-user"></i>
+        <i className="fi fi-sr-user"></i>
         <h1>Dashboard</h1>
       </div>
       <div>
@@ -51,4 +51,4 @@ const Dashboard_side_bar = () => {
   );
 };
 
-export default Dashboard_side_bar;
+export default DashboardSideBar;
