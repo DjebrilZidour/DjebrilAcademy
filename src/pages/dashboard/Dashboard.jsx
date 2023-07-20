@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import DashboardSideBar from "./components/DashboardSideBar";
 
 const Dashboard = () => {
-  return (
-    <section>
-      <DashboardSideBar />
-    </section>
-  );
+  return <section></section>;
 };
 
 export default Dashboard;

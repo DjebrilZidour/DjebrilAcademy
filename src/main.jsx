@@ -6,7 +6,10 @@ import Login from "./pages/auth/Login/Login";
 import SignUp from "./pages/auth/SignUp/SignUp";
 import BacGettingStarted from "./pages/bac-prep/BacGettingStarted";
 import Dashboard from "./pages/dashboard/Dashboard";
+import NotAllowed from "./pages/NotAllowed/NotAllowed";
+import { getIsUserLogged } from "./utils/utils";
 
+const isLogged = getIsUserLogged();
 
 
 const router = createBrowserRouter([
@@ -16,16 +19,18 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <App />,
+    element: isLogged ? <App /> : <NotAllowed />,
   },
   { path: "/signup", element: <SignUp /> },
 
   {
-    path:"/bac-getting-started", element: <BacGettingStarted />
+    path: "/bac-getting-started",
+    element: <BacGettingStarted />,
   },
   {
-    path:"/dashboard", element: <Dashboard/>,
-  }
+    path: "/dashboard",
+    element: <Dashboard />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

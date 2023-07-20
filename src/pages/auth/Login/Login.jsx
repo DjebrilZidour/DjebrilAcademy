@@ -3,11 +3,21 @@ import Input from "../../../components/Atomic/Input";
 import Btn from "../../../components/Atomic/Btn";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { LOCAL_STORAGE_KEYS } from "../../../utils/utils";
 
 const Login = () => {
   const [typedEmail, setTypedEmail] = useState("");
   const [typedPassword, setTypedPassword] = useState("");
+  const navigate = useNavigate();
+
+  const submitLogin = () => {
+    if (typedEmail === "test@test.com" && typedPassword === "test") {
+      localStorage.setItem(LOCAL_STORAGE_KEYS.isLogged, true);
+      navigate("/");
+    }
+  };
+
   return (
     <div>
       <Navbar />
@@ -20,36 +30,29 @@ const Login = () => {
         </section>
 
         <section className="mt-10">
-          <form className="flex flex-col" method="POST" action="#">
-            <Input
-              label="Email"
-              type="email"
-              value={typedEmail}
-              setValue={setTypedEmail}
-            />
-            <Input
-              label="Password"
-              type="password"
-              value={typedPassword}
-              setValue={setTypedPassword}
-            />
+          <Input
+            label="Email"
+            type="email"
+            value={typedEmail}
+            setValue={setTypedEmail}
+          />
+          <Input
+            label="Password"
+            type="password"
+            value={typedPassword}
+            setValue={setTypedPassword}
+          />
 
-            <div className="flex justify-end">
-              <a
-                href="#"
-                className="text-sm text-purple-600 hover:text-purple-700 hover:underline mb-6"
-              >
-                Forgot your password?
-              </a>
-            </div>
+          <div className="flex justify-end">
+            <a
+              href="#"
+              className="text-sm text-purple-600 hover:text-purple-700 hover:underline mb-6"
+            >
+              Forgot your password?
+            </a>
+          </div>
 
-            <Btn
-              value="sing in"
-              onClick={() => {
-                console.log("Email:", typedEmail, "PASSWORD:", typedPassword);
-              }}
-            />
-          </form>
+          <Btn value="sing in" onClick={submitLogin} />
         </section>
       </main>
 
