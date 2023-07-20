@@ -7,3 +7,16 @@ body {
 html {
     scroll-behavior: smooth;
 }
+#btn{
+  background-color: #00e388;
+}
+#btn:hover{
+  background-color: #00ba70;
+}
+
+#bem-prep-card{
+  background-color: #86fe00;
+}
+#bac-prep-card{
+  background-color:#1df45d;
+}

@@ -5,23 +5,84 @@ import SingUp from "../pages/auth/SignUp/SignUp";
 import Footer from "../components/Footer";
 import BacGettingStarted from "../pages/bac-prep/BacGettingStarted";
 import { Link } from "react-router-dom"; //! VERY __________ IMPORTANT !!!!!!!!!!!!!
+import Btn from "../components/Atomic/Btn";
 
 function App() {
   // const startBtn = () => {};
   return (
     <section id="app">
-      <Navbar/>
-      <div>
-        <div>
-          <h1>BEM PREPARATION</h1>
-          <p></p>
-          <BacGettingStarted/>
+      <Navbar />
+
+      {/* <div style={{ backgroundColor: "" }} className="flex justify-between">
+        <div className="m-4 p-4 w-1/2 border-2 border-black rounded-3xl flex flex-col gap-12 ">
+          <h1 className="text-3xl">
+            Do you know that you are the builder of your future !!!!
+          </h1>
+          <p className="w-42">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+            dicta magni maxime earum eveniet, deleniti sunt quibusdam
+            accusantium quisquam blanditiis doloremque. Consequatur nulla
+            placeat aspernatur nesciunt quam impedit? Enim, distinctio!
+          </p>
+
           <Link to="/bac-getting-started">
-          <button>start now</button>
+            <Btn value="start now" />
           </Link>
         </div>
-        <div></div>
+        <div className="p-4 w-1/2">
+          <img
+            className="rounded-3xl w-full h-full"
+            src="https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt=""
+          />
+        </div>
+      </div> */}
+
+      <div className="flex justify-between mt-8 ">
+        <div
+          id="bem-prep-card"
+          className="flex flex-col justify-between items-center text-center gap-16 border-2 border-black rounded-xl m-2 py-10 px-4 w-full  h-92"
+        >
+          <div className="flex justify-center gap-4 items-center">
+            <img
+              className="w-12"
+              src="https://cdn-icons-png.flaticon.com/512/207/207190.png"
+              alt=""
+            />
+            <h1 className="text-3xl">BEM PREPARATION</h1>
+          </div>
+
+          <p className="text-xl w-1/2">
+            if you want to get the best mark on your bem so our program is
+            dedicated for you djebril academy will offer you a program that
+            helps you to be the first in your middle shool
+          </p>
+          <Btn value="prepare for your Bem Now !!!" />
+        </div>
+
+        <div
+          id="bac-prep-card"
+          className="flex flex-col justify-between items-center text-center gap-16 border-2 border-black rounded-xl m-2 py-10 px-4 w-full h-92"
+        >
+          <div className="flex justify-center gap-4 items-center">
+            <img
+              className="w-12"
+              src="https://cdn-icons-png.flaticon.com/512/2677/2677319.png"
+              alt=""
+            />
+            <h1 className="text-3xl">BAC PREPARATION</h1>
+          </div>
+
+          <p className="text-xl text-xl w-1/2">
+            if you want to get the best mark on your <b>bac exam</b> so our
+            program is dedicated for you djebril academy will offer you a
+            program that helps you to be the first in your middle shool
+          </p>
+          <Btn value="prepare for your Bac Now !!!" />
+        </div>
       </div>
+
+      <footer />
     </section>
   );
 }
