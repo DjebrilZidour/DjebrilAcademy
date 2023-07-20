@@ -13,31 +13,6 @@ function App() {
     <section id="app">
       <Navbar />
 
-      {/* <div style={{ backgroundColor: "" }} className="flex justify-between">
-        <div className="m-4 p-4 w-1/2 border-2 border-black rounded-3xl flex flex-col gap-12 ">
-          <h1 className="text-3xl">
-            Do you know that you are the builder of your future !!!!
-          </h1>
-          <p className="w-42">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-            dicta magni maxime earum eveniet, deleniti sunt quibusdam
-            accusantium quisquam blanditiis doloremque. Consequatur nulla
-            placeat aspernatur nesciunt quam impedit? Enim, distinctio!
-          </p>
-
-          <Link to="/bac-getting-started">
-            <Btn value="start now" />
-          </Link>
-        </div>
-        <div className="p-4 w-1/2">
-          <img
-            className="rounded-3xl w-full h-full"
-            src="https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=1600"
-            alt=""
-          />
-        </div>
-      </div> */}
-
       <div className="flex justify-between mt-8 ">
         <div
           id="bem-prep-card"

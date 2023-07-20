@@ -1,875 +1,216 @@
-const Landing =  () => {
- return ( <div>
-     <div class="preloader">
-         <div class="loader">
-             <div class="ytp-spinner">
-                 <div class="ytp-spinner-container">
-                     <div class="ytp-spinner-rotator">
-                         <div class="ytp-spinner-left">
-                             <div class="ytp-spinner-circle"></div>
-                         </div>
-                         <div class="ytp-spinner-right">
-                             <div class="ytp-spinner-circle"></div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- 
-     <section class="header_area">
-         <div class="navbar-area bg-white">
-             <div class="container relative">
-                 <div class="row items-center">
-                     <div class="w-full">
-                         <nav class="flex items-center justify-between py-4 navbar navbar-expand-lg">
-                             <a class="navbar-brand mr-5" href="index.html">
-                                 <img src="assets/images/logo.svg" alt="Logo"/>
-                             </a>
-                             <button class="block navbar-toggler focus:outline-none lg:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
-                                 <span class="toggler-icon"></span>
-                                 <span class="toggler-icon"></span>
-                                 <span class="toggler-icon"></span>
-                             </button>
- 
-                             <div class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white lg:w-auto collapse navbar-collapse lg:block top-full mt-full lg:static lg:bg-transparent shadow lg:shadow-none" id="navbarOne">
-                                 <ul id="nav" class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
-                                     <li class="nav-item ml-5 lg:ml-11">
-                                         <a class="page-scroll active" href="#home">Home</a>
-                                     </li>
-                                     <li class="nav-item ml-5 lg:ml-11">
-                                         <a class="page-scroll" href="#about">About</a>
-                                     </li>
-                                     <li class="nav-item ml-5 lg:ml-11">
-                                         <a class="page-scroll" href="#services">Services</a>
-                                     </li>
-                                     <li class="nav-item ml-5 lg:ml-11">
-                                         <a class="page-scroll" href="#work">Projects</a>
-                                     </li>
-                                     <li class="nav-item ml-5 lg:ml-11">
-                                         <a class="page-scroll" href="#pricing">Pricing</a>
-                                     </li>
-                                     <li class="nav-item ml-5 lg:ml-11">
-                                         <a class="page-scroll" href="#blog">Blog</a>
-                                     </li>
-                                     <li class="nav-item ml-5 lg:ml-11">
-                                         <a class="page-scroll" href="#contact">Contact</a>
-                                     </li>
-                                 </ul>
-                             </div> {/*navbar collapse */}
-                         </nav> {/*navbar */}
-                     </div>
-                 </div> {/*row */}
-             </div> {/*container */}
-         </div> {/*header navbar */}
- 
-         <div id="home" class="header_hero bg-gray relative z-10 overflow-hidden lg:flex items-center">
-             <div class="hero_shape shape_1">
-                 <img src="assets/images/shape/shape-1.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_2">
-                 <img src="assets/images/shape/shape-2.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_3">
-                 <img src="assets/images/shape/shape-3.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_4">
-                 <img src="assets/images/shape/shape-4.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_6">
-                 <img src="assets/images/shape/shape-1.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_7">
-                 <img src="assets/images/shape/shape-4.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_8">
-                 <img src="assets/images/shape/shape-3.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_9">
-                 <img src="assets/images/shape/shape-2.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_10">
-                 <img src="assets/images/shape/shape-4.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_11">
-                 <img src="assets/images/shape/shape-1.svg" alt="shape"/>
-             </div>{/*hero shape */}
-             <div class="hero_shape shape_12">
-                 <img src="assets/images/shape/shape-2.svg" alt="shape"/>
-             </div>{/*hero shape */}
- 
-             <div class="container">
-                 <div class="row">
-                     <div class="w-full lg:w-1/2">
-                         <div class="header_hero_content pt-150 lg:pt-0">
-                             <h2 class="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">Creative Multipurpose Tailwind CSS <span class="text-theme-color">Template</span></h2>
-                             <p class="mt-8 lg:mr-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-                             <div class="hero_btn mt-10">
-                                 <a class="main-btn" href="#0">Get Started</a>
-                             </div>
-                         </div> {/*header hero content */}
-                     </div>
-                 </div> {/*row */}
-             </div> {/*container */}
-             <div class="header_shape hidden lg:block"></div>
- 
-             <div class="header_image flex items-center">
-                 <div class="image 2xl:pl-25">
-                     <img src="assets/images/header-image.svg" alt="Header Image"/>
-                 </div>
-             </div> {/*header image */}
-         </div> {/*header hero */}
-     </section>
- 
- 
-     <section class="services_area pt-120" id="about">
-         <div class="container">
-             <div class="row justify-center">
-                 <div class="w-full lg:w-1/2">
-                     <div class="section_title text-center pb-6">
-                         <h5 class="sub_title">About</h5>
-                         <h4 class="main_title">Work Process</h4>
-                     </div> {/*section title */}
-                 </div>
-             </div> {/*row */}
-             <div class="row justify-center">
-                 <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
-                     <div class="single_services text-center mt-8 mx-3">
-                         <div class="services_icon">
-                             <i class="lni lni-write"></i>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
-                                 <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
-                             </svg>
-                         </div>
-                         <div class="services_content mt-5">
-                             <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Research</h3>
-                             <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
-                         </div>
-                     </div> {/*single services */}
-                 </div>
-                 <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
-                     <div class="single_services text-center mt-8 mx-3">
-                         <div class="services_icon">
-                             <i class="lni lni-bulb"></i>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
-                                 <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
-                             </svg>
-                         </div>
-                         <div class="services_content mt-5">
-                             <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Prototype</h3>
-                             <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
-                         </div>
-                     </div> {/*single services */}
-                 </div>
-                 <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
-                     <div class="single_services text-center mt-8 mx-3">
-                         <div class="services_icon">
-                             <i class="lni lni-checkmark-circle"></i>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
-                                 <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
-                             </svg>
-                         </div>
-                         <div class="services_content mt-5">
-                             <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Build</h3>
-                             <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
-                         </div>
-                     </div> {/*single services */}
-                 </div>
-             </div> {/*row */}
-         </div> {/*container */}
-     </section>
- 
-     <section id="why" class="about_area pt-120 relative">
-         <div class="about_image flex items-end justify-end">
-             <div class="image lg:pr-13">
-                 <img src="assets/images/about.svg" alt="about"/>
-             </div>
-         </div> {/*about image */}
-         <div class="container">
-             <div class="row justify-end">
-                 <div class="w-full lg:w-1/2">
-                     <div class="about_content mx-4 pt-11 lg:pt-15 lg:pb-15">
-                         <div class="section_title pb-9">
-                             <h5 class="sub_title">Why Choose Us</h5>
-                             <h4 class="main_title">Your Goal is Our Achievement</h4>
-                         </div> {/*section title */}
-                         <p>Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergren, no sea takimata sanctus. </p>
-                         <ul class="about_list pt-3">
-                             <li class="flex mt-5">
-                                 <div class="about_check">
-                                     <i class="lni lni-checkmark-circle"></i>
-                                 </div>
-                                 <div class="about_list_content pl-5 pr-2">
-                                     <p>Vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
-                                 </div>
-                             </li>
-                             <li class="flex mt-5">
-                                 <div class="about_check">
-                                     <i class="lni lni-checkmark-circle"></i>
-                                 </div>
-                                 <div class="about_list_content pl-5 pr-2">
-                                     <p>At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
-                                 </div>
-                             </li>
-                             <li class="flex mt-5">
-                                 <div class="about_check">
-                                     <i class="lni lni-checkmark-circle"></i>
-                                 </div>
-                                 <div class="about_list_content pl-5 pr-2">
-                                     <p>Dvero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
-                                 </div>
-                             </li>
-                         </ul>
-                     </div> {/*about content */}
-                 </div>
-             </div> {/*row */}
-         </div> {/*container */}
-     </section>
- 
-     {/*====== ABOUT PART ENDS ======*/}
- 
-     {/*====== SERVICES PART START ======*/}
- 
-     <section id="services" class="services_area pt-120 pb-120">
-         <div class="container">
-             <div class="row justify-center">
-                 <div class="w-full lg:w-1/2">
-                     <div class="section_title text-center pb-6">
-                         <h5 class="sub_title">What We Do</h5>
-                         <h4 class="main_title">Our Services</h4>
-                     </div> {/*section title */}
-                 </div>
-             </div> {/*row */}
-             <div class="row justify-center">
-                 <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
-                     <div class="single_services text-center mt-8 mx-3">
-                         <div class="services_icon">
-                             <i class="lni lni-layout"></i>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
-                                 <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
-                             </svg>
-                         </div>
-                         <div class="services_content mt-5 xl:mt-10">
-                             <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Web Design</h3>
-                             <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
-                         </div>
-                     </div> {/*single services */}
-                 </div>
- 
-                 <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
-                     <div class="single_services text-center mt-8 mx-3">
-                         <div class="services_icon">
-                             <i class="lni lni-bullhorn"></i>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
-                                 <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
-                             </svg>
-                         </div>
-                         <div class="services_content mt-5 xl:mt-10">
-                             <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Digital Marketing</h3>
-                             <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
-                         </div>
-                     </div> {/*single services */}
-                 </div>
- 
-                 <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
-                     <div class="single_services text-center mt-8 mx-3">
-                         <div class="services_icon">
-                             <i class="lni lni-mobile"></i>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
-                                 <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
-                             </svg>
-                         </div>
-                         <div class="services_content mt-5 xl:mt-10">
-                             <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Mobile Apps</h3>
-                             <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
-                         </div>
-                     </div> {/*single services */}
-                 </div>
- 
-                 <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
-                     <div class="single_services text-center mt-8 mx-3">
-                         <div class="services_icon">
-                             <i class="lni lni-seo"></i>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
-                                 <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
-                             </svg>
-                         </div>
-                         <div class="services_content mt-5 xl:mt-10">
-                             <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">SEO Consultancy</h3>
-                             <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
-                         </div>
-                     </div> {/*single services */}
-                 </div>
- 
-                 <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
-                     <div class="single_services text-center mt-8 mx-3">
-                         <div class="services_icon">
-                             <i class="lni lni-layers"></i>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
-                                 <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
-                             </svg>
-                         </div>
-                         <div class="services_content mt-5 xl:mt-10">
-                             <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Graphic Design</h3>
-                             <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
-                         </div>
-                     </div> {/*single services */}
-                 </div>
- 
-                 <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
-                     <div class="single_services text-center mt-8 mx-3">
-                         <div class="services_icon">
-                             <i class="lni lni-briefcase"></i>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
-                                 <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
-                             </svg>
-                         </div>
-                         <div class="services_content mt-5 xl:mt-10">
-                             <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Business Consultancy</h3>
-                             <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
-                         </div>
-                     </div> {/*single services */}
-                 </div>
-             </div> {/*row */}
-         </div> {/*container */}
-     </section>
- 
- 
-     <section id="work" class="work_area bg-gray pt-120 pb-120">
-         <div class="container">
-             <div class="row justify-center">
-                 <div class="w-ull lg:w-1/2">
-                     <div class="section_title text-center pb-6">
-                         <h5 class="sub_title">Works</h5>
-                         <h4 class="main_title">Some of Our Recent Works</h4>
-                     </div> {/*section title */}
-                 </div>
-             </div> {/*row */}
-         </div> {/*container */}
-         <div class="container-fluid">
-             <div class="work_wrapper relative">
-                 <div class="row work_active">
-                     <div class="w-full lg:w-3/12">
-                         <div class="single_item mx-auto">
-                             <div class="single_work mx-3">
-                                 <div class="work_image">
-                                     <img src="assets/images/work-1.jpg" alt="work" class="w-full"/>
-                                 </div>
-                                 <div class="work_content">
-                                     <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                     <h4 class="work_title text-xl md:text-2xl"><a href="#">Marketing</a></h4>
-                                     <p class="mt-2">NoCodeAPI</p>
-                                 </div>
-                             </div>
-                         </div> {/*single work */}
-                     </div>
-                     <div class="w-full lg:w-3/12">
-                         <div class="single_item mx-auto">
-                             <div class="single_work mx-3">
-                                 <div class="work_image">
-                                     <img src="assets/images/work-2.jpg" alt="work" class="w-full"/>
-                                 </div>
-                                 <div class="work_content">
-                                     <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                     <h4 class="work_title text-xl md:text-2xl"><a href="#">Creative Design</a></h4>
-                                     <p class="mt-2">UIdeck</p>
-                                 </div>
-                             </div>
-                         </div> 
-                     </div>
-                     <div class="w-full lg:w-3/12">
-                         <div class="single_item mx-auto">
-                             <div class="single_work mx-3">
-                                 <div class="work_image">
-                                     <img src="assets/images/work-3.jpg" alt="work" class="w-full"/>
-                                 </div>
-                                 <div class="work_content">
-                                     <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                     <h4 class="work_title text-xl md:text-2xl"><a href="#">Web Design</a></h4>
-                                     <p class="mt-2">GrayGrids</p>
-                                 </div>
-                             </div>
-                         </div> 
-                     </div>
-                     <div class="w-full lg:w-3/12">
-                         <div class="single_item mx-auto">
-                             <div class="single_work mx-3">
-                                 <div class="work_image">
-                                     <img src="assets/images/work-4.jpg" alt="work" class="w-full"/>
-                                 </div>
-                                 <div class="work_content">
-                                     <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                     <h4 class="work_title text-xl md:text-2xl"><a href="#">Analysis</a></h4>
-                                     <p class="mt-2">Ayro UI</p>
-                                 </div>
-                             </div>
-                         </div> 
-                     </div>
-                     <div class="w-full lg:w-3/12">
-                         <div class="single_item mx-auto">
-                             <div class="single_work mx-3">
-                                 <div class="work_image">
-                                     <img src="assets/images/work-5.jpg" alt="work" class="w-full"/>
-                                 </div>
-                                 <div class="work_content">
-                                     <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                     <h4 class="work_title text-xl md:text-2xl"><a href="#">SMM</a></h4>
-                                     <p class="mt-2">LineIcons</p>
-                                 </div>
-                             </div>
-                         </div>  
-                     </div>
-                     <div class="w-full lg:w-3/12">
-                         <div class="single_item mx-auto">
-                             <div class="single_work mx-3">
-                                 <div class="work_image">
-                                     <img src="assets/images/work-2.jpg" alt="work" class="w-full"/>
-                                 </div>
-                                 <div class="work_content">
-                                     <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                     <h4 class="work_title text-xl md:text-2xl"><a href="#">SEO</a></h4>
-                                     <p class="mt-2">PageBulb</p>
-                                 </div>
-                             </div>
-                         </div> 
-                     </div>
-                     <div class="w-full lg:w-3/12">
-                         <div class="single_item mx-auto">
-                             <div class="single_work mx-3">
-                                 <div class="work_image">
-                                     <img src="assets/images/work-4.jpg" alt="work" class="w-full"/>
-                                 </div>
-                                 <div class="work_content">
-                                     <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                     <h4 class="work_title text-xl md:text-2xl"><a href="#">Mobile App</a></h4>
-                                     <p class="mt-2">Rocket Internet LTD</p>
-                                 </div>
-                             </div>
-                         </div> 
-                     </div>
-                 </div>  
-             </div>
-         </div>  
-     </section>
- 
- 
-     <section id="pricing" class="pricing_area pt-120 pb-120">
-         <div class="container">
-             <div class="row justify-center">
-                 <div class="w-full lg:w-1/2">
-                     <div class="section_title text-center pb-6">
-                         <h5 class="sub_title">Pricing Plans</h5>
-                         <h4 class="main_title">Choose Your Plan</h4>
-                     </div> 
-                 </div>
-             </div>  
-             <div class="row">
-                 <div class="w-full">
-                     <div class="pricing_menu mt-8 pb-8">
-                         <ul class="flex justify-center">
-                             <li class="nav-item">
-                                 <button class="active bg-gray text-body-color py-3 px-8 rounded-tl-full rounded-bl-full" data-tab-target="#monthlyPlan">Monthly</button>
-                             </li>
-                             <li class="nav-item">
-                                 <button class="bg-gray text-body-color py-3 px-8 rounded-tr-full rounded-br-full" data-tab-target="#yearlyPlan">Yearly</button>
-                             </li>
-                         </ul>
-                     </div> 
-                     
-                     <div class="pricing_content mt-6_area">
-                         <div class="tab-content">
-                             <div class="active tab-pane" id="monthlyPlan" data-tab-content>
-                                 <div class="row justify-center">
-                                     <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
-                                         <div class="single_pricing text-center mt-8 mx-3">
-                                             <div class="pricing_title relative inline-block">
-                                                 <h4 class="title group-hover:text-white">Basic</h4>
-                                                 <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
-                                                     <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
-                                                 </svg>
-                                             </div>
-                                             <div class="pricing_content mt-6">
-                                                 <span class="pricing_price font-bold text-black text-4xl">$19.00</span>
-                                                 <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
-                                                 <a href="" class="main-btn pricing_btn">Choose Plan</a>
-                                             </div>
-                                         </div>   
-                                     </div>
-                                     
-                                     <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
-                                         <div class="single_pricing text-center mt-8 mx-3 active">
-                                             <div class="pricing_title relative inline-block">
-                                                 <h4 class="title group-hover:text-white">Standard</h4>
-                                                 <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
-                                                     <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
-                                                 </svg>
-                                             </div>
-                                             <div class="pricing_content mt-6">
-                                                 <span class="pricing_price font-bold text-black text-4xl">$39.00</span>
-                                                 <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
-                                                 <a href="" class="main-btn pricing_btn">Choose Plan</a>
-                                             </div>
-                                         </div>   
-                                     </div>
-                                     
-                                     <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
-                                         <div class="single_pricing text-center mt-8 mx-3">
-                                             <div class="pricing_title relative inline-block">
-                                                 <h4 class="title group-hover:text-white">Premium</h4>
-                                                 <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
-                                                     <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
-                                                 </svg>
-                                             </div>
-                                             <div class="pricing_content mt-6">
-                                                 <span class="pricing_price font-bold text-black text-4xl">$99.00</span>
-                                                 <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
-                                                 <a href="" class="main-btn pricing_btn">Choose Plan</a>
-                                             </div>
-                                         </div>  
-                                     </div>
-                                 </div>  
-                             </div>
-                             <div class="tab-pane" id="yearlyPlan" data-tab-content>
-                                 <div class="row justify-center">
-                                     <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
-                                         <div class="single_pricing text-center mt-8 mx-3">
-                                             <div class="pricing_title relative inline-block">
-                                                 <h4 class="title group-hover:text-white">Basic</h4>
-                                                 <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
-                                                     <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
-                                                 </svg>
-                                             </div>
-                                             <div class="pricing_content mt-6">
-                                                 <span class="pricing_price font-bold text-black text-4xl">$99.00</span>
-                                                 <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
-                                                 <a href="" class="main-btn pricing_btn">Choose Plan</a>
-                                             </div>
-                                         </div>  
-                                     </div>
-                                     
-                                     <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
-                                         <div class="single_pricing text-center mt-8 mx-3 active">
-                                             <div class="pricing_title relative inline-block">
-                                                 <h4 class="title group-hover:text-white">Standard</h4>
-                                                 <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
-                                                     <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
-                                                 </svg>
-                                             </div>
-                                             <div class="pricing_content mt-6">
-                                                 <span class="pricing_price font-bold text-black text-4xl">$199.00</span>
-                                                 <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
-                                                 <a href="" class="main-btn pricing_btn">Choose Plan</a>
-                                             </div>
-                                         </div>  
-                                     </div>
-                                     
-                                     <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
-                                         <div class="single_pricing text-center mt-8 mx-3">
-                                             <div class="pricing_title relative inline-block">
-                                                 <h4 class="title group-hover:text-white">Premium</h4>
-                                                 <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
-                                                     <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
-                                                 </svg>
-                                             </div>
-                                             <div class="pricing_content mt-6">
-                                                 <span class="pricing_price font-bold text-black text-4xl">$499.00</span>
-                                                 <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
-                                                 <a href="" class="main-btn pricing_btn">Choose Plan</a>
-                                             </div>
-                                         </div>  
-                                     </div>
-                                 </div> 
-                             </div>
-                         </div>
-                     </div>  
-                 </div>
-             </div> 
-         </div>  
-     </section>
- 
- 
-     <section id="team" class="team_area bg-gray pt-120 pb-120">
-         <div class="container">
-             <div class="row justify-center">
-                 <div class="w-full lg:w-1/2">
-                     <div class="section_title text-center pb-6">
-                         <h5 class="sub_title">Team</h5>
-                         <h4 class="main_title">Meet Our Team Members</h4>
-                     </div> 
-                 </div>
-             </div> {/*row */}
-             <div class="team-wrapper relative">
-                 <div class="row team_active">
-                     <div class="w-full lg:w-4/12">
-                         <div class="single_team_item mx-auto">
-                             <div class="single_team mx-3">
-                                 <div class="team_image relative">
-                                     <img src="assets/images/team-1.jpg" alt="team" class="w-full"/>
-                                     <ul class="social absolute top-4 right-8">
-                                         <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                         <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                         <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                     </ul>
-                                 </div>
-                                 <div class="team_content py-5 px-8 relative">
-                                     <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Chris Dave</a></h4>
-                                     <p class="mt-2 transition-all duration-300 group-hover:text-white">Founder and CEO</p>
-                                 </div>
-                             </div> {/*single team */}
-                         </div>
-                     </div>
-                     <div class="w-full lg:w-4/12">
-                         <div class="single_team_item mx-auto">
-                             <div class="single_team mx-3">
-                                 <div class="team_image relative">
-                                     <img src="assets/images/team-3.jpg" alt="team" class="w-full"/>
-                                     <ul class="social absolute top-4 right-8">
-                                         <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                         <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                         <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                     </ul>
-                                 </div>
-                                 <div class="team_content py-5 px-8 relative">
-                                     <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Sarah Doe</a></h4>
-                                     <p class="mt-2 transition-all duration-300 group-hover:text-white">UI Designer</p>
-                                 </div>
-                             </div> {/*single team */}
-                         </div>
-                     </div>
-                     <div class="w-full lg:w-4/12">
-                         <div class="single_team_item mx-auto">
-                             <div class="single_team mx-3">
-                                 <div class="team_image relative">
-                                     <img src="assets/images/team-5.jpg" alt="team" class="w-full">
-                                     <ul class="social absolute top-4 right-8">
-                                         <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                         <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                         <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                     </ul>
-                                 </div>
-                                 <div class="team_content py-5 px-8 relative">
-                                     <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Rob Hope</a></h4>
-                                     <p class="mt-2 transition-all duration-300 group-hover:text-white">Dr. Software Engineer</p>
-                                 </div>
-                             </div> {/*single team */}
-                         </div>
-                     </div>
-                     <div class="w-full lg:w-4/12">
-                         <div class="single_team_item mx-auto">
-                             <div class="single_team mx-3">
-                                 <div class="team_image relative">
-                                     <img src="assets/images/team-2.jpg" alt="team" class="w-full"/>
-                                     <ul class="social absolute top-4 right-8">
-                                         <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                         <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                         <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                     </ul>
-                                 </div>
-                                 <div class="team_content py-5 px-8 relative">
-                                     <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Micheal Jordan</a></h4>
-                                     <p class="mt-2 transition-all duration-300 group-hover:text-white">Business Development Manager</p>
-                                 </div>
-                             </div> {/*single team */}
-                         </div>
-                     </div>
-                 </div> {/*row */}
-             </div>
-         </div> {/*container */}
-     </section>
- 
- 
-     <section id="blog" class="blog_area pt-120">
-         <div class="container">
-             <div class="row justify-center">
-                 <div class="w-full lg:w-1/2">
-                     <div class="section_title text-center pb-6">
-                         <h5 class="sub_title">Blog</h5>
-                         <h4 class="main_title">From The Blog</h4>
-                     </div> {/*section title */}
-                 </div>
-             </div> {/*row */}
-             <div class="row justify-center lg:justify-start">
-                 <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
-                     <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
-                         <div class="blog_image">
-                             <img src="assets/images/blog-1.jpg" alt="blog" class="w-full"/>
-                         </div>
-                         <div class="blog_content p-4 md:p-5">
-                             <ul class="blog_meta flex justify-between">
-                                 <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
-                                 <li class="text-body-color text-sm md:text-base">15 June 2024</li>
-                             </ul>
-                             <h3 class="blog_title"><a href="#">How to track your business revenue</a></h3>
-                             <a href="#" class="more_btn">Read More</a>
-                         </div>
-                     </div> {/*row */}
-                 </div>
-                 <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
-                     <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
-                         <div class="blog_image">
-                             <img src="assets/images/blog-2.jpg" alt="blog" class="w-full">
-                         </div>
-                         <div class="blog_content p-4 md:p-5">
-                             <ul class="blog_meta flex justify-between">
-                                 <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
-                                 <li class="text-body-color text-sm md:text-base">15 June 2024</li>
-                             </ul>
-                             <h3 class="blog_title"><a href="#">Improving products depending on feedback</a></h3>
-                             <a href="#" class="more_btn">Read More</a>
-                         </div>
-                     </div> {/*row */}
-                 </div>
-                 <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
-                     <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
-                         <div class="blog_image">
-                             <img src="assets/images/blog-3.jpg" alt="blog" class="w-full"/>
-                         </div>
-                         <div class="blog_content p-4 md:p-5">
-                             <ul class="blog_meta flex justify-between">
-                                 <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
-                                 <li class="text-body-color text-sm md:text-base">15 June 2024</li>
-                             </ul>
-                             <h3 class="blog_title"><a href="#">How to diversify your audience</a></h3>
-                             <a href="#" class="more_btn">Read More</a>
-                         </div>
-                     </div> {/*row */}
-                 </div>
-             </div> {/*row */}
-         </div> {/*container */}
-     </section>
- 
- 
-     <section id="contact" class="contact_area relative pt-18 pb-120">
-         <div class="contact_image flex items-center justify-end">
-             <div class="image lg:pr-13">
-                  src="assets/images/contact.svg" alt="about">
-             </div>
-         </div> {/*about image */}
-         
-         <div class="container">
-             <div class="row justify-end">
-                 <div class="w-full lg:w-1/2">
-                     <div class="contact_wrapper mt-11">
-                         <div class="section_title pb-4">
-                             <h5 class="sub_title">Contact</h5>
-                             <h4 class="main_title">Get In Touch</h4>
-                             <p>Lorem ipsum dolor sitrg amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-                         </div> {/*section title */}
-                         
-                         <div class="contact_form">
-                             <form id="contact-form" action="assets/php/contact.php" method="POST">
-                                 <div class="row">
-                                     <div class="w-full md:w-1/2">
-                                         <div class="mx-3">
-                                             <div class="single_form mt-8">
-                                                 <input name="name" id="name" type="text" placeholder="Name" class="w-full rounded-md py-4 px-6 border border-solid border-body-color">
-                                             </div> {/*single form */}
-                                         </div>
-                                     </div>
-                                     <div class="w-full md:w-1/2">
-                                         <div class="mx-3">
-                                             <div class="single_form mt-8">
-                                                 <input name="email" id="email" type="email" placeholder="Email" class="w-full rounded-md py-4 px-6 border border-solid border-body-color">
-                                             </div> {/*single form */}
-                                         </div>
-                                     </div>
-                                     <div class="w-full">
-                                         <div class="mx-3">
-                                             <div class="single_form mt-8">
-                                                 <textarea name="message" id="message" placeholder="Message" rows="5" class="w-full rounded-md py-4 px-6 border border-solid border-body-color resize-none"></textarea>
-                                             </div> {/*single form */}
-                                         </div>
-                                     </div>
-                                     <p class="form-message mx-3"></p>
-                                     <div class="w-full">
-                                         <div class="mx-3">
-                                             <div class="single_form mt-8">
-                                                 <button type="submit" class="main-btn contact-btn">Submit</button>
-                                             </div> {/*single form */}
-                                         </div>
-                                     </div>
-                                 </div> {/*row */}
-                             </form>
-                         </div> {/*contact form */}
-                     </div> {/*contact wrapper */}
-                 </div>
-             </div> {/*row */}
-         </div> {/*container */}
-     </section>
- 
- 
- 
-     <footer id="footer" class="footer_area bg-black relative z-10">
-         <div class="shape absolute left-0 top-0 opacity-5 h-full overflow-hidden w-1/3">
-             <img src="assets/images/footer-shape-left.png" alt=""/>
-         </div>
-         <div class="shape absolute right-0 top-0 opacity-5 h-full overflow-hidden w-1/3">
-             <img src="assets/images/footer-shape-right.png" alt=""/>
-         </div>
-         <div class="container">
-             <div class="footer_widget pt-18 pb-120">
-                 <div class="row justify-center">
-                     <div class="w-full md:w-1/2 lg:w-3/12">
-                         <div class="footer_about mt-13 mx-3">
-                             <div class="footer_logo">
-                                 <a href="#"><img src="assets/images/logo-footer.svg" alt=""/></a>
-                             </div>
-                             <div class="footer_content mt-8">
-                                 <p class="text-white">Lorem ipsum dolor sitco nsetetu nonumy eirmod tempor invidunt ut labore et dolore magna uyam erat, sed diam.</p>
-                             </div>
-                         </div> {/*footer about */}
-                     </div>
-                     <div class="w-full md:w-1/2 lg:w-5/12">
-                         <div class="footer_link_wrapper flex flex-wrap mx-3">
-                             <div class="footer_link w-1/2 md:pl-13 mt-13">
-                                 <h2 class="footer_title text-xl font-semibold text-white">Quick Links</h2>
-                                 <ul class="link pt-4">
-                                     <li><a href="#" class="text-white mt-4 hover:text-theme-color">Company</a></li>
-                                     <li><a href="#" class="text-white mt-4 hover:text-theme-color">Privacy Policy</a></li>
-                                     <li><a href="#" class="text-white mt-4 hover:text-theme-color">About</a></li>
-                                 </ul>
-                             </div> {/*footer link */}
-                             <div class="footer_link w-1/2 md:pl-13 mt-13">
-                                 <h2 class="footer_title text-xl font-semibold text-white">Resources</h2>
-                                 <ul class="link pt-4">
-                                     <li><a href="#" class="text-white mt-4 hover:text-theme-color">Support</a></li>
-                                     <li><a href="#" class="text-white mt-4 hover:text-theme-color">Contact</a></li>
-                                     <li><a href="#" class="text-white mt-4 hover:text-theme-color">Terms</a></li>
-                                 </ul>
-                             </div> {/*footer link */}
-                         </div> {/*footer link wrapper */}
-                     </div>
-                     <div class="w-full md:w-2/3 lg:w-4/12">
-                         <div class="footer_subscribe mt-13 mx-3">
-                             <h2 class="footer_title text-xl font-semibold text-white">Newsletter</h2>
-                             <div class="subscribe_form text-right mt-9 relative">
-                                 <form action="#">
-                                     <input type="text" placeholder="Enter email" class="w-full py-5 px-6 bg-white text-black rounded-full border-none">
-                                     <button class="main-btn subscribe-btn">Subscribe</button>
-                                 </form>
-                             </div>
-                         </div> {/*footer subscribe */}
-                     </div>
-                 </div> {/*row */}
-             </div> {/*footer widget */}
-             <div class="footer_copyright pt-3 pb-6 border-t-2 border-solid border-white border-opacity-10 sm:flex justify-between">
-                 <div class="footer_social pt-4 mx-3 text-center">
-                     <ul class="social flex justify-center sm:justify-start">
-                         <li class="mr-3"><a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i></a></li>
-                         <li class="mr-3"><a href="https://twitter.com/uideckHQ"><i class="lni lni-twitter-filled"></i></a></li>
-                         <li class="mr-3"><a href="https://instagram.com/uideckHQ"><i class="lni lni-instagram-original"></i></a></li>
-                         <li class="mr-3"><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                     </ul>
-                 </div> {/*footer social */}
-                 <div class="footer_copyright_content pt-4 text-center">
-                     <p class="text-white">Designed and Developed by <a href="https://uideck.com" rel="nofollow" class="text-white hover:text-theme-color">UIdeck</a> and <a href="https://tailwindtemplates.co" rel="nofollow" class="text-white hover:text-theme-color">Tailwind Templates</a></p>
-                 </div> {/*footer copyright content */}
-             </div> {/*footer copyright */}
-         </div> {/*container */}
-     </footer>
-     
- </div>
- </div>
-}
+import Navbar from "../../components/Navbar";
+import Btn from "../../components/Atomic/Btn";
+
+const Landing = () => {
+  return (
+    <>
+    <Navbar/>
+    <section className="flex items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20 mt-8">
+      <div className="px-3 w-full lg:w-2/5">
+        <div className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
+          <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl">
+            Exclusive Agency For
+            <span style={{color:"#61faaf"}} className="text-5xl ">
+               <div className=""></div>Technology
+            </span>
+              .Provide Solution
+          </h2>
+
+          <p className="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
+            Helping you maximize operations management with digitization
+          </p>
+        </div>
+
+        <div className="text-center lg:text-left">
+
+          <Btn value="Key Features" />
+
+          <button className="text-black font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200 px-4 ml-4">
+            how do we work !!
+          </button>
+            
+
+        </div>
+      </div>
+
+      <div className="px-3 mb-12 w-full lg:mb-0 lg:w-3/5">
+        <div className="flex justify-center items-center">
+          <svg
+            className="block max-w-full h-auto align-middle lg:max-w-lg"
+            xmlns="http://www.w3.org/2000/svg"
+            height="400"
+            viewBox="0 0 524.67004 627.58314"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M369.04619,148.0378h51.762v17.04364c0,28.5682-23.19375,51.76195-51.76195,51.76195h-.00005v-68.80558h0Z"
+              transform="translate(789.85437 364.88118) rotate(-180)"
+              fill="#2f2e41"
+            />
+            <polygon
+              points="409.33502 185.02664 418.23482 225.05637 366.08305 216.39672 387.33502 178.53845 409.33502 185.02664"
+              fill="#a0616a"
+            />
+            <polygon
+              points="409.33502 185.02664 418.23482 225.05637 366.08305 216.39672 387.33502 178.53845 409.33502 185.02664"
+              opacity=".1"
+            />
+            <rect
+              x="359.33502"
+              y="270.53845"
+              width="50"
+              height="74"
+              transform="translate(768.67004 615.07691) rotate(-180)"
+              fill="#a0616a"
+            />
+            <path
+              d="M441.83502,405.03845l-11,59s7,41-14,83l-14,43-21-3s13-32,13-46c0-14,3-68,3-68l-1.5-61.61811,45.5-6.38189Z"
+              fill="#2f2e41"
+            />
+            <path
+              d="M378.83502,586.03845s24-9,26,4l-1,6s9,27-4,29c-13,2-25,5-26-1-1-6-.98425-13.48966,1.50787-18.74483,2.49213-5.25517,3.49213-19.25517,3.49213-19.25517Z"
+              fill="#2f2e41"
+            />
+            <g>
+              <path
+                d="M366.13446,395.88629l-5.84242,59.73162s-18.12633,37.43576-9.63539,83.61913l1.48898,45.19716,21.00587,2.95865s-3.58764-34.353,.30589-47.80069c3.89353-13.44769,16.0298-66.15169,16.0298-66.15169l18.5774-58.77007-41.93013-18.7841Z"
+                fill="#2f2e41"
+              />
+              <path
+                d="M376.31126,587.26662s-20.5502-15.31957-26.08672-3.38865l-.70811,6.04141s-16.1539,23.43185-4.22298,28.96837c11.93092,5.53652,22.62319,11.75548,25.25239,6.2703,2.62921-5.48519,4.69702-12.68375,3.76473-18.42469-.9323-5.74094,2.00069-19.46674,2.00069-19.46674Z"
+                fill="#2f2e41"
+              />
+            </g>
+            <path
+              d="M429.83502,310.53845c23.51917,21.94757,25.26404,56.67346,11.5,98,0,0-44,30-76-8l-16-77,80.5-13Z"
+              fill="#2f2e41"
+            />
+            <path
+              d="M390.33502,203.53845l25,4-2,63,28,56-36,18s-28-53-33-86c-5-33-2-57-2-57l20,2Z"
+              fill="#61faaf"
+            />
+            <path
+              d="M371.33502,205.53845l-25,4,2,63-6,58,14,16s28-53,33-86,2-57,2-57l-20,2Z"
+              fill="#61faaf"
+            />
+            <path
+              d="M401.33502,207.03845l5.5-1.5s19.5-2.5,22.5,5.5c3,8,2,55,2,55,0,0,5.16,57.68504-14.92,58.34252-20.08,.65748-16.08-47.34252-16.08-47.34252l1-70Z"
+              fill="#61faaf"
+            />
+            <circle cx="400.60838" cy="170.13134" r="25.881" fill="#a0616a" />
+            <path
+              d="M368.33502,209.03845l-5.5-1.5s-19.5-2.5-22.5,5.5-2,55-2,55c0,0-5.16,57.68504,14.92,58.34252s16.08-47.34252,16.08-47.34252l-1-70Z"
+              fill="#61faaf"
+            />
+            <path
+              d="M385.65786,205.75047c-5.55216-1.40863-11.84681,4.52132-14.06128,13.24853-.93243,3.47409-1.01931,7.12088-.2534,10.63535l-2.38571,9.92043-.17551-.00924-18.81824,44.34887c-4.37547,10.31165-3.91314,22.14968,1.66767,31.86201,3.3199,5.77765,7.67792,9.66177,12.79497,5.69682,8.49085-6.57912,14.03686-44.24916,16.56905-65.88826l5.85496-21.9959c2.35018-2.72464,4.01347-5.97257,4.85067-9.47191,2.2149-8.72385-.49107-16.93801-6.04318-18.34671Z"
+              fill="#a0616a"
+            />
+            <path
+              d="M351.0597,191.06934c1.31647-4.00284,3.91522-7.50723,5.07796-11.55742,1.54386-5.37763,4.83076,6.55243,5.15143,.96678,.60951-10.61668,16.81288-37.92626,26.06316-43.17205,9.25028-5.24583,14.56315-3.66417,23.98727,1.26249,0,0,4.57463,.29093,10.26981,3.10267,5.69518,2.81174,10.82161,7.31486,13.03674,13.26749,1.7558,4.7183,1.56147,9.89986,2.14813,14.89992,1.63436,13.92994,9.44292,27.17801,7.76691,41.10298-.52286,4.3445-2.17418,8.83707-5.72639,11.39244-3.55221,2.55534-9.29104,2.27736-11.62924-1.42142-.79788-1.26218-1.13531-2.75965-1.81906-4.08713-.6838-1.32748-1.91931-2.56501-3.41201-2.5237-2.2436,.06211-3.38562,3.07261-2.5009,5.13537s2.96377,3.30817,4.91583,4.41597c-4.6491,2.0915-10.41629,1.44022-14.48185-1.63548-4.06552-3.0757-6.26097-8.44832-5.51283-13.49099,1.05424-7.10612,11.4065-5.63531,12.62603-12.71492,.88773-5.15371,4.00542-13.77714,3.15622-18.93732-.8492-5.16022-4.92762,1.08784-.63124-1.89373-4.72678,2.27867-14.83731-13.30983-19.78567-15.05584-4.94831-1.74601-9.14394-5.5267-11.39402-10.26715-5.24845,7.60821-9.86523,5.54211-11.7449,14.59185-1.87967,9.04974-.14171,29.60975,7.598,34.66228-3.09743,2.11334-5.56661,5.13552-7.01993,8.59211-.82334,1.95819-1.35711,4.10081-2.72366,5.72716-2.60993,3.10617-7.4291,3.29511-11.27027,1.98909-4.76288-1.61941-8.83514-5.17625-11.08048-9.67806-2.24534-4.50181-2.63675-9.89451-1.06507-14.67338Z"
+              fill="#2f2e41"
+            />
+            <path
+              d="M0,626.13577c0,.66003,.53003,1.19,1.19006,1.19H523.48004c.65997,0,1.19-.52997,1.19-1.19,0-.65997-.53003-1.19-1.19-1.19H1.19006c-.66003,0-1.19006,.53003-1.19006,1.19Z"
+              fill="#3f3d56"
+            />
+            <g>
+              <path
+                d="M340.03771,.99983H134.36885c-23.32296,0-42.22995,18.90699-42.22995,42.22995V583.66267c0,23.32291,18.90695,42.22986,42.22986,42.22986h205.66894c23.32296,0,42.22995-18.90699,42.22995-42.22995V43.22978c0-23.32296-18.90699-42.22995-42.22995-42.22995Z"
+                fill="#fff"
+              />
+              <path
+                d="M340.03782,626.89209H134.36888c-23.83691,0-43.22998-19.39258-43.22998-43.22949V43.22998C91.1389,19.39307,110.53196,0,134.36888,0h205.66895c23.83691,0,43.22998,19.39307,43.22998,43.22998V583.6626c0,23.83691-19.39307,43.22949-43.22998,43.22949ZM134.36888,2c-22.73438,0-41.22998,18.49561-41.22998,41.22998V583.6626c0,22.73438,18.49561,41.22949,41.22998,41.22949h205.66895c22.73438,0,41.22998-18.49512,41.22998-41.22949V43.22998c0-22.73438-18.49561-41.22998-41.22998-41.22998H134.36888Z"
+                fill="#3f3d56"
+              />
+              <path
+                d="M75.14368,94.56643c-1.80561,0-3.27392,1.46831-3.27392,3.27392v26.1914c0,1.80561,1.46831,3.27392,3.27392,3.27392s3.27392-1.46831,3.27392-3.27392v-26.1914c0-1.80561-1.46831-3.27392-3.27392-3.27392Z"
+                fill="#3f3d56"
+              />
+              <path
+                d="M354.93558,87.46124h-82.66786c-3.50634,0-6.35907-2.85273-6.35907-6.35907s2.85273-6.35907,6.35907-6.35907h82.66786c3.50634,0,6.35907,2.85273,6.35907,6.35907s-2.85273,6.35907-6.35907,6.35907Z"
+                fill="#e6e6e6"
+              />
+              <path
+                d="M277.38221,137.46854h-80.3571c-2.02587,0-3.67427-1.64841-3.67427-3.67428s1.64841-3.67351,3.67427-3.67351h80.3571c2.02587,0,3.67351,1.64765,3.67351,3.67351,0,2.02587-1.64764,3.67427-3.67351,3.67427Z"
+                fill="#61faaf"
+              />
+              <ellipse
+                cx="78.32235"
+                cy="92.07002"
+                rx="64.899"
+                ry="63.53157"
+                fill="#61faaf"
+              />
+              <path
+                d="M100.34912,60.02429c-8.64008,15.73267-17.28021,31.46545-25.92029,47.19818-5.50665-9.72955-10.98322-19.47626-16.50342-29.19818-1.90643-3.3576-7.09204-.33765-5.18079,3.02832,6.39911,11.2699,12.73193,22.57727,19.13104,33.84717,1.09412,1.92694,4.09796,1.97168,5.18085,0,9.49115-17.28241,18.9823-34.56482,28.47345-51.84717,1.8598-3.38647-3.31964-6.41742-5.18085-3.02832Z"
+                fill="#fff"
+              />
+              <rect
+                x="117.61763"
+                y="14.65784"
+                width="46.49807"
+                height="5.96129"
+                rx=".31021"
+                ry=".31021"
+                fill="#e6e6e6"
+              />
+              <circle cx="318.33631" cy="15.8501" r="4.76903" fill="#e6e6e6" />
+              <circle cx="331.45115" cy="15.8501" r="4.76903" fill="#e6e6e6" />
+              <circle cx="344.56599" cy="15.8501" r="4.76903" fill="#e6e6e6" />
+              <path
+                d="M133.86826,157.13577c0,.66003,.53003,1.19,1.19006,1.19h204.28998c.65997,0,1.19-.52997,1.19-1.19,0-.65997-.53003-1.19-1.19-1.19H135.05832c-.66003,0-1.19006,.53003-1.19006,1.19Z"
+                fill="#3f3d56"
+              />
+              <g>
+                <path
+                  d="M319.7578,250.66658h-122.59803c-2.02587,0-3.67427-1.64842-3.67427-3.67428s1.64841-3.67351,3.67427-3.67351h122.59803c2.02587,0,3.67351,1.64765,3.67351,3.67352,0,2.02587-1.64764,3.67427-3.67351,3.67427Z"
+                  fill="#61faaf"
+                />
+                <path
+                  d="M319.7578,303.66658h-122.59803c-2.02587,0-3.67427-1.64842-3.67427-3.67428s1.64841-3.67351,3.67427-3.67351h122.59803c2.02587,0,3.67351,1.64765,3.67351,3.67352,0,2.02587-1.64764,3.67427-3.67351,3.67427Z"
+                  fill="#61faaf"
+                />
+                <path
+                  d="M319.7578,356.66658h-122.59803c-2.02587,0-3.67427-1.64842-3.67427-3.67428s1.64841-3.67351,3.67427-3.67351h122.59803c2.02587,0,3.67351,1.64765,3.67351,3.67352,0,2.02587-1.64764,3.67427-3.67351,3.67427Z"
+                  fill="#61faaf"
+                />
+                <circle cx="159.97525" cy="246.53845" r="9" fill="#61faaf" />
+                <path
+                  d="M158.97516,261.53845v-2c7.44385,0,13.5-6.05615,13.5-13.5s-6.05615-13.5-13.5-13.5v-2c8.54688,0,15.5,6.95312,15.5,15.5s-6.95312,15.5-15.5,15.5Z"
+                  fill="#3f3d56"
+                />
+                <circle cx="159.97525" cy="299.53845" r="9" fill="#61faaf" />
+                <path
+                  d="M158.97516,314.53845v-2c7.44385,0,13.5-6.05566,13.5-13.5,0-7.44385-6.05615-13.5-13.5-13.5v-2c8.54688,0,15.5,6.95312,15.5,15.5s-6.95312,15.5-15.5,15.5Z"
+                  fill="#3f3d56"
+                />
+                <circle cx="159.97525" cy="352.53845" r="9" fill="#61faaf" />
+                <path
+                  d="M158.97516,367.53845v-2c7.44385,0,13.5-6.05566,13.5-13.5s-6.05615-13.5-13.5-13.5v-2c8.54688,0,15.5,6.95312,15.5,15.5s-6.95312,15.5-15.5,15.5Z"
+                  fill="#3f3d56"
+                />
+              </g>
+            </g>
+            <path
+              d="M384.01219,203.75047c5.55216-1.40863,11.84681,4.52132,14.06128,13.24853,.93243,3.47409,1.01931,7.12088,.2534,10.63535l2.38571,9.92043,.17551-.00924,18.81824,44.34887c4.37547,10.31165,3.91314,22.14968-1.66767,31.86201-3.3199,5.77765-7.67792,9.66177-12.79497,5.69682-8.49085-6.57912-14.03686-44.24916-16.56905-65.88826l-5.85496-21.9959c-2.35018-2.72464-4.01347-5.97257-4.85067-9.47191-2.2149-8.72385,.49107-16.93801,6.04318-18.34671Z"
+              fill="#a0616a"
+            />
+            <polygon
+              points="405.38874 228.05282 384.33502 243.01874 394.86188 309.31266 408.0646 326.38767 423.44391 321.0686 427.94066 289.72998 422.64886 259.42289 405.38874 228.05282"
+              fill="#61faaf"
+            />
+          </svg>
+        </div>
+      </div>
+
+    </section>
+    <section>
+        <h1>why choose us </h1>
+       
+        </section>
+    </>
+  );
+};
 
 export default Landing;

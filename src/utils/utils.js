@@ -3,5 +3,10 @@ export const LOCAL_STORAGE_KEYS = {
 };
 
 export const getIsUserLogged = () => {
-  return JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEYS.isLogged));
+  const isUserLogged =  JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEYS.isLogged));
+  if (typeof isUserLogged === "boolean") {
+    return isUserLogged
+  } else {
+    return false
+  }
 };

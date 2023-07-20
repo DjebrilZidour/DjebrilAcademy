@@ -8,6 +8,7 @@ import BacGettingStarted from "./pages/bac-prep/BacGettingStarted";
 import Dashboard from "./pages/dashboard/Dashboard";
 import NotAllowed from "./pages/NotAllowed/NotAllowed";
 import { getIsUserLogged } from "./utils/utils";
+import Landing from "./pages/Landing/Landing";
 
 const isLogged = getIsUserLogged();
 
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: isLogged ? <App /> : <NotAllowed />,
+    element: isLogged ? <App /> : <Landing/>,
   },
   { path: "/signup", element: <SignUp /> },
 
