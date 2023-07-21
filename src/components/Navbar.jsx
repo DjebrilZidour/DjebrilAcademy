@@ -8,17 +8,45 @@ const UserPopUp = (props) => {
   console.log(props.number);
 
   return (
-    <section className="absolute right-10 top-10 bg-white shadow-2xl rounded-2xl p-4 " style={{ display: props.isPopUpClosed ? "none" : "block" }}>
+    <section
+      className="flex flex col items-center justify-center absolute right-14 top-16 bg-white shadow-2xl rounded-2xl p-4 "
+      style={{ display: props.isPopUpClosed ? "none" : "block" }}
+    >
+      <img
+        onClick={() => {
+          props.switchPopUpState(true);
+        }}
+        className="w-4 absolute right-3 top-2 cursor-pointer"
+        src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png"
+        alt=""
+      />
       <ul>
-        <li className="borders border-b-2 p-1 ">Dashboard</li>
-        <li className="borders border-b-2 p-1 ">My Profile</li>
-        <li className="borders border-b-2 p-1 ">Log out</li>
+        <Link to="/dashboard">
+          <li className="borders border-b-2 px-1 py-3 cursor-pointer ">
+            Dashboard
+          </li>
+        </Link>
+        <li className="borders border-b-2 px-1 py-3 cursor-pointer ">
+          My Profile
+        </li>
+        <Link to="/">
+          <li
+            className="borders border-b-2 px-1 py-3 cursor-pointer "
+            onClick={()=>{
+              localStorage.setItem("isUserLoggedIn","false")
+              isUserLogged = getIsUserLogged()
+              console.log(isUserLogged);
+            }}
+          >
+            Log out
+          </li>
+        </Link>
       </ul>
     </section>
   );
 };
 
-const isUserLogged = getIsUserLogged();
+let isUserLogged = getIsUserLogged();
 const Navbar = () => {
   const [isPopUpClosed, switchPopUpState] = useState(true);
 
@@ -29,7 +57,7 @@ const Navbar = () => {
         switchPopUpState={switchPopUpState}
         number="2"
       />
-      
+
       <nav
         style={{ backgroundColor: "#61faaf" }}
         className="shadow-lg px-16 py-2 rounded-bl-3xl"
@@ -82,12 +110,12 @@ const Navbar = () => {
                   <strong>user</strong>
                 </h1> */}
                 <img
-                  className="w-6 pointer"
+                  className="w-6 cursor-pointer"
                   src="https://cdn-icons-png.flaticon.com/128/3917/3917711.png"
                   alt=""
                   onClick={() => {
                     console.log("clicked");
-                    switchPopUpState(!isPopUpClosed)
+                    switchPopUpState(!isPopUpClosed);
                   }}
                 />
               </div>

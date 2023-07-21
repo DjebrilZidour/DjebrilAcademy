@@ -12,8 +12,9 @@ import Landing from "./pages/Landing/Landing";
 
 const isLogged = getIsUserLogged();
 
-
+console.log("hi");
 const router = createBrowserRouter([
+
   {
     path: "/login",
     element: <Login />,
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />,
   },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

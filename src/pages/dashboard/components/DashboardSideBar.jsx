@@ -2,7 +2,7 @@ import Navbar from "../../../components/Navbar";
 
 const DashboardSideBar = () => {
   return (
-    <section id="dashboard-side-bar" className="">
+    <section id="dashboard-side-bar border-" className="">
       <Navbar />
       <div>
         <i className="fi fi-sr-user"></i>
