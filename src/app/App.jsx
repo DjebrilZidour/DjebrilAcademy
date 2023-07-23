@@ -13,10 +13,10 @@ function App() {
     <section id="app">
       <Navbar />
 
-      <div className="flex justify-between mt-8 ">
+      <div className="flex justify-between mt-8  max-sm:flex-col max-sm:w-4/5 max-sm:w-92 max-sm:my-4 ">
         <div
           id="bem-prep-card"tru
-          className="flex flex-col justify-between items-center text-center gap-16 border-2 border-black rounded-xl m-2 py-10 px-4 w-full  h-92"
+          className="flex flex-col justify-between items-center text-center gap-16 border-2 border-black rounded-xl m-2 py-10 px-4 w-full  h-92 "
         >
           <div className="flex justify-center gap-4 items-center">
             <img
@@ -55,6 +55,7 @@ function App() {
           </p>
           <Btn value="prepare for your Bac Now !!!" />
         </div>
+
       </div>
 
       <footer />

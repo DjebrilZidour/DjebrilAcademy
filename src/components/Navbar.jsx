@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { getIsUserLogged } from "../utils/utils";
 import { useState } from "react";
@@ -6,10 +6,10 @@ import { useState } from "react";
 const UserPopUp = (props) => {
   console.log(props.isPopUpClosed);
   console.log(props.number);
-
+  const navigate = useNavigate();
   return (
     <section
-      className="flex flex col items-center justify-center absolute right-14 top-16 bg-white shadow-2xl rounded-2xl p-4 "
+      className="flex flex-col items-center justify-start absolute right-14 top-16 bg-white shadow-2xl rounded-2xl p-5  "
       style={{ display: props.isPopUpClosed ? "none" : "block" }}
     >
       <img
@@ -20,33 +20,72 @@ const UserPopUp = (props) => {
         src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png"
         alt=""
       />
-      <ul>
-        <Link to="/dashboard">
-          <li className="borders border-b-2 px-1 py-3 cursor-pointer ">
-            Dashboard
-          </li>
-        </Link>
-        <li className="borders border-b-2 px-1 py-3 cursor-pointer ">
-          My Profile
-        </li>
-        <Link to="/">
-          <li
-            className="borders border-b-2 px-1 py-3 cursor-pointer "
-            onClick={()=>{
-              localStorage.setItem("isUserLoggedIn","false")
-              isUserLogged = getIsUserLogged()
-              console.log(isUserLogged);
-            }}
-          >
-            Log out
-          </li>
-        </Link>
+
+      <ul className="flex flex-col items-start justify-between">
+        
+        <div className="border-b-2 border-t-2 borders my-4 py-2">
+          <img src="" alt="" />
+          <div>
+            <h1>User Name</h1>
+            <h2>userEmail@gmail.com</h2>
+          </div>
+        </div>
+
+        <div className="flex items-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png"
+            alt=""
+            className="w-8 m-2"
+          />
+
+          <li className="px-1 py-2 cursor-pointer ">My Profile</li>
+        </div>
+
+        <hr className="separator w-full" />
+
+        <div className="flex items-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1828/1828765.png"
+            alt=""
+            className="w-8 m-2"
+          />
+
+          <Link to="/dashboard">
+            <li className=" px-1 py-2 cursor-pointer ">Dashboard</li>
+          </Link>
+        </div>
+
+        <hr className="separator w-full" />
+
+        <div className="flex items-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1828/1828479.png"
+            alt=""
+            className="w-8 m-2"
+          />
+
+          <Link to="/">
+            <li
+              className=" px-1 py-2 cursor-pointer text-red"
+              onClick={() => {
+                localStorage.setItem("isUserLoggedIn", "false");
+                isUserLogged = getIsUserLogged();
+                console.log(isUserLogged);
+                props.switchPopUpState(true);
+                navigate("/");
+              }}
+            >
+              Log out
+            </li>
+          </Link>
+        </div>
       </ul>
     </section>
   );
 };
 
 let isUserLogged = getIsUserLogged();
+
 const Navbar = () => {
   const [isPopUpClosed, switchPopUpState] = useState(true);
 
@@ -71,8 +110,8 @@ const Navbar = () => {
               <h1 className="text-3xl">DJeb.</h1>
             </Link>
           </li>
-
-          <div className="flex justify-between items-center text-black-100">
+          <img src="" alt="" />
+          <div className="flex justify-between items-center text-black-100  max-sm:flex-col max-sm:hidden ">
             <Link to="/">
               <li className="px-4 text-black cursor-pointer hover:underline">
                 home

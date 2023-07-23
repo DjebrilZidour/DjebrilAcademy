@@ -20,6 +20,12 @@ html {
 #bac-prep-card{
   background-color:#1df45d;
 }
+.separator{
+  border-color: #1df45d;
+  background-color: #1df45d;
+
+}
 .borders{
   border-color: #1df45d;
+
 }

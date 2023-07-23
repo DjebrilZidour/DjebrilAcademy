@@ -1,12 +1,17 @@
 import Navbar from "../../../components/Navbar";
+import { getIsUserLogged } from "../../../utils/utils";
+import { Link , useNavigate } from "react-router-dom";
 
 const DashboardSideBar = () => {
+  let isUserLogged = getIsUserLogged()
+  const navigate = useNavigate()
   return (
     <>
-      <Navbar />
+
+
       <section
         id="dashboard-side-bar"
-        className="shadow-2xl rounded-2xl p-4 w-80 border-2 my-4 mx-4"
+        className="shadow-2xl rounded-2xl py-5 px-5 w-80 border-2 ml-4 mt-6 h-full"
       >
         <div className="flex items-center justify-start">
           <img
@@ -17,22 +22,30 @@ const DashboardSideBar = () => {
 
           <h1  className="text-3xl my-4">Dashboard</h1>
         </div>
+
         <div className="m-4 cursor-pointer">
+          <Link to="/learning-program">
           <h2>Learning program</h2>
+          </Link>
         </div>
+
         <div className="m-4 cursor-pointer">
           <img src="" alt="" />
           <h2>Lessons detailed</h2>
         </div>
+
         <div className="m-4 cursor-pointer">
           <img src="" alt="" />
           <h2>Quizs</h2>
         </div>
+
         <div className="m-4 cursor-pointer">
           <img src="" alt="" />
           <h2>Exercices</h2>
         </div>
+
         {/* <div></div> */}
+
         <div className="m-4 cursor-pointer">
           <img src="" alt="" />
           <h2>Settings</h2>
@@ -55,9 +68,17 @@ const DashboardSideBar = () => {
 
         <div className="m-4">
           <img src="" alt="" />
-          <h1>log out</h1>
+          <h1 className="cursor-pointer"onClick={()=>{
+            localStorage.setItem("isUserLoggedIn","false")
+            isUserLogged = getIsUserLogged()
+            console.log(isUserLogged);
+            navigate("/")
+          }}>log out</h1>
+          
         </div>
+
       </section>
+  
     </>
   );
 };
