@@ -250,7 +250,9 @@ const Landing = () => {
 
       <section>
         <h1>our team</h1>
-        <div></div>
+        <div>
+            <p>cards</p>
+        </div>
         <div></div>
         <div></div>
         <Btn value="see more"/>
