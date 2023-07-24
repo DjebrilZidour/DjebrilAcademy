@@ -8,6 +8,7 @@ const Dashboard = () => {
   return (
     <>
       <Navbar />
+    
       <section className="flex items-start justify-between">
         <div>
           <DashboardSideBar />
