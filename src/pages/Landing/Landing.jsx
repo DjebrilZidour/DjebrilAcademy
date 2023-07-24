@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Btn from "../../components/Atomic/Btn";
+import Footer from "../../components/Footer";
 
 const Landing = () => {
   return (
@@ -217,7 +218,7 @@ const Landing = () => {
         </div>
       </section>
 
-      <section className="flex justify-between items-center p-4 mx-8 h-92 gap-4">
+      <section className="flex justify-between items-center p-4 mx-24 h-92 gap-4">
         <div className="borders border-2 rounded-3xl flex flex-col justify-start items-start w-1/2 h-96 gap-6 p-4 ">
           <h1 className="text-2xl underline">Why choose us !!!</h1>
           <p>
@@ -239,6 +240,29 @@ const Landing = () => {
           />
         </div>
       </section>
+
+      <section className="flex flex-col justify-center items-center gap-4 p-4 mx-28 my-4 border-2 borders rounded-3xl">
+        <h1 className="text-3xl texts">Want to know something????</h1>
+        <h1 className="text-2xl"> E-mail US now: </h1>
+        <h1 className="text-black hover:underline hover:texts cursor-pointer">XXXXXXX@example.com</h1>
+        
+      </section>
+
+      <section>
+        <h1>our team</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+        <Btn value="see more"/>
+      </section>
+
+      <section>
+        <h1>what people sad about us </h1> //! check the drawed paper // check american institute website 
+        <div></div>
+      </section>
+
+      <Footer />
+
     </>
   );
 };
