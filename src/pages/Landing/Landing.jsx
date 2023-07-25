@@ -217,6 +217,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
+
       <section className="flex justify-between items-center p-4 mx-24 h-92 gap-4">
         <div className="borders border-2 rounded-3xl flex flex-col justify-start items-start w-1/2 h-96 gap-6 p-4 ">
           <h1 className="text-2xl underline">Why choose us !!!</h1>
@@ -239,54 +240,39 @@ const Landing = () => {
           />
         </div>
       </section>
-      //TODO ------->{" "}
-      {/* <section>
+
+      //TODO -------> {/* <section>
         <h1>what is our mission</h1>
         <div>
             //! check drawed paper 2
         </div>
       </section> */}
+
       <section className="flex flex-col justify-center items-center gap-4 p-4 mx-28 my-4 border-2 borders rounded-3xl">
         <h1 className="text-3xl texts">Want to know something????</h1>
         <h1 className="text-2xl"> E-mail US now: </h1>
-        <h1 className="text-black hover:underline hover:texts cursor-pointer">
-          XXXXXXX@example.com
-        </h1>
+        <h1 className="text-black hover:underline hover:texts cursor-pointer">XXXXXXX@example.com</h1>
+        
       </section>
-      <section>
+
+     
+     //TODO -------> {/* <section>
         <h1>our team</h1>
         <div>
-          <p>cards</p>
+            <p>cards</p>
         </div>
         <div></div>
         <div></div>
-        <Btn value="see more" />
+        <Btn value="see more"/>
+      </section> */}
 
-        <section class="about" id="about">
-
-        <div class="image">
-            <img style="border: white 10px solid;"src="images /library.jpg" >
-            
-        </div>
-
-        <div class="content">
-            <h1 class="text-why">why choose us ?</h1>
-            <h3>
-                     our community <strong>IBN BADIS</strong> prepared for you thousannts of subjucts in all the levels and all lot of cousres of progrmming the futur job and some courses of mathemathematics 
-                     so if you have any question or you want to help <strong>our communnity</strong> subjucts or any thing you can contact us in the above button contact and we will answer you in 48 hours so it's for our team who answer your questions and our services<strong> our commiunity</strong> is the best for that so you can check our services in the next button 
-            </h3>
-            
-            <a href="exam tests.html"><button class="btn">learn</button></a>
-        </div>
-    </section>
-
-      </section>
-      //TODO ------>{" "}
-      {/* <section>
+     //TODO ------> {/* <section>
         <h1>what people sad about us </h1> //! check the drawed paper // check american institute website 
         <div></div>
       </section> */}
+
       <Footer />
+
     </>
   );
 };
