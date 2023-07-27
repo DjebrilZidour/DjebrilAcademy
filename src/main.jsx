@@ -9,7 +9,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import NotAllowed from "./pages/NotAllowed/NotAllowed";
 import { getIsUserLogged } from "./utils/utils";
 import Landing from "./pages/Landing/Landing";
-import LearningProgram from "./pages/dashboard/pages/LearningProgram";
+
 
 const isLogged = getIsUserLogged();
 
@@ -34,10 +34,7 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />,
   },
-  {
-    path:"/learning-program",
-    element: <LearningProgram />
-  },
+
 
 ]);
 
