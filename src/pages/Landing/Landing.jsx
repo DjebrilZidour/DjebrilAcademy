@@ -1,11 +1,14 @@
 import Navbar from "../../components/Navbar";
 import Btn from "../../components/Atomic/Btn";
 import Footer from "../../components/Footer";
+// import img12 from "../../images/landingPic.png";
+
 
 const Landing = () => {
   return (
     <>
       <Navbar />
+
       <section className="flex items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20 mt-8">
         <div className="px-3 w-full lg:w-2/5">
           <div className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
@@ -21,7 +24,7 @@ const Landing = () => {
               Helping you maximize operations management with digitization
             </p>
           </div>
-          <div>{/* <img src={landingPic} alt="" /> */}</div>
+          
           <div className="text-center lg:text-left">
             <Btn value="Key Features" />
 
@@ -58,7 +61,6 @@ const Landing = () => {
       <section>
         <h1>what is our mission</h1>
         <div>
-          
           <div className="">
             <img className="" src="" alt="" />
             <h1 className="">understand all your lessons in one platform</h1>
@@ -73,7 +75,6 @@ const Landing = () => {
             <img className="" src="" alt="" />
             <h1 className="">get the highest mark in your exams</h1>
           </div>
-
         </div>
       </section>
 
@@ -85,15 +86,28 @@ const Landing = () => {
         </h1>
       </section>
 
-      {/* <section>
+      <section>
         <h1>our team</h1>
+
         <div>
-            <p>cards</p>
+          <img src="" alt="" />
+          <h1></h1>
+          <p></p>
         </div>
-        <div></div>
-        <div></div>
-        <Btn value="see more"/>
-      </section> */}
+
+        <div>
+          <img src="" alt="" />
+          <h1></h1>
+          <p></p>
+        </div>
+
+        <div>
+          <img src="" alt="" />
+          <h1></h1>
+          <p></p>
+        </div>
+        <Btn value="see more" />
+      </section>
 
       {/* <section>
         <h1>what people sad about us </h1> //! check the drawed paper // check american institute website 
