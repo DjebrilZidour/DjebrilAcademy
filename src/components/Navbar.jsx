@@ -37,8 +37,9 @@ const UserPopUp = (props) => {
             alt=""
             className="w-8 m-2"
           />
-
-          <li className="px-1 py-2 cursor-pointer ">My Profile</li>
+          <Link to="/profile">
+          <li className="px-1 py-2 cursor-pointer">My Profile</li>
+          </Link>
         </div>
 
         <hr className="separator w-full" />

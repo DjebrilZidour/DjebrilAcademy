@@ -9,6 +9,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import NotAllowed from "./pages/NotAllowed/NotAllowed";
 import { getIsUserLogged } from "./utils/utils";
 import Landing from "./pages/Landing/Landing";
+import Profile from "./pages/Profile/Profile";
 
 
 const isLogged = getIsUserLogged();
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+
+  {
+    path: "/profile",
+    element: <Profile />,
   },
 
 

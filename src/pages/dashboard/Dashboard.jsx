@@ -28,16 +28,16 @@ const Dashboard = () => {
             <div>
               <div>
                 <h1>TO DO</h1>
-                <button>add new task</button>
+                <button>+ add new task</button>
               </div>
 
               <div>
-                <p>element</p>
-                <p>element</p>
-                <p>element</p>
-                <p>element</p>
-                <p>element</p>
-                <p>element</p>
+                <p className="p-4 border-2 border-black ">element</p>
+                <p className="p-4 border-2 border-black ">element</p>
+                <p className="p-4 border-2 border-black ">element</p>
+                <p className="p-4 border-2 border-black ">element</p>
+                <p className="p-4 border-2 border-black ">element</p>
+                <p className="p-4 border-2 border-black ">element</p>
               </div>
             </div>
 
