@@ -1,7 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Btn from "../../components/Atomic/Btn";
 import Footer from "../../components/Footer";
-import img from "../../images/";
 
 const Landing = () => {
   return (
@@ -22,9 +21,7 @@ const Landing = () => {
               Helping you maximize operations management with digitization
             </p>
           </div>
-          <div>
-            <img src={landingPic} alt="" />
-          </div>
+          <div>{/* <img src={landingPic} alt="" /> */}</div>
           <div className="text-center lg:text-left">
             <Btn value="Key Features" />
 
@@ -32,11 +29,7 @@ const Landing = () => {
               how do we work !!
             </button>
           </div>
-
         </div>
-
-    
-        
       </section>
 
       <section className="flex justify-between items-center p-4 mx-24 h-92 gap-4">
@@ -62,22 +55,37 @@ const Landing = () => {
         </div>
       </section>
 
-     {/* <section>
+      <section>
         <h1>what is our mission</h1>
         <div>
-            //! check drawed paper 2
+          
+          <div className="">
+            <img className="" src="" alt="" />
+            <h1 className="">understand all your lessons in one platform</h1>
+          </div>
+
+          <div className="">
+            <img className="" src="" alt="" />
+            <h1 className="">practisce what did you learned</h1>
+          </div>
+
+          <div className="">
+            <img className="" src="" alt="" />
+            <h1 className="">get the highest mark in your exams</h1>
+          </div>
+
         </div>
-      </section> */}
+      </section>
 
       <section className="flex flex-col justify-center items-center gap-4 p-4 mx-28 my-4 border-2 borders rounded-3xl">
         <h1 className="text-3xl texts">Want to know something????</h1>
         <h1 className="text-2xl"> E-mail US now: </h1>
-        <h1 className="text-black hover:underline hover:texts cursor-pointer">XXXXXXX@example.com</h1>
-        
+        <h1 className="text-black hover:underline hover:texts cursor-pointer">
+          XXXXXXX@example.com
+        </h1>
       </section>
 
-     
-    {/* <section>
+      {/* <section>
         <h1>our team</h1>
         <div>
             <p>cards</p>
@@ -87,13 +95,12 @@ const Landing = () => {
         <Btn value="see more"/>
       </section> */}
 
-     //TODO ------> {/* <section>
+      {/* <section>
         <h1>what people sad about us </h1> //! check the drawed paper // check american institute website 
         <div></div>
       </section> */}
 
       <Footer />
-
     </>
   );
 };
