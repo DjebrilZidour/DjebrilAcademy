@@ -11,6 +11,7 @@ import { getIsUserLogged } from "./utils/utils";
 import Landing from "./pages/Landing/Landing";
 import Profile from "./pages/Profile/Profile";
 import Subjects from "./pages/dashboard/pages/Subjects";
+import Learning from "./pages/dashboard/pages/Learning"
 
 
 const isLogged = getIsUserLogged();
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
     path: "/subjects",
     element: <Subjects />,
   },
+  {
+    path: "/learning",
+    element: <Learning />,
+  },
+
 
 
 ]);

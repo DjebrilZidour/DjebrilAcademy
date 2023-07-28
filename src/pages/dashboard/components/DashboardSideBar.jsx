@@ -13,6 +13,7 @@ const DashboardSideBar = () => {
         id="dashboard-side-bar"
         className="shadow-2xl rounded-2xl py-5 px-5 w-80 border-2 ml-4 mt-6 h-full"
       >
+
         <div className="flex items-center justify-start">
           <img
             className="w-8 m-4"
@@ -24,8 +25,8 @@ const DashboardSideBar = () => {
         </div>
 
         <div className="m-4 cursor-pointer">
-          <Link to="/learning-program">
-          <h2>Learning program</h2>
+          <Link to="/learning">
+          <h2>learning</h2>
           </Link>
         </div>
 
