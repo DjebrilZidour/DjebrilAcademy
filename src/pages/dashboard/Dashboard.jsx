@@ -32,12 +32,10 @@ const Dashboard = () => {
               </div>
 
               <div>
-                <p className="p-4 border-2 border-black ">element</p>
-                <p className="p-4 border-2 border-black ">element</p>
-                <p className="p-4 border-2 border-black ">element</p>
-                <p className="p-4 border-2 border-black ">element</p>
-                <p className="p-4 border-2 border-black ">element</p>
-                <p className="p-4 border-2 border-black ">element</p>
+                <p className="px-4 py-2 border-2 border-black ">element</p>
+                <p className="px-4 py-2 border-2 border-black ">element</p>
+                <p className="px-4 py-2 border-2 border-black ">element</p>
+
               </div>
             </div>
 

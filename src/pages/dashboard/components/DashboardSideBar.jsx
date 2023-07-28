@@ -32,7 +32,7 @@ const DashboardSideBar = () => {
 
         <div className="m-4 cursor-pointer">
           <img src="" alt="" />
-          <h2>Lessons detailed</h2>
+          <h2>Learning progress</h2>
         </div>
 
         <div className="m-4 cursor-pointer">

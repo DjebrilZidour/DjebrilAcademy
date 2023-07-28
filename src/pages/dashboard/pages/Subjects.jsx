@@ -31,18 +31,18 @@ const Subjects = () => {
           </div>
           <div className="flex justify-center items-center gap-4 w-full">
             <SubjectCard
-              imageUrl="https://images.pexels.com/photos/541484/sun-flower-blossom-bloom-pollen-541484.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-              subName="google"
+              imageUrl="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=800"
+              subName="Science"
             />
 
             <SubjectCard
-              imageUrl="https://images.pexels.com/photos/541484/sun-flower-blossom-bloom-pollen-541484.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-              subName="google"
+              imageUrl="https://images.pexels.com/photos/68173/flash-tesla-coil-experiment-faradayscher-cage-68173.jpeg?auto=compress&cs=tinysrgb&w=800"
+              subName="phisics"
             />
 
             <SubjectCard
-              imageUrl="https://images.pexels.com/photos/541484/sun-flower-blossom-bloom-pollen-541484.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-              subName="google"
+              imageUrl="https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=800"
+              subName="French"
             />
           </div>
           <div className="flex justify-center items-center gap-4 w-full">
@@ -58,7 +58,7 @@ const Subjects = () => {
 
             <SubjectCard
               imageUrl="https://images.pexels.com/photos/541484/sun-flower-blossom-bloom-pollen-541484.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-              subName="google"
+              subName="History"
             />
           </div>
         </div>
