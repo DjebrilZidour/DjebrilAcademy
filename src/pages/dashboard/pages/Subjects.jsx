@@ -57,8 +57,8 @@ const Subjects = () => {
             />
 
             <SubjectCard
-              imageUrl="https://images.pexels.com/photos/541484/sun-flower-blossom-bloom-pollen-541484.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-              subName="History"
+              imageUrl="https://images.pexels.com/photos/2952871/pexels-photo-2952871.jpeg?auto=compress&cs=tinysrgb&w=800"
+              subName="History and geo"
             />
           </div>
         </div>
