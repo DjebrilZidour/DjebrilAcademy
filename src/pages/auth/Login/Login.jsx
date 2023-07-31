@@ -14,7 +14,7 @@ const Login = () => {
   const submitLogin = () => {
     if (typedEmail === "test@test.com" && typedPassword === "test") {
       localStorage.setItem(LOCAL_STORAGE_KEYS.isLogged, true);
-      navigate("/");
+      navigate("/dashboard");
     }
   };
 
@@ -30,6 +30,7 @@ const Login = () => {
         </section>
 
         <section className="mt-10 flex flex-col">
+
           <Input
             label="Email"
             type="email"
@@ -46,7 +47,7 @@ const Login = () => {
           <div className="flex justify-end">
             <a
               href="#"
-              className="text-sm text-purple-600 hover:text-purple-700 hover:underline mb-6"
+              className="text-sm texts hover:black hover:underline mb-6"
             >
               Forgot your password?
             </a>
@@ -59,6 +60,7 @@ const Login = () => {
       <div className="text-black max-w-lg mx-auto text-center mt-12 mb-6">
         <p>
           Don't have an account?{" "}
+          
           <Link to="/signup">
             <a href="#" className="font-bold hover:underline">
               Sign up

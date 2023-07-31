@@ -12,6 +12,7 @@ import Landing from "./pages/Landing/Landing";
 import Profile from "./pages/Profile/Profile";
 import Subjects from "./pages/dashboard/pages/Subjects";
 import Learning from "./pages/dashboard/pages/Learning"
+import About from "./pages/About/About";
 
 
 const isLogged = getIsUserLogged();
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
   {
     path: "/learning",
     element: <Learning />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 
 

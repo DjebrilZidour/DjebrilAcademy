@@ -22,7 +22,6 @@ const UserPopUp = (props) => {
       />
 
       <ul className="flex flex-col items-start justify-between">
-        
         <div className="border-b-2 border-t-2 borders my-4 py-2">
           <img src="" alt="" />
           <div>
@@ -38,7 +37,7 @@ const UserPopUp = (props) => {
             className="w-8 m-2"
           />
           <Link to="/profile">
-          <li className="px-1 py-2 cursor-pointer">My Profile</li>
+            <li className="px-1 py-2 cursor-pointer">My Profile</li>
           </Link>
         </div>
 
@@ -119,9 +118,12 @@ const Navbar = () => {
               </li>
             </Link>
 
-            <li className="px-4 text-black cursor-pointer hover:underline">
-              about us
-            </li>
+            <Link to="/about">
+              <li className="px-4 text-black cursor-pointer hover:underline">
+                about us
+              </li>
+            </Link>
+
             <li className="px-4 text-black cursor-pointer hover:underline">
               start learning
             </li>
