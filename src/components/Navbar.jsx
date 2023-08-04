@@ -117,9 +117,11 @@ const Navbar = () => {
               </li>
             </Link>
 
-            <li className="px-4 text-black cursor-pointer hover:underline">
-              Start learning
-            </li>
+            <Link to="/dashboard/home">
+              <li className="px-4 text-black cursor-pointer hover:underline">
+                Start learning
+              </li>
+            </Link>
 
             {!isUserLogged ? (
               <div className="flex justify-between items-center ml-4 ">

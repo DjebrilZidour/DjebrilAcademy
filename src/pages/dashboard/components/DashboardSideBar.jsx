@@ -11,43 +11,43 @@ const DashboardSideBar = () => {
     <>
       <section
         id="dashboard-side-bar"
-        className="shadow-2xl rounded-2xl py-5 px-5 w-80 border-2 ml-4 mt-6 h-full "
+        className="shadow-2xl rounded-2xl py-5  w-80 border-2 ml-4 mt-6 h-full "
       >
-        <div className="flex items-center justify-start">
-          <Link to="/dashboard">
+        <Link Link to="/dashboard/home">
+          <div className="flex items-center justify-start border-b-2">
             <img
               className="w-8 m-4 cursor-pointer"
               src="https://cdn-icons-png.flaticon.com/128/3917/3917711.png"
               alt=""
             />
-          </Link>
 
-          <Link to="/dashboard">
             <h1 className="text-3xl my-4 cursor-pointer">Dashboard</h1>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="m-4 cursor-pointer flex justify-start items-center">
-          <img
-            className="w-12 mx-2 px-1"
-            src="https://cdn-icons-png.flaticon.com/128/4185/4185218.png"
-            alt=""
-          />
-          <Link to="/learning">
+        <Link to="/dashboard/learning-welcome">
+          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
+            <img
+              className="w-12 mx-2 px-1"
+              src="https://cdn-icons-png.flaticon.com/128/4185/4185218.png"
+              alt=""
+            />
             <h2>learning</h2>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="m-4 cursor-pointer flex justify-start items-center">
-          <img
-            className="w-12 mx-2 px-1"
-            src="https://cdn-icons-png.flaticon.com/128/1535/1535012.png"
-            alt=""
-          />
-          <h2>Learning progress</h2>
-        </div>
+        <Link to="/dashboard/learning-progress">
+          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
+            <img
+              className="w-12 mx-2 px-1"
+              src="https://cdn-icons-png.flaticon.com/128/1535/1535012.png"
+              alt=""
+            />
+            <h2>Learning progress</h2>
+          </div>
+        </Link>
 
-        <div className="m-4 cursor-pointer flex justify-start items-center">
+        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
           <img
             className="w-12 mx-2 px-1"
             src="https://cdn-icons-png.flaticon.com/128/5677/5677910.png"
@@ -56,7 +56,7 @@ const DashboardSideBar = () => {
           <h2>Quizs</h2>
         </div>
 
-        <div className="m-4 cursor-pointer flex justify-start items-center">
+        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
           <img
             className="w-12 mx-2 px-1"
             src="https://cdn-icons-png.flaticon.com/128/2157/2157114.png"
@@ -65,7 +65,7 @@ const DashboardSideBar = () => {
           <h2>Intelegent games</h2>
         </div>
 
-        <div className="m-4 cursor-pointer flex justify-start items-center">
+        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
           <img
             className="w-12 mx-2 px-1"
             src="https://cdn-icons-png.flaticon.com/128/5879/5879073.png"
