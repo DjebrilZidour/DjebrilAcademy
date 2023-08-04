@@ -15,6 +15,7 @@ const Login = () => {
     if (typedEmail === "test@test.com" && typedPassword === "test") {
       localStorage.setItem(LOCAL_STORAGE_KEYS.isLogged, true);
       navigate("/dashboard");
+      location.reload();
     }
   };
 
