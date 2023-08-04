@@ -4,8 +4,6 @@ import { getIsUserLogged } from "../utils/utils";
 import { useState } from "react";
 
 const UserPopUp = (props) => {
-  console.log(props.isPopUpClosed);
-  console.log(props.number);
   const navigate = useNavigate();
   return (
     <section
@@ -30,7 +28,7 @@ const UserPopUp = (props) => {
           </div>
         </div>
 
-        <div className="flex items-center">
+        <div className="flex items-center  w-full  cursor-pointer hover:bg-gray-200 rounded-md">
           <img
             src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png"
             alt=""
@@ -43,7 +41,7 @@ const UserPopUp = (props) => {
 
         <hr className="separator w-full" />
 
-        <div className="flex items-center">
+        <div className="flex items-center w-full  cursor-pointer hover:bg-gray-200 rounded-md">
           <img
             src="https://cdn-icons-png.flaticon.com/128/1828/1828765.png"
             alt=""
@@ -57,27 +55,22 @@ const UserPopUp = (props) => {
 
         <hr className="separator w-full" />
 
-        <div className="flex items-center">
+        <div
+          onClick={() => {
+            localStorage.setItem("isUserLoggedIn", false);
+            props.switchPopUpState(true);
+            navigate("/login");
+            location.reload();
+          }}
+          className="flex items-center w-full  cursor-pointer hover:bg-gray-200 rounded-md"
+        >
           <img
             src="https://cdn-icons-png.flaticon.com/128/1828/1828479.png"
             alt=""
             className="w-8 m-2"
           />
 
-          <Link to="/">
-            <li
-              className=" px-1 py-2 cursor-pointer text-red"
-              onClick={() => {
-                localStorage.setItem("isUserLoggedIn", "false");
-                isUserLogged = getIsUserLogged();
-                console.log(isUserLogged);
-                props.switchPopUpState(true);
-                navigate("/");
-              }}
-            >
-              Log out
-            </li>
-          </Link>
+          <li className=" px-1 py-2 cursor-pointer text-red">Log out</li>
         </div>
       </ul>
     </section>
@@ -114,18 +107,18 @@ const Navbar = () => {
           <div className="flex justify-between items-center text-black-100  max-sm:flex-col max-sm:hidden ">
             <Link to="/">
               <li className="px-4 text-black cursor-pointer hover:underline">
-                home
+                Home
               </li>
             </Link>
 
             <Link to="/about">
               <li className="px-4 text-black cursor-pointer hover:underline">
-                about us
+                About us
               </li>
             </Link>
 
             <li className="px-4 text-black cursor-pointer hover:underline">
-              start learning
+              Start learning
             </li>
 
             {!isUserLogged ? (
@@ -144,13 +137,6 @@ const Navbar = () => {
               </div>
             ) : (
               <div>
-                {/* <h1
-                  onClick={() => {
-                    switchPopUpState(false)
-                  }}
-                >
-                  <strong>user</strong>
-                </h1> */}
                 <img
                   className="w-6 cursor-pointer"
                   src="https://cdn-icons-png.flaticon.com/128/3917/3917711.png"

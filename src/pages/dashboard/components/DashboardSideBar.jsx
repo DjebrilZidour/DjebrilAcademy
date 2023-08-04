@@ -62,7 +62,7 @@ const DashboardSideBar = () => {
             src="https://cdn-icons-png.flaticon.com/128/2157/2157114.png"
             alt=""
           />
-          <h2>intelegent games</h2>
+          <h2>Intelegent games</h2>
         </div>
 
         <div className="m-4 cursor-pointer flex justify-start items-center">
@@ -105,7 +105,7 @@ const DashboardSideBar = () => {
         </div>
       </section>
 
-      <section className="">
+      <section className="hidden">
         <div className="flex justify-center items-center">
           <img
             className="w-12"

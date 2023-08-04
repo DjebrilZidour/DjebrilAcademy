@@ -7,8 +7,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { LOCAL_STORAGE_KEYS } from "../../../utils/utils";
 
 const Login = () => {
-  const [typedEmail, setTypedEmail] = useState("");
-  const [typedPassword, setTypedPassword] = useState("");
+  const [typedEmail, setTypedEmail] = useState("test@test.com");
+  const [typedPassword, setTypedPassword] = useState("test");
   const navigate = useNavigate();
 
   const submitLogin = () => {
@@ -60,7 +60,7 @@ const Login = () => {
 
       <div className="text-black max-w-lg mx-auto text-center mt-12 mb-6">
         <p>
-          Don't have an account?{" "}
+          Don't have an account?
           
           <Link to="/signup">
             <a href="#" className="font-bold hover:underline">

@@ -32,7 +32,7 @@ const Dashboard = () => {
 
                 <h1 className="text-3xl">TO DO</h1>
                 <button className="bg-green-400 rounded-3xl px-4 py-2 my-4 ">
-                  + add new task
+                  + Add new task
                 </button>
 
                 <hr className=" border-1 border-black w-full rounded-3xl" />
