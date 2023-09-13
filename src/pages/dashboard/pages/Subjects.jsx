@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router";
 import Navbar from "../../../components/Navbar";
 import DashboardSideBar from "../components/DashboardSideBar";
 import SubjectCard from "../components/SubjectCard";
+
+
 
 const modules = [
   {
@@ -18,6 +21,7 @@ const modules = [
   {
     moduleName: "Math",
     img: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800",
+    path:"/dashboard/learning/courses/math",
   },
   {
     moduleName: "science",
@@ -34,6 +38,7 @@ const modules = [
   {
     moduleName: "History and geo",
     img: "https://images.pexels.com/photos/2952871/pexels-photo-2952871.jpeg?auto=compress&cs=tinysrgb&w=800",
+    
   },
   {
     moduleName: "civil",
@@ -45,6 +50,7 @@ const modules = [
 ];
 
 const Subjects = () => {
+    const navigate = useNavigate()
   return (
     <>
       <section className="flex">
@@ -56,38 +62,13 @@ const Subjects = () => {
                   key={element.moduleName}
                   imageUrl={element.img}
                   subName={element.moduleName}
+                  onClick = {()=>{
+                    navigate(element.path)
+                  }}
                 />
               );
             })}
-            {/* 
             
-
-           
-          
-
-            <SubjectCard
-              imageUrl="https://images.pexels.com/photos/68173/flash-tesla-coil-experiment-faradayscher-cage-68173.jpeg?auto=compress&cs=tinysrgb&w=800"
-              subName="phisics"
-            />
-
-            <SubjectCard
-              imageUrl="https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=800"
-              subName="French"
-            />
-            <SubjectCard
-              imageUrl="https://images.pexels.com/photos/541484/sun-flower-blossom-bloom-pollen-541484.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-              subName="google"
-            />
-
-            <SubjectCard
-              imageUrl="https://images.pexels.com/photos/541484/sun-flower-blossom-bloom-pollen-541484.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-              subName="google"
-            />
-
-            <SubjectCard
-              imageUrl="https://images.pexels.com/photos/2952871/pexels-photo-2952871.jpeg?auto=compress&cs=tinysrgb&w=800"
-              subName="History and geo"
-            /> */}
           </div>
         </div>
       </section>

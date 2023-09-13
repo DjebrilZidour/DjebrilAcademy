@@ -12,9 +12,12 @@ const SubjectCard = (props) => {
         <h1 className="text-3xl text-black ">
           {props.subName}
         </h1>
-        <Btn value={"Start Learning"}/>
+       
+        <Btn onClick={props.onClick} value={"Start Learning"}/>
+ 
       </div>
     </>
   );
 };
 export default SubjectCard
+ 

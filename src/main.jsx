@@ -14,6 +14,7 @@ import Subjects from "./pages/dashboard/pages/Subjects";
 import Learning from "./pages/dashboard/pages/Learning";
 import About from "./pages/About/About";
 import LearningProcess from "./pages/dashboard/pages/LearningProgress";
+import CourseMath from "./pages/dashboard/pages/courses-pages/CourseMath";
 
 const isLogged = getIsUserLogged();
 
@@ -41,6 +42,7 @@ const router = createBrowserRouter([
       { path: "/dashboard/learning-welcome", element: <Learning /> },
       { path: "/dashboard/learning-courses", element: <Subjects /> },
       { path: "/dashboard/learning-exc", element: <Subjects /> },
+      {path: "/dashboard/learning/courses/math" ,element: <CourseMath />},
       { path: "/dashboard/learning-progress", element: <LearningProcess /> },
     ],
   },
@@ -48,7 +50,7 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <Profile />,
-  },
+  }, 
   {
     path: "/subjects",
     element: <Subjects />,
