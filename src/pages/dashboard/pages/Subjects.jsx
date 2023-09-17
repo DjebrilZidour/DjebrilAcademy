@@ -50,21 +50,17 @@ const modules = [
 ];
 
 const Subjects = () => {
-    const navigate = useNavigate()
   return (
     <>
       <section className="flex">
         <div className="my-6 mx-2 p-2 border-2 rounded-3xl flex flex-col items-center justify-center gap-4 ">
-          <div className="grid grid-cols-3 justify-center items-center gap-4 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-4 w-full">
             {modules.map((element) => {
               return (
                 <SubjectCard
                   key={element.moduleName}
                   imageUrl={element.img}
                   subName={element.moduleName}
-                  onClick = {()=>{
-                    navigate(element.path)
-                  }}
                 />
               );
             })}

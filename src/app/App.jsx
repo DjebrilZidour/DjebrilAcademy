@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import Login from "../pages/auth/Login/Login";
 import SingUp from "../pages/auth/SignUp/SignUp";
 import Footer from "../components/Footer";
-import BacGettingStarted from "../pages/bac-prep/BacGettingStarted";
 import { Link } from "react-router-dom"; //! VERY __________ IMPORTANT !!!!!!!!!!!!!
 import Btn from "../components/Atomic/Btn";
 
