@@ -20,6 +20,7 @@ const SemesterPage = () => {
       >
         semster 1
       </h1>
+      
       <h1
         onClick={() => {
           onClickSemester(2);
@@ -28,6 +29,7 @@ const SemesterPage = () => {
       >
         semster 2
       </h1>
+
       <h1
         onClick={() => {
           onClickSemester(3);
