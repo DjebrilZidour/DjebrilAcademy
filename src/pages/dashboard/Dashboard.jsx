@@ -13,7 +13,7 @@ const Dashboard = () => {
           <DashboardSideBar />
         </div>
 
-        <div className="border-2 border-black  min-h-100 mx-4 w-full  mt-6 rounded-3xl p-4 flex flex-col items-center justify-center w-full">
+        <div className="border-2 border-gray  min-h-100 mx-4 w-full  mt-6 rounded-3xl p-4 flex flex-col items-center justify-center w-full drop-shadow-lg">
           <Outlet />
         </div>
       </section>
