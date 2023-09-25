@@ -7,8 +7,8 @@ const UserPopUp = (props) => {
   const navigate = useNavigate();
   return (
     <section
-      className="flex flex-col items-center justify-start absolute right-14 top-16 bg-white shadow-2xl rounded-2xl p-5  "
-      style={{ display: props.isPopUpClosed ? "none" : "block" }}
+      className="flex flex-col items-center justify-start absolute  right-14 top-16 bg-white shadow-2xl rounded-2xl p-5  "
+      style={{ display: props.isPopUpClosed ? "none" : "block" ,}}
     >
       <img
         onClick={() => {
@@ -75,6 +75,7 @@ const UserPopUp = (props) => {
       </ul>
     </section>
   );
+
 };
 
 let isUserLogged = getIsUserLogged();

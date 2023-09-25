@@ -1,7 +1,8 @@
 const LearningProcess = () => {
   return (
     <div>
-      <p>learning process ......</p>
+      <p>welcome to learning progress page  ///  </p>
+      
     </div>
   );
 };

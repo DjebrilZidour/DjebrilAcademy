@@ -13,9 +13,10 @@ const Dashboard = () => {
           <DashboardSideBar />
         </div>
 
-        <div className="border-2 border-gray  min-h-100 mx-4 w-full  mt-6 rounded-3xl p-4 flex flex-col items-center justify-center w-full drop-shadow-lg">
+        <div className="border-2 border-gray  min-h-100 mx-4 w-full  mt-6 rounded-3xl p-4 flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50 ">
           <Outlet />
         </div>
+
       </section>
     </>
   );
@@ -28,9 +29,10 @@ export default Dashboard;
 export const Default = () => {
   return (
     <>
-      {" "}
-      <div className="border-2 border-black rounded-2xl px-4 py-8 w-full flex justify-center items-center rounded-3xl gap-6 ">
-        <div className="w-4/5 border-2 border-black rounded-2xl">
+
+      
+      <div className="border-2 border-gray rounded-2xl px-4 py-8 w-full flex justify-center items-center rounded-3xl gap-6 ">
+        <div className="w-4/5 border-2 border-gray rounded-2xl">
           <div className="w-4/5 bg-green-300 w-full border-2 p-4 rounded-2xl"></div>
         </div>
 
@@ -81,10 +83,10 @@ export const Default = () => {
               </div>
             </div>
 
-            <h1>remember that your time is runing out</h1>
+            <h1>remember that your time is running out</h1>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </>
   );
 };

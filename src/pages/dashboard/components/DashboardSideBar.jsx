@@ -1,12 +1,10 @@
-import Navbar from "../../../components/Navbar";
 import { getIsUserLogged } from "../../../utils/utils";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const DashboardSideBar = () => {
   let isUserLogged = getIsUserLogged();
-  const [isbtnClicked, seClickedBtnAct] = useState(false);
   const navigate = useNavigate();
+
   return (
     <>
       <section
@@ -47,14 +45,16 @@ const DashboardSideBar = () => {
           </div>
         </Link>
 
-        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
-          <img
-            className="w-12 mx-2 px-1"
-            src="https://cdn-icons-png.flaticon.com/128/5677/5677910.png"
-            alt=""
-          />
-          <h2>Quizs</h2>
-        </div>
+        <Link to="/dashboard/quizs">
+          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
+            <img
+              className="w-12 mx-2 px-1"
+              src="https://cdn-icons-png.flaticon.com/128/5677/5677910.png"
+              alt=""
+            />
+            <h2>Quizs</h2>
+          </div>
+        </Link>
 
         <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
           <img

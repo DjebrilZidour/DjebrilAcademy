@@ -16,6 +16,7 @@ import LearningProcess from "./pages/dashboard/pages/LearningProgress";
 
 import SemesterPage from "./pages/dashboard/pages/SemesterPages";
 import SemesterDetail from "./pages/dashboard/pages/SemesterDetail";
+import Quizs from "./pages/dashboard/pages/Quizs";
 
 const isLogged = getIsUserLogged();
 
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
       { path: "/dashboard/learning-courses", element: <Subjects /> },
       { path: "/dashboard/learning-exc", element: <Subjects /> },
       { path: "/dashboard/learning-progress", element: <LearningProcess /> },
+      { path: "/dashboard/quizs", element: <Quizs /> },
       { path: "/dashboard/semesters", element: <SemesterPage /> },
       { path: "/dashboard/semester-detail", element: <SemesterDetail /> },
       
