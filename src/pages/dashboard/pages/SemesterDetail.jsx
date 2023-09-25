@@ -6,7 +6,8 @@ const CourseDetail = (props) => {
 
   return (
     <div>
-      <p className="text-lg">{title}</p>
+      <h2 className="text-xl underline capitalize">{title}</h2>
+
       <p>{course}</p>
     </div>
   );
@@ -19,11 +20,16 @@ const SemesterDetail = () => {
     moduleName.toLowerCase(),
     semesterNumber - 1
   );
+
   return (
-    <div>
-      <h1 className="text-3xl ">
-        {state.moduleName} Semester {state.semesterNumber}
-      </h1>
+    <div className="w-full">
+
+      <div className="  border-gray border-2 w-full rounded-xl flex justify-between items-center h-16 mb-16">
+        <h1 className="text-2xl background  py-4 w-4/5 h-full px-4 py-8">{state.moduleName}</h1>
+        <h1 className="text-lg bg-green-100 px-4 w-1/5 h-full px-4 py-8">
+          Semester {state.semesterNumber}
+        </h1>
+      </div>
 
       {courses.length > 0 ? (
         courses.map((singleCourse, idx) => {
