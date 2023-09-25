@@ -9,23 +9,23 @@ const SemesterPage = () => {
     });
   };
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-4">
+    <section className="w-full flex flex-col items-center justify-center gap-4 py-28">
       <h1 className="text-3xl "> {state.moduleName} </h1>
 
       <h1
         onClick={() => {
           onClickSemester(1);
         }}
-        className="text-lg font-bold border-2 border-black px-8 py-4 cursor-pointer"
+        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md"
       >
         semster 1
       </h1>
-      
+
       <h1
         onClick={() => {
           onClickSemester(2);
         }}
-        className="text-lg font-bold border-2 border-black px-8 py-4 cursor-pointer"
+        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md"
       >
         semster 2
       </h1>
@@ -34,7 +34,7 @@ const SemesterPage = () => {
         onClick={() => {
           onClickSemester(3);
         }}
-        className="text-lg font-bold border-2 border-black px-8 py-4 cursor-pointer"
+        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md"
       >
         semster 3
       </h1>
