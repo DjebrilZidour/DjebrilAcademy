@@ -45,7 +45,7 @@ const DashboardSideBar = () => {
           </div>
         </Link>
 
-        <Link to="/dashboard/quizs">
+        <Link to="">
           <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
             <img
               className="w-12 mx-2 px-1"
@@ -88,20 +88,25 @@ const DashboardSideBar = () => {
             <h3></h3>
           </div>
         </div>
-
-        <div className="m-4">
-          <img src="" alt="" />
-          <h1
-            className="cursor-pointer"
-            onClick={() => {
-              localStorage.setItem("isUserLoggedIn", "false");
-              isUserLogged = getIsUserLogged();
-              console.log(isUserLogged);
-              navigate("/");
-            }}
-          >
-            log out
-          </h1>
+        <div className="flex justify-end items-center">
+          <div className="m-4 flex justify-center items-center bg-red-500 w-44 px-4 py-2 rounded-xl">
+            <img
+              className="w-8 mx-2 px-1"
+              src="https://cdn-icons-png.flaticon.com/128/10477/10477736.png"
+              alt=""
+            />
+            <h1
+              className="cursor-pointer text-white font-semibold pr-6"
+              onClick={() => {
+                localStorage.setItem("isUserLoggedIn", "false");
+                isUserLogged = getIsUserLogged();
+                console.log(isUserLogged);
+                navigate("/");
+              }}
+            >
+              log out
+            </h1>
+          </div>
         </div>
       </section>
 
