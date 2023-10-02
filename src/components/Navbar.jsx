@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
+import Djeb from "../assets/images/djeb.png"
 import { getIsUserLogged } from "../utils/utils";
 import { useState } from "react";
 
@@ -98,7 +99,7 @@ const Navbar = () => {
         <ul className="list-none flex justify-between items-center">
           <li className="flex justify-center items-center gap-2">
             <Link to="/">
-              <img className="h-12 w-12" src={Logo} />
+              <img className=" p-1 h-12 w-12 bg-white rounded-full" src={Logo} />
             </Link>
             <Link to="/">
               <h1 className="text-3xl">DJeb.</h1>

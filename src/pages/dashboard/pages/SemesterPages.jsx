@@ -5,7 +5,7 @@ const SemesterPage = () => {
   const navigate = useNavigate();
   const onClickSemester = (semesterNumber) => {
     navigate("/dashboard/semester-detail", {
-      state: { moduleName: state.moduleName, semesterNumber: semesterNumber },
+      state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl },
     });
   };
   return (

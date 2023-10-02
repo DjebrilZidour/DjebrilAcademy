@@ -3,10 +3,14 @@ import Navbar from "../components/Navbar";
 import Login from "../pages/auth/Login/Login";
 import SingUp from "../pages/auth/SignUp/SignUp";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom"; //! VERY __________ IMPORTANT !!!!!!!!!!!!!
+import { Link, useNavigate } from "react-router-dom"; //! VERY __________ IMPORTANT !!!!!!!!!!!!!
 import Btn from "../components/Atomic/Btn";
 
 function App() {
+  const navigate = useNavigate()
+  const onClick = ()=>{
+    navigate("/dashboard/home")
+  } 
   // const startBtn = () => {};
   return (
     <section id="app">
@@ -31,7 +35,7 @@ function App() {
             dedicated for you djebril academy will offer you a program that
             helps you to be the first in your middle shool
           </p>
-          <Btn value="prepare for your Bem Now !!!" />
+          <Btn onClick={onClick} value="prepare for your Bem Now !!!" />
         </div>
 
         <div
@@ -52,7 +56,7 @@ function App() {
             program is dedicated for you djebril academy will offer you a
             program that helps you to be the first in your middle shool
           </p>
-          <Btn value="prepare for your Bac Now !!!" />
+          <Btn onClick={onClick} value="prepare for your Bac Now !!!" />
         </div>
 
       </div>
