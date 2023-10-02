@@ -1,7 +1,6 @@
 const dataBase = [
   {
     module: "math",
-    imgUrl:"https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?auto=compress&cs=tinysrgb&w=800",
     semesters: [
       [
         {
@@ -212,7 +211,7 @@ const dataBase = [
   },
 ];
 
-export const fetchSemesterDetail = (module, sem, imgUrl) => {
+export const fetchSemesterDetail = (module, sem) => {
   const dataList = dataBase.find((m) => module === m.module);
   const courseData =
     dataList?.semesters.length > 0 ? dataList.semesters[sem]    : [];
