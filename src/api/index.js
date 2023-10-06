@@ -145,7 +145,7 @@ const dataBase = [
       [
         {
           courseTitle: "course science title sem 1",
-          courseDetail: "course science detail sem 1",
+          courseDetail: "bon le qupe dars loul sahl rayha kaml fl hadm ou el inzimat donc choufou fhad dars nta oy chtartak ftamarin kol mathal tamarin ak bien ",
         },
         {
           courseTitle: "course science title sem 1",
