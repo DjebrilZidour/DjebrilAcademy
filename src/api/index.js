@@ -5,27 +5,32 @@ const dataBase = [
       [
         {
           courseTitle: "course math title sem 1",
-          courseDetail: "course math detail sem 1",
+          courseDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          courseImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           courseTitle: "course math title sem 1",
           courseDetail: "course math detail sem 1",
+          courseImage: "",
         },
       ],
       [
         {
           courseTitle: "course math title sem 2",
           courseDetail: "course math detail sem 2",
+          courseImage: "",
         },
         {
           courseTitle: "course math title sem 2",
           courseDetail: "course math detail sem 2",
+          courseImage: "",
         },
       ],
       [
         {
-          courseTitle: "course math title sem 2",
-          courseDetail: "course math detail sem 2",
+          courseTitle: "course math title sem 3",
+          courseDetail: "course math detail sem 3",
+          courseImage: "",
         },
         {
           courseTitle: "course math title sem 2",
@@ -214,7 +219,7 @@ const dataBase = [
 export const fetchSemesterDetail = (module, sem) => {
   const dataList = dataBase.find((m) => module === m.module);
   const courseData =
-    dataList?.semesters.length > 0 ? dataList.semesters[sem]    : [];
+    dataList?.semesters.length > 0 ? dataList.semesters[sem] : [];
 
   return courseData;
 };
