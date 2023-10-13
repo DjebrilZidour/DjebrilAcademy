@@ -107,19 +107,19 @@ const Navbar = () => {
           <img src="" alt="" />
           <div className="flex justify-between items-center text-black-100  max-sm:flex-col max-sm:hidden ">
             <Link to="/">
-              <li className="px-4 text-black cursor-pointer hover:underline">
+              <li className="px-4 font-semibold text-black cursor-pointer hover:underline">
                 Home
               </li>
             </Link>
 
             <Link to="/about">
-              <li className="px-4 text-black cursor-pointer hover:underline">
+              <li className="px-4 font-semibold text-black cursor-pointer hover:underline">
                 About us
               </li>
             </Link>
 
             <Link to="/dashboard/home">
-              <li className="px-4 text-black cursor-pointer hover:underline">
+              <li className="px-4 font-semibold text-black cursor-pointer hover:underline">
                 Start learning
               </li>
             </Link>
@@ -141,7 +141,7 @@ const Navbar = () => {
             ) : (
               <div>
                 <img
-                  className="w-6 cursor-pointer"
+                  className="w-6 mx-4 cursor-pointer"
                   src="https://cdn-icons-png.flaticon.com/128/3917/3917711.png"
                   alt=""
                   onClick={() => {
