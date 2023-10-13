@@ -23,16 +23,8 @@ const CourseDetail = (props) => {
       </div>
 
       <div>
-        <Btn value="check PDF file" />
-        <button>
-          <a
-            target="_blank"
-            href="https://drive.google.com/drive/u/1/my-drive?q=type:pdf%20parent:0AEIPBoVGzKUGUk9PVA"
-          >
-            {" "}
-            check pdf file
-          </a>
-        </button>
+        <Btn value="check PDF file" onClick="https://drive.google.com/drive/u/1/my-drive?q=type:pdf%20parent:0AEIPBoVGzKUGUk9PVA" />
+       
       </div>
     </div>
   );
