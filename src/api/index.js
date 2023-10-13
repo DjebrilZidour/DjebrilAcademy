@@ -151,10 +151,13 @@ const dataBase = [
         {
           courseTitle: "course science title sem 1",
           courseDetail: "bon le qupe dars loul sahl rayha kaml fl hadm ou el inzimat donc choufou fhad dars nta oy chtartak ftamarin kol mathal tamarin ak bien ",
+          courseImage:"https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=800",
+          courseLink: "https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           courseTitle: "course science title sem 1",
           courseDetail: "course science detail sem 1",
+          courseImage:"https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
       ],
       [
