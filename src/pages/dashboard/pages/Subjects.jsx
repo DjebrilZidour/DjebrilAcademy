@@ -71,6 +71,7 @@ const Subjects = () => {
                   imageUrl={element.img}
                   subName={element.moduleName}
                   imgUrl={element.imgUrl}
+                 
                 />
               );
             })}

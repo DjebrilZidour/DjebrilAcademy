@@ -3,7 +3,7 @@ import { fetchSemesterDetail } from "../../../api";
 import Btn from "../../../components/Atomic/Btn";
 
 const CourseDetail = (props) => {
-  const { title, course, courseImage } = props;
+  const { title, course, courseImage, courseLink } = props;
 
   return (
     <div className="flex justify-center items-center flex-col w-full  my-4 border-2 border-gray rounded-xl pb-4 ">
@@ -22,9 +22,8 @@ const CourseDetail = (props) => {
         </div>
       </div>
 
-      <div>
-        <Btn value="check PDF file" onClick="https://drive.google.com/drive/u/1/my-drive?q=type:pdf%20parent:0AEIPBoVGzKUGUk9PVA" />
-       
+      <div className="pb-4">
+        <Btn value="check PDF file" onClick={courseLink} />
       </div>
     </div>
   );
@@ -32,7 +31,8 @@ const CourseDetail = (props) => {
 
 const SemesterDetail = () => {
   const { state } = useLocation();
-  const { moduleName, semesterNumber, imgUrl } = state;
+  const { moduleName, semesterNumber, imgUrl, courseLink} = state;
+  console.log(courseLink);
   const courses = fetchSemesterDetail(
     moduleName.toLowerCase(),
     semesterNumber - 1
@@ -66,6 +66,7 @@ const SemesterDetail = () => {
               title={singleCourse.courseTitle}
               course={singleCourse.courseDetail}
               courseImage={singleCourse.courseImage}
+              courseLink={singleCourse.courseLink}
             />
           );
         })

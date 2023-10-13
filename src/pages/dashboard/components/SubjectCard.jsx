@@ -3,7 +3,7 @@ import Btn from "../../../components/Atomic/Btn";
 const SubjectCard = (props) => {
   const navigate = useNavigate();
   const onClick = () => {
-    navigate("/dashboard/semesters", { state: { moduleName: props.subName , imgUrl: props.imgUrl} });
+    navigate("/dashboard/semesters", { state: { moduleName: props.subName , imgUrl: props.imgUrl, courseLink: props.courseLink } });
   };
   console.log(props.imgUrl);
   return (
