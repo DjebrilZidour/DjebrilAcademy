@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
-import Djeb from "../assets/images/djeb.png"
 import { getIsUserLogged } from "../utils/utils";
 import { useState } from "react";
 
@@ -8,7 +7,7 @@ const UserPopUp = (props) => {
   const navigate = useNavigate();
   return (
     <section
-      className="flex flex-col items-center justify-start absolute  right-14 top-16 bg-white shadow-2xl rounded-2xl p-5  "
+      className="flex flex-col items-center justify-start absolute  right-14 top-16 bg-white z-10 shadow-2xl rounded-2xl p-5  "
       style={{ display: props.isPopUpClosed ? "none" : "block" ,}}
     >
       <img

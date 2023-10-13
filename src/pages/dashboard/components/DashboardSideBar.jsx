@@ -35,7 +35,7 @@ const DashboardSideBar = () => {
         </Link>
 
         <Link to="/dashboard/learning-progress">
-          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
+          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
             <img
               className="w-12 mx-2 px-1"
               src="https://cdn-icons-png.flaticon.com/128/1535/1535012.png"
@@ -46,7 +46,7 @@ const DashboardSideBar = () => {
         </Link>
 
         <Link to="">
-          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
+          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
             <img
               className="w-12 mx-2 px-1"
               src="https://cdn-icons-png.flaticon.com/128/5677/5677910.png"
@@ -56,7 +56,7 @@ const DashboardSideBar = () => {
           </div>
         </Link>
 
-        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
+        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
           <img
             className="w-12 mx-2 px-1"
             src="https://cdn-icons-png.flaticon.com/128/2157/2157114.png"
@@ -65,7 +65,7 @@ const DashboardSideBar = () => {
           <h2>Intelegent games</h2>
         </div>
 
-        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2">
+        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
           <img
             className="w-12 mx-2 px-1"
             src="https://cdn-icons-png.flaticon.com/128/5879/5879073.png"
@@ -74,20 +74,6 @@ const DashboardSideBar = () => {
           <h2>Settings</h2>
         </div>
 
-        <div className="my-10 cursor-pointer">
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-          </div>
-        </div>
         <div className="flex justify-end items-center">
           <div className="m-4 flex justify-center items-center bg-red-500 w-44 px-4 py-2 rounded-xl">
             <img
