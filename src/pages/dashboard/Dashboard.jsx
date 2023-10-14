@@ -2,7 +2,53 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import DashboardSideBar from "./components/DashboardSideBar";
 import Navbar from "../../components/Navbar";
+import Btn from "../../components/Atomic/Btn";
+import Input from "../../components/Atomic/Input";
 
+
+const TypingArea = () => {
+  const [typedTask, setTypedTask] = useState("");
+  return (
+    <div className="border-2 border-gray p-4 flex flex-col justify-between gap-4">
+      <h1 className="text-3xl">type your task....</h1>
+      <div>
+        <Input
+          label="task"
+          type="text"
+          value={typedTask}
+          setValue={setTypedTask}
+        />
+      </div>
+      <Btn value="Done" onClick={()=>{console.log(typedTask);}}/>
+    </div>
+  );
+};
+const TodoList = () => {
+
+  const onClick = () => {
+    console.log("hi");
+  };
+
+  const [addedElement, setAddedElement] = useState([]);
+
+  return (
+    <>
+        <TypingArea/>
+    <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-96">
+   
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text-3xl">TO DO</h1>
+
+        <Btn value="add an element" onClick={onClick} />
+       
+
+        <hr className=" border-1 border-black w-full rounded-3xl" />
+       
+      </div>
+    </div>
+    </>
+  );
+};
 const Dashboard = () => {
   return (
     <>
@@ -16,7 +62,6 @@ const Dashboard = () => {
         <div className="border-2 border-gray  min-h-100 mx-4 w-full  mt-6 rounded-3xl p-4 flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50 ">
           <Outlet />
         </div>
-
       </section>
     </>
   );
@@ -24,13 +69,10 @@ const Dashboard = () => {
 
 export default Dashboard;
 
-
 // todo : move to pages
 export const Default = () => {
   return (
     <>
-
-      
       <div className="border-2 border-gray rounded-2xl px-4 py-8 w-full flex justify-center items-center rounded-3xl gap-6 ">
         <div className="w-4/5 border-2 border-gray rounded-2xl">
           <div className="w-4/5 bg-green-300 w-full border-2 p-4 rounded-2xl"></div>
@@ -39,7 +81,7 @@ export const Default = () => {
         <h1>0%</h1>
       </div>
       <div className="flex justify-between items-start gap-4 mt-4 w-full h-full ">
-        <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-96">
+        {/* <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-96">
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-3xl">TO DO</h1>
             <button className="bg-green-400 rounded-3xl px-4 py-2 my-4 ">
@@ -53,8 +95,9 @@ export const Default = () => {
               <p className="px-4 py-2 border-2 rounded-2xl p-4 m-4 ">element</p>
             </div>
           </div>
-        </div>
-
+        </div> */}
+        <TodoList />
+        //! TODO LIST
         <div className="border-2 rounded-3xl p-6 ">
           <div className=" flex flex-col justify-center items-center">
             <h1 className="text-2xl">Still for your final exam</h1>
