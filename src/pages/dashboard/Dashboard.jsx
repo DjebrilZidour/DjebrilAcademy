@@ -5,47 +5,54 @@ import Navbar from "../../components/Navbar";
 import Btn from "../../components/Atomic/Btn";
 import Input from "../../components/Atomic/Input";
 
+const PutIt = ()=>{
+  
+}
 
-const TypingArea = () => {
+const TypingArea = (props) => {
   const [typedTask, setTypedTask] = useState("");
   return (
-    <div className="border-2 border-gray p-4 flex flex-col justify-between gap-4">
-      <h1 className="text-3xl">type your task....</h1>
-      <div>
+    <div className=" flex flex-row align-center items-center justify-between">
+      <div className="mx-4">
+
         <Input
-          label="task"
+          label="new task"
           type="text"
           value={typedTask}
           setValue={setTypedTask}
         />
       </div>
-      <Btn value="Done" onClick={()=>{console.log(typedTask);}}/>
+
+      <Btn
+        value="new"
+        onClick={() => {
+          console.log(typedTask);
+          props.addedElement.push(typedTask);
+          console.log(props.addedElement);
+        }}
+      />
     </div>
   );
 };
+
 const TodoList = () => {
-
-  const onClick = () => {
-    console.log("hi");
-  };
-
+ 
   const [addedElement, setAddedElement] = useState([]);
-
+  console.log(addedElement);
   return (
     <>
-        <TypingArea/>
-    <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-96">
-   
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-3xl">TO DO</h1>
-
-        <Btn value="add an element" onClick={onClick} />
-       
-
-        <hr className=" border-1 border-black w-full rounded-3xl" />
-       
+      
+      <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-96">
+          <TypingArea
+        addedElement={addedElement}
+        setAddedElement={setAddedElement}
+      />
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-3xl">TO DO</h1>
+          
+          <hr className=" border-1 border-black w-full rounded-3xl" />
+        </div>
       </div>
-    </div>
     </>
   );
 };
@@ -78,7 +85,7 @@ export const Default = () => {
           <div className="w-4/5 bg-green-300 w-full border-2 p-4 rounded-2xl"></div>
         </div>
 
-        <h1>0%</h1>
+        <h1>63%</h1>
       </div>
       <div className="flex justify-between items-start gap-4 mt-4 w-full h-full ">
         {/* <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-96">

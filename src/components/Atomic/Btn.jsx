@@ -1,5 +1,5 @@
 const Btn = (props) => {
-  const { value, onClick, bg } = props;
+  const { value, onClick } = props;
   
   if (typeof onClick === "string") {
     return (
