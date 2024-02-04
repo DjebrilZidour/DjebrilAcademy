@@ -11,7 +11,6 @@ const dataBase = [
         {
           courseTitle: "course math title sem 1",
           courseDetail: "course math detail sem 1",
-          courseImage: "",
         },
       ],
       [

@@ -6,23 +6,28 @@ const CourseDetail = (props) => {
   const { title, course, courseImage, courseLink } = props;
 
   return (
-    <div className="flex justify-center items-center flex-col w-full  my-4 border-2 border-gray rounded-xl pb-4 ">
-      <div className=" text-white font-bold  p-4 w-full rounded-xl background ">
+    <div className="  w-full  my-4 border-2 border-gray rounded-xl pb-4 ">
+      <div className="font-bold  p-4 w-full rounded-t-xl background ">
         <h1 className="text-xl capitalize">{title}</h1>
       </div>
 
-      <div className="mb-16 px-8 py-4 flex justify-between  gap-32  ">
-
-        <div className="flex justify-start items-start w-1/2">
+      <div className="mb-16 px-8 py-4 flex justify-between gap-32  ">
+        <div className="flex-1">
           <p className="px-4 py-4 w-full text-lg">{course}</p>
         </div>
 
-        <div className="w-1/2">
-          <img src={courseImage} className="w-96 rounded-xl h-80 w-full" alt="" />
-        </div>
+        {courseImage ? (
+          <div className="flex-1">
+            <img
+              src={courseImage}
+              className="w-96 rounded-xl h-80 w-full"
+              alt=""
+            />
+          </div>
+        ) : null}
       </div>
 
-      <div className="pb-4">
+      <div className="pb-4 w-full flex justify-center">
         <Btn value="check PDF file" onClick={courseLink} />
       </div>
     </div>
@@ -31,7 +36,7 @@ const CourseDetail = (props) => {
 
 const SemesterDetail = () => {
   const { state } = useLocation();
-  const { moduleName, semesterNumber, imgUrl, courseLink} = state;
+  const { moduleName, semesterNumber, imgUrl, courseLink } = state;
   console.log(courseLink);
   const courses = fetchSemesterDetail(
     moduleName.toLowerCase(),
