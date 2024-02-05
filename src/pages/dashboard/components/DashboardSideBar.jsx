@@ -1,18 +1,34 @@
 import { getIsUserLogged } from "../../../utils/utils";
 import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const DashboardSideBar = () => {
   let isUserLogged = getIsUserLogged();
   const navigate = useNavigate();
+   const sideBare = ()=>{
+    const [BarState, setBarState] = useState(false)
+    if (BarState) {
+      
+    }
+   }
 
   return (
     <>
       <section
         id="dashboard-side-bar"
-        className="shadow-2xl rounded-2xl py-5  w-80 border-2 ml-4 mt-6 h-full "
+        className="shadow-2xl rounded-2xl py-5  w-80 border-2 ml-4 mt-6 h-full hidden"
       >
         <Link Link to="/dashboard/home">
+          <div className="flex justify-end items-center flex-end mx-4">
+          <img
+              src="https://cdn-icons-png.flaticon.com/128/2985/2985161.png"
+              alt=""
+              className="w-12"
+              onClick={sideBare}
+            />
+          </div>
           <div className="flex items-center justify-start border-b-2">
+           
             <img
               className="w-8 m-4 cursor-pointer"
               src="https://cdn-icons-png.flaticon.com/128/3917/3917711.png"
@@ -20,6 +36,7 @@ const DashboardSideBar = () => {
             />
 
             <h1 className="text-3xl my-4 cursor-pointer">Dashboard</h1>
+          
           </div>
         </Link>
 
@@ -96,10 +113,10 @@ const DashboardSideBar = () => {
         </div>
       </section>
 
-      <section className="hidden">
+      <section className="">
         <div className="flex justify-center items-center">
           <img
-            className="w-12"
+            className="w-8"
             src="https://cdn-icons-png.flaticon.com/128/271/271228.png"
             alt=""
           />

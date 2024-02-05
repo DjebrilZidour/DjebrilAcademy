@@ -5,57 +5,55 @@ import Navbar from "../../components/Navbar";
 import Btn from "../../components/Atomic/Btn";
 import Input from "../../components/Atomic/Input";
 
-const PutIt = ()=>{
-  
-}
-
-const TypingArea = (props) => {
-  const [typedTask, setTypedTask] = useState("");
-  return (
-    <div className=" flex flex-row align-center items-center justify-between">
-      <div className="mx-4">
-
-        <Input
-          label="new task"
-          type="text"
-          value={typedTask}
-          setValue={setTypedTask}
-        />
-      </div>
-
-      <Btn
-        value="new"
-        onClick={() => {
-          console.log(typedTask);
-          props.addedElement.push(typedTask);
-          console.log(props.addedElement);
-        }}
-      />
-    </div>
-  );
-};
-
 const TodoList = () => {
- 
-  const [addedElement, setAddedElement] = useState([]);
-  console.log(addedElement);
+  const [typedTask, setTypedTask] = useState("");
+  const [todoList, setTodoList] = useState([]);
+  let i = 0;
+
+  const addTodo = () => {
+    console.log(typedTask);
+    if(typedTask.length < 4 ){
+      console.log("pls enter a valid task");
+    }else{
+      todoList.push(typedTask);
+    setTypedTask("");
+    console.log(todoList);
+    setTodoList(todoList);
+    }
+    
+  };
+
   return (
     <>
-      
       <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-96">
-          <TypingArea
-        addedElement={addedElement}
-        setAddedElement={setAddedElement}
-      />
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-3xl">TO DO</h1>
-          
-          <hr className=" border-1 border-black w-full rounded-3xl" />
+
+          <Input
+            label="new task"
+            type="text"
+            value={typedTask}
+            setValue={setTypedTask}
+          />
+
+          <Btn value="newTodo" onClick={addTodo} />
+          <hr className=" border-1 border-black w-full rounded-3xl m-4" />
+
+          <div>
+            {todoList.map((element, i) => {
+            return(
+              <ul className="w-full">
+                <li key={i}>{element}</li>
+              </ul>
+            )
+          })}
+          </div>
         </div>
       </div>
     </>
   );
 };
+
 const Dashboard = () => {
   return (
     <>
