@@ -16,7 +16,7 @@ const SemesterPage = () => {
         onClick={() => {
           onClickSemester(1);
         }}
-        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-110 cursor-pointer duration-200"
+        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
       >
         semster 1
       </h1>
@@ -25,7 +25,7 @@ const SemesterPage = () => {
         onClick={() => {
           onClickSemester(2);
         }}
-        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-110 cursor-pointer duration-200"
+        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
       >
         semster 2
       </h1>
@@ -34,7 +34,7 @@ const SemesterPage = () => {
         onClick={() => {
           onClickSemester(3);
         }}
-        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-110 cursor-pointer duration-200"
+        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
       >
         semster 3
       </h1>

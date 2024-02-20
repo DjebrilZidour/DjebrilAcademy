@@ -222,6 +222,5 @@ export const fetchSemesterDetail = (module, sem) => {
   const dataList = dataBase.find((m) => module === m.module);
   const courseData =
     dataList?.semesters.length > 0 ? dataList.semesters[sem] : [];
-
   return courseData;
 };
