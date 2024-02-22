@@ -53,9 +53,6 @@ const modules = [
     img: "https://images.pexels.com/photos/5191376/pexels-photo-5191376.jpeg?auto=compress&cs=tinysrgb&w=800 ",
     imgUrl:""
   },
-  
-  
-
 ];
 
 const Subjects = () => {
