@@ -7,10 +7,10 @@ import { Link, useNavigate } from "react-router-dom"; //! VERY __________ IMPORT
 import Btn from "../components/Atomic/Btn";
 
 function App() {
-  const navigate = useNavigate()
-  const onClick = ()=>{
-    navigate("/dashboard/home")
-  } 
+  const navigate = useNavigate();
+  const onClick = () => {
+    navigate("/dashboard/home");
+  };
   // const startBtn = () => {};
   return (
     <section id="app">
@@ -18,7 +18,8 @@ function App() {
 
       <div className="flex justify-between mt-8  max-sm:flex-col max-sm:w-4/5 max-sm:w-92 max-sm:my-4 ">
         <div
-          id="bem-prep-card"tru
+          id="bem-prep-card"
+          tru
           className="flex flex-col justify-between items-center text-center gap-16 border-2 border-black rounded-xl m-2 py-10 px-4 w-full  h-92 "
         >
           <div className="flex justify-center gap-4 items-center">
@@ -58,9 +59,35 @@ function App() {
           </p>
           <Btn onClick={onClick} value="prepare for your Bac Now !!!" />
         </div>
-
       </div>
 
+      {/* <div>
+        <div className="border-2 border-black my-4 mx-4 rounded-xl h-1/2 flex flex-col ">
+          <div className="flex justify-center gap-4 items-center">
+            <img
+              className="w-12"
+              src="https://cdn-icons-png.flaticon.com/512/207/207190.png"
+              alt=""
+            />
+            <h1 className="text-3xl">BEM PREPARATION</h1>
+          </div>
+          <p></p>
+          <button></button>
+        </div>
+
+        <div className="border-2 border-black my-4 mx-4 rounded-xl h-1/2 flex flex-col ">
+          <div className="flex justify-center gap-4 items-center">
+            <img
+              className="w-12"
+              src="https://cdn-icons-png.flaticon.com/512/2677/2677319.png"
+              alt=""
+            />
+            <h1 className="text-3xl">BAC PREPARATION</h1>
+          </div>
+          <p></p>
+          <button></button>
+        </div>
+      </div> */}
       <footer />
     </section>
   );
