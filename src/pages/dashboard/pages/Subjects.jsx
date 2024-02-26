@@ -59,7 +59,7 @@ const Subjects = () => {
   return (
     <>
       <section className="flex">
-        <div className="my-6 mx-2 p-2 border-2 rounded-3xl flex flex-col items-center justify-center gap-4 ">
+        <div className="my-6 mx-2 p-2 border-2 rounded-xl flex flex-col items-center justify-center gap-4 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-4 w-full">
             {modules.map((element) => {
               return (

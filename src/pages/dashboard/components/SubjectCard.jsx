@@ -13,7 +13,7 @@ const SubjectCard = (props) => {
     });
   };
   return (
-    <div className="flex flex-col justify-between items-center hover:scale-105 cursor-pointer duration-200 shadow rounded-xl border-4 w-1/3 gap-4 pb-4 w-72 h-96">
+    <div className="flex flex-col justify-between items-center hover:scale-105 cursor-pointer duration-200 shadow rounded-xl border-4 w-1/3 gap-4 pb-4 w-64 h-96">
 
       <img
         className="rounded-xl max-h-52 w-full"
