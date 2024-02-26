@@ -4,12 +4,15 @@ import Btn from "../../../components/Atomic/Btn";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import { Link, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import { LOCAL_STORAGE_KEYS } from "../../../utils/utils";
 
 const SignUp = () => {
   const [typedName, setTypedName] = useState("");
   const [typedEmail, setTypedEmail] = useState("");
   const [typedPassword, setTypedPassword] = useState("");
+  const navigate = useNavigate();
 
   const createAccount = () => {
     fetch("http://localhost:3000/register", {
@@ -22,12 +25,12 @@ const SignUp = () => {
     .then((res)=>{
       if (res.status === 200 ) {
         console.log("goods");
-        alert("account created successfully")
+        alert("account created successfully, pls login to your account")
+        navigate("/login")
         console.log("done sign up ");
       }else{
         res.json().then((data)=>{
           console.log(data);
-          setErrMessage(data.message)
         })
       }
     })

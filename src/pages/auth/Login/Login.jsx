@@ -27,7 +27,7 @@ const Login = () => {
       .then((res) => {
         if (res.status === 200) {
           localStorage.setItem(LOCAL_STORAGE_KEYS.isLogged, true);
-          navigate("dashboard");
+          navigate("/dashboard");
           location.reload();
         } else {
           res.json().then((data) => {
