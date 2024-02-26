@@ -29,8 +29,10 @@ const SignUp = () => {
         navigate("/login")
         console.log("done sign up ");
       }else{
+        alert(res.status)
         res.json().then((data)=>{
           console.log(data);
+          
         })
       }
     })
