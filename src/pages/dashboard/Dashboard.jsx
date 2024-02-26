@@ -8,12 +8,22 @@ import Input from "../../components/Atomic/Input";
 const TodoList = () => {
   const [typedTask, setTypedTask] = useState("");
   const [todoList, setTodoList] = useState([]);
+  const [isTaskDone, setTaskDone] = useState(false)
   let i = 0;
+
+  const setTaskDoneBtn = ()=>{
+    if (isTaskDone) {
+      setTaskDone(false)
+    }else{
+      setTaskDone(true)
+    }
+  }
 
   const addTodo = () => {
     console.log(typedTask);
     if(typedTask.length < 4 ){
       console.log("pls enter a valid task");
+      alert("ERR")
     }else{
       todoList.push(typedTask);
     setTypedTask("");
@@ -42,8 +52,13 @@ const TodoList = () => {
           <div>
             {todoList.map((element, i) => {
             return(
-              <ul className="w-full">
-                <li key={i}>{element}</li>
+              <ul className=" flex justify-between items-center gap-8">
+                <li className={isTaskDone?"":""} key={i}>{element}</li>
+                <div className="flex justify-between items-center gap-4">
+                <img onClick={setTaskDoneBtn} className="w-4 h-4 rounded-full cursor-pointer" src={isTaskDone?"https://cdn-icons-png.flaticon.com/128/7739/7739845.png":"https://cdn-icons-png.flaticon.com/128/808/808569.png"} alt="" />
+                <img className="w-4 h-4 rounded-full cursor-pointer" src="https://cdn-icons-png.flaticon.com/128/594/594864.png" alt="" />
+                </div>
+                {/* <img src={TodoList?"":""} alt="" /> */}
               </ul>
             )
           })}
