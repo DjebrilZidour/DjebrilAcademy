@@ -15,7 +15,7 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   const createAccount = () => {
-    fetch("http://localhost:3000/register", {
+    fetch("https://nodeexpress-zwwh.onrender.com/register", {
       method: "POST",
       body: JSON.stringify({ name:typedName ,email: typedEmail, password: typedPassword }),
       headers:{
