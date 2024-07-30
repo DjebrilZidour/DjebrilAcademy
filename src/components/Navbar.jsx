@@ -101,7 +101,7 @@ const Navbar = () => {
               <img className=" p-1 h-12 w-12 bg-white rounded-full" src={Logo} />
             </Link>
             <Link to="/">
-              <h1 className="text-3xl">DJeb.</h1>
+              <h1 className="text-3xl">DJebril Academy</h1>
             </Link>
           </li>
           <img src="" alt="" />
@@ -114,13 +114,13 @@ const Navbar = () => {
 
             <Link to="/about">
               <li className="px-4 font-semibold text-black cursor-pointer hover:underline">
-                About us
+                About
               </li>
             </Link>
 
             <Link to="/dashboard/home">
               <li className="px-4 font-semibold text-black cursor-pointer hover:underline">
-                Start learning
+                Dashboard
               </li>
             </Link>
 

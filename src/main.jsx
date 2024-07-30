@@ -13,7 +13,7 @@ import Subjects from "./pages/dashboard/pages/Subjects";
 import Learning from "./pages/dashboard/pages/Learning";
 import About from "./pages/About/About";
 import LearningProcess from "./pages/dashboard/pages/LearningProgress";
-
+import Team from "./pages/Team/Team";
 import SemesterPage from "./pages/dashboard/pages/SemesterPages";
 import SemesterDetail from "./pages/dashboard/pages/SemesterDetail";
 import Quizs from "./pages/dashboard/pages/Quizs";
@@ -68,6 +68,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/team",
+    element: <Team />,
   },
 ]);
 

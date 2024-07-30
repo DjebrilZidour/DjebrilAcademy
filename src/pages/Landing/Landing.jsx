@@ -3,9 +3,10 @@ import Btn from "../../components/Atomic/Btn";
 import Footer from "../../components/Footer";
 // import img12 from "../../images/landingPic.png";
 import TeamCard from "../dashboard/components/TeamCard";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Landing = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -13,39 +14,44 @@ const Landing = () => {
       <section className="flex items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20 mt-8">
         <div className="px-3 w-full flex items-center justify-center">
           <div>
-            <div className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
-              <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl">
-                Exclusive Agency For
-                <span style={{ color: "#61faaf" }} className="text-5xl ">
-                  <div className=""></div>Technology
-                </span>
-                .Provide Solution
+            <div className="mx-auto mb-8 max-w-lg text-center lg:mx-0  lg:text-left">
+              <h2 className="capitalize text-4xl w-96">
+                welcome to <br /> Djebril Academy <br />
+                your first platform to fix your mathemathics and phisics problem
               </h2>
 
               <p className="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
-                Helping you maximize operations management with digitization
+                Helping you all your problems with the math and phisycs
               </p>
             </div>
 
             <div className="text-center lg:text-left">
-              <Btn value="Key Features" />
+              <Btn
+                value="Get Course/Exersice"
+                onClick={() => {
+                  navigate("/dashboard/learning-welcome");
+                }}
+              />
+              <Link to="/about">
               <button className="text-black font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200 px-4 ml-4">
-                how do we work !!
+                Learn more
               </button>
+              </Link>
+             
             </div>
           </div>
 
           <div className="p-4 pl-8 ml ">
             <img
               className="w-full rounded-3xl"
-              src="https://images.pexels.com/photos/5905445/pexels-photo-5905445.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="https://images.unsplash.com/photo-1630983358494-96012d838b84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3R1ZHlpbmd8ZW58MHx8MHx8fDA%3D"
               alt="hi"
             />
           </div>
         </div>
       </section>
 
-      <section className="flex justify-between items-center p-4 mx-24 h-92 gap-4">
+      {/* <section className="flex justify-between items-center p-4 mx-24 h-92 gap-4">
         <div className="borders border-2 rounded-3xl flex flex-col justify-start items-start w-1/2 h-96 gap-6 p-4 ">
           <h1 className="text-2xl underline">Why choose us !!!</h1>
           <p>
@@ -66,7 +72,7 @@ const Landing = () => {
             alt=""
           />
         </div>
-      </section>
+      </section> */}
 
       <section className="my-10 py-2">
         <h1 className="text-3xl font-semibold text-center ">
@@ -125,23 +131,23 @@ const Landing = () => {
       </section> */}
 
       <section className="flex flex-col justify-center items-center gap-4 my-12">
-        <h1 className="text-3xl">Our team</h1>
+        <h1 className="text-3xl">Our ceo</h1>
         <div className="flex justify-between items-center">
           <TeamCard
-            name="Nabil"
-            description="he is 24 years old he learned un the ens highest school for teachers"
+            name="ZIDOUR Djebril"
+            description="DJEBRIl ZIDOUR the founder of this ambicious platform "
           />
           <TeamCard
-            name="Nabil"
-            description="he is 24 years old he learned un the ens highest school for teachers"
+            name="ZIDOUR Djebril"
+            description="DJEBRIl ZIDOUR the founder of this ambicious platform "
           />
           <TeamCard
-            name="Nabil"
-            description="he is 24 years old he learned un the ens highest school for teachers"
+            name="ZIDOUR Djebril"
+            description="DJEBRIl ZIDOUR the founder of this ambicious platform "
           />
         </div>
-        <Link to="/about">
-          <Btn value="learn more" />
+        <Link to="/team">
+          <Btn value="See more" />
         </Link>
       </section>
 

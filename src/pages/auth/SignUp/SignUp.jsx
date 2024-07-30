@@ -25,7 +25,7 @@ const SignUp = () => {
     .then((res)=>{
       if (res.status === 200 ) {
         console.log("goods");
-        alert("account created successfully, pls login to your account")
+        alert("account created successfully, pls login to  your account")
         navigate("/login")
         console.log("done sign up ");
       }else{
