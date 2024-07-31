@@ -1,11 +1,8 @@
 import { useLocation } from "react-router";
-import { fetchSemesterDetail } from "../../../api";
 const CoursePreview = () =>{
 
     const { state } = useLocation();
     const { moduleName, semesterNumber, imgUrl, courseLink } = state;
-   
-    console.log(moduleName);
     console.log("here iam");
     return(
         <div className="  w-full  my-4 border-2 border-gray rounded-xl pb-4 ">

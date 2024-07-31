@@ -41,19 +41,17 @@ const CourseDetail = (props) => {
 
 
 const CourseTitles = (props)=>{
-  const { state } = useLocation();
   const navigate = useNavigate()
-  const { title, course, courseImage, courseLink } = props;
-  const onClickCourse = (semesterNumber) => {
-    navigate("/dashboard/coursepreview", {
-      state: { moduleName: state.title,  imgUrl: state.imgUrl , courseLink: state.courseLink },
-    });
-  };
+const {title,}= props;
 return(
   <>
   <div className="flex justify-between items-center  border-2 border-black rounded-xl p-4 w-full">
     <h1>{title}</h1>
-    <Btn value="acsess course" onClick={onClickCourse}/>
+    <Btn value="acsess course" onClick={()=>{
+      navigate("/dashboard/coursepreview", {
+        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink },
+      });
+    }}/>
   </div>
   </>
 )
@@ -93,6 +91,8 @@ const SemesterDetail = () => {
           return (
             <CourseTitles
             key={idx}
+            moduleName={moduleName}
+            semesterNumber={semesterNumber}
             title={singleCourse.courseTitle}
             course={singleCourse.courseDetail}
             courseImage={singleCourse.courseImage}
