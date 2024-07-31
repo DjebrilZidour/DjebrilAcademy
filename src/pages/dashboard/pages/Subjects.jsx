@@ -59,7 +59,7 @@ const Subjects = () => {
   return (
     <>
       
-      <div className=" border-2 py-12 px-8 flex gap-4 ">
+      <div className=" border-2 py-12 px-8 flex gap-4 h-max">
             {modules.map((element) => {
               return (
                 <SubjectCard

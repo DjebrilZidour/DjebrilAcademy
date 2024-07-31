@@ -13,10 +13,10 @@ const SubjectCard = (props) => {
     });
   };
   return (
-    <div className="flex flex-col justify-between items-center cursor-pointer duration-200 shadow rounded-xl border-2 border-black gap-4 pb-4 w-64 h-max w-full bg-white">
+    <div className="flex flex-col justify-between items-center cursor-pointer duration-200 shadow rounded-xl border-2 border-black gap-4 pb-4   bg-white">
 
       <img
-        className="rounded-xl max-h-92 w-full"
+        className="rounded-xl h-92 w-full"
         src={props.imageUrl}
         alt="subject-picture"
       />
