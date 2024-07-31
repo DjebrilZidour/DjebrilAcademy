@@ -1,12 +1,16 @@
 import { useLocation } from "react-router";
 import { fetchSemesterDetail } from "../../../api";
 import Btn from "../../../components/Atomic/Btn";
+import { useNavigate } from "react-router";
+import CoursePreview from "./CoursePreview";
 
 const CourseDetail = (props) => {
   const { title, course, courseImage, courseLink } = props;
 
   return (
+    
     <div className="  w-full  my-4 border-2 border-gray rounded-xl pb-4 ">
+
       <div className="font-bold  p-4 w-full rounded-t-xl background ">
         <h1 className="text-xl capitalize">{title}</h1>
       </div>
@@ -34,15 +38,22 @@ const CourseDetail = (props) => {
   );
 };
 
+
+
 const CourseTitles = (props)=>{
-const {title}= props;
+  const { state } = useLocation();
+  const navigate = useNavigate()
+  const { title, course, courseImage, courseLink } = props;
+  const onClickCourse = (semesterNumber) => {
+    navigate("/dashboard/coursepreview", {
+      state: { moduleName: state.title,  imgUrl: state.imgUrl , courseLink: state.courseLink },
+    });
+  };
 return(
   <>
   <div className="flex justify-between items-center  border-2 border-black rounded-xl p-4 w-full">
     <h1>{title}</h1>
-    <Btn value="acsess course" onClick={()=>{
-      
-    }}/>
+    <Btn value="acsess course" onClick={onClickCourse}/>
   </div>
   </>
 )
@@ -81,8 +92,11 @@ const SemesterDetail = () => {
         courses.map((singleCourse, idx) => {
           return (
             <CourseTitles
-              key={idx}
-              title={singleCourse.courseTitle}
+            key={idx}
+            title={singleCourse.courseTitle}
+            course={singleCourse.courseDetail}
+            courseImage={singleCourse.courseImage}
+            courseLink={singleCourse.courseLink}
              
             />
           );
