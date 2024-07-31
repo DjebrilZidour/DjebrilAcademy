@@ -17,6 +17,7 @@ import Team from "./pages/Team/Team";
 import SemesterPage from "./pages/dashboard/pages/SemesterPages";
 import SemesterDetail from "./pages/dashboard/pages/SemesterDetail";
 import Quizs from "./pages/dashboard/pages/Quizs";
+import CoursePreview from "./pages/dashboard/pages/CoursePreview";
 
 const isLogged = getIsUserLogged();
 
@@ -49,6 +50,7 @@ const router = createBrowserRouter([
       { path: "/dashboard/quizs", element: <Quizs /> },
       { path: "/dashboard/semesters", element: <SemesterPage /> },
       { path: "/dashboard/semester-detail", element: <SemesterDetail /> },
+      { path: "/dashboard/coursepreview", element: CoursePreview },
       
     ],
   },
