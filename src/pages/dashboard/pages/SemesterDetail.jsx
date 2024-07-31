@@ -34,6 +34,20 @@ const CourseDetail = (props) => {
   );
 };
 
+const CourseTitles = (props)=>{
+const {title}= props;
+return(
+  <>
+  <div className="flex justify-between items-center  border-2 border-black rounded-xl p-4 w-full">
+    <h1>{title}</h1>
+    <Btn value="acsess course" onClick={()=>{
+      
+    }}/>
+  </div>
+  </>
+)
+};
+
 const SemesterDetail = () => {
   const { state } = useLocation();
   const { moduleName, semesterNumber, imgUrl, courseLink } = state;
@@ -59,25 +73,25 @@ const SemesterDetail = () => {
 
         <div className="text-2xl font-bold bg-green-100 px-4 w-1/5 h-full px-4 py-8  rounded-r-xl flex justify-start items-center">
           {" "}
-          <h1> Semester {state.semesterNumber} </h1>
+          <h1> Triméstre {state.semesterNumber} </h1>
         </div>
       </div>
-
+      <div className="flex flex-col items-center justify-center w-full gap-4 ">
       {courses.length > 0 ? (
         courses.map((singleCourse, idx) => {
           return (
-            <CourseDetail
+            <CourseTitles
               key={idx}
               title={singleCourse.courseTitle}
-              course={singleCourse.courseDetail}
-              courseImage={singleCourse.courseImage}
-              courseLink={singleCourse.courseLink}
+             
             />
           );
         })
       ) : (
         <p className="text-red-400 ">no content</p>
       )}
+      </div>
+     
     </div>
   );
 };

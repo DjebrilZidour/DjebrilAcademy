@@ -79,7 +79,7 @@ const Dashboard = () => {
           <DashboardSideBar />
         </div>
 
-        <div className="border-4 border-gray mx-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50">
+        <div className="border-4 p-4 border-gray mx-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50">
           <Outlet />
         </div>
       </section>
