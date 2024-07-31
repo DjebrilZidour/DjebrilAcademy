@@ -41,17 +41,20 @@ const CourseDetail = (props) => {
 
 
 const CourseTitles = (props)=>{
+  const {state} = useLocation()
   const navigate = useNavigate()
-const {title,}= props;
+  const onClickCourse =()=>{
+    navigate("/dashboard/coursepreview", {
+      state: { moduleName: state.moduleName, semesterNumber: state.semesterNumber}
+    });
+  }
+const {title}= props;
+
 return(
   <>
   <div className="flex justify-between items-center  border-2 border-black rounded-xl p-4 w-full">
     <h1>{title}</h1>
-    <Btn value="acsess course" onClick={()=>{
-      navigate("/dashboard/coursepreview", {
-        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink },
-      });
-    }}/>
+    <Btn value="acsess course" onClick={onClickCourse}/>
   </div>
   </>
 )
