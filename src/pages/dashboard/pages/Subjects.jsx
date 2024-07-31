@@ -36,7 +36,7 @@ const modules = [
   {
     moduleName: "Phisics",
     img: "https://images.pexels.com/photos/68173/flash-tesla-coil-experiment-faradayscher-cage-68173.jpeg?auto=compress&cs=tinysrgb&w=800",
-    imgUrl:""
+    imgUrl:"https://media.istockphoto.com/id/953006834/photo/science-math-chemistry-equations.jpg?s=612x612&w=0&k=20&c=kF7XAjZlhC1QgUOEZS7A6p6tMYAS1oF4nFLG5XQQgbE="
   },
   // {
   //   moduleName: "Islamic",
