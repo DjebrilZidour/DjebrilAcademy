@@ -61,8 +61,10 @@ const Subjects = (props) => {
   
   return (
     <>
-      
-      <div className=" border-2 py-12 px-8 flex gap-4 h-max">
+      <div className="flex justify-end w-full">
+        <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">{state.grade} AS</h1>
+      </div>
+      <div className="  py-12 px-8 flex gap-4 h-max">
             {modules.map((element) => {
               return (
                 <SubjectCard

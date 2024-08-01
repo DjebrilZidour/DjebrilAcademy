@@ -6,48 +6,71 @@ const SemesterPage = () => {
   const onClickSemester = (semesterNumber) => {
     if (state.type === "co") {
       navigate("/dashboard/semester-detail", {
-        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink ,type:state.type, grade:state.grade },
+        state: {
+          moduleName: state.moduleName,
+          semesterNumber: semesterNumber,
+          imgUrl: state.imgUrl,
+          courseLink: state.courseLink,
+          type: state.type,
+          grade: state.grade,
+        },
       });
-    }else{
+    } else {
       navigate("/dashboard/exercice-preview", {
-        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink ,type:state.type, grade:state.grade },
+        state: {
+          moduleName: state.moduleName,
+          semesterNumber: semesterNumber,
+          imgUrl: state.imgUrl,
+          courseLink: state.courseLink,
+          type: state.type,
+          grade: state.grade,
+        },
       });
-      
     }
-   
   };
-  
+
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-4 py-28">
-      <h1 className="text-3xl "> {state.moduleName} </h1>
+    <>
+      <div className="flex justify-end w-full">
+        <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">
+          {state.grade} AS
+        </h1>
+      </div>
+      <section className="w-full flex flex-col items-center justify-center gap-4 pb-12">
+        <h1 className="text-4xl "> {state.moduleName} </h1>
+        <h2 className="text-xl capitalize py-4">
+          {" "}
+          merci de selectionner votre Triméstre !!
+        </h2>
 
-      <h1
-        onClick={() => {
-          onClickSemester(1);
-        }}
-        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
-      >
-        semster 1
-      </h1>
+        <h1
+          onClick={() => {
+            onClickSemester(1);
+          }}
+          className="text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+        >
+          Triméstre 1
+        </h1>
 
-      <h1
-        onClick={() => {
-          onClickSemester(2);
-        }}
-        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
-      >
-        semster 2
-      </h1>
+        <h1
+          onClick={() => {
+            onClickSemester(2);
+          }}
+          className="text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+        >
+          Triméstre 2
+        </h1>
 
-      <h1
-        onClick={() => {
-          onClickSemester(3);
-        }}
-        className="text-lg capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
-      >
-        semster 3
-      </h1>
-    </section>
+        <h1
+          onClick={() => {
+            onClickSemester(3);
+          }}
+          className="text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+        >
+          Triméstre 3
+        </h1>
+      </section>
+    </>
   );
 };
 

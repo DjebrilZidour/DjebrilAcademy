@@ -28,9 +28,10 @@ const CoursePreview = () => {
           <h1> {state.moduleName} </h1>
         </div>
 
-        <div className="text-2xl font-bold bg-green-100 px-4 w-1/5 h-full px-4 py-8 borde-0 rounded-tr-xl flex justify-start items-center">
+        <div className="text-2xl font-bold bg-green-100 px-4 w-1/5 h-full px-4 py-8 border-0 rounded-tr-xl flex justify-between items-center">
           {" "}
           <h1> Triméstre {state.semesterNumber} </h1>
+          <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">{state.grade}AS</h1>
         </div>
       </div>
       <div className="flex justify-center items-center bg-red-100 rounded-b-3xl shadow-xl">

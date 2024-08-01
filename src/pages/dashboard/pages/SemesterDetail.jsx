@@ -43,7 +43,7 @@ const CourseDetail = (props) => {
 const CourseTitles = (props)=>{
   const {state} = useLocation()
   const navigate = useNavigate()
-  console.log("hawlik",state.grade);
+
   const onClickCourse = ()=>{
     navigate("/dashboard/coursepreview", {
       state: { moduleName: state.moduleName, semesterNumber: state.semesterNumber ,imgUrl:state.imgUrl, idx:props.idx, type:props.type,grade:state.grade}
@@ -53,6 +53,7 @@ const CourseTitles = (props)=>{
 
 return(
   <>
+
   <div className="flex justify-between items-center  border-2 border-black rounded-xl p-4 w-full">
     <h1>{props.title}</h1>
     <Btn value="acsess course" onClick={onClickCourse}/>
@@ -84,9 +85,10 @@ const SemesterDetail = () => {
           <h1> {state.moduleName} </h1>
         </div>
 
-        <div className="text-2xl font-bold bg-green-100 px-4 w-1/5 h-full px-4 py-8  rounded-r-xl flex justify-start items-center">
+        <div className="text-2xl font-bold bg-green-100 px-4 w-1/5 h-full px-4 py-8  rounded-r-xl flex justify-between items-center">
           {" "}
           <h1> Triméstre {state.semesterNumber} </h1>
+          <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">{state.grade}AS</h1>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center w-full gap-4 ">
