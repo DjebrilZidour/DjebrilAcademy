@@ -36,6 +36,9 @@ const CoursePreview = () => {
         <h1 className="text-5xl py-4 capitalize">{course.courseTitle}</h1>
       </div>
     
+    <div className="flex justify-center">
+       
+    </div>
     </div>
     
   );
