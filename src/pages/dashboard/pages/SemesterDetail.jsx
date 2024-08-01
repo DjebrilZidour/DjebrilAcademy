@@ -45,14 +45,9 @@ const CourseTitles = (props)=>{
   const navigate = useNavigate()
   console.log(state.imgUrl);
   const onClickCourse = ()=>{
-    if (props.type === "co") {
-      navigate("/dashboard/coursepreview", {
-        state: { moduleName: state.moduleName, semesterNumber: state.semesterNumber ,imgUrl:state.imgUrl, idx:props.idx, type:props.type,}
-      });
-    }else{
-      navigate("/about")
-    }
-    
+    navigate("/dashboard/coursepreview", {
+      state: { moduleName: state.moduleName, semesterNumber: state.semesterNumber ,imgUrl:state.imgUrl, idx:props.idx, type:props.type,}
+    });
   }
 
 

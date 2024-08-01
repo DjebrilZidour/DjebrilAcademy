@@ -4,9 +4,17 @@ const SemesterPage = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
   const onClickSemester = (semesterNumber) => {
-    navigate("/dashboard/semester-detail", {
-      state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink ,type:state.type },
-    });
+    if (state.type === "co") {
+      navigate("/dashboard/semester-detail", {
+        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink ,type:state.type, },
+      });
+    }else{
+      navigate("/dashboard/exercice-preview", {
+        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink ,type:state.type, },
+      });
+      
+    }
+   
   };
   
   return (
