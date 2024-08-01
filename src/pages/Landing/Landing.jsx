@@ -7,12 +7,14 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Landing = () => {
   const navigate = useNavigate();
+  const videoSrc =
+    "https://www.youtube.com/embed/FYQ5OUbFv7I?autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1&loop=1&playlist=FYQ5OUbFv7I";
   return (
     <>
       <Navbar />
 
       <section className="flex items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20 mt-8">
-        <div className="px-3 w-full flex items-center justify-center">
+        <div className="px-3 w-full flex items-center justify-between gap-16">
           <div>
             <div className="mx-auto mb-8 max-w-lg text-center lg:mx-0  lg:text-left">
               <h2 className="capitalize text-4xl w-96">
@@ -33,20 +35,35 @@ const Landing = () => {
                 }}
               />
               <Link to="/about">
-              <button className="text-black font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200 px-4 ml-4">
-                Learn more
-              </button>
+                <button className="text-black font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200 px-4 ml-4">
+                  Learn more
+                </button>
               </Link>
-             
             </div>
           </div>
+     
+            <div
+              className=""
+              style={{
+                position: "relative",
+                width: "100%",
+                height: 0,
+                paddingBottom: "30%",
+              }}
+            >
+              <iframe className="border-2  border-white rounded-3xl"
+                src={videoSrc}
+                allow="autoplay; encrypted-media"
+                style={{
 
-          <div className="p-4 pl-8 ml ">
-            <img
-              className="w-full rounded-3xl"
-              src="https://images.unsplash.com/photo-1630983358494-96012d838b84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3R1ZHlpbmd8ZW58MHx8MHx8fDA%3D"
-              alt="hi"
-            />
+                  width: "120%",
+                  height: "120%",
+                  position: "absolute",
+                  left: 0,
+                  top: 0,
+                }}
+              ></iframe>
+        
           </div>
         </div>
       </section>
