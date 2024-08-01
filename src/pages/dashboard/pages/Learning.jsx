@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-
+const onClickLearning= ()=>{
+  useNavigate
+}
 const NavigateButton = (props) => {
   return (
     <Link to={props.path} c="/dashboard/learning-courses">
-      <button className="px-32 py-6 rounded-lg background hover:scale-105 duration-200">
+      <button onClick={onClickLearning} className="px-32 py-6 rounded-lg background hover:scale-105 duration-200">
         <h1 className="text-3xl cursor-pointer">{props.text}</h1>
       </button>
     </Link>

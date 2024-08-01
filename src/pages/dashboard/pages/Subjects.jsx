@@ -55,7 +55,7 @@ const modules = [
   // },
 ];
 
-const Subjects = () => {
+const Subjects = (props) => {
   return (
     <>
       
@@ -67,6 +67,7 @@ const Subjects = () => {
                   imageUrl={element.img}
                   subName={element.moduleName}
                   imgUrl={element.imgUrl}
+                  type={props.type}
 
                 />
               );

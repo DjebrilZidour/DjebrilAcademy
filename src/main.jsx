@@ -44,8 +44,8 @@ const router = createBrowserRouter([
     children: [
       { path: "/dashboard/home", element: <Default /> },
       { path: "/dashboard/learning-welcome", element: <Learning /> },
-      { path: "/dashboard/learning-courses", element: <Subjects /> },
-      { path: "/dashboard/learning-exc", element: <Subjects /> },
+      { path: "/dashboard/learning-courses", element: <Subjects type="co" /> },
+      { path: "/dashboard/learning-exc", element: <Subjects type="ex"/> },
       { path: "/dashboard/learning-progress", element: <LearningProcess /> },
       { path: "/dashboard/quizs", element: <Quizs /> },
       { path: "/dashboard/semesters", element: <SemesterPage /> },

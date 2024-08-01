@@ -9,7 +9,7 @@ const SubjectCard = (props) => {
         moduleName: props.subName,
         imgUrl: props.imgUrl,
         courseLink: props.courseLink,
-        st:"doros"
+        type: props.type
       },
     });
   };

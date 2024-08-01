@@ -45,9 +45,14 @@ const CourseTitles = (props)=>{
   const navigate = useNavigate()
   console.log(state.imgUrl);
   const onClickCourse = ()=>{
-    navigate("/dashboard/coursepreview", {
-      state: { moduleName: state.moduleName, semesterNumber: state.semesterNumber ,imgUrl:state.imgUrl, idx:props.idx, moh:1,}
-    });
+    if (props.type === "co") {
+      navigate("/dashboard/coursepreview", {
+        state: { moduleName: state.moduleName, semesterNumber: state.semesterNumber ,imgUrl:state.imgUrl, idx:props.idx, type:props.type,}
+      });
+    }else{
+      navigate("/about")
+    }
+    
   }
 
 
@@ -63,7 +68,7 @@ return(
 
 const SemesterDetail = () => {
   const { state } = useLocation();
-  const { moduleName, semesterNumber, imgUrl, courseLink } = state;
+  const { moduleName, semesterNumber, imgUrl, courseLink, type } = state;
   console.log(courseLink);
   const courses = fetchSemesterDetail(
     moduleName.toLowerCase(),
@@ -102,6 +107,7 @@ const SemesterDetail = () => {
             course={singleCourse.courseDetail}
             courseImage={singleCourse.courseImage}
             courseLink={singleCourse.courseLink}
+            type={type}
              
             />
           );
