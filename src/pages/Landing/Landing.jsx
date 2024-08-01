@@ -29,7 +29,7 @@ const Landing = () => {
               <Btn
                 value="Get Course/Exersice"
                 onClick={() => {
-                  navigate("/dashboard/learning-welcome");
+                  navigate("/dashboard/learning-grade");
                 }}
               />
               <Link to="/about">
