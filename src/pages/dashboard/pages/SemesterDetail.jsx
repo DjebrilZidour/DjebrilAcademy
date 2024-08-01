@@ -43,10 +43,10 @@ const CourseDetail = (props) => {
 const CourseTitles = (props)=>{
   const {state} = useLocation()
   const navigate = useNavigate()
-  console.log(state.imgUrl);
+  console.log("hawlik",state.grade);
   const onClickCourse = ()=>{
     navigate("/dashboard/coursepreview", {
-      state: { moduleName: state.moduleName, semesterNumber: state.semesterNumber ,imgUrl:state.imgUrl, idx:props.idx, type:props.type,}
+      state: { moduleName: state.moduleName, semesterNumber: state.semesterNumber ,imgUrl:state.imgUrl, idx:props.idx, type:props.type,grade:state.grade}
     });
   }
 

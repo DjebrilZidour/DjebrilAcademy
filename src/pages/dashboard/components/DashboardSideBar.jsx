@@ -45,7 +45,7 @@ const DashboardSideBar = () => {
           </div>
         </Link>
 
-        <Link to="/dashboard/learning-welcome">
+        <Link to="/dashboard/learning-grade">
           <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
             <img
               className="w-12 mx-2 px-1"

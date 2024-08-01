@@ -9,7 +9,8 @@ const SubjectCard = (props) => {
         moduleName: props.subName,
         imgUrl: props.imgUrl,
         courseLink: props.courseLink,
-        type: props.type
+        type: props.type,
+        grade: props.grade,
       },
     });
   };

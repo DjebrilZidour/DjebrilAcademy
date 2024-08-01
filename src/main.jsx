@@ -19,6 +19,7 @@ import SemesterDetail from "./pages/dashboard/pages/SemesterDetail";
 import Quizs from "./pages/dashboard/pages/Quizs";
 import CoursePreview from "./pages/dashboard/pages/CoursePreview";
 import ExPreview from "./pages/dashboard/pages/ExPreview";
+import Grade from "./pages/dashboard/pages/Grade";
 
 const isLogged = getIsUserLogged();
 
@@ -44,6 +45,7 @@ const router = createBrowserRouter([
     element: <Dashboard />,
     children: [
       { path: "/dashboard/home", element: <Default /> },
+      { path: "/dashboard/learning-grade", element: <Grade /> },
       { path: "/dashboard/learning-welcome", element: <Learning /> },
       { path: "/dashboard/learning-courses", element: <Subjects type="co" /> },
       { path: "/dashboard/learning-exc", element: <Subjects type="ex"/> },

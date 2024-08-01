@@ -15,6 +15,7 @@ const CoursePreview = () => {
   const index = state.idx + 1;
   console.log(state.imgUrl);
   const course = courseData[state.idx];
+  console.log("hawlik lanne", state.grade);
   return (
     <div className="  w-full  my-4 border-none rounded-xl pb-4 h-screen">
     
@@ -34,6 +35,7 @@ const CoursePreview = () => {
       </div>
       <div className="flex justify-center items-center bg-red-100 rounded-b-3xl shadow-xl">
         <h1 className="text-5xl py-4 capitalize">{course.courseTitle}</h1>
+        <h1 className="text-6xl text-red-500">marhba {state.grade} AS</h1>
       </div>
     
     <div className="flex justify-center">

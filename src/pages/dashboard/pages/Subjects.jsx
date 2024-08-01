@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 import Navbar from "../../../components/Navbar";
 import DashboardSideBar from "../components/DashboardSideBar";
 import SubjectCard from "../components/SubjectCard";
+import { useLocation } from "react-router";
 
 
 
@@ -56,6 +57,8 @@ const modules = [
 ];
 
 const Subjects = (props) => {
+  const{state}=useLocation()
+  
   return (
     <>
       
@@ -68,6 +71,7 @@ const Subjects = (props) => {
                   subName={element.moduleName}
                   imgUrl={element.imgUrl}
                   type={props.type}
+                  grade={state.grade}
 
                 />
               );

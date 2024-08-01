@@ -6,11 +6,11 @@ const SemesterPage = () => {
   const onClickSemester = (semesterNumber) => {
     if (state.type === "co") {
       navigate("/dashboard/semester-detail", {
-        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink ,type:state.type, },
+        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink ,type:state.type, grade:state.grade },
       });
     }else{
       navigate("/dashboard/exercice-preview", {
-        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink ,type:state.type, },
+        state: { moduleName: state.moduleName, semesterNumber: semesterNumber , imgUrl: state.imgUrl , courseLink: state.courseLink ,type:state.type, grade:state.grade },
       });
       
     }

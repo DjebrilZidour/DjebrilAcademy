@@ -4,19 +4,41 @@ const Grade = () => {
   const navigate = useNavigate();
   const { state } = useLocation;
   const onClickGrade = (grade) => {
+    console.log(grade);
     navigate("/dashboard/learning-welcome", {
       state: {
-        grade:grade
+        grade:grade,
       },
     });
   };
 
   return (
-    <section>
+    <section className="flex flex-col ">
       <h1>welcome to Grade selector</h1>
-      <button onClick={onClickGrade(1)}>1as</button>
-      <button onClick={onClickGrade(2)}>2as</button>
-      <button onClick={onClickGrade(3)}>3as</button>
+      <button className="p-4" onClick={()=>{
+        
+        navigate("/dashboard/learning-welcome", {
+            state: {
+              grade:1,
+            },
+          })
+      }}>1as</button>
+      <button className="p-4" onClick={()=>{
+       
+        navigate("/dashboard/learning-welcome", {
+            state: {
+              grade:2,
+            },
+          })
+      }}>2as</button>
+      <button className="p-4"  onClick={()=>{
+    
+        navigate("/dashboard/learning-welcome", {
+            state: {
+              grade:3,
+            },
+          })
+      }}>3as</button>
     </section>
   );
 };
