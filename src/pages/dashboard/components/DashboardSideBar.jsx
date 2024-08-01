@@ -55,46 +55,26 @@ const DashboardSideBar = () => {
             <h2>learning</h2>
           </div>
         </Link>
-
         <Link to="/dashboard/learning-progress">
           <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
             <img
               className="w-12 mx-2 px-1"
-              src="https://cdn-icons-png.flaticon.com/128/1535/1535012.png"
+              src="https://cdn-icons-png.flaticon.com/128/5948/5948543.png"
               alt=""
             />
-            <h2>Learning progress</h2>
+            <h2>Interesting vidéos</h2>
           </div>
         </Link>
-
-        <Link to="">
+        <Link to="/dashboard/learning-progress">
           <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
             <img
               className="w-12 mx-2 px-1"
-              src="https://cdn-icons-png.flaticon.com/128/5677/5677910.png"
+              src="https://cdn-icons-png.flaticon.com/128/3208/3208799.png"
               alt=""
             />
-            <h2>Quizs</h2>
+            <h2>Educational news</h2>
           </div>
         </Link>
-
-        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
-          <img
-            className="w-12 mx-2 px-1"
-            src="https://cdn-icons-png.flaticon.com/128/2157/2157114.png"
-            alt=""
-          />
-          <h2>Intelegent games</h2>
-        </div>
-
-        <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
-          <img
-            className="w-12 mx-2 px-1"
-            src="https://cdn-icons-png.flaticon.com/128/5879/5879073.png"
-            alt=""
-          />
-          <h2>Settings</h2>
-        </div>
 
         <div className="flex justify-end items-center">
           <div className="m-4 flex justify-center items-center bg-red-500 w-44 px-4 py-2 rounded-xl">
@@ -147,12 +127,11 @@ const DashboardSideBar = () => {
             />
           </Link>
           <Link to="/dashboard/learning-progress">
-          <img
-            className="w-12 m-4"
-            src="https://cdn-icons-png.flaticon.com/128/1535/1535012.png"
-          />
+            <img
+              className="w-12 m-4"
+              src="https://cdn-icons-png.flaticon.com/128/1535/1535012.png"
+            />
           </Link>
-         
 
           <img
             className="w-12 m-4"
