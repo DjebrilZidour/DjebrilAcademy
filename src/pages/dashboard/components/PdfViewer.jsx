@@ -1,17 +1,10 @@
 // src/components/PdfViewer.js
 import React from 'react';
-import { Worker, Viewer } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
-const PdfViewer = ({ pdfUrl }) => {
-    return (
-        <div style={{ height: '750px', width: '100%' }}>
-            <Worker workerUrl={`https://unpkg.com/pdfjs-dist@2.12.313/build/pdf.worker.min.js`}>
-                <Viewer fileUrl={pdfUrl} />
-            </Worker>
-        </div>
-    );
+
+const PdfViewer = () => {
+    //TODO START THE PDF VIEWER and finish it 
+    
 };
 
 export default PdfViewer;
