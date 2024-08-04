@@ -79,13 +79,16 @@ const UserPopUp = (props) => {
 };
 const Nav = (props)=>{
   return(
-    <div className="flex flex-col items-center justify-start absolute  right-14 top-16 bg-white z-10 shadow-2xl rounded-2xl p-5  "
-    style={{ display: props.isNavOpened ? "block" : "none" ,}}>
-      <ul className="font-bold">
+    <div className="sm:hidden">
+
+      <div>
+      <ul className="flex flex-col items-center justify-start absolute  right-14 top-16 bg-white z-10 shadow-2xl rounded-2xl p-5  font-bold sm:hidden"  style={{ display: props.isNavOpened ? "block" : "none" ,}}>
         <li>Home</li>
         <li>About</li>
         <li>Dashboard</li>
       </ul>
+      </div>
+     
     </div>
   )
 }
