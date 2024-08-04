@@ -81,8 +81,16 @@ const Nav = (props)=>{
   return(
     <div className="sm:hidden">
 
-      <div>
-      <ul className="flex flex-col items-center justify-start absolute  right-14 top-16 bg-white z-10 shadow-2xl rounded-2xl p-5  font-bold sm:hidden"  style={{ display: props.isNavOpened ? "block" : "none" ,}}>
+      <div> //TODO ADD VALID LINKS
+      <ul className="flex flex-col items-center justify-start absolute   right-14 top-24 bg-white z-10 shadow-2xl rounded-2xl p-6   font-bold sm:hidden"  style={{ display: props.isNavOpened ? "block" : "none" ,}}>
+      <img
+        onClick={() => {
+          props.switchNavState(false);
+        }}
+        className="w-4 absolute right-3 top-2 cursor-pointer"
+        src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png"
+        alt=""
+      />
         <li>Home</li>
         <li>About</li>
         <li>Dashboard</li>

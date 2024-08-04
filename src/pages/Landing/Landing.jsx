@@ -7,12 +7,11 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Landing = () => {
   const navigate = useNavigate();
-  const videoSrc =
-    "https://www.youtube.com/embed/FYQ5OUbFv7I?autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1&loop=1&playlist=FYQ5OUbFv7I";
+  
   return (
     <>
       <Navbar />
-s
+
       <section className="flex items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20 mt-8">
         <div className="px-3 w-full flex items-center justify-between gap-16 md:flex-row flex-col">
           <div> 
