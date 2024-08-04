@@ -78,10 +78,11 @@ const UserPopUp = (props) => {
 
 };
 const Nav = (props)=>{
+  const navigate = useNavigate()
   return(
     <div className="sm:hidden">
 
-      <div> //TODO ADD VALID LINKS
+      <div> 
       <ul className="flex flex-col items-center justify-start absolute   right-14 top-24 bg-white z-10 shadow-2xl rounded-2xl p-6   font-bold sm:hidden"  style={{ display: props.isNavOpened ? "block" : "none" ,}}>
       <img
         onClick={() => {
@@ -91,9 +92,9 @@ const Nav = (props)=>{
         src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png"
         alt=""
       />
-        <li>Home</li>
-        <li>About</li>
-        <li>Dashboard</li>
+     <li className="cursor-pointer" onClick={()=>{navigate("/")}}>Home</li>
+      <li className="cursor-pointer" onClick={()=>{navigate("/about")}}>About</li>
+        <li className="cursor-pointer" onClick={()=>{navigate("/dashboard/home")}}>Dashboard</li>
       </ul>
       </div>
      
