@@ -127,7 +127,7 @@ s
         </h1>
       </section> */}
 
-      <section className="flex flex-col justify-center items-center gap-4 my-12 ">
+      <section className="flex flex-col justify-center items-center gap-4 my-12 mx-2">
         <h1 className="text-3xl">Our ceo</h1>
         <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row">
           <TeamCard

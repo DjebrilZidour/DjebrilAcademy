@@ -79,11 +79,12 @@ const UserPopUp = (props) => {
 };
 const Nav = (props)=>{
   return(
-    <div>
-      <ul>
-        <li>hi1</li>
-        <li>hi2</li>
-        <li>hi3</li>
+    <div className="flex flex-col items-center justify-start absolute  right-14 top-16 bg-white z-10 shadow-2xl rounded-2xl p-5  "
+    style={{ display: props.isNavOpened ? "block" : "none" ,}}>
+      <ul className="font-bold">
+        <li>Home</li>
+        <li>About</li>
+        <li>Dashboard</li>
       </ul>
     </div>
   )
@@ -96,6 +97,8 @@ const Navbar = () => {
 
   return (
     <>
+     <Nav isNavOpened={isNavOpened} switchNavState={switchNavState}/>
+
       <UserPopUp
         isPopUpClosed={isPopUpClosed}
         switchPopUpState={switchPopUpState}
@@ -134,6 +137,7 @@ const Navbar = () => {
                 Dashboard
               </li>
             </Link>
+            
 
             <div className="hidden">
             {!isUserLogged ? (
@@ -164,6 +168,16 @@ const Navbar = () => {
               </div>
             )}
             </div>
+          </div>
+          <div className="flex sm:hidden">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1828/1828765.png"
+            alt=""
+            className="w-8 m-2"
+            onClick={()=>{
+              switchNavState(!isNavOpened)
+            }}
+          />
           </div>
         </ul>
       </nav>
