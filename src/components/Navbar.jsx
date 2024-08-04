@@ -77,11 +77,22 @@ const UserPopUp = (props) => {
   );
 
 };
-
+const Nav = (props)=>{
+  return(
+    <div>
+      <ul>
+        <li>hi1</li>
+        <li>hi2</li>
+        <li>hi3</li>
+      </ul>
+    </div>
+  )
+}
 let isUserLogged = getIsUserLogged();
 
 const Navbar = () => {
   const [isPopUpClosed, switchPopUpState] = useState(true);
+  const [isNavOpened,switchNavState] = useState(false)
 
   return (
     <>
