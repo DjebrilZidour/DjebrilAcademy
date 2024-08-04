@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="background px-8 py-16 mt-8">
-      <section className="flex justify-between items-center p-4 mx-20">
+    <footer className="background px-8 py-16 mt-8 ">
+      <section className="flex justify-between items-center p-4 mx-20 flex-col gap-8 md:flex-row md:gap-0">
         <div className=" flex flex-col justify-center items-start">
           <h1 className="hover:underline cursor-pointer">Home</h1>
           <h1 className="hover:underline cursor-pointer">about</h1>

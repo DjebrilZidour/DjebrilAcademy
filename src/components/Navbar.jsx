@@ -93,7 +93,7 @@ const Navbar = () => {
 
       <nav
         style={{ backgroundColor: "#61faaf" }}
-        className="shadow-lg px-16 py-2 rounded-bl-3xl"
+        className="shadow-lg px-16 py-2 rounded-bl-3xl "
       >
         <ul className="list-none flex justify-between items-center">
           <li className="flex justify-center items-center gap-2">
@@ -124,6 +124,7 @@ const Navbar = () => {
               </li>
             </Link>
 
+            <div className="hidden">
             {!isUserLogged ? (
               <div className="flex justify-between items-center ml-4 ">
                 <Link to="/login">
@@ -151,6 +152,7 @@ const Navbar = () => {
                 />
               </div>
             )}
+            </div>
           </div>
         </ul>
       </nav>

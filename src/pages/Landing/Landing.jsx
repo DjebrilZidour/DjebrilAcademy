@@ -12,12 +12,12 @@ const Landing = () => {
   return (
     <>
       <Navbar />
-
+s
       <section className="flex items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20 mt-8">
-        <div className="px-3 w-full flex items-center justify-between gap-16">
-          <div>
+        <div className="px-3 w-full flex items-center justify-between gap-16 md:flex-row flex-col">
+          <div> 
             <div className="mx-auto mb-8 max-w-lg text-center lg:mx-0  lg:text-left">
-              <h2 className="capitalize text-4xl w-96">
+              <h2 className="capitalize text-4xl w-96 text-start">
                 welcome to <br /> <span className="text-green-400">Djebril Academy</span> <br />
                 your first platform to fix your mathemathics and phisics <span className="text-red-400">problems</span> 
               </h2>
@@ -27,7 +27,7 @@ const Landing = () => {
               </p>
             </div>
 
-            <div className="text-center lg:text-left">
+            <div className="text-center md:text-left ">
               <Btn
                 value="Get Course/Exersice"
                 onClick={() => {
@@ -75,7 +75,7 @@ const Landing = () => {
         <h1 className="text-3xl font-semibold text-center ">
           what is our mission
         </h1>
-        <div className="flex justify-between items-center mx-28 my-2">
+        <div className="flex justify-between items-center mx-12 lg:mx-28 my-2 flex-col md:flex-row gap-4 md:gap-0">
           <div className="flex flex-col items-center justify-center">
             <img
               className="w-20"
@@ -87,7 +87,7 @@ const Landing = () => {
             </h1>
           </div>
           <img
-            className="w-20"
+            className="w-12 md:w-20"
             src="https://cdn-icons-png.flaticon.com/128/1294/1294758.png"
             alt=""
           />
@@ -102,7 +102,7 @@ const Landing = () => {
             </h1>
           </div>
           <img
-            className="w-20"
+            className="w-12 md:w-20"
             src="https://cdn-icons-png.flaticon.com/128/1294/1294758.png"
             alt=""
           />
@@ -127,9 +127,9 @@ const Landing = () => {
         </h1>
       </section> */}
 
-      <section className="flex flex-col justify-center items-center gap-4 my-12">
+      <section className="flex flex-col justify-center items-center gap-4 my-12 ">
         <h1 className="text-3xl">Our ceo</h1>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row">
           <TeamCard
             name="ZIDOUR Djebril"
             description="DJEBRIl ZIDOUR the founder of this ambicious platform "
