@@ -1,6 +1,7 @@
 import { useLocation } from "react-router";
 import { fetchSemesterDetail } from "../../../api";
 import Btn from "../../../components/Atomic/Btn";
+import PdfPreview from "../components/PdfPreview";
 const CoursePreview = () => {
   const { state } = useLocation();
   const { moduleName, semesterNumber } = state;
@@ -16,6 +17,7 @@ const CoursePreview = () => {
   console.log(state.imgUrl);
   const course = courseData[state.idx];
   console.log("hawlik lanne", state.grade);
+  const pdfUrl = "https://www.deyeshigh.co.uk/downloads/literacy/world_book_day/roald_dahl_s_tales_of_the_unexpected.pdf"
   return (
     <>
       <div className=" w-full rounded-xl flex justify-between items-center h-32  drop-shadow-xl">
@@ -57,6 +59,10 @@ const CoursePreview = () => {
         </div>
         <Btn value="GET PDF FILE" />
       </div>
+      <div className="w-full">
+      <h1>PDF Preview</h1>
+      <PdfPreview pdfUrl={pdfUrl} />
+    </div>
     </>
   );
 };
