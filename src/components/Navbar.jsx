@@ -83,7 +83,7 @@ const Nav = (props)=>{
     <div className="sm:hidden">
 
       <div> 
-      <ul className="flex flex-col items-center justify-start absolute   right-14 top-24 bg-white z-10 shadow-2xl rounded-2xl p-6   font-bold sm:hidden"  style={{ display: props.isNavOpened ? "block" : "none" ,}}>
+      <ul className="flex flex-col items-center justify-start absolute   right-14 top-16 bg-white z-10 shadow-2xl rounded-2xl p-6   font-bold sm:hidden"  style={{ display: props.isNavOpened ? "block" : "none" ,}}>
       <img
         onClick={() => {
           props.switchNavState(false);
