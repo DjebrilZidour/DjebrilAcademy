@@ -8,7 +8,7 @@ const PdfPreview = ({ pdfUrl }) => {
   };
 
   return (
-    <div style={{ display: 'flex', width: '80%', margin: '0 auto', border: '1px solid #ddd' }}>
+    <div className="my-8" style={{ display: 'flex', width: '80%', margin: '0 auto', border: '1px solid #ddd' }}>
       {/* Sidebar (conditionally rendered) */}
       {showSidebar && (
         <div style={{ width: '250px', borderRight: '1px solid #ddd', padding: '10px' }}>
@@ -17,7 +17,6 @@ const PdfPreview = ({ pdfUrl }) => {
         </div>
       )}
       
-      {/* PDF Viewer */}
       <div style={{ flex: 1, height: '600px', position: 'relative' }}>
         <iframe
           src={pdfUrl}
@@ -28,8 +27,7 @@ const PdfPreview = ({ pdfUrl }) => {
           }}
         ></iframe>
       </div>
-      
-      {/* Toggle Sidebar Button */}
+   
       <button
         onClick={toggleSidebar}
         style={{

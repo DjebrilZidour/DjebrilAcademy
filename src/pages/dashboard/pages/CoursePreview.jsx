@@ -17,7 +17,7 @@ const CoursePreview = () => {
   console.log(state.imgUrl);
   const course = courseData[state.idx];
   console.log("hawlik lanne", state.grade);
-  const pdfUrl = "https://www.deyeshigh.co.uk/downloads/literacy/world_book_day/roald_dahl_s_tales_of_the_unexpected.pdf"
+  const pdfUrl = "https://www.ency-education.com/uploads/3/0/9/3/309326/french-2am20-1trim-d1.pdf"
   return (
     <>
       <div className=" w-full rounded-xl flex justify-between items-center h-32  drop-shadow-xl">
@@ -60,7 +60,6 @@ const CoursePreview = () => {
         <Btn value="GET PDF FILE" />
       </div>
       <div className="w-full">
-      <h1>PDF Preview</h1> 
       <PdfPreview pdfUrl={pdfUrl} />
     </div>
     </>
