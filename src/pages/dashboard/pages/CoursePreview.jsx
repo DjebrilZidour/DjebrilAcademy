@@ -18,6 +18,7 @@ const CoursePreview = () => {
   const course = courseData[state.idx];
   console.log("hawlik lanne", state.grade);
   const pdfUrl = "https://www.ency-education.com/uploads/3/0/9/3/309326/french-2am20-1trim-d1.pdf"
+  const drivePreviewUrl = "https://drive.google.com/file/d/1SyVIfAJ2LcfCKyaQ1dg7-bRPOA3p77YV/preview"
   return (
     <>
       <div className=" w-full rounded-xl flex justify-between items-center h-32  drop-shadow-xl">
