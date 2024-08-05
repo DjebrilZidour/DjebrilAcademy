@@ -8,7 +8,7 @@ const PdfPreview = ({ pdfUrl }) => {
   };
 
   return (
-    <div className="my-8" style={{ display: 'flex', width: '80%', margin: '0 auto', border: '1px solid #ddd' }}>
+    <div className="my-8" style={{ display: 'flex', width: '80%', margin: '0 auto', border:'none'}}>
       {/* Sidebar (conditionally rendered) */}
       {showSidebar && (
         <div style={{ width: '250px', borderRight: '1px solid #ddd', padding: '10px' }}>
@@ -17,13 +17,14 @@ const PdfPreview = ({ pdfUrl }) => {
         </div>
       )}
       
-      <div style={{ flex: 1, height: '600px', position: 'relative' }}>
+      <div style={{ flex: 1, height: '600px', position: 'relative',border:'none' }}>
         <iframe
+        className='rounded-3xl border-none'
           src={pdfUrl}
           style={{
             width: '100%',
             height: '100%',
-            border: 'none'
+            border: '0'
           }}
         ></iframe>
       </div>

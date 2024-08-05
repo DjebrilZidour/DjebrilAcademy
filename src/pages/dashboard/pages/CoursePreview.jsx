@@ -60,7 +60,7 @@ const CoursePreview = () => {
         </div>
         <Btn value="GET PDF FILE" />
       </div>
-      <div className="w-full">
+      <div className="w-full my-12">
       <PdfPreview pdfUrl={pdfUrl} />
     </div>
     </>
