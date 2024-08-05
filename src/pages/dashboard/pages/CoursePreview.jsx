@@ -16,7 +16,7 @@ const CoursePreview = () => {
   const index = state.idx + 1;
   console.log(state.imgUrl);
   const course = courseData[state.idx];
-  console.log("hawlik lanne", state.grade);
+console.log(courseData[0]);
   const pdfUrl = "https://www.ency-education.com/uploads/3/0/9/3/309326/french-2am20-1trim-d1.pdf"
   const drivePreviewUrl = "https://drive.google.com/file/d/1SyVIfAJ2LcfCKyaQ1dg7-bRPOA3p77YV/preview"
   return (
