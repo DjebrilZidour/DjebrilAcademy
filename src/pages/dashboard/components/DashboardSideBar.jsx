@@ -98,11 +98,11 @@ const DashboardSideBar = () => {
         </div>
       </section>
 
-      <section className="" style={{ display: BarClosed ? "block" : "none" }}>
+      <section style={{ display: BarClosed ? "block" : "none" }}>
         <div className="flex justify-center items-center gap-4 flex-col m-4 w-24 border-2 rounded-2xl py-4">
           <div
             style={{ backgroundColor: "#61faaf" }}
-            className="flex items-center justify-end   p-4 rounded-full cursor-pointer"
+            className="flex items-center justify-end p-4 rounded-full cursor-pointer"
           >
             <img
               className="w-8 "
