@@ -120,7 +120,7 @@ const DashboardSideBar = () => {
             />
           </Link>
 
-          <Link to="/dashboard/learning-welcome">
+          <Link to="/dashboard/learning-grade">
             <img
               className="w-10 m-4"
               src="https://cdn-icons-png.flaticon.com/128/4185/4185218.png"
@@ -129,23 +129,14 @@ const DashboardSideBar = () => {
           <Link to="/dashboard/learning-progress">
             <img
               className="w-12 m-4"
-              src="https://cdn-icons-png.flaticon.com/128/1535/1535012.png"
+              src="https://cdn-icons-png.flaticon.com/128/5948/5948543.png"
             />
           </Link>
 
+        
           <img
             className="w-12 m-4"
-            src="https://cdn-icons-png.flaticon.com/128/5677/5677910.png"
-            alt=""
-          />
-
-          <img
-            className="w-12 m-4"
-            src="https://cdn-icons-png.flaticon.com/128/2157/2157114.png"
-          />
-          <img
-            className="w-12 m-4"
-            src="https://cdn-icons-png.flaticon.com/128/5879/5879073.png"
+            src="https://cdn-icons-png.flaticon.com/128/3208/3208799.png"
           />
           <div className="rounded-full p-4 bg-red-500">
             <img
