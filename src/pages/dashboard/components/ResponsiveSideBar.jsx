@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const ResponsiveSideBar = ()=>{
     return(
         <section className="w-full">
-      <div className="flex justify-center items-center gap-4  m-4  border-2 border-green-400 rounded-2xl py-4 px-4">
+      <div className="flex justify-center items-center gap-4  m-4 bg-green-200 border-2 border-green-400 rounded-2xl py-4 px-4">
          
 
           <Link  to="/dashboard/home">
