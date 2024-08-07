@@ -4,6 +4,7 @@ import DashboardSideBar from "./components/DashboardSideBar";
 import Navbar from "../../components/Navbar";
 import Btn from "../../components/Atomic/Btn";
 import Input from "../../components/Atomic/Input";
+import ResponsiveSideBar from "./components/ResponsiveSideBar";
 
 const TodoList = () => {
   const [typedTask, setTypedTask] = useState("");
@@ -75,11 +76,14 @@ const Dashboard = () => {
       <Navbar />
 
       <section className="flex items-start justify-between">
-        <div>
+        <div className="hidden lg:flex">
           <DashboardSideBar />
         </div>
-
-        <div className="border-4 p-4 border-gray mx-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50">
+        
+        <div className="border-4 p-4 border-gray lg:mx-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50">
+          <div className="md:hidden">
+          <ResponsiveSideBar />
+        </div>
           <Outlet />
         </div>
       </section>

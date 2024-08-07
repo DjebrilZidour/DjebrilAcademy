@@ -133,7 +133,6 @@ const DashboardSideBar = () => {
             />
           </Link>
 
-        
           <img
             className="w-12 m-4"
             src="https://cdn-icons-png.flaticon.com/128/3208/3208799.png"
@@ -153,7 +152,7 @@ const DashboardSideBar = () => {
           </div>
         </div>
       </section>
-      
+     
     </>
   );
 };
