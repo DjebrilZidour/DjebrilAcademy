@@ -122,7 +122,7 @@ const DashboardSideBar = () => {
 
           <Link to="/dashboard/learning-grade">
             <img
-              className="w-10 m-4"
+              className="w-14 m-2"
               src="https://cdn-icons-png.flaticon.com/128/4185/4185218.png"
             />
           </Link>
@@ -153,6 +153,7 @@ const DashboardSideBar = () => {
           </div>
         </div>
       </section>
+      
     </>
   );
 };
