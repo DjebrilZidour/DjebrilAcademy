@@ -32,13 +32,13 @@ const SemesterPage = () => {
   return (
     <>
       <div className="flex justify-end w-full">
-        <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">
+        <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full mr-4">
           {state.grade} AS
         </h1>
       </div>
       <section className="w-full flex flex-col items-center justify-center gap-4 pb-12">
         <h1 className="text-4xl "> {state.moduleName} </h1>
-        <h2 className="text-xl capitalize py-4">
+        <h2 className="text-lg md:text-xl capitalize py-4">
           {" "}
           merci de selectionner votre Triméstre !!
         </h2>
@@ -47,7 +47,7 @@ const SemesterPage = () => {
           onClick={() => {
             onClickSemester(1);
           }}
-          className="text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+          className="text-lg md:text-2xl   capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
           Triméstre 1
         </h1>
@@ -56,7 +56,7 @@ const SemesterPage = () => {
           onClick={() => {
             onClickSemester(2);
           }}
-          className="text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+          className="text-lg md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
           Triméstre 2
         </h1>
@@ -65,7 +65,7 @@ const SemesterPage = () => {
           onClick={() => {
             onClickSemester(3);
           }}
-          className="text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+          className="text-lg md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
           Triméstre 3
         </h1>

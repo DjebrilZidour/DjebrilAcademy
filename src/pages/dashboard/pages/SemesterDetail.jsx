@@ -8,9 +8,7 @@ const CourseDetail = (props) => {
   const { title, course, courseImage, courseLink } = props;
 
   return (
-    
     <div className="  w-full  my-4 border-2 border-gray rounded-xl pb-4 ">
-
       <div className="font-bold  p-4 w-full rounded-t-xl background ">
         <h1 className="text-xl capitalize">{title}</h1>
       </div>
@@ -38,28 +36,31 @@ const CourseDetail = (props) => {
   );
 };
 
+const CourseTitles = (props) => {
+  const { state } = useLocation();
+  const navigate = useNavigate();
 
-
-const CourseTitles = (props)=>{
-  const {state} = useLocation()
-  const navigate = useNavigate()
-
-  const onClickCourse = ()=>{
+  const onClickCourse = () => {
     navigate("/dashboard/coursepreview", {
-      state: { moduleName: state.moduleName, semesterNumber: state.semesterNumber ,imgUrl:state.imgUrl, idx:props.idx, type:props.type,grade:state.grade}
+      state: {
+        moduleName: state.moduleName,
+        semesterNumber: state.semesterNumber,
+        imgUrl: state.imgUrl,
+        idx: props.idx,
+        type: props.type,
+        grade: state.grade,
+      },
     });
-  }
+  };
 
-
-return(
-  <>
-
-  <div className="flex justify-between items-center  border-2 border-black rounded-xl p-4 w-full">
-    <h1>{props.title}</h1>
-    <Btn value="acsess course" onClick={onClickCourse}/>
-  </div>
-  </>
-)
+  return (
+    <>
+      <div className="flex justify-between items-center  border-2 border-black rounded-xl p-4 w-full">
+        <h1>{props.title}</h1>
+        <Btn value="acsess course" onClick={onClickCourse} />
+      </div>
+    </>
+  );
 };
 
 const SemesterDetail = () => {
@@ -88,32 +89,32 @@ const SemesterDetail = () => {
         <div className="text-2xl font-bold bg-green-100 px-4 w-1/5 h-full px-4 py-8  rounded-r-xl flex justify-between items-center">
           {" "}
           <h1> Triméstre {state.semesterNumber} </h1>
-          <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">{state.grade}AS</h1>
+          <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">
+            {state.grade}AS
+          </h1>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center w-full gap-4 ">
-      {courses.length > 0 ? (
-        courses.map((singleCourse, idx) => {
-          return (
-            <CourseTitles
-            idx={idx}
-            key={idx}
-            moduleName={moduleName}
-            semesterNumber={semesterNumber}
-            title={singleCourse.courseTitle}
-            course={singleCourse.courseDetail}
-            courseImage={singleCourse.courseImage}
-            courseLink={singleCourse.courseLink}
-            type={type}
-             
-            />
-          );
-        })
-      ) : (
-        <p className="text-red-400 ">no content</p>
-      )}
+        {courses.length > 0 ? (
+          courses.map((singleCourse, idx) => {
+            return (
+              <CourseTitles
+                idx={idx}
+                key={idx}
+                moduleName={moduleName}
+                semesterNumber={semesterNumber}
+                title={singleCourse.courseTitle}
+                course={singleCourse.courseDetail}
+                courseImage={singleCourse.courseImage}
+                courseLink={singleCourse.courseLink}
+                type={type}
+              />
+            );
+          })
+        ) : (
+          <p className="text-red-400 ">no content</p>
+        )}
       </div>
-     
     </div>
   );
 };
