@@ -21,7 +21,7 @@ console.log(courseData[0]);
   const drivePreviewUrl = "https://drive.google.com/file/d/1SyVIfAJ2LcfCKyaQ1dg7-bRPOA3p77YV/preview"
   return (
     <>
-      <div className=" w-full rounded-xl flex justify-between items-center h-32  drop-shadow-xl">
+      <div className="rounded-xl w-full rounded-xl flex md:flex-row flex-col justify-between items-center h-64 md:mb-16 drop-shadow-2xl">
         <div
           style={{ backgroundImage: `url(${state.imgUrl})` }}
           className="text-5xl text-white font-bold bg-cover  py-4 w-4/5 h-full px-4 py-8  rounded-tl-xl flex justify-start items-center"
@@ -30,20 +30,21 @@ console.log(courseData[0]);
           <h1> {state.moduleName} </h1>
         </div>
 
-        <div className="text-2xl font-bold bg-green-100 px-4 w-1/5 h-full px-4 py-8 border-0 rounded-tr-xl flex justify-between items-center">
+        <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-1/5 md:h-full px-4 py-2 md:py-8  rounded-b-xl flex justify-between items-center">
           {" "}
           <h1> Triméstre {state.semesterNumber} </h1>
-          <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">
+          <h1 className="text-3xl uppercase background border-black border-2 px-2 py-2 md:py-5 cursor-pointer rounded-full ">
             {state.grade}AS
           </h1>
         </div>
+        
       </div>
-      <div className="flex justify-center items-center bg-red-100 rounded-b-3xl shadow-xl w-full">
-        <h1 className="text-5xl py-4 capitalize">{course.courseTitle}</h1>
+      <div className="flex justify-center w-4/5 items-center bg-red-100 rounded-b-3xl shadow-xl md:w-full">
+        <h1 className="md:text-5xl text-4xl text-center py-4 capitalize">{course.courseTitle}</h1>
       </div>
       <div className="  w-full   border-none rounded-xl my-8 flex justify-center items-center flex-col">
-        <div className="flex justify-between items-center w-full">
-          <div className="my-12 mx-8 flex flex-col justify-center items-start gap-4 w-1/2">
+        <div className="flex-col md:flex-row justify-between items-center w-full">
+          <div className="my-12 mx-2 flex flex-col justify-center items-start gap-4 w-1/2">
             <h1 className="text-6xl text-red-500 capitalize">
               Description de Cours
             </h1>
