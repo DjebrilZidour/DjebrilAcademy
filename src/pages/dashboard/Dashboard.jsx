@@ -97,7 +97,8 @@ export default Dashboard;
 export const Default = () => {
   return (
     <>
-      <div className="border-2 border-black rounded-2xl px-4 py-8 w-full flex justify-center items-center rounded-3xl gap-6 ">
+    <div className="flex-col md:flex-row">
+    <div className="border-2 border-black rounded-2xl px-4 py-8 md:w-full flex justify-center items-center rounded-3xl gap-6 ">
         <div className="w-4/5 border-2 border-gray rounded-2xl">
           <div className="w-4/5 bg-green-300 w-full border-2 p-4 rounded-2xl"></div>
         </div>
@@ -120,8 +121,8 @@ export const Default = () => {
             </div>
           </div>
         </div> */}
-        <TodoList />
-        //! TODO LIST
+       
+  
         <div className="border-2 rounded-3xl p-6 ">
           <div className=" flex flex-col justify-center items-center">
             <h1 className="text-2xl">Still for your final exam</h1>
@@ -154,6 +155,8 @@ export const Default = () => {
           </div>
         </div>
       </div>
+    </div>
+    <TodoList />
     </>
   );
 };
