@@ -80,7 +80,7 @@ const Dashboard = () => {
           <DashboardSideBar />
         </div>
         
-        <div className="border-4 border-gray lg:mx-4 mb-4 pb-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50 m-4">
+        <div className="border-4 border-gray lg:mx-4 mb-4 pb-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50 m-2 p-2">
           <div className="md:hidden">
           <ResponsiveSideBar />
         </div>
@@ -97,14 +97,8 @@ export default Dashboard;
 export const Default = () => {
   return (
     <>
-    <div className="flex-col md:flex-row">
-    <div className="border-2 border-black rounded-2xl px-4 py-8 md:w-full flex justify-center items-center rounded-3xl gap-6 ">
-        <div className="w-4/5 border-2 border-gray rounded-2xl">
-          <div className="w-4/5 bg-green-300 w-full border-2 p-4 rounded-2xl"></div>
-        </div>
-
-        <h1>63%</h1>
-      </div>
+    <div className=" flex md:gap-4 flex-col md:flex-row">
+   
       <div className="flex justify-between items-start gap-4 mt-4 w-full h-full ">
         {/* <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-96">
           <div className="flex flex-col justify-center items-center">
@@ -155,8 +149,15 @@ export const Default = () => {
           </div>
         </div>
       </div>
-    </div>
     <TodoList />
+    <div className="border-2 border-black rounded-2xl px-4 py-8 md:w-full flex justify-center items-center rounded-3xl gap-6 ">
+        <div className="w-4/5 border-2 border-gray rounded-2xl">
+          <div className="w-4/5 bg-green-300 w-full border-2 p-4 rounded-2xl"></div>
+        </div>
+
+        <h1>63%</h1>
+      </div>
+    </div>
     </>
   );
 };
