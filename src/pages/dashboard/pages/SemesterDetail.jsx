@@ -55,9 +55,12 @@ const CourseTitles = (props) => {
 
   return (
     <>
-      <div className="flex justify-between items-center  border-2 border-black rounded-xl p-4 w-full">
-        <h1>{props.title}</h1>
+      <div className="  border-2 border-black rounded-xl p-4 w-4/5 ">
+        <div className="flex  flex-col md:flex-row justify-center md:justify-between items-center  gap-4">
+
+        <h1 className="capitalize">{props.title}</h1>
         <Btn value="acsess course" onClick={onClickCourse} />
+        </div>
       </div>
     </>
   );
@@ -77,16 +80,16 @@ const SemesterDetail = () => {
 
   return (
     <div className="w-full">
-      <div className=" rounded-xl w-full rounded-xl flex justify-between items-center h-64 mb-16 drop-shadow-xl">
+      <div className=" rounded-xl w-full rounded-xl flex md:flex-row flex-col justify-between items-center h-64 mb-16 drop-shadow-2xl">
         <div
           style={{ backgroundImage: `url(${officialLink})` }}
-          className="text-5xl text-white font-bold bg-cover  py-4 w-4/5 h-full px-4 py-8  rounded-l-xl flex justify-start items-center"
+          className="text-5xl text-white font-bold bg-cover  py-4 w-4/5 h-full px-4 py-8  rounded-t-xl md:rounded-l-xl flex justify-start items-center"
         >
           {" "}
           <h1> {state.moduleName} </h1>
         </div>
 
-        <div className="text-2xl font-bold bg-green-100 px-4 w-1/5 h-full px-4 py-8  rounded-r-xl flex justify-between items-center">
+        <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-1/5 md:h-full px-4 py-2 md:py-8  rounded-b-xl flex justify-between items-center">
           {" "}
           <h1> Triméstre {state.semesterNumber} </h1>
           <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">
