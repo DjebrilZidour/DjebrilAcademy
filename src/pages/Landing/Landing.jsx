@@ -7,18 +7,20 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Landing = () => {
   const navigate = useNavigate();
-  
+
   return (
     <>
       <Navbar />
 
       <section className="flex items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20 mt-8">
         <div className="px-3 w-full flex items-center justify-between gap-16 md:flex-row flex-col">
-          <div> 
+          <div>
             <div className="mx-auto mb-8 max-w-lg text-center lg:mx-0  lg:text-left">
               <h2 className="capitalize text-4xl w-96 text-center md:text-start px-8">
-                welcome to <br /> <span className="text-green-400">Djebril Academy</span> <br />
-                your first platform to fix your mathemathics and phisics <span className="text-red-400">problems</span> 
+                welcome to <br />{" "}
+                <span className="text-green-400">Djebril Academy</span> <br />
+                your first platform to fix your mathemathics and phisics{" "}
+                <span className="text-red-400">problems</span>
               </h2>
 
               <p className="text-center md:text-start visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
@@ -40,10 +42,14 @@ const Landing = () => {
               </Link>
             </div>
           </div>
-     
-           <div>
-            <img className="rounded-3xl" src="https://plus.unsplash.com/premium_photo-1671069848005-7231fc25703f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWR5aW5nfGVufDB8fDB8fHww" alt="" />
-           </div>
+
+          <div>
+            <img
+              className="rounded-3xl"
+              src="https://plus.unsplash.com/premium_photo-1671069848005-7231fc25703f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWR5aW5nfGVufDB8fDB8fHww"
+              alt=""
+            />
+          </div>
         </div>
       </section>
 
@@ -127,7 +133,32 @@ const Landing = () => {
       </section> */}
 
       <section className="flex flex-col justify-center items-center gap-4 my-12 mx-2">
-        <h1 className="text-3xl">Our ceo</h1>
+        <h1 className="text-4xl underline">Our ceo</h1>
+        <div className="flex justify-center items-center w-full md:flex-row flex-col gap-8 my-8 md:px-32  ">
+          <div className="flex flex-col  items-center md:items-start md:w-1/2 md:p-4 gap-8">
+            <h1 className="text-2xl md:text-5xl">Zidour Djebril</h1>
+            <p className="text-lg md:text-xl text-center md:text-start ">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              praesentium dicta soluta autem dignissimos quae dolore molestiae
+              deleniti error obcaecati provident quam, cum porro recusandae et
+              tempora laudantium doloremque ipsum!
+            </p>
+             <p>social media </p>
+            <div className="flex gap-4">
+              <img className="w-12" src="https://cdn-icons-png.flaticon.com/128/7544/7544562.png" alt="" />
+              <img className="w-12" src="https://cdn-icons-png.flaticon.com/128/7544/7544562.png" alt="" />
+              <img className="w-12" src="https://cdn-icons-png.flaticon.com/128/7544/7544562.png" alt="" />
+              <img className="w-12" src="https://cdn-icons-png.flaticon.com/128/7544/7544562.png" alt="" />
+            </div>
+          </div>
+          <div className="md:w-1/2 w-4/5 flex justify-center items-center">
+            <img
+              class
+              src="https://i.ibb.co/9WyBmLY/Design-sans-titre-1.png"
+              alt=""
+            />
+          </div>
+        </div>
         <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row">
           <TeamCard
             name="ZIDOUR Djebril"
