@@ -83,12 +83,12 @@ const Nav = (props)=>{
     <div className="sm:hidden">
 
       <div> 
-      <ul className="flex flex-col items-center justify-start absolute   right-14 top-16 bg-white z-10 shadow-2xl rounded-2xl p-6   font-bold sm:hidden"  style={{ display: props.isNavOpened ? "block" : "none" ,}}>
+      <ul className=" text-xl w-48 flex flex-col items-center justify-start absolute   right-14 top-16 bg-white z-10 shadow-2xl rounded-2xl p-6   font-bold sm:hidden"  style={{ display: props.isNavOpened ? "block" : "none" ,}}>
       <img
         onClick={() => {
           props.switchNavState(false);
         }}
-        className="w-4 absolute right-3 top-2 cursor-pointer"
+        className="w-6 absolute right-3 top-2 cursor-pointer"
         src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png"
         alt=""
       />
@@ -128,10 +128,10 @@ const Navbar = () => {
               <img className=" p-1 h-12 w-12 bg-white rounded-full" src={Logo} />
             </Link>
             <Link to="/">
-              <h1 className="text-3xl">DJebril Academy</h1>
+              <h1 className="md:text-3xl text-xl">DJebril Academy</h1>
             </Link>
           </li>
-          <img src="" alt="" />
+          
           <div className="flex justify-between items-center text-black-100  max-sm:flex-col max-sm:hidden ">
             <Link to="/">
               <li className="px-4 font-semibold text-black cursor-pointer hover:underline">

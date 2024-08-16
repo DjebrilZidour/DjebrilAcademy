@@ -16,13 +16,13 @@ const Landing = () => {
         <div className="px-3 w-full flex items-center justify-between gap-16 md:flex-row flex-col">
           <div> 
             <div className="mx-auto mb-8 max-w-lg text-center lg:mx-0  lg:text-left">
-              <h2 className="capitalize text-4xl w-96 text-start">
+              <h2 className="capitalize text-4xl w-96 text-center md:text-start px-8">
                 welcome to <br /> <span className="text-green-400">Djebril Academy</span> <br />
                 your first platform to fix your mathemathics and phisics <span className="text-red-400">problems</span> 
               </h2>
 
-              <p className="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
-                Helping you all your problems with the math and phisycs
+              <p className="text-center md:text-start visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
+                this platform is special for MATHELEM
               </p>
             </div>
 
