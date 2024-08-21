@@ -11,11 +11,11 @@ const Landing = () => {
   return (
     <>
       <Navbar />
-
+ 
       <section className="flex items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20 mt-8">
         <div className="px-3 w-full flex items-center justify-between gap-16 md:flex-row flex-col">
           <div>
-            <div className="mx-auto mb-8 max-w-lg text-center lg:mx-0  md:text-left px-8">
+            <div className="mb-8 max-w-lg text-center lg:mx-0  md:text-left ">
               <h2 className="capitalize text-4xl w-96 text-center md:text-start ">
                 welcome to <br />{" "}
                 <span className="text-green-400">Djebril Academy</span> <br />
@@ -177,7 +177,7 @@ const Landing = () => {
           <Btn value="See more" />
         </Link>
       </section>
-
+      
       {/* <section>
         <h1>what people sad about us </h1> //! check the drawed paper // check american institute website 
         <div></div>
