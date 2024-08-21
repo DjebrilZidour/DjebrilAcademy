@@ -36,7 +36,7 @@ const SemesterPage = () => {
           {state.grade} AS
         </h1>
       </div>
-      <section className="w-full flex flex-col items-center justify-center gap-4 pb-12">
+      <section className="w-5/6 flex flex-col items-center justify-center gap-4 pb-12 ">
         <h1 className="text-4xl "> {state.moduleName} </h1>
         <h2 className="text-md md:text-xl capitalize py-4">
           {" "}
