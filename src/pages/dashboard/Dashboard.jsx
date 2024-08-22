@@ -24,7 +24,7 @@ const TodoList = () => {
     console.log(typedTask);
     if(typedTask.length < 4 ){
       console.log("pls enter a valid task");
-      alert("ERR")
+    
     }else{
       todoList.push(typedTask);
     setTypedTask("");
@@ -56,8 +56,10 @@ const TodoList = () => {
               <ul className=" flex justify-between items-center gap-8">
                 <li className={isTaskDone?"":""} key={i}>{element}</li>
                 <div className="flex justify-between items-center gap-4">
-                <img onClick={setTaskDoneBtn} className="w-4 h-4 rounded-full cursor-pointer" src={isTaskDone?"https://cdn-icons-png.flaticon.com/128/7739/7739845.png":"https://cdn-icons-png.flaticon.com/128/808/808569.png"} alt="" />
-                <img className="w-4 h-4 rounded-full cursor-pointer" src="https://cdn-icons-png.flaticon.com/128/594/594864.png" alt="" />
+                <img key={i} onClick={setTaskDoneBtn} className="w-4 h-4 rounded-full cursor-pointer" src={isTaskDone?"https://cdn-icons-png.flaticon.com/128/7739/7739845.png":"https://cdn-icons-png.flaticon.com/128/808/808569.png"} alt="" />
+                <img onClick={()=>{
+                
+                }} className="w-4 h-4 rounded-full cursor-pointer" src="https://cdn-icons-png.flaticon.com/128/594/594864.png" alt="" />
                 </div>
                 {/* <img src={TodoList?"":""} alt="" /> */}
               </ul>
@@ -150,7 +152,7 @@ export const Default = () => {
         </div>
       </div>
     <TodoList />
-    <div className="border-2 border-black rounded-2xl px-4 py-8 md:w-full flex justify-center items-center rounded-3xl gap-6 ">
+    <div className="border-2 border-black rounded-2xl px-4 py-8 md:w-full flex justify-center items-center rounded-3xl gap-6 "> 
         <div className="w-4/5 border-2 border-gray rounded-2xl">
           <div className="w-4/5 bg-green-300 w-full border-2 p-4 rounded-2xl"></div>
         </div>
