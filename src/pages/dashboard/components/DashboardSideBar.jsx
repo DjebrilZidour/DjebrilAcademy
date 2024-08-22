@@ -55,7 +55,7 @@ const DashboardSideBar = () => {
             <h2>learning</h2>
           </div>
         </Link>
-        <Link to="/dashboard/learning-progress">
+        <Link to="/dashboard/vidéos">
           <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
             <img
               className="w-12 mx-2 px-1"

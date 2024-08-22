@@ -16,11 +16,11 @@ import LearningProcess from "./pages/dashboard/pages/LearningProgress";
 import Team from "./pages/Team/Team";
 import SemesterPage from "./pages/dashboard/pages/SemesterPages";
 import SemesterDetail from "./pages/dashboard/pages/SemesterDetail";
-import Quizs from "./pages/dashboard/pages/Quizs";
+
 import CoursePreview from "./pages/dashboard/pages/CoursePreview";
 import ExPreview from "./pages/dashboard/pages/ExPreview";
 import Grade from "./pages/dashboard/pages/Grade";
-
+import DashVd from "./pages/dashboard/pages/DashVd"
 const isLogged = getIsUserLogged();
 
 console.log("hi");
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: isLogged ? <App /> : <Landing />,
+    element: <Landing />,
   },
   { path: "/signup", element: <SignUp /> },
 
@@ -49,8 +49,8 @@ const router = createBrowserRouter([
       { path: "/dashboard/learning-welcome", element: <Learning /> },
       { path: "/dashboard/learning-courses", element: <Subjects type="co" /> },
       { path: "/dashboard/learning-exc", element: <Subjects type="ex"/> },
-      { path: "/dashboard/learning-progress", element: <LearningProcess /> },
-      { path: "/dashboard/quizs", element: <Quizs /> },
+      { path: "/dashboard/vidéos", element: <DashVd/> },
+   
       { path: "/dashboard/semesters", element: <SemesterPage /> },
       { path: "/dashboard/semester-detail", element: <SemesterDetail /> },
       { path: "/dashboard/coursepreview", element: <CoursePreview /> },
