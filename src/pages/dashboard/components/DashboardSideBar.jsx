@@ -23,7 +23,7 @@ const DashboardSideBar = () => {
         style={{ display: BarClosed ? "none" : "block" }}
       >
         <div
-          style={{ backgroundColor: "#61faaf" }}
+          
           className="flex justify-end items-center flex-end mx-4 rounded-full "
         >
           <img
@@ -101,7 +101,7 @@ const DashboardSideBar = () => {
       <section style={{ display: BarClosed ? "block" : "none" }}>
         <div className="flex justify-center items-center gap-4 flex-col m-4 w-24 border-2 rounded-2xl py-4">
           <div
-            style={{ backgroundColor: "#61faaf" }}
+           
             className="flex items-center justify-end p-4 rounded-full cursor-pointer"
           >
             <img
