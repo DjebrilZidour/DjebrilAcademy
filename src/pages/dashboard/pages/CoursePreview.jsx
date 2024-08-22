@@ -2,6 +2,7 @@ import { useLocation } from "react-router";
 import { fetchSemesterDetail } from "../../../api";
 import Btn from "../../../components/Atomic/Btn";
 import PdfPreview from "../components/PdfPreview";
+import Preview from "../components/Preview";
 const CoursePreview = () => {
   const { state } = useLocation();
   const { moduleName, semesterNumber } = state;
@@ -21,7 +22,7 @@ console.log(courseData[0]);
   const drivePreviewUrl = "https://drive.google.com/file/d/1SyVIfAJ2LcfCKyaQ1dg7-bRPOA3p77YV/preview"
   return (
     <>
-      <div className="rounded-xl w-full rounded-xl flex md:flex-row flex-col justify-between items-center h-64 md:mb-16 drop-shadow-2xl">
+      <div className="rounded-xl w-full rounded-xl flex md:flex-row flex-col justify-between items-center h-64  drop-shadow-2xl">
         <div
           style={{ backgroundImage: `url(${state.imgUrl})` }}
           className="text-5xl text-white font-bold bg-cover  py-4 w-4/5 h-full px-4 py-8  rounded-tl-xl flex justify-start items-center"
@@ -30,9 +31,9 @@ console.log(courseData[0]);
           <h1> {state.moduleName} </h1>
         </div>
 
-        <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-1/5 md:h-full px-4 py-2 md:py-8  rounded-b-xl flex justify-between items-center">
+        <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-2/6 md:h-full px-4 py-2 md:py-8  rounded-b-xl flex justify-center  gap-4 items-center flex-col">
           {" "}
-          <h1> Triméstre {state.semesterNumber} </h1>
+          <h1 className="text-md"> Triméstre {state.semesterNumber} </h1>
           <h1 className="text-3xl uppercase background border-black border-2 px-2 py-2 md:py-5 cursor-pointer rounded-full ">
             {state.grade}AS
           </h1>
@@ -61,6 +62,7 @@ console.log(courseData[0]);
         </div>
         <Btn value="GET PDF FILE" />
       </div>
+      <Preview course={course}/>
       <div className="w-full my-12">
       <PdfPreview pdfUrl={pdfUrl} />
     </div>

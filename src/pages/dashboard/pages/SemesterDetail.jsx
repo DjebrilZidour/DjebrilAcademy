@@ -80,7 +80,7 @@ const SemesterDetail = () => {
 
   return (
     <div className="w-full">
-      <div className=" rounded-xl w-full rounded-xl flex md:flex-row flex-col justify-between items-center h-64 mb-16 drop-shadow-2xl">
+      <div className=" rounded-xl w-full rounded-xl flex md:flex-row flex-col justify-between items-center h-64 mb-16 drop-shadow-xl">
         <div
           style={{ backgroundImage: `url(${officialLink})` }}
           className="text-5xl text-white font-bold bg-cover  py-4 w-4/5 h-full px-4 py-8  rounded-t-xl md:rounded-l-xl flex justify-start items-center"
@@ -89,9 +89,9 @@ const SemesterDetail = () => {
           <h1> {state.moduleName} </h1>
         </div>
 
-        <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-1/5 md:h-full px-4 py-2 md:py-8  rounded-b-xl flex justify-between items-center">
+        <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-2/6 md:h-full px-4 py-2 md:py-8  rounded-b-xl flex justify-center  gap-4 items-center flex-col">
           {" "}
-          <h1> Triméstre {state.semesterNumber} </h1>
+          <h1 className="text-md"> Triméstre {state.semesterNumber} </h1>
           <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">
             {state.grade}AS
           </h1>
