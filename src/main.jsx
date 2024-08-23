@@ -20,7 +20,7 @@ import SemesterDetail from "./pages/dashboard/pages/SemesterDetail";
 import CoursePreview from "./pages/dashboard/pages/CoursePreview";
 import ExPreview from "./pages/dashboard/pages/ExPreview";
 import Grade from "./pages/dashboard/pages/Grade";
-import DashVd from "./pages/dashboard/pages/DashVd"
+import DashVd from "./pages/dashboard/pages/DashVd";
 const isLogged = getIsUserLogged();
 
 console.log("hi");
@@ -44,25 +44,28 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />,
     children: [
+      { path: "/dashboard", element: <Default /> },
       { path: "/dashboard/home", element: <Default /> },
       { path: "/dashboard/learning-grade", element: <Grade /> },
       { path: "/dashboard/learning-welcome", element: <Learning /> },
       { path: "/dashboard/learning-courses", element: <Subjects type="co" /> },
-      { path: "/dashboard/learning-exc", element: <Subjects type="ex"/> },
-      { path: "/dashboard/vidéos", element: <DashVd/> },
-   
+      { path: "/dashboard/learning-exc", element: <Subjects type="ex" /> },
+      { path: "/dashboard/vidéos", element: <DashVd /> },
+
       { path: "/dashboard/semesters", element: <SemesterPage /> },
       { path: "/dashboard/semester-detail", element: <SemesterDetail /> },
       { path: "/dashboard/coursepreview", element: <CoursePreview /> },
-      { path: "/dashboard/exercice-preview", element: <ExPreview/> }
-
-      
+      { path: "/dashboard/exercice-preview", element: <ExPreview /> },
     ],
   },
 
   {
     path: "/profile",
     element: <Profile />,
+  },
+  {
+    path: "/dashboard",
+    element: <Default />,
   },
   {
     path: "/subjects",
