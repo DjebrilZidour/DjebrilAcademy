@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Countdown = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({});
@@ -20,12 +20,37 @@ const Countdown = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div>
-      <span>{timeLeft.days} Days </span>
-      <span>{timeLeft.hours} Hours </span>
-      <span>{timeLeft.minutes} Minutes </span>
-      <span>{timeLeft.seconds} Seconds</span>
-    </div>
+    <>
+      <section className="flex flex-col justify-center items-center gap-2  border-2 px-4 py-2 rounded-3xl">
+        <div className="flex justify-center items-center gap-2 ">
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="bg-gray-200 p-2 rounded-xl">{timeLeft.days}</h1>
+          </div>
+
+          <h1 className="text-3xl">:</h1>
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="bg-gray-200 p-2 rounded-xl">{timeLeft.hours}</h1>
+          </div>
+
+          <h1 className="text-3xl">:</h1>
+
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="bg-gray-200 p-2 rounded-xl">{timeLeft.minutes}</h1>
+          </div>
+
+          <h1 className="text-3xl">:</h1>
+          <div className="flex flex-col justify-center items-center justify-center items-center">
+            <h1 className="bg-gray-200 p-2 rounded-xl">{timeLeft.seconds}</h1>
+          </div>
+        </div>
+        <div className="flex gap-4">
+          <span>Days</span>
+          <span>Hours</span>
+          <span>Minutes</span>
+          <span>Seconds</span>
+        </div>
+      </section>
+    </>
   );
 };
 
