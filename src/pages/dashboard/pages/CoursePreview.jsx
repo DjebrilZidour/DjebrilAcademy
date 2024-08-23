@@ -17,9 +17,11 @@ const CoursePreview = () => {
   const index = state.idx + 1;
   console.log(state.imgUrl);
   const course = courseData[state.idx];
-console.log(courseData[0]);
-  const pdfUrl = "https://www.ency-education.com/uploads/3/0/9/3/309326/french-2am20-1trim-d1.pdf"
-  const drivePreviewUrl = "https://drive.google.com/file/d/1SyVIfAJ2LcfCKyaQ1dg7-bRPOA3p77YV/preview"
+  console.log(courseData[0]);
+  const pdfUrl =
+    "https://www.ency-education.com/uploads/3/0/9/3/309326/french-2am20-1trim-d1.pdf";
+  const drivePreviewUrl =
+    "https://drive.google.com/file/d/1SyVIfAJ2LcfCKyaQ1dg7-bRPOA3p77YV/preview";
   return (
     <>
       <div className="rounded-xl w-full rounded-xl flex md:flex-row flex-col justify-between items-center h-64  drop-shadow-2xl">
@@ -38,20 +40,21 @@ console.log(courseData[0]);
             {state.grade}AS
           </h1>
         </div>
-        
       </div>
       <div className="flex justify-center w-4/5 items-center bg-red-100 rounded-b-3xl shadow-xl md:w-full">
-        <h1 className="md:text-5xl text-4xl text-center py-4 capitalize">{course.courseTitle}</h1>
+        <h1 className="md:text-5xl text-4xl text-center py-4 capitalize">
+          {course.courseTitle}
+        </h1>
       </div>
-      <div className="  w-full   border-none rounded-xl my-8 flex justify-center items-center flex-col">
-        <div className="flex-col md:flex-row justify-between items-center w-full">
-          <div className="my-12 mx-2 flex flex-col justify-center items-start gap-4 w-1/2">
-            <h1 className="text-6xl text-red-500 capitalize">
+      <div className="  w-full   border-none rounded-xl my-8 flex justify-center items-center flex-col gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full ">
+          <div className="my-12 mx-2 flex flex-col justify-center items-start gap-4 md:w-1/2">
+            <h1 className="text-5xl text-red-500 capitalize md:text-left text-center">
               Description de Cours
             </h1>
-            <p className="w-5/6 text-lg">{course.courseDetail}</p>
+            <p className="text-lg md:text-left text-center">{course.courseDetail}</p>
           </div>
-          <div className="flex flex-col justify-center items-center w-1/2 gap-2">
+          <div className="flex flex-col justify-center items-center gap-4 md:w-1/2">
             <img
               className="w-1/3"
               src="https://cdn-icons-png.flaticon.com/128/3792/3792702.png"
@@ -62,10 +65,10 @@ console.log(courseData[0]);
         </div>
         <Btn value="GET PDF FILE" />
       </div>
-      <Preview course={course}/>
+      <Preview course={course} />
       <div className="w-full my-12">
-      <PdfPreview pdfUrl={pdfUrl} />
-    </div>
+        <PdfPreview pdfUrl={pdfUrl} />
+      </div>
     </>
   );
 };

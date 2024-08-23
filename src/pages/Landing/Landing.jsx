@@ -163,6 +163,7 @@ const Landing = () => {
           <TeamCard
             name="ZIDOUR Djebril"
             description="DJEBRIl ZIDOUR the founder of this ambicious platform "
+            img=""
           />
           <TeamCard
             name="ZIDOUR Djebril"
