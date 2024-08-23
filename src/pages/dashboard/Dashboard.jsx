@@ -82,7 +82,7 @@ const Dashboard = () => {
           <DashboardSideBar />
         </div>
         
-        <div className="border-4 border-gray lg:mx-4 mb-4 pb-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50 m-2 p-2">
+        <div className="border-4 border-gray lg:mx-4 mb-4 pb-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50  p-2">
           <div className="md:hidden">
           <ResponsiveSideBar />
         </div>

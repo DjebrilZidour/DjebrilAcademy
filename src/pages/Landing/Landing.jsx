@@ -45,7 +45,7 @@ const Landing = () => {
 
           <div>
             <img
-              className="rounded-3xl"
+              className="rounded-3xl p-4 md:p-0"
               src="https://plus.unsplash.com/premium_photo-1671069848005-7231fc25703f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWR5aW5nfGVufDB8fDB8fHww"
               alt=""
             />
