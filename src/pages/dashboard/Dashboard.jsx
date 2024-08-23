@@ -127,13 +127,7 @@ export const Default = () => {
           </div>
         </div>
         <TodoList />
-        <div className="border-2 border-black rounded-2xl px-4 py-8 md:w-full flex justify-center items-center rounded-3xl gap-6 ">
-          <div className="w-4/5 border-2 border-gray rounded-2xl">
-            <div className="w-4/5 bg-green-300 w-full border-2 p-4 rounded-2xl"></div>
-          </div>
-
-          <h1>63%</h1>
-        </div>
+      
       </div>
     </>
   );
