@@ -7,8 +7,8 @@ const DashVd = () => {
           <div className="w-1/3">
             <iframe
               className="w-full rounded-3xl"
-              src="https://www.youtube.com/embed/P0uaLRO6V1U"
-              title="سورة البقرة كاملة للشيخ د. ياسر الدوسري~طاردة الشياطين | Surat Al-Baqarah | Yasser Al-Dosari"
+              src="https://www.youtube.com/embed/BsLC5eIjcag"
+              title="How To Manage Your Time As A Student"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
@@ -18,14 +18,15 @@ const DashVd = () => {
           <div className="w-1/3">
             <iframe
               className="w-full rounded-3xl"
-              src="https://www.youtube.com/embed/P0uaLRO6V1U"
-              title="سورة البقرة كاملة للشيخ د. ياسر الدوسري~طاردة الشياطين | Surat Al-Baqarah | Yasser Al-Dosari"
+              src="https://www.youtube.com/embed/iONDebHX9qk"
+              title="How I Manage My Time - 10 Time Management Tips"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
           </div>
+
           <div className="w-1/3">
             <iframe
               className="w-full rounded-3xl"
@@ -110,7 +111,6 @@ const DashVd = () => {
             ></iframe>
           </div>
         </div>
-      
       </section>
     </>
   );
