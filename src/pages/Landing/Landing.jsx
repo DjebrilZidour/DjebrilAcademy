@@ -16,15 +16,15 @@ const Landing = () => {
         <div className=" w-full flex items-center justify-center gap-16 md:flex-row flex-col">
           <div>
             <div className="mb-8 text-center lg:mx-0  md:text-left ">
-              <h2 className="capitalize md:text-4xl text-3xl md:w-96 text-center md:text-start ">
+              <h2 className="capitalize md:text-4xl text-2xl md:w-92 text-center md:text-start ">
                 welcome to <br />{" "}
-                <span className="text-green-400">Djebril Academy</span> <br />
-                your first platform to fix your mathemathics and phisics{" "}
-                <span className="text-red-400">problems</span>
+                <span className="text-green-400 text-4xl">Djebril Academy</span> <br />
+                The first platform to fix your mathemathics and phisics{" "}
+                <span className="text-red-400 text-4xl">problems</span>
               </h2>
 
               <p className="text-center md:text-start visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
-                this platform is special for MATHELEM
+                PLATFORM FOR MATHELEM BRANCHE
               </p>
             </div>
 
