@@ -148,7 +148,9 @@ const Landing = () => {
               discipline, even the best intentions fall short."
             </p>
             <p className="text-lg md:text-xl text-center md:text-start ">
-            "بالنسبة لي، تحسين الذات هو رحلة تتطلب الذكاء والعمل الجاد، ولكن الأهم من ذلك هو الانضباط. بدون الانضباط، حتى أفضل النوايا لا تحقق النجاح."
+              "بالنسبة لي، تحسين الذات هو رحلة تتطلب الذكاء والعمل الجاد، ولكن
+              الأهم من ذلك هو الانضباط. بدون الانضباط، حتى أفضل النوايا لا تحقق
+              النجاح."
             </p>
 
             <div className="flex gap-8">
@@ -167,40 +169,40 @@ const Landing = () => {
                 />
               </a>
               <a href="https://djebril.pages.dev/" target="new">
-              <img
-                className="w-12"
-                src="https://cdn-icons-png.flaticon.com/128/5891/5891729.png"
-                alt=""
-              />
+                <img
+                  className="w-12"
+                  src="https://cdn-icons-png.flaticon.com/128/5891/5891729.png"
+                  alt=""
+                />
               </a>
-              
             </div>
           </div>
           <div className="md:w-1/2 w-4/5 flex justify-center items-center">
-            
             <img
-                class
-                src="https://i.ibb.co/9WyBmLY/Design-sans-titre-1.png"
-                alt=""
-              />
+              class
+              src="https://i.ibb.co/9WyBmLY/Design-sans-titre-1.png"
+              alt=""
+            />
           </div>
         </div>
-        <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row mx-4">
         <h1 className="text-5xl font-semibold text-center  capitalize p-4">
           our Team
         </h1>
+        <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row mx-4">
           <TeamCard
             name="Prof1 "
             description="description prof 1"
-            img=""
+            img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
           <TeamCard
             name="ZIDOUR Djebril"
             description="DJEBRIl ZIDOUR the founder of this ambicious platform "
+            img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
           <TeamCard
             name="ZIDOUR Djebril"
             description="DJEBRIl ZIDOUR the founder of this ambicious platform "
+            img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
         </div>
         <Link to="/team">
