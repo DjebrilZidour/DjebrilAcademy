@@ -3,7 +3,7 @@ const DashVd = () => {
     <>
       <section className=" flex flex-col justify-center items-center gap-4">
         <h1 className="text-3xl">Tandim El wakt </h1>
-        <div className="flex md:flex-row flex-col justify-center gap-4 p-2">
+        {/* <div className="flex md:flex-row flex-col justify-center gap-4 p-2">
           <div className="md:w-1/3 w-full">
             <iframe
               className="w-full rounded-3xl"
@@ -54,7 +54,7 @@ const DashVd = () => {
           <div className="md:w-1/3 w-full">
           <iframe className="w-full rounded-3xl" src="https://www.youtube.com/embed/LvYki1R6BsM" title="خطة و برنامج دراسي لشهر سبتمبر من اجل الحصول على 19 في بكالوريا 2025 | استعد للدخول المدرسي bac 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
