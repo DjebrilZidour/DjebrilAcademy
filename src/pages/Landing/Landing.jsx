@@ -195,13 +195,13 @@ const Landing = () => {
             img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
           <TeamCard
-            name="ZIDOUR Djebril"
-            description="DJEBRIl ZIDOUR the founder of this ambicious platform "
+            name="Prof2"
+            description="description prof 2"
             img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
           <TeamCard
-            name="ZIDOUR Djebril"
-            description="DJEBRIl ZIDOUR the founder of this ambicious platform "
+            name="Prof3"
+            description="description prof 3"
             img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
         </div>
