@@ -13,8 +13,8 @@ const Landing = () => {
       <Navbar />
 
       <section className="flex items-center justify-center font-sans w-full pb-4 mt-8">
-        <div className=" w-full flex items-center justify-center gap-16 md:flex-row flex-col">
-          <div>
+        <div className=" w-full flex items-center justify-center gap-16 md:flex-row flex-col md:mx-48">
+          <div className="md:w-1/2">
             <div className="mb-8 text-center lg:mx-0  md:text-left ">
               <h2 className="capitalize md:text-4xl text-2xl md:w-92 text-center md:text-start ">
                 welcome to <br />{" "}
@@ -44,9 +44,9 @@ const Landing = () => {
             </div>
           </div>
 
-          <div>
+          <div className="md:w-1/2">
             <img
-              className="rounded-3xl p-4 md:p-0"
+              className="rounded-3xl p-4 md:p-0 w-full"
               src="https://plus.unsplash.com/premium_photo-1671069848005-7231fc25703f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWR5aW5nfGVufDB8fDB8fHww"
               alt=""
             />
@@ -134,54 +134,62 @@ const Landing = () => {
       </section> */}
 
       <section className="flex flex-col justify-center items-center gap-4 my-12 mx-2">
-      <h1 className="text-5xl font-semibold text-center  capitalize">
+        <h1 className="text-5xl font-semibold text-center  capitalize">
           our ceo
         </h1>
         <div className="flex justify-center items-center w-full md:flex-row flex-col gap-8 my-8 md:px-32  ">
           <div className="flex flex-col  items-center md:items-start md:w-1/2 md:p-4 gap-8">
-            <h1 className="text-3xl md:text-5xl font-semi-bold">Zidour Djebril</h1>
+            <h1 className="text-3xl md:text-5xl font-semi-bold">
+              Zidour Djebril
+            </h1>
             <p className="text-lg md:text-xl text-center md:text-start ">
-            "To me, self-improvement is a journey that demands both intelligence and hard work, but above all, discipline. Without discipline, even the best intentions fall short."
+              "To me, self-improvement is a journey that demands both
+              intelligence and hard work, but above all, discipline. Without
+              discipline, even the best intentions fall short."
             </p>
-            <p className="text-lg md:text-xl text-center md:text-start ">
-            "بالنسبة لي، تحسين الذات هو رحلة تتطلب الذكاء والعمل الجاد، ولكن الأهم من ذلك هو الانضباط. بدون الانضباط، حتى أفضل النوايا لا تحقق النجاح."
-            </p>
-            <p>social media </p>
-            <div className="flex gap-4">
+           
+
+            <div className="flex gap-8">
+              <a href="https://github.com/DjebrilZidour" target="new">
+                <img
+                  className="w-12"
+                  src="https://cdn-icons-png.flaticon.com/128/25/25231.png"
+                  alt=""
+                />
+              </a>
+              <a href="mailto:djebril.zidour.pro@gmail.com" target="new">
+                <img
+                  className="w-12"
+                  src="https://cdn-icons-png.flaticon.com/128/542/542689.png"
+                  alt=""
+                />
+              </a>
+              <a href="https://djebril.pages.dev/" target="new">
               <img
                 className="w-12"
-                src="https://cdn-icons-png.flaticon.com/128/7544/7544562.png"
+                src="https://cdn-icons-png.flaticon.com/128/5891/5891729.png"
                 alt=""
               />
-              <img
-                className="w-12"
-                src="https://cdn-icons-png.flaticon.com/128/7544/7544562.png"
-                alt=""
-              />
-              <img
-                className="w-12"
-                src="https://cdn-icons-png.flaticon.com/128/7544/7544562.png"
-                alt=""
-              />
-              <img
-                className="w-12"
-                src="https://cdn-icons-png.flaticon.com/128/7544/7544562.png"
-                alt=""
-              />
+              </a>
+              
             </div>
           </div>
           <div className="md:w-1/2 w-4/5 flex justify-center items-center">
+            
             <img
-              class
-              src="https://i.ibb.co/9WyBmLY/Design-sans-titre-1.png"
-              alt=""
-            />
+                class
+                src="https://i.ibb.co/9WyBmLY/Design-sans-titre-1.png"
+                alt=""
+              />
           </div>
         </div>
-        <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row">
+        <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row mx-4">
+        <h1 className="text-5xl font-semibold text-center  capitalize p-4">
+          our Team
+        </h1>
           <TeamCard
-            name="ZIDOUR Djebril"
-            description="DJEBRIl ZIDOUR the founder of this ambicious platform "
+            name="Prof1 "
+            description="description prof 1"
             img=""
           />
           <TeamCard
