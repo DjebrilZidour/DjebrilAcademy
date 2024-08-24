@@ -147,7 +147,9 @@ const Landing = () => {
               intelligence and hard work, but above all, discipline. Without
               discipline, even the best intentions fall short."
             </p>
-           
+            <p className="text-lg md:text-xl text-center md:text-start ">
+            "بالنسبة لي، تحسين الذات هو رحلة تتطلب الذكاء والعمل الجاد، ولكن الأهم من ذلك هو الانضباط. بدون الانضباط، حتى أفضل النوايا لا تحقق النجاح."
+            </p>
 
             <div className="flex gap-8">
               <a href="https://github.com/DjebrilZidour" target="new">
