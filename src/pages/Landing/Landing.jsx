@@ -12,7 +12,7 @@ const Landing = () => {
     <>
       <Navbar />
 
-      <section className="flex items-center justify-center font-sans w-full pb-4 mt-8">
+      <section className="flex items-center justify-center font-sans w-full py-12 mt-12 my-16 ">
         <div className=" w-full flex items-center justify-center gap-16 md:flex-row flex-col md:mx-48">
           <div className="md:w-1/2">
             <div className="mb-8 text-center lg:mx-0  md:text-left ">
