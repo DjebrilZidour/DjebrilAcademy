@@ -118,7 +118,7 @@ export const Default = () => {
         <div className="flex justify-between items-start gap-4 mt-4 w-full h-full ">
     
             <div className=" flex flex-col justify-center items-center gap-2 border-2 rounded-3xl p-6 my-4">
-              <h1 className="text-2xl">Still for your final exam</h1>
+              <h1 className="text-2xl">Still for 2025</h1>
 
               
                 <Countdown targetDate={targetDate} />
