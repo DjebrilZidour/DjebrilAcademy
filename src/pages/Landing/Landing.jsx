@@ -170,19 +170,20 @@ const Landing = () => {
         <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row mx-4">
           <TeamCard
             name="Prof1 "
-            description="description prof 1"
+            description="description prof 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae ."
             img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
           <TeamCard
             name="Prof2"
-            description="description prof 2"
+            description="description prof 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae ."
             img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
           <TeamCard
             name="Prof3"
-            description="description prof 3"
+            description="description prof 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae ."
             img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
+         
         </div>
         <Link to="/team">
           <Btn value="See more" />
