@@ -46,7 +46,7 @@ const CoursePreview = () => {
           {course.courseTitle}
         </h1>
       </div>
-      <div className="  w-full   border-none rounded-xl my-8 flex justify-center items-center flex-col gap-4">
+      {/* <div className="  w-full   border-none rounded-xl my-8 flex justify-center items-center flex-col gap-4">
         <div className="flex flex-col md:flex-row justify-between items-center w-full ">
           <div className="my-12 mx-2 flex flex-col justify-center items-start gap-4 md:w-1/2">
             <h1 className="text-5xl text-red-500 capitalize md:text-left text-center">
@@ -64,10 +64,10 @@ const CoursePreview = () => {
           </div>
         </div>
         <Btn value="GET PDF FILE" />
-      </div>
-      <Preview course={course} />
+      </div> */}
+ 
       <div className="w-full my-12">
-        <PdfPreview pdfUrl={pdfUrl} />
+        <PdfPreview pdfUrl={course.pdfUrl} pdfId={course.pdfId} />
       </div>
     </>
   );
