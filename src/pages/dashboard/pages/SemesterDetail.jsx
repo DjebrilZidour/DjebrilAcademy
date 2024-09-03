@@ -56,9 +56,9 @@ const CourseTitles = (props) => {
   return (
     <>
       <div className="  border-2 border-black rounded-xl p-4 w-4/5 ">
-        <div className="flex  flex-col md:flex-row justify-center md:justify-between items-center  gap-4">
+        <div className="flex  flex-col md:flex-row-reverse justify-center md:justify-between items-center gap-4">
 
-        <h1 className="capitalize">{props.title}</h1>
+        <h1 className="capitalize text-3xl">{props.title}</h1>
         <Btn value="acsess course" onClick={onClickCourse} />
         </div>
       </div>
