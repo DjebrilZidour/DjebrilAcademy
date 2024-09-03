@@ -4,7 +4,7 @@ const dataBase = [
     semesters: [
       [
         {
-          courseTitle: "cours 1 de trimestre 1",
+          courseTitle: "مبادئ في الحسابيات",
           courseDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
           courseImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "",
           pdfUrl: "https://drive.google.com/file/d/13r7y6yv2HNITtNUuLRO8T6YvbNJ_9LRr/preview",
