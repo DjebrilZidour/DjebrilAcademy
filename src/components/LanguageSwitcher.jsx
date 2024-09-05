@@ -35,7 +35,7 @@ const LanguageSwitcher = ({ changeLanguage }) => {
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className=" flex flex-col flex-0 absolute right-0 mt-2  origin-top-right bg-white border border-gray-300 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <div className=" flex flex-col  z-50 absolute right-0 mt-2  origin-top-right bg-white border border-gray-300 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div
             onClick={() => {
               changeLanguage("en");

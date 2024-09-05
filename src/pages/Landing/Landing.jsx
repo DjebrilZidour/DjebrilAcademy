@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Navbar from "../../components/Navbar";
 import Btn from "../../components/Atomic/Btn";
@@ -7,84 +7,68 @@ import TeamCard from "../dashboard/components/TeamCard";
 import { Link, useNavigate } from "react-router-dom";
 import i18n from "../../i18n"; // Make sure i18n is imported
 
-let langue = true;
 const Landing = () => {
+  const [isMediumScreen, setIsMediumScreen] = useState(window.matchMedia("(min-width: 768px)").matches);
   const { t } = useTranslation();
   const navigate = useNavigate();
 
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-  };
-  console.log(langue);
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const mediumScreen = window.matchMedia("(min-width: 768px)").matches;
+      setIsMediumScreen(mediumScreen);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+
+  // Determine the direction based on language
   const langDirection = i18n.language === "ar" ? "row-reverse" : "row";
   const textAlign = i18n.language === "ar" ? "right" : "left";
-  const displayNoneAr = i18n.language === "ar" ? "none" : "flex"; // Changed to 'none'
-  const displayYesAr = i18n.language === "ar" ? "flex" : "none"; // Changed to 'none'
- 
+  const displayNoneAr = i18n.language === "ar" ? "none" : "flex";
+  const displayYesAr = i18n.language === "ar" ? "flex" : "none";
+
+  // Define styles for responsive layout and language direction
+  const styles = {
+    container: {
+      display: 'flex',
+      flexDirection: isMediumScreen ? langDirection : 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: '100%',
+      padding: '10px',
+    },
+    item: {
+      margin: '10px',
+      padding: '10px',
+      backgroundColor: 'lightgray',
+    }
+  };
+
   return (
     <>
       <Navbar />
 
-      {/* Language Switch Buttons */}
-      <div className="flex justify-end m-4">
-        <ul className="flex space-x-4">
-          <li>
-            <button
-              className={`px-4 py-2 rounded border border-gray-300 hover:bg-gray-100 transition ${
-                i18n.language === "en" ? "bg-gray-200" : "bg-white"
-              }`}
-              onClick={() => {
-                changeLanguage("en");
-                langue = false;
-              }}
-            >
-              English
-            </button>
-          </li>
-          <li>
-            <button
-              className={`px-4 py-2 rounded border border-gray-300 hover:bg-gray-100 transition ${
-                i18n.language === "fr" ? "bg-gray-200" : "bg-white"
-              }`}
-              onClick={() => {
-                changeLanguage("fr");
-                langue = false;
-              }}
-            >
-              Français
-            </button>
-          </li>
-          <li>
-            <button
-              className={`px-4 py-2 rounded border border-gray-300 hover:bg-gray-100 transition ${
-                i18n.language === "ar" ? "bg-gray-200" : "bg-white"
-              }`}
-              onClick={() => {
-                changeLanguage("ar");
-                langue = true;
-              }}
-            >
-              العربية
-            </button>
-          </li>
-        </ul>
-      </div>
       {/* Hero Section */}
-      <section className="flex items-center justify-center font-sans w-full py-12 my-16 ">
+      <section className="flex items-center justify-center font-sans w-full py-12 my-16">
         <div
-          style={{ flexDirection: langDirection }}
-          className="w-full flex items-center justify-center gap-16 md:flex-row flex-col md:mx-48"
+          style={styles.container}
+          className="w-full flex items-center justify-center gap-16"
         >
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 w-full">
             <div
               style={{ textAlign: textAlign }}
               className="mb-8 text-center lg:mx-0 md:text-left "
             >
               <h2 className="capitalize md:text-4xl text-2xl md:w-92 text-center md:text-start">
                 {t("welcome")} <br />
-                <span className="text-green-400 text-4xl ">
+                <span className="text-green-400 text-4xl">
                   {t("welcomeName")}
-                </span>{" "}
+                </span>
                 <span style={{ display: displayYesAr }} className="text-3xl">
                   {t("des2")}
                 </span>
@@ -94,10 +78,10 @@ const Landing = () => {
                 >
                   {t("problems")}
                 </span>
-                {t("platform_desc")}{" "}
+                {t("platform_desc")}
                 <span
                   style={{ display: displayNoneAr }}
-                  className="text-red-400 text-3xl"
+                  className="text-red-400 md:text-3xl md:text-left text-center"
                 >
                   {t("problems")}
                 </span>
@@ -122,7 +106,7 @@ const Landing = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 w-full">
             <img
               className="rounded-3xl p-4 md:p-0 w-full"
               src="https://plus.unsplash.com/premium_photo-1671069848005-7231fc25703f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWR5aW5nfGVufDB8fDB8fHww"
@@ -131,7 +115,6 @@ const Landing = () => {
           </div>
         </div>
       </section>
-
       {/* Mission Section */}
       <section className="my-10 py-16">
         <h1 className="text-5xl font-semibold text-center capitalize p-4">
