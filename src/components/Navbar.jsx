@@ -154,8 +154,6 @@ const Navbar = () => {
             </Link>
             <li>
             <LanguageSwitcher changeLanguage={i18n.changeLanguage} />
-
-
             </li>
 
             <div className="hidden">
@@ -188,7 +186,8 @@ const Navbar = () => {
             )}
             </div>
           </div>
-          <div className="flex sm:hidden">
+          <div className="flex sm:hidden gap-2 items-center justify-center">
+          <LanguageSwitcher changeLanguage={i18n.changeLanguage} />
           <img
             src="https://cdn-icons-png.flaticon.com/128/1828/1828765.png"
             alt=""

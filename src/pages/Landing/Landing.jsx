@@ -81,10 +81,14 @@ const Landing = () => {
                 {t("platform_desc")}
                 <span
                   style={{ display: displayNoneAr }}
-                  className="text-red-400 md:text-3xl md:text-left text-center"
+                  className="text-red-400 md:text-4xl md:text-left text-center"
                 >
                   {t("problems")}
                 </span>
+                <span style={{ display: displayNoneAr }} className="text-3xl">
+                  {t("des2")}
+                </span>
+              
               </h2>
               <p className="text-center md:text-start visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
                 PLATFORM FOR MATHELEM BRANCHE
