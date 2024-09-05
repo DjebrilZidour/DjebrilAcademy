@@ -11,17 +11,8 @@ const Landing = () => {
   return (
     <>
       <Navbar />
-      <div class="gtranslate_wrapper">
-        <a
-          href="http://free-website-translation.com/"
-          id="ftwtranslation_button"
-          hreflang="en"
-        >
-          <img
-            src="https://free-website-translation.com/img/fwt_button_en.gif"
-            id="ftwtranslation_image"
-          />
-        </a>
+    
+
         <section className="flex items-center justify-center font-sans w-full py-12 my-16 ">
           <div className=" w-full flex items-center justify-center gap-16 md:flex-row flex-col md:mx-48">
             <div className="md:w-1/2">
@@ -203,7 +194,7 @@ const Landing = () => {
         <h1>what people sad about us </h1> //! check the drawed paper // check american institute website 
         <div></div>
       </section> */}
-      </div>
+
       <Footer />
     </>
   );
