@@ -232,13 +232,8 @@ const Landing = () => {
         </Link>
       </section>
 
-      {/* <section>
-        <h1>what people sad about us </h1> //! check the drawed paper // check american institute website 
-        <div></div>
-      </section> */}
-      <button onClick={() => i18n.changeLanguage("fr")}>FR</button>
-      <button onClick={() => i18n.changeLanguage("ar")}>AR</button>
-
+   
+    
       <Footer />
     </>
   );
