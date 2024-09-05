@@ -25,7 +25,7 @@ const LanguageSwitcher = ({ changeLanguage }) => {
 
       <button
         onClick={toggleDropdown}
-        className="flex gap-2 items-center px-4 py-2 border border-gray-100 rounded-md bg-white text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        className="flex gap-2 items-center px-4 py-2 border border-gray-100 rounded-md bg-white text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400"
       >
         {/* Display the flag of the selected language */}
         <span className="text-2xl">{flags[currentLang]} </span>
