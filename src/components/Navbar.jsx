@@ -2,6 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { getIsUserLogged } from "../utils/utils";
 import { useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const UserPopUp = (props) => {
   const navigate = useNavigate();
@@ -107,7 +109,7 @@ let isUserLogged = getIsUserLogged();
 const Navbar = () => {
   const [isPopUpClosed, switchPopUpState] = useState(true);
   const [isNavOpened,switchNavState] = useState(false)
-
+  const { i18n } = useTranslation();
   return (
     <>
      <Nav isNavOpened={isNavOpened} switchNavState={switchNavState}/>
@@ -128,7 +130,7 @@ const Navbar = () => {
               <img className=" p-1 h-12 w-12 bg-white rounded-full" src={Logo} />
             </Link>
             <Link to="/">
-              <h1 className="md:text-3xl text-xl">DJebril Academy</h1>
+              <h1 className="md:text-3xl text-xl">DjEbRiL Academy</h1>
             </Link>
           </li>
           
@@ -150,7 +152,11 @@ const Navbar = () => {
                 Dashboard
               </li>
             </Link>
-            
+            <li>
+            <LanguageSwitcher changeLanguage={i18n.changeLanguage} />
+
+
+            </li>
 
             <div className="hidden">
             {!isUserLogged ? (
