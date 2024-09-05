@@ -21,6 +21,7 @@ import CoursePreview from "./pages/dashboard/pages/CoursePreview";
 import ExPreview from "./pages/dashboard/pages/ExPreview";
 import Grade from "./pages/dashboard/pages/Grade";
 import DashVd from "./pages/dashboard/pages/DashVd";
+import i18n from "./i18n";
 const isLogged = getIsUserLogged();
 
 console.log("hi");
