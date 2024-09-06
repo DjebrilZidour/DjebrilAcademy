@@ -170,7 +170,7 @@ const Landing = () => {
 
       <section className="flex flex-col justify-center items-center gap-4 my-12 mx-2">
         <h1 className="text-5xl font-semibold text-center  capitalize">
-          our ceo
+          {t("our_ceo")}
         </h1>
         <div className="flex justify-center items-center w-full md:flex-row flex-col gap-8 my-8 md:px-32  ">
           <div className="flex flex-col  items-center md:items-start md:w-1/2 md:p-4 gap-8">
