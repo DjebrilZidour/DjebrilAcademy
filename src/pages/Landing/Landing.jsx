@@ -57,9 +57,9 @@ const Landing = () => {
       <section className="flex items-center justify-center font-sans w-full py-12 my-16">
         <div
           style={styles.container}
-          className="w-full flex items-center justify-center gap-16"
+          className=" flex items-center justify-center gap-16  mx-24"
         >
-          <div className="md:w-1/2 w-full">
+          <div className="md:w-1/2">
             <div
               style={{ textAlign: textAlign }}
               className="mb-8 text-center lg:mx-0 md:text-left "
@@ -110,7 +110,7 @@ const Landing = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2 w-full">
+          <div className="md:w-1/2">
             <img
               className="rounded-3xl p-4 md:p-0 w-full"
               src="https://plus.unsplash.com/premium_photo-1671069848005-7231fc25703f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWR5aW5nfGVufDB8fDB8fHww"
