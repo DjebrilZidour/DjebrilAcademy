@@ -7,6 +7,7 @@ const resources = {
       "welcome": "Welcome to ",
       "welcomeName": "Djebril Academy",
       "problems": "Problems",
+      "des2":"",
       "platform_desc": "The first platform to fix your mathematics and physics ",
       "get_course": "Get Course/Exercise",
       "learn_more": "Learn more",

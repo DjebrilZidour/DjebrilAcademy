@@ -29,8 +29,8 @@ const Landing = () => {
   // Determine the direction based on language
   const langDirection = i18n.language === "ar" ? "row-reverse" : "row";
   const textAlign = i18n.language === "ar" ? "right" : "left";
-  const displayNoneAr = i18n.language === "ar" ? "none" : "flex";
-  const displayYesAr = i18n.language === "ar" ? "flex" : "none";
+  const displayNoneAr = i18n.language === "ar" ? "none" : "block";
+  const displayYesAr = i18n.language === "ar" ? "block" : "none";
 
   // Define styles for responsive layout and language direction
   const styles = {
@@ -57,7 +57,7 @@ const Landing = () => {
       <section className="flex items-center justify-center font-sans w-full py-12 my-16">
         <div
           style={styles.container}
-          className=" flex items-center justify-center gap-16  mx-24"
+          className=" flex items-center justify-center gap-16  md:mx-24 mx-8"
         >
           <div className="md:w-1/2">
             <div
@@ -68,7 +68,7 @@ const Landing = () => {
                 {t("welcome")} <br />
                 <span className="text-green-400 text-4xl">
                   {t("welcomeName")}
-                </span>
+                </span> <br />
                 <span style={{ display: displayYesAr }} className="text-3xl">
                   {t("des2")}
                 </span>
