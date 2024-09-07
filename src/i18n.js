@@ -75,6 +75,7 @@ const resources = {
       "delete_task": "حذف مهمة",
       "still_for_2025": "لا يزال للعام 2025",
       "error_invalid_task": "يرجى إدخال مهمة صحيحة"
+      
     }
   }
 };

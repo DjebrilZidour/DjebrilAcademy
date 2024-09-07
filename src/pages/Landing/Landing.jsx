@@ -221,7 +221,7 @@ const Landing = () => {
           </div>
         </div>
         <h1 className="text-5xl font-semibold text-center  capitalize p-4">
-          our Team
+          {t("our_team")}
         </h1>
         <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row mx-4">
           <TeamCard
