@@ -19,7 +19,7 @@ const DashboardSideBar = () => {
     <>
       <section
         id="dashboard-side-bar"
-        className="shadow-2xl rounded-2xl py-5  w-80 border-2 ml-4 mt-6 h-full hidden"
+        className="shadow-2xl rounded-2xl py-5  w-80 border-2  mt-6 h-full hidden"
         style={{ display: BarClosed ? "none" : "block" }}
       >
         <div

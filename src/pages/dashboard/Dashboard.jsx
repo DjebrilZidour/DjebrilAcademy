@@ -71,12 +71,12 @@ const Dashboard = () => {
   return (
     <>
       <Navbar />
-      <section style={{flexDirection:langDirection}} className="flex items-start justify-between">
-        <div className="hidden lg:flex">
+      <section style={{flexDirection:langDirection}} className="flex items-start justify-between gap-8 mx-8">
+        <div className="hidden lg:flex ">
           <DashboardSideBar />
         </div>
-        <div className="border-4 border-gray lg:mx-4 mb-4 pb-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50 p-2">
-          <div className="md:hidden">
+        <div className="border-4 border-gray  mb-4 pb-4 mt-6 rounded-3xl flex flex-col items-center justify-center w-full drop-shadow-lg bg-green-50 ">
+          <div className="lg:hidden">
             <ResponsiveSideBar />
           </div>
           <Outlet />
