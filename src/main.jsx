@@ -53,10 +53,13 @@ const router = createBrowserRouter([
         path: "/dashboard/learning/:grade/:type/subjects",
         element: <Subjects />,
       },
-      
       {
-        path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters",
-        element: <SemesterPage />,
+        path: "/dashboard/semester-detail/:moduleName/:semesterNumber/:imgUrl/:courseLink/:grade",
+        element:<SemesterPage />,
+      },
+      {
+        path: "/dashboard/exercice-preview/:moduleName/:semesterNumber/:imgUrl/:courseLink/:grade",
+        element: <ExPreview />,
       },
       {
         path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/courses",

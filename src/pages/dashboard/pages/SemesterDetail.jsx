@@ -1,8 +1,7 @@
-import { useLocation } from "react-router";
+import { useParams } from "react-router-dom";
 import { fetchSemesterDetail } from "../../../api";
 import Btn from "../../../components/Atomic/Btn";
 import { useNavigate } from "react-router";
-import CoursePreview from "./CoursePreview";
 
 const CourseDetail = (props) => {
   const { title, course, courseImage, courseLink } = props;
@@ -37,29 +36,20 @@ const CourseDetail = (props) => {
 };
 
 const CourseTitles = (props) => {
-  const { state } = useLocation();
   const navigate = useNavigate();
 
   const onClickCourse = () => {
-    navigate("/dashboard/coursepreview", {
-      state: {
-        moduleName: state.moduleName,
-        semesterNumber: state.semesterNumber,
-        imgUrl: state.imgUrl,
-        idx: props.idx,
-        type: props.type,
-        grade: state.grade,
-      },
-    });
+    navigate(
+      `/dashboard/coursepreview/${props.moduleName}/${props.semesterNumber}/${props.idx}/${props.type}/${props.grade}`
+    );
   };
 
   return (
     <>
       <div className="  border-2 border-black rounded-xl p-4 w-4/5 ">
         <div className="flex  flex-col md:flex-row-reverse justify-center md:justify-between items-center gap-4">
-
-        <h1 className="capitalize text-3xl">{props.title}</h1>
-        <Btn value="acsess course" onClick={onClickCourse} />
+          <h1 className="capitalize text-3xl">{props.title}</h1>
+          <Btn value="access course" onClick={onClickCourse} />
         </div>
       </div>
     </>
@@ -67,33 +57,26 @@ const CourseTitles = (props) => {
 };
 
 const SemesterDetail = () => {
-  const { state } = useLocation();
-  const { moduleName, semesterNumber, imgUrl, courseLink, type } = state;
-  console.log(courseLink);
-  const courses = fetchSemesterDetail(
-    moduleName.toLowerCase(),
-    semesterNumber - 1
-  );
-  console.log(typeof imgUrl);
+  const { moduleName, semesterNumber, imgUrl, courseLink, grade } = useParams();
+  const courses = fetchSemesterDetail(moduleName.toLowerCase(), semesterNumber - 1);
   const officialLink = imgUrl;
-  console.log(officialLink);
 
   return (
     <div className="w-full">
-      <div className=" rounded-xl w-full rounded-xl flex md:flex-row flex-col justify-between items-center h-64 mb-16 drop-shadow-xl">
+      <div className=" rounded-xl w-full flex md:flex-row flex-col justify-between items-center h-64 mb-16 drop-shadow-xl">
         <div
           style={{ backgroundImage: `url(${officialLink})` }}
           className="text-5xl text-white font-bold bg-cover  py-4 w-4/5 h-full px-4 py-8  rounded-t-xl md:rounded-l-xl flex justify-start items-center"
         >
           {" "}
-          <h1> {state.moduleName} </h1>
+          <h1> {moduleName} </h1>
         </div>
 
         <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-2/6 md:h-full px-4 py-2 md:py-8  rounded-b-xl flex justify-center  gap-4 items-center flex-col">
           {" "}
-          <h1 className="text-md"> Triméstre {state.semesterNumber} </h1>
+          <h1 className="text-md"> Trimestre {semesterNumber} </h1>
           <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full ">
-            {state.grade}AS
+            {grade}AS
           </h1>
         </div>
       </div>
@@ -102,20 +85,21 @@ const SemesterDetail = () => {
           courses.map((singleCourse, idx) => {
             return (
               <CourseTitles
-                idx={idx}
                 key={idx}
+                idx={idx}
                 moduleName={moduleName}
                 semesterNumber={semesterNumber}
                 title={singleCourse.courseTitle}
                 course={singleCourse.courseDetail}
                 courseImage={singleCourse.courseImage}
                 courseLink={singleCourse.courseLink}
-                type={type}
+                type="co" // Add type from URL if necessary
+                grade={grade}
               />
             );
           })
         ) : (
-          <p className="text-red-400 ">no content</p>
+          <p className="text-red-400">no content</p>
         )}
       </div>
     </div>

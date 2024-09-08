@@ -3,30 +3,13 @@ import { useLocation, useNavigate } from "react-router";
 const SemesterPage = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
+
   const onClickSemester = (semesterNumber) => {
-    if (state.type === "co") {
-      navigate("/dashboard/semester-detail", {
-        state: {
-          moduleName: state.moduleName,
-          semesterNumber: semesterNumber,
-          imgUrl: state.imgUrl,
-          courseLink: state.courseLink,
-          type: state.type,
-          grade: state.grade,
-        },
-      });
-    } else {
-      navigate("/dashboard/exercice-preview", {
-        state: {
-          moduleName: state.moduleName,
-          semesterNumber: semesterNumber,
-          imgUrl: state.imgUrl,
-          courseLink: state.courseLink,
-          type: state.type,
-          grade: state.grade,
-        },
-      });
-    }
+    const path = state.type === "co"
+      ? `/dashboard/semester-detail/${state.moduleName}/${semesterNumber}/${state.imgUrl}/${state.courseLink}/${state.grade}`
+      : `/dashboard/exercice-preview/${state.moduleName}/${semesterNumber}/${state.imgUrl}/${state.courseLink}/${state.grade}`;
+    
+    navigate(path);
   };
 
   return (
@@ -40,16 +23,16 @@ const SemesterPage = () => {
         <h1 className="text-4xl "> {state.moduleName} </h1>
         <h2 className="text-md md:text-xl capitalize py-4">
           {" "}
-          merci de selectionner votre Triméstre !!
+          Merci de sélectionner votre Trimestre !!
         </h2>
 
         <h1
           onClick={() => {
             onClickSemester(1);
           }}
-          className="w-full text-md text-center md:text-2xl   capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+          className="w-full text-md text-center md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
-          Triméstre 1
+          Trimestre 1
         </h1>
 
         <h1
@@ -58,7 +41,7 @@ const SemesterPage = () => {
           }}
           className="w-full text-md text-center md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
-          Triméstre 2
+          Trimestre 2
         </h1>
 
         <h1
@@ -67,7 +50,7 @@ const SemesterPage = () => {
           }}
           className="w-full text-md text-center md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
-          Triméstre 3
+          Trimestre 3
         </h1>
       </section>
     </>
