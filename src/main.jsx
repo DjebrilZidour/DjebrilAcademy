@@ -47,35 +47,33 @@ const router = createBrowserRouter([
     children: [
       { path: "/dashboard", element: <Default /> },
       { path: "/dashboard/home", element: <Default /> },
-    //   { path: "/dashboard/learning-grade", element: <Grade /> },
-    //   { path: "/dashboard/learning-welcome", element: <Learning /> },
-    //   { path: "/dashboard/learning-courses", element: <Subjects type="co" /> },
-    //   { path: "/dashboard/learning-exc", element: <Subjects type="ex" /> },
-    //   { path: "/dashboard/vidéos", element: <DashVd /> },
-
-    //   { path: "/dashboard/semesters", element: <SemesterPage /> },
-    //   { path: "/dashboard/semester-detail", element: <SemesterDetail /> },
-    //   { path: "/dashboard/coursepreview", element: <CoursePreview /> },
-    //   { path: "/dashboard/exercice-preview", element: <ExPreview /> },
-
-    //   { path: '/dashboard/learning/grades', element: <Grade />  },
-    // { path: '/dashboard/learning/:grade/subjects', element: <SubjectSelection /> },
-    // { path: '/dashboard/learning/:grade/subjects/:subject/trimesters', element: <TrimesterSelection /> },
-    // { path: '/dashboard/learning/:grade/subjects/:subject/trimesters/:trimester/courses', element: <CourseSelection /> },
-    // { path: '/dashboard/learning/:grade/subjects/:subject/trimesters/:trimester/courses/:course', element: <CourseExposition /> }
-    { path: "/dashboard/learning-grade", element: <Grade /> },
-    { path: "/dashboard/learning/:grade/choose", element: <Learning /> },
-    { path: "/dashboard/learning/:grade/courses/subjects", element: <Subjects type="co" /> },
-    { path: "/dashboard/learning/:grade/exercises/subjects", element: <Subjects type="ex" /> },
-    { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters", element: <SemesterPage /> },
-    { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/courses", element: <SemesterDetail /> },
-    // { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises", element: <ExerciseSelection /> },
-    { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/courses/:course", element: <CoursePreview /> },
-    { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises/:exercise", element: <ExPreview /> },
-    { path: "/dashboard/semesters", element: <SemesterPage /> },
-    { path: "/dashboard/semester-detail", element: <SemesterDetail /> },
-    { path: "/dashboard/vidéos", element: <DashVd /> }
+      { path: "/dashboard/learning-grade", element: <Grade /> },
+      { path: "/dashboard/learning/:grade/choose", element: <Learning /> },
+      {
+        path: "/dashboard/learning/:grade/:type/subjects",
+        element: <Subjects />,
+      },
       
+      {
+        path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters",
+        element: <SemesterPage />,
+      },
+      {
+        path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/courses",
+        element: <SemesterDetail />,
+      },
+      // { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises", element: <ExerciseSelection /> },
+      {
+        path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/courses/:course",
+        element: <CoursePreview />,
+      },
+      {
+        path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises/:exercise",
+        element: <ExPreview />,
+      },
+      { path: "/dashboard/semesters", element: <SemesterPage /> },
+      { path: "/dashboard/semester-detail", element: <SemesterDetail /> },
+      { path: "/dashboard/vidéos", element: <DashVd /> },
     ],
   },
 

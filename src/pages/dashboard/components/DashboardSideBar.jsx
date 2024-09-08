@@ -33,7 +33,7 @@ const DashboardSideBar = () => {
             onClick={sideBare}
           />
         </div>
-        <Link Link to="/dashboard/home">
+        <Link to="/dashboard/home">
           <div className="flex items-center justify-start border-b-2">
             <img
               className="w-8 m-4 cursor-pointer"
