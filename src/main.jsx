@@ -54,15 +54,15 @@ const router = createBrowserRouter([
         element: <Subjects />,
       },
       {
-        path: "/dashboard/semester-detail/:moduleName/:semesterNumber/:imgUrl/:courseLink/:grade",
-        element:<SemesterPage />,
+        path: "/dashboard/learning/:grade/:type/subjects/:moduleName/trimesters",
+        element: <SemesterPage />,
       },
       {
-        path: "/dashboard/exercice-preview/:moduleName/:semesterNumber/:imgUrl/:courseLink/:grade",
+        path: "/dashboard/exercice-preview/:moduleName/:semesterNumber/:grade",
         element: <ExPreview />,
       },
       {
-        path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/courses",
+        path: "/dashboard/semester-detail/:moduleName/:semesterNumber/:imgUrl/:grade",
         element: <SemesterDetail />,
       },
       // { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises", element: <ExerciseSelection /> },

@@ -1,5 +1,4 @@
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import SubjectCard from "../components/SubjectCard";
 
 const modules = [
@@ -9,14 +8,14 @@ const modules = [
     imgUrl: "https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    moduleName: "Physics", // Fixed typo
+    moduleName: "Physics",
     img: "https://images.pexels.com/photos/68173/flash-tesla-coil-experiment-faradayscher-cage-68173.jpeg?auto=compress&cs=tinysrgb&w=800",
     imgUrl: "https://media.istockphoto.com/id/953006834/photo/science-math-chemistry-equations.jpg?s=612x612&w=0&k=20&c=kF7XAjZlhC1QgUOEZS7A6p6tMYAS1oF4nFLG5XQQgbE=",
   },
 ];
 
 const Subjects = () => {
-  const { grade, choice } = useParams(); // Retrieve grade and choice (course or exercise) from the URL
+  const { grade, type } = useParams(); // Retrieve grade and type from URL parameters
 
   return (
     <>
@@ -29,14 +28,14 @@ const Subjects = () => {
         {modules.map((element) => (
           <Link
             key={element.moduleName}
-            to={`/dashboard/learning/${grade}/${choice}/subjects/${element.moduleName.toLowerCase()}/trimesters`}
+            to={`/dashboard/learning/${grade}/${type}/subjects/${element.moduleName.toLowerCase()}/trimesters`}
           >
             <SubjectCard
               imageUrl={element.img}
               subName={element.moduleName}
               imgUrl={element.imgUrl}
               grade={grade}
-              type={choice} // Pass the course/exercise choice to SubjectCard
+              type={type}
             />
           </Link>
         ))}
