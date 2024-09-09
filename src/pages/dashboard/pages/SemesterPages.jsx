@@ -6,10 +6,24 @@ const SemesterPage = () => {
   const { grade, type, moduleName ,imgUrl} = useParams();
   const onClickSemester = (semesterNumber) => {
     if (type === "co") {
-      navigate(`/dashboard/semester-detail/${moduleName}/${semesterNumber}/${imgUrl}/${grade}`);
+      navigate(`/dashboard/semester-detail/${moduleName}/${semesterNumber}/${imgUrl}/${grade}`, {
+        state: {
+          moduleName: moduleName,
+          semesterNumber: semesterNumber,
+          imgUrl: imgUrl,
+          grade: grade,
+        }
+      });
     } else {
-      navigate(`/dashboard/exercice-preview/${moduleName}/${semesterNumber}/${grade}`);
+      navigate(`/dashboard/exercice-preview/${moduleName}/${semesterNumber}/${grade}`, {
+        state: {
+          moduleName: moduleName,
+          semesterNumber: semesterNumber,
+          grade: grade,
+        }
+      });
     }
+    
   };
 
 
