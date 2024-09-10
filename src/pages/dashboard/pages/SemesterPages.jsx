@@ -1,18 +1,20 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+
 const SemesterPage = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
-  const { grade, type, moduleName ,imgUrl} = useParams();
+  const { grade, type, moduleName } = useParams();
+
   const onClickSemester = (semesterNumber) => {
     if (type === "co") {
-      navigate(`/dashboard/semester-detail/${moduleName}/${semesterNumber}/${imgUrl}/${grade}`, {
+      navigate(`/dashboard/semester-detail/${moduleName}/${semesterNumber}/${grade}`, {
         state: {
           moduleName: moduleName,
           semesterNumber: semesterNumber,
-          imgUrl: imgUrl,
+          imgUrl: state.imgUrl, // Use imgUrl from the state
           grade: grade,
-        }
+        },
       });
     } else {
       navigate(`/dashboard/exercice-preview/${moduleName}/${semesterNumber}/${grade}`, {
@@ -20,12 +22,10 @@ const SemesterPage = () => {
           moduleName: moduleName,
           semesterNumber: semesterNumber,
           grade: grade,
-        }
+        },
       });
     }
-    
   };
-
 
   // Check if parameters are available
   if (!grade || !type || !moduleName) {
@@ -34,6 +34,7 @@ const SemesterPage = () => {
 
   return (
     <>
+   
       <div className="flex justify-end w-full">
         <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full mr-4">
           {grade} AS

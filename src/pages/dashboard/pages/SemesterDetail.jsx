@@ -7,19 +7,14 @@ import CoursePreview from "./CoursePreview";
 const CourseTitles = (props) => {
   const { state } = useLocation();
   const navigate = useNavigate();
-
   const onClickCourse = () => {
-    navigate("/dashboard/coursepreview", {
+    navigate(`/dashboard/coursepreview/${state?.moduleName}/${state?.semesterNumber}/${props.idx}/${state?.grade}/${state?.type}/${state?.imgUrl}`, {
       state: {
-        moduleName: state?.moduleName,
-        semesterNumber: state?.semesterNumber,
-        imgUrl: state?.imgUrl,
-        idx: props.idx,
-        type: props.type,
-        grade: state?.grade,
-      },
+        // You may want to pass other state data if necessary
+      }
     });
   };
+  
 
   return (
     <div className="border-2 border-black rounded-xl p-4 w-4/5">
@@ -39,13 +34,13 @@ const SemesterDetail = () => {
   const { moduleName, semesterNumber, imgUrl, courseLink, type, grade } = state;
 
   const courses = fetchSemesterDetail(moduleName.toLowerCase(), semesterNumber - 1);
-  const officialLink = imgUrl;
+
 
   return (
     <div className="w-full">
       <div className="rounded-xl w-full flex md:flex-row flex-col justify-between items-center h-64 mb-16 drop-shadow-xl">
         <div
-          style={{ backgroundImage: `url(${officialLink})` }}
+          style={{ backgroundImage: `url(${state.imgUrl})` }}
           className="text-5xl text-white font-bold bg-cover py-4 w-4/5 h-full px-4 py-8 rounded-t-xl md:rounded-l-xl flex justify-start items-center"
         >
           <h1>{moduleName}</h1>
