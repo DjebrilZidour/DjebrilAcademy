@@ -9,13 +9,14 @@ const CourseTitles = (props) => {
   const {type } = useParams();
   const navigate = useNavigate();
   const onClickCourse = () => {
-    const encodedImgUrl = encodeURIComponent(state.imgUrl);
-    navigate(`/dashboard/coursepreview/${state?.moduleName}/${state?.semesterNumber}/${props.idx}/${state?.grade}/${type}/${encodedImgUrl}`, {
+    navigate(`/dashboard/coursepreview/${state?.moduleName}/${state?.semesterNumber}/${props.idx}/${state?.grade}`, {
       state: {
-        // You may want to pass other state data if necessary
+        imgUrl: state?.imgUrl,  // Pass only necessary data through state
+        type: props.type,       // Optional state information
       }
     });
   };
+  
   
 
   return (

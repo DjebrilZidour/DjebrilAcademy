@@ -1,13 +1,12 @@
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { fetchSemesterDetail } from "../../../api";
 import PdfPreview from "../components/PdfPreview";
 
 const CoursePreview = () => {
-    // Extract from URL
-  const { moduleName, semesterNumber, idx, grade, type, encodedImgUrl } = useParams();
-  const decodedImgUrl = decodeURIComponent(encodedImgUrl); // Decode the imgUrl
+  const { moduleName, semesterNumber, idx, grade } = useParams();  // Extract from URL
+  const { state } = useLocation();  // Retrieve optional state data like imgUrl
+  const imgUrl = state?.imgUrl || "defaultImageUrl";  // Use a fallback if state.imgUrl is not available
 
-  console.log(decodedImgUrl);
   const courseData = fetchSemesterDetail(moduleName.toLowerCase(), semesterNumber - 1);
   const course = courseData[idx];
 
@@ -15,7 +14,7 @@ const CoursePreview = () => {
     <>
       <div className="rounded-xl w-full flex justify-between items-center h-64">
         <div
-          style={{ backgroundImage: `url(${decodedImgUrl})` }}
+          style={{ backgroundImage: `url(${imgUrl})` }}
           className="text-5xl text-white font-bold bg-cover py-4 w-4/5 h-full px-4 rounded-tl-xl"
         >
           <h1>{moduleName}</h1>

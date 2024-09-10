@@ -67,7 +67,7 @@ const router = createBrowserRouter([
       },
       // { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises", element: <ExerciseSelection /> },
       {
-        path: "/dashboard/coursepreview/:moduleName/:semesterNumber/:idx/:grade/:type/:imgUrl",  // Add imgUrl and type
+        path: "/dashboard/coursepreview/:moduleName/:semesterNumber/:idx/:grade",
         element: <CoursePreview />,
       },
       {
