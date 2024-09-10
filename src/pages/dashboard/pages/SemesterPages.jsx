@@ -8,7 +8,7 @@ const SemesterPage = () => {
 
   const onClickSemester = (semesterNumber) => {
     if (type === "co") {
-      navigate(`/dashboard/semester-detail/${moduleName}/${semesterNumber}/${grade}`, {
+      navigate(`/dashboard/semester-detail/${moduleName}/${type}/${semesterNumber}/${grade}`, {
         state: {
           moduleName: moduleName,
           semesterNumber: semesterNumber,

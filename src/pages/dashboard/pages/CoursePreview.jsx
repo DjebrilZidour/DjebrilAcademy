@@ -3,8 +3,11 @@ import { fetchSemesterDetail } from "../../../api";
 import PdfPreview from "../components/PdfPreview";
 
 const CoursePreview = () => {
-  const { moduleName, semesterNumber, idx, grade, type, imgUrl } = useParams();  // Extract from URL
+    // Extract from URL
+  const { moduleName, semesterNumber, idx, grade, type, encodedImgUrl } = useParams();
+  const decodedImgUrl = decodeURIComponent(encodedImgUrl); // Decode the imgUrl
 
+  console.log(decodedImgUrl);
   const courseData = fetchSemesterDetail(moduleName.toLowerCase(), semesterNumber - 1);
   const course = courseData[idx];
 
@@ -12,7 +15,7 @@ const CoursePreview = () => {
     <>
       <div className="rounded-xl w-full flex justify-between items-center h-64">
         <div
-          style={{ backgroundImage: `url(${imgUrl})` }}
+          style={{ backgroundImage: `url(${decodedImgUrl})` }}
           className="text-5xl text-white font-bold bg-cover py-4 w-4/5 h-full px-4 rounded-tl-xl"
         >
           <h1>{moduleName}</h1>

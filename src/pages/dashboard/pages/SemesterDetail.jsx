@@ -3,12 +3,14 @@ import { fetchSemesterDetail } from "../../../api";
 import Btn from "../../../components/Atomic/Btn";
 import { useNavigate } from "react-router";
 import CoursePreview from "./CoursePreview";
-
+import { useParams } from "react-router-dom";
 const CourseTitles = (props) => {
   const { state } = useLocation();
+  const {type } = useParams();
   const navigate = useNavigate();
   const onClickCourse = () => {
-    navigate(`/dashboard/coursepreview/${state?.moduleName}/${state?.semesterNumber}/${props.idx}/${state?.grade}/${state?.type}/${state?.imgUrl}`, {
+    const encodedImgUrl = encodeURIComponent(state.imgUrl);
+    navigate(`/dashboard/coursepreview/${state?.moduleName}/${state?.semesterNumber}/${props.idx}/${state?.grade}/${type}/${encodedImgUrl}`, {
       state: {
         // You may want to pass other state data if necessary
       }

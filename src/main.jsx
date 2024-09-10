@@ -62,12 +62,12 @@ const router = createBrowserRouter([
         element: <ExPreview />,
       },
       {
-        path: "/dashboard/semester-detail/:moduleName/:semesterNumber/:grade",
+        path: "/dashboard/semester-detail/:moduleName/:type/:semesterNumber/:grade",
         element: <SemesterDetail />,
       },
       // { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises", element: <ExerciseSelection /> },
       {
-        path: "/dashboard/coursepreview/:moduleName/:semesterNumber/:idx/:grade",
+        path: "/dashboard/coursepreview/:moduleName/:semesterNumber/:idx/:grade/:type/:imgUrl",  // Add imgUrl and type
         element: <CoursePreview />,
       },
       {
