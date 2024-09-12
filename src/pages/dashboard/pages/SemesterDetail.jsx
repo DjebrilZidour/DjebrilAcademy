@@ -40,8 +40,9 @@ const SemesterDetail = () => {
   ];
   const { moduleName, semesterNumber, imgUrl, type, grade } = useParams(); // Extract params from URL
   const moduleData = modules.find((element) => element.moduleName === moduleName);
+  console.log(grade);
   // Fetch courses based on moduleName and semesterNumber
-  const courses = fetchSemesterDetail(moduleName.toLowerCase(), semesterNumber - 1);
+  const courses = fetchSemesterDetail(moduleName.toLowerCase(), semesterNumber - 1, grade);
 console.log(courses);
   return (
     <div className="w-full px-4 my-4">
