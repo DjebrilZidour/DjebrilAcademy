@@ -39,7 +39,7 @@ const dataBase = [
       ],
       [
         {
-          courseTitle: "course math title sem 2",
+          courseTitle: "cou2",
           courseDetail: "course math detail sem 2",
           courseImage: "",
           pdfUrl: "",
@@ -433,17 +433,17 @@ const dataBase = [
 export const fetchSemesterDetail = (module, sem, grade) => {
   const dataList = dataBase.find((m) => module === m.module);
  
-  if (grade === 1) {
+  if (grade == 1) {
     const courseData =
     dataList?.semesters1.length > 0 ? dataList.semesters1[sem] : [];
   return courseData;
-  }else if(grade === 2){
+  }else if(grade == 2){
     const courseData =
-    dataList?.semesters2.length > 0 ? dataList.semesters1[sem] : [];
+    dataList?.semesters2.length > 0 ? dataList.semesters2[sem] : [];
   return courseData;
   }else{
     const courseData =
-    dataList?.semesters3.length > 0 ? dataList.semesters1[sem] : [];
+    dataList?.semesters3.length > 0 ? dataList.semesters3[sem] : [];
   return courseData;
   }
   
