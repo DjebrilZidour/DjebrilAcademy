@@ -24,15 +24,15 @@ const {t}= useTranslation()
         <div className="py-36 lg:mx-4 lg:px-32 flex flex-col items-center justify-center gap-8">
           <button
             onClick={() => onClickType("co")}
-            className="px-28 py-6 rounded-lg background hover:scale-105 duration-200"
+            className="md:text-4xl text-xl uppercase background px-8 py-3 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200 w-96"
           >
-            <h1 className="text-3xl cursor-pointer">{t("courses")}</h1>
+            <h1 className="cursor-pointer">{t("courses")}</h1>
           </button>
           <button
             onClick={() => onClickType("ex")}
-            className="px-28 py-6 rounded-lg background hover:scale-105 duration-200"
+            className="md:text-4xl text-xl uppercase background px-8 py-3 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200 w-96"
           >
-            <h1 className="text-3xl cursor-pointer">{t("exercices")}</h1>
+            <h1 className="cursor-pointer">{t("exercices")}</h1>
         
           </button>
         </div>
