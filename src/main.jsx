@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./app/App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./app/App";
 import Login from "./pages/auth/Login/Login";
 import SignUp from "./pages/auth/SignUp/SignUp";
 import BacGettingStarted from "./pages/BacPrep/BacGettingStarted";
@@ -16,94 +16,56 @@ import LearningProcess from "./pages/dashboard/pages/LearningProgress";
 import Team from "./pages/Team/Team";
 import SemesterPage from "./pages/dashboard/pages/SemesterPages";
 import SemesterDetail from "./pages/dashboard/pages/SemesterDetail";
-
 import CoursePreview from "./pages/dashboard/pages/CoursePreview";
 import ExPreview from "./pages/dashboard/pages/ExPreview";
 import Grade from "./pages/dashboard/pages/Grade";
 import DashVd from "./pages/dashboard/pages/DashVd";
 import i18n from "./i18n";
+
 const isLogged = getIsUserLogged();
 
-console.log("hi");
 const router = createBrowserRouter([
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/",
-    element: <Landing />,
-  },
+  // Landing page routes for different languages
+  { path: "/en", element: <Landing language="en" /> },
+  { path: "/ar", element: <Landing language="ar" /> },
+  { path: "/fr", element: <Landing language="fr" /> },
+  { path: "/", element: <Landing language="en" /> }, // Fallback to English
+
+  // Auth routes
+  { path: "/login", element: <Login /> },
   { path: "/signup", element: <SignUp /> },
 
-  {
-    path: "/bac-getting-started",
-    element: <BacGettingStarted />,
-  },
+  // Bac preparation route
+  { path: "/bac-getting-started", element: <BacGettingStarted /> },
 
+  // Dashboard with nested dynamic routes
   {
     path: "/dashboard",
     element: <Dashboard />,
     children: [
-      { path: "/dashboard", element: <Default /> },
-      { path: "/dashboard/home", element: <Default /> },
-      { path: "/dashboard/learning-grade", element: <Grade /> },
-      { path: "/dashboard/learning/:grade/choose", element: <Learning /> },
-      {
-        path: "/dashboard/learning/:grade/:type/subjects",
-        element: <Subjects />,
-      },
-      {
-        path: "/dashboard/learning/:grade/:type/subjects/:moduleName/trimesters",
-        element: <SemesterPage />,
-      },
-      {
-        path: "/dashboard/exercice-preview/:moduleName/:semesterNumber/:grade",
-        element: <ExPreview />,
-      },
-      {
-        path: "/dashboard/semester-detail/:moduleName/:type/:semesterNumber/:grade",
-        element: <SemesterDetail />,
-      },
-      // { path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises", element: <ExerciseSelection /> },
-      {
-        path: "/dashboard/coursepreview/:moduleName/:semesterNumber/:idx/:grade",
-        element: <CoursePreview />,
-      },
-      {
-        path: "/dashboard/learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises/:exercise",
-        element: <ExPreview />,
-      },
-      { path: "/dashboard/semesters", element: <SemesterPage /> },
-      { path: "/dashboard/semester-detail", element: <SemesterDetail /> },
-      { path: "/dashboard/vidéos", element: <DashVd /> },
+      { path: "", element: <Default /> }, // Default dashboard route
+      { path: "home", element: <Default /> },
+      { path: "learning-grade", element: <Grade /> },
+      { path: "learning/:grade/choose", element: <Learning /> },
+      { path: "learning/:grade/:type/subjects", element: <Subjects /> },
+      { path: "learning/:grade/:type/subjects/:moduleName/trimesters", element: <SemesterPage /> },
+      { path: "exercice-preview/:moduleName/:semesterNumber/:grade", element: <ExPreview /> },
+      { path: "semester-detail/:moduleName/:type/:semesterNumber/:grade", element: <SemesterDetail /> },
+      { path: "coursepreview/:moduleName/:semesterNumber/:idx/:grade", element: <CoursePreview /> },
+      { path: "learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises/:exercise", element: <ExPreview /> },
+      { path: "semesters", element: <SemesterPage /> },
+      { path: "semester-detail", element: <SemesterDetail /> },
+      { path: "vidéos", element: <DashVd /> },
     ],
   },
 
-  {
-    path: "/profile",
-    element: <Profile />,
-  },
-  {
-    path: "/dashboard",
-    element: <Default />,
-  },
-  {
-    path: "/subjects",
-    element: <Subjects />,
-  },
-  {
-    path: "/learning",
-    element: <Learning />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/team",
-    element: <Team />,
-  },
+  // Profile route
+  { path: "/profile", element: <Profile /> },
+
+  // About, subjects, and team routes
+  { path: "/about", element: <About /> },
+  { path: "/subjects", element: <Subjects /> },
+  { path: "/team", element: <Team /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -28,7 +28,13 @@ const resources = {
       "1as": "1AS",
       "2as": "2AS",
       "3as": "3AS",
-      "select":"Please select your grade",
+      "select": "Please select your grade",
+      "math": "Math",
+      "physics": "Physics",
+      "select_trimester": "Please select your trimester!!",
+      "trimester_1": "Trimester 1",
+      "trimester_2": "Trimester 2",
+      "trimester_3": "Trimester 3",
     }
   },
   fr: {
@@ -57,7 +63,13 @@ const resources = {
       "1as": "1AS",
       "2as": "2AS",
       "3as": "3AS",
-      "select":"Selectionne votre niveaux scolaire svp",
+      "select": "Selectionne votre niveaux scolaire svp",
+      "math": "Mathématiques",
+      "physics": "Physique",
+      "select_trimester": "Veuillez sélectionner votre trimestre !!",
+      "trimester_1": "Trimestre 1",
+      "trimester_2": "Trimestre 2",
+      "trimester_3": "Trimestre 3",
     }
   },
   ar: {
@@ -86,7 +98,13 @@ const resources = {
       "1as": "السنة اولى جذع مشترك علوم و تكنولوجيا",
       "2as": "السنة ثانية رياضيات",
       "3as": "السنة ثالثة رياضيات",
-      "select":"إختر السنة الدراسية من فضلك",
+      "select": "إختر السنة الدراسية من فضلك",
+      "math": "رياضيات",
+      "physics": "فيزياء",
+      "select_trimester": "يرجى اختيار الفصل الدراسي!!",
+      "trimester_1": "الفصل الدراسي 1",
+      "trimester_2": "الفصل الدراسي 2",
+      "trimester_3": "الفصل الدراسي 3",
     }
   }
 };
