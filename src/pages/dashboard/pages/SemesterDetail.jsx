@@ -42,7 +42,7 @@ const SemesterDetail = () => {
   const moduleData = modules.find((element) => element.moduleName === moduleName);
   // Fetch courses based on moduleName and semesterNumber
   const courses = fetchSemesterDetail(moduleName.toLowerCase(), semesterNumber - 1);
-
+console.log(courses);
   return (
     <div className="w-full px-4 my-4">
       <div className="md:rounded-l-xl rounded-t-xl w-full flex md:flex-row flex-col justify-between mb-16 items-center h-64 drop-shadow-xl">

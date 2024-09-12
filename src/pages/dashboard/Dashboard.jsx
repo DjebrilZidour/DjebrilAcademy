@@ -9,6 +9,11 @@ import ResponsiveSideBar from "./components/ResponsiveSideBar";
 import Countdown from "./components/Countdown";
 import i18n from "../../i18n";
 
+const langDirection = i18n.language === "ar" ? "row-reverse" : "row";
+const textAlign = i18n.language === "ar" ? "right" : "left";
+const displayNoneAr = i18n.language === "ar" ? "none" : "block";
+const displayYesAr = i18n.language === "ar" ? "block" : "none";
+
 const TodoList = () => {
   const { t } = useTranslation();
   const [typedTask, setTypedTask] = useState("");

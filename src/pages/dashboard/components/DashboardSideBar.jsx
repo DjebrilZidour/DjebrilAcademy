@@ -1,30 +1,44 @@
 import { getIsUserLogged } from "../../../utils/utils";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import i18n from "../../../i18n";
 
 const DashboardSideBar = () => {
   let isUserLogged = getIsUserLogged();
   const [BarClosed, setBarState] = useState(false);
   const navigate = useNavigate();
+  
+  // Dynamic styles based on language
+  const [flexDirection, setFlexDirection] = useState("row");
+  const [textAlign, setTextAlign] = useState("left");
+  const [displayNone, setDisplayNone] = useState("none");
+  const [displayYes, setDisplayYes] = useState("block");
+
+  useEffect(() => {
+    const direction = i18n.language === "ar" ? "row-reverse" : "row";
+    const align = i18n.language === "ar" ? "right" : "left";
+    const noneDisplay = i18n.language === "ar" ? "none" : "block";
+    const yesDisplay = i18n.language === "ar" ? "block" : "none";
+
+    setFlexDirection(direction);
+    setTextAlign(align);
+    setDisplayNone(noneDisplay);
+    setDisplayYes(yesDisplay);
+  }, [i18n.language]);
+
   const sideBare = () => {
-    console.log("im in ");
-    if (BarClosed) {
-      setBarState(false);
-    } else {
-      setBarState(true);
-    }
+    setBarState(!BarClosed);
   };
 
   return (
     <>
       <section
         id="dashboard-side-bar"
-        className="shadow-2xl rounded-2xl py-5  w-80 border-2  mt-6 h-full hidden"
+        className="shadow-2xl rounded-2xl py-5 w-80 border-2 mt-6 h-full hidden"
         style={{ display: BarClosed ? "none" : "block" }}
       >
         <div
-          
-          className="flex justify-end items-center flex-end mx-4 rounded-full "
+          className="flex justify-end items-center flex-end mx-4 rounded-full"
         >
           <img
             src="https://cdn-icons-png.flaticon.com/128/2985/2985161.png"
@@ -34,29 +48,30 @@ const DashboardSideBar = () => {
           />
         </div>
         <Link to="/dashboard/home">
-          <div className="flex items-center justify-start border-b-2">
+          <div style={{ flexDirection }} className="flex items-center justify-start border-b-2">
             <img
               className="w-8 m-4 cursor-pointer"
               src="https://cdn-icons-png.flaticon.com/128/3917/3917711.png"
               alt=""
             />
-
-            <h1 className="text-3xl my-4 cursor-pointer">Dashboard</h1>
+            <h1 className="text-3xl my-4 cursor-pointer" style={{ textAlign }}>
+              Dashboard
+            </h1>
           </div>
         </Link>
 
         <Link to="/dashboard/learning-grade">
-          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
+          <div style={{ flexDirection }} className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
             <img
               className="w-12 mx-2 px-1"
               src="https://cdn-icons-png.flaticon.com/128/4185/4185218.png"
               alt=""
             />
-            <h2>learning</h2>
+            <h2>Learning</h2>
           </div>
         </Link>
         <Link to="/dashboard/vidéos">
-          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
+          <div style={{ flexDirection }} className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
             <img
               className="w-12 mx-2 px-1"
               src="https://cdn-icons-png.flaticon.com/128/5948/5948543.png"
@@ -66,7 +81,7 @@ const DashboardSideBar = () => {
           </div>
         </Link>
         <Link to="/dashboard/learning-progress">
-          <div className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
+          <div style={{ flexDirection }} className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
             <img
               className="w-12 mx-2 px-1"
               src="https://cdn-icons-png.flaticon.com/128/3208/3208799.png"
@@ -88,11 +103,10 @@ const DashboardSideBar = () => {
               onClick={() => {
                 localStorage.setItem("isUserLoggedIn", "false");
                 isUserLogged = getIsUserLogged();
-                console.log(isUserLogged);
                 navigate("/");
               }}
             >
-              log out
+              Log out
             </h1>
           </div>
         </div>
@@ -101,18 +115,17 @@ const DashboardSideBar = () => {
       <section style={{ display: BarClosed ? "block" : "none" }}>
         <div className="flex justify-center items-center gap-4 flex-col m-4 w-24 border-2 rounded-2xl py-4">
           <div
-           
             className="flex items-center justify-end p-4 rounded-full cursor-pointer"
           >
             <img
-              className="w-8 "
+              className="w-8"
               src="https://cdn-icons-png.flaticon.com/128/271/271228.png"
               alt=""
               onClick={sideBare}
             />
           </div>
 
-          <Link Link to="/dashboard/home">
+          <Link to="/dashboard/home">
             <img
               className="w-10 m-2"
               src="https://cdn-icons-png.flaticon.com/128/3917/3917711.png"
@@ -145,14 +158,12 @@ const DashboardSideBar = () => {
               onClick={() => {
                 localStorage.setItem("isUserLoggedIn", "false");
                 isUserLogged = getIsUserLogged();
-                console.log(isUserLogged);
                 navigate("/");
               }}
             />
           </div>
         </div>
       </section>
-     
     </>
   );
 };

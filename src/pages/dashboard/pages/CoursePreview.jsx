@@ -1,7 +1,7 @@
 import { useParams, useLocation } from "react-router-dom";
 import { fetchSemesterDetail } from "../../../api";
 import PdfPreview from "../components/PdfPreview";
-
+import { useTranslation } from "react-i18next";
 const modules = [
   {
     moduleName: "math",
@@ -16,6 +16,7 @@ const modules = [
 ];
 
 const CoursePreview = () => {
+  const {t}= useTranslation()
   const { moduleName, semesterNumber, idx, grade } = useParams(); // Extract from URL
   const { state } = useLocation(); // Retrieve optional state data like imgUrl
  // Use a fallback if state.imgUrl is not available
@@ -34,7 +35,7 @@ const CoursePreview = () => {
             style={{ backgroundImage: `url(${moduleData.imgUrl})` }}
             className="text-5xl text-white font-bold bg-cover py-4 w-4/5 h-full px-4 py-8 rounded-tl-xl flex md:justify-start justify-center items-center"
           >
-            <h1 className="capitalize md:text-left text-center">{moduleName}</h1>
+            <h1 className="capitalize md:text-left text-center">{t(moduleName)}</h1>
           </div>
 
           <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-2/6 md:h-full px-4 py-2 md:py-8 rounded-tr-xl flex justify-center gap-4 items-center flex-col">

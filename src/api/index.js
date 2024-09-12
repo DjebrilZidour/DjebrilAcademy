@@ -67,7 +67,7 @@ const dataBase = [
     ],
   },
   {
-    module: "phisics",
+    module: "physics",
     semesters: [
       [
         {
