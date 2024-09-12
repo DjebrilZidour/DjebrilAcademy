@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 
 const Learning = () => {
-const {t}= useTranslation
+const {t}= useTranslation()
   const navigate = useNavigate();
   const { grade } = useParams(); // Get grade from route parameters
 
@@ -26,13 +26,14 @@ const {t}= useTranslation
             onClick={() => onClickType("co")}
             className="px-28 py-6 rounded-lg background hover:scale-105 duration-200"
           >
-            <h1 className="text-3xl cursor-pointer">Courses</h1>
+            <h1 className="text-3xl cursor-pointer">{t("courses")}</h1>
           </button>
           <button
             onClick={() => onClickType("ex")}
             className="px-28 py-6 rounded-lg background hover:scale-105 duration-200"
           >
-            <h1 className="text-3xl cursor-pointer">Exercices</h1>
+            <h1 className="text-3xl cursor-pointer">{t("exercices")}</h1>
+        
           </button>
         </div>
       </section>
