@@ -11,22 +11,13 @@ const SemesterPage = () => {
 
   const onClickSemester = (semesterNumber) => {
     if (type === "co") {
-      navigate(`/dashboard/semester-detail/${moduleName}/${type}/${semesterNumber}/${grade}`, {
-        state: {
-          moduleName: moduleName,
-          semesterNumber: semesterNumber,
-          imgUrl: state.imgUrl, // Use imgUrl from the state
-          grade: grade,
-        },
-      });
+      navigate(
+        `/dashboard/semester-detail/${moduleName}/${type}/${semesterNumber}/${grade}`
+      );
     } else {
-      navigate(`/dashboard/exercice-preview/${moduleName}/${semesterNumber}/${grade}`, {
-        state: {
-          moduleName: moduleName,
-          semesterNumber: semesterNumber,
-          grade: grade,
-        },
-      });
+      navigate(
+        `/dashboard/exercice-preview/${moduleName}/${semesterNumber}/${grade}`
+      );
     }
   };
 
@@ -45,28 +36,28 @@ const SemesterPage = () => {
       <section className="flex flex-col items-center justify-center gap-4 pb-12">
         <h1 className="text-4xl">{t(moduleName)}</h1>
         <h2 className="text-md md:text-xl capitalize py-4">
-          {t('select_trimester')}
+          {t("select_trimester")}
         </h2>
 
         <h1
           onClick={() => onClickSemester(1)}
           className="w-full text-md text-center md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
-          {t('trimester_1')}
+          {t("trimester_1")}
         </h1>
 
         <h1
           onClick={() => onClickSemester(2)}
           className="w-full text-md text-center md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
-          {t('trimester_2')}
+          {t("trimester_2")}
         </h1>
 
         <h1
           onClick={() => onClickSemester(3)}
           className="w-full text-md text-center md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
-          {t('trimester_3')}
+          {t("trimester_3")}
         </h1>
       </section>
     </>

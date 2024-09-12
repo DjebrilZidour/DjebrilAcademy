@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import SubjectCard from "../components/SubjectCard";
-
+import { useTranslation } from "react-i18next";
 const modules = [
   {
     moduleName: "Math",
@@ -16,7 +16,7 @@ const modules = [
 
 const Subjects = () => {
   const { grade, type } = useParams(); // Retrieve grade and type from URL parameters
-
+  const {t}= useTranslation
   return (
     <>
       <div className="flex justify-end w-full">
@@ -29,12 +29,7 @@ const Subjects = () => {
           <Link
             key={element.moduleName}
             to={`/dashboard/learning/${grade}/${type}/subjects/${element.moduleName.toLowerCase()}/trimesters`}
-            state={{
-              imgUrl: element.imgUrl, // Passing imgUrl through state
-              moduleName: element.moduleName,
-              grade: grade,
-              type: type,
-            }}
+
           >
             <SubjectCard
               imageUrl={element.img}

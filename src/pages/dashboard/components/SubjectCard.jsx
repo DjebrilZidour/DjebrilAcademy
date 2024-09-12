@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import Btn from "../../../components/Atomic/Btn";
-
+import { useTranslation } from "react-i18next";
 const SubjectCard = (props) => {
   const navigate = useNavigate();
-
+  const {t}= useTranslation()
   const onClick = () => {
     const { grade, type, subName } = props;
     navigate(`/dashboard/learning/${grade}/${type}/subjects/${subName.toLowerCase()}/trimesters`);
@@ -16,7 +16,7 @@ const SubjectCard = (props) => {
         src={props.imageUrl}
         alt="subject-picture"
       />
-      <h1 className="text-3xl text-black capitalize">{props.subName}</h1>
+      <h1 className="text-3xl text-black capitalize">{t(props.subName.toLowerCase())}</h1>
       <Btn onClick={onClick} value={"Start Learning"} />
     </div>
   );

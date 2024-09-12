@@ -5,16 +5,12 @@ import { useNavigate } from "react-router";
 import CoursePreview from "./CoursePreview";
 import { useParams } from "react-router-dom";
 const CourseTitles = (props) => {
+  const { moduleName, semesterNumber, imgUrl, grade } = useParams()
   const { state } = useLocation();
   const {type } = useParams();
   const navigate = useNavigate();
   const onClickCourse = () => {
-    navigate(`/dashboard/coursepreview/${state?.moduleName}/${state?.semesterNumber}/${props.idx}/${state?.grade}`, {
-      state: {
-        imgUrl: state?.imgUrl,  // Pass only necessary data through state
-        type: props.type,       // Optional state information
-      }
-    });
+    navigate(`/dashboard/coursepreview/${moduleName}/${semesterNumber}/${props.idx}/${grade}`);
   };
   
   
@@ -48,13 +44,13 @@ const SemesterDetail = () => {
   const courses = fetchSemesterDetail(moduleName.toLowerCase(), semesterNumber - 1);
 
   return (
-    <div className="w-full px-4">
-      <div className="md:rounded-l-xl rounded-t-xl w-full flex md:flex-row flex-col justify-between mb-24 items-center h-64 drop-shadow-xl">
+    <div className="w-full px-4 my-4">
+      <div className="md:rounded-l-xl rounded-t-xl w-full flex md:flex-row flex-col justify-between mb-16 items-center h-64 drop-shadow-xl">
         <div
           style={{ backgroundImage: `url(${moduleData.imgUrl})` }}
-          className="text-5xl text-white font-bold bg-cover py-4 w-4/5 h-full px-4 py-8 md:rounded-l-xl rounded-t-xl flex justify-start items-center"
+          className="text-5xl text-white font-bold bg-cover py-4 w-4/5 h-full px-4 py-8 md:rounded-l-xl rounded-t-xl flex md:justify-start justify-center items-center"
         >
-          <h1>{moduleName}</h1>
+          <h1 className="capitalize md:text-left text-center">{moduleName}</h1>
         </div>
 
         <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-2/6 md:h-full px-4 py-2 md:py-8 md:rounded-r-xl flex justify-center gap-4 items-center flex-col">
