@@ -1,10 +1,10 @@
 import {useNavigate, useParams } from "react-router-dom"
-
+import { useTranslation } from "react-i18next";
 
 
 
 const Learning = () => {
-
+const {t}= useTranslation
   const navigate = useNavigate();
   const { grade } = useParams(); // Get grade from route parameters
 

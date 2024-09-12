@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import i18n from "../../../i18n";
 
 const SemesterPage = () => {
   const { state } = useLocation();

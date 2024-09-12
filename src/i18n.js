@@ -7,7 +7,7 @@ const resources = {
       "welcome": "Welcome to ",
       "welcomeName": "Djebril Academy",
       "problems": "Problems",
-      "des2":"",
+      "des2": "",
       "platform_desc": "The first platform to fix your mathematics and physics ",
       "get_course": "Get Course/Exercise",
       "learn_more": "Learn more",
@@ -24,7 +24,11 @@ const resources = {
       "toggle_task_done": "Toggle Task Done",
       "delete_task": "Delete Task",
       "still_for_2025": "Still for 2025",
-      "error_invalid_task": "Please enter a valid task"
+      "error_invalid_task": "Please enter a valid task",
+      "1as": "1AS",
+      "2as": "2AS",
+      "3as": "3AS",
+      "select":"Please select your grade",
     }
   },
   fr: {
@@ -33,7 +37,7 @@ const resources = {
       "welcomeName": "Djebril Academy",
       "problems": "Problems",
       "platform_desc": " La première plateforme pour résoudre vos",
-      "des2":"de mathématiques et de physique",
+      "des2": "de mathématiques et de physique",
       "get_course": "Obtenir Cours/Exercice",
       "learn_more": "En savoir plus",
       "our_mission": "Notre mission",
@@ -49,7 +53,11 @@ const resources = {
       "toggle_task_done": "Changer Statut Tâche",
       "delete_task": "Supprimer Tâche",
       "still_for_2025": "Encore pour 2025",
-      "error_invalid_task": "Veuillez entrer une tâche valide"
+      "error_invalid_task": "Veuillez entrer une tâche valide",
+      "1as": "1AS",
+      "2as": "2AS",
+      "3as": "3AS",
+      "select":"Selectionne votre niveaux scolaire svp",
     }
   },
   ar: {
@@ -74,8 +82,11 @@ const resources = {
       "toggle_task_done": "تبديل حالة المهمة",
       "delete_task": "حذف مهمة",
       "still_for_2025": "لا يزال للعام 2025",
-      "error_invalid_task": "يرجى إدخال مهمة صحيحة"
-      
+      "error_invalid_task": "يرجى إدخال مهمة صحيحة",
+      "1as": "السنة اولى جذع مشترك علوم و تكنولوجيا",
+      "2as": "السنة ثانية رياضيات",
+      "3as": "السنة ثالثة رياضيات",
+      "select":"إختر السنة الدراسية من فضلك",
     }
   }
 };
