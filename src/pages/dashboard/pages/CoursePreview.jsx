@@ -23,7 +23,7 @@ const CoursePreview = () => {
  const moduleData = modules.find((element) => element.moduleName === moduleName);
   const courseData = fetchSemesterDetail(
     moduleName.toLowerCase(),
-    semesterNumber - 1
+    semesterNumber - 1,grade
   );
   const course = courseData[idx];
 
