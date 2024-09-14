@@ -41,21 +41,21 @@ const SemesterPage = () => {
 
         <h1
           onClick={() => onClickSemester(1)}
-          className="w-full text-md text-center md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+          className="w-full text-md text-center md:text-2xl capitalize background md:px-32 px-2 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
           {t("trimester_1")}
         </h1>
 
         <h1
           onClick={() => onClickSemester(2)}
-          className="w-full text-md text-center md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+          className="w-full text-md text-center md:text-2xl capitalize background md:px-32 px-2 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
           {t("trimester_2")}
         </h1>
 
         <h1
           onClick={() => onClickSemester(3)}
-          className="w-full text-md text-center md:text-2xl capitalize background px-32 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
+          className="w-full text-md text-center md:text-2xl capitalize background md:px-32 px-2 py-4 cursor-pointer rounded-tl-md rounded-tr-md rounded-br-3xl rounded-bl-md hover:scale-105 cursor-pointer duration-200"
         >
           {t("trimester_3")}
         </h1>
