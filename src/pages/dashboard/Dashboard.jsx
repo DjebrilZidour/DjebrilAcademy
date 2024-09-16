@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import DashboardSideBar from "./components/DashboardSideBar";
@@ -18,25 +18,48 @@ const TodoList = () => {
   const { t } = useTranslation();
   const [typedTask, setTypedTask] = useState("");
   const [todoList, setTodoList] = useState([]);
-  const [isTaskDone, setTaskDone] = useState(false);
 
-  const setTaskDoneBtn = () => {
-    setTaskDone(!isTaskDone);
-  };
+  // Load tasks from localStorage when component mounts
+  useEffect(() => {
+    const storedTasks = JSON.parse(localStorage.getItem("todoList"));
+    if (storedTasks) {
+      setTodoList(storedTasks);
+    }
+  }, []);
 
+  // Update localStorage whenever todoList changes
+  useEffect(() => {
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+  }, [todoList]);
+
+  // Add task with taskDone status
   const addTodo = () => {
     if (typedTask.length < 4) {
       console.log(t('error_invalid_task'));
     } else {
-      setTodoList([...todoList, typedTask]);
+      setTodoList([...todoList, { task: typedTask, isTaskDone: false }]);
       setTypedTask("");
     }
   };
 
+  // Toggle task completion for individual tasks
+  const toggleTaskDone = (index) => {
+    setTodoList(
+      todoList.map((item, i) =>
+        i === index ? { ...item, isTaskDone: !item.isTaskDone } : item
+      )
+    );
+  };
+
+  // Delete task
+  const deleteTask = (index) => {
+    setTodoList(todoList.filter((_, i) => i !== index));
+  };
+
   return (
-    <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-96">
+    <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-auto max-h-96 w-96 overflow-auto">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-3xl">{t('todo')}</h1>
+        <h1 className="text-3xl mb-4">{t('todo')}</h1>
         <Input
           label={t('new_task')}
           type="text"
@@ -45,31 +68,39 @@ const TodoList = () => {
         />
         <Btn value={t('add_task')} onClick={addTodo} />
         <hr className="border-1 border-black w-full rounded-3xl m-4" />
-        <div>
-          {todoList.map((element, i) => (
-            <ul className="flex justify-between items-center gap-8" key={i}>
-              <li className={isTaskDone ? "line-through" : ""}>{element}</li>
-              <div className="flex justify-between items-center gap-4">
-                <img
-                  onClick={setTaskDoneBtn}
-                  className="w-4 h-4 rounded-full cursor-pointer"
-                  src={isTaskDone ? "https://cdn-icons-png.flaticon.com/128/7739/7739845.png" : "https://cdn-icons-png.flaticon.com/128/808/808569.png"}
-                  alt={t('toggle_task_done')}
-                />
-                <img
-                  onClick={() => {}}
-                  className="w-4 h-4 rounded-full cursor-pointer"
-                  src="https://cdn-icons-png.flaticon.com/128/594/594864.png"
-                  alt={t('delete_task')}
-                />
-              </div>
-            </ul>
-          ))}
+        <div className="w-full">
+          {todoList.length === 0 ? (
+            <p className="text-center">{t('no_tasks')}</p>
+          ) : (
+            todoList.map((element, i) => (
+              <ul className="flex justify-between items-center gap-4 py-2" key={i}>
+                <li className={`flex-1 ${element.isTaskDone ? "line-through" : ""}`}>
+                  {element.task}
+                </li>
+                <div className="flex justify-between items-center gap-4">
+                  <img
+                    onClick={() => toggleTaskDone(i)}
+                    className="w-4 h-4 rounded-full cursor-pointer"
+                    src={element.isTaskDone ? "https://cdn-icons-png.flaticon.com/128/7739/7739845.png" : "https://cdn-icons-png.flaticon.com/128/808/808569.png"}
+                    alt={t('toggle_task_done')}
+                  />
+                  <img
+                    onClick={() => deleteTask(i)}
+                    className="w-4 h-4 rounded-full cursor-pointer"
+                    src="https://cdn-icons-png.flaticon.com/128/594/594864.png"
+                    alt={t('delete_task')}
+                  />
+                </div>
+              </ul>
+            ))
+          )}
         </div>
       </div>
     </div>
   );
 };
+
+
 const Dashboard = () => {
   const { t } = useTranslation();
   const langDirection = i18n.language === 'ar' ? 'row-reverse' : 'row';
