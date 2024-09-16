@@ -42,6 +42,7 @@ const resources = {
       "educational_news": "educational news",
       "start_now": "start now",
       "no_tasks":"No tasks available",
+      "dashboard":"Dashboard",
     }
   },
   fr: {
@@ -84,6 +85,7 @@ const resources = {
       "educational_news": "Actualités éducatives",
       "start_now": "Commencez maintenant",
       "no_tasks":"Aucune tâche disponible",
+      "dashboard":"Tableau de bord",
     }
   },
   ar: {
@@ -126,6 +128,7 @@ const resources = {
       "educational_news": "أخبار تعليمية",
       "start_now": "ابدأ الآن",
       "no_tasks":"لا توجد مهام",
+      "dashboard":"لوحة التحكم",
     }
   }
 };
