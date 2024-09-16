@@ -41,6 +41,7 @@ const resources = {
       "interesting_videos": "interesting videos",
       "educational_news": "educational news",
       "start_now": "start now",
+      "no_tasks":"No tasks available",
     }
   },
   fr: {
@@ -82,6 +83,7 @@ const resources = {
       "interesting_videos": "Vidéos intéressantes",
       "educational_news": "Actualités éducatives",
       "start_now": "Commencez maintenant",
+      "no_tasks":"Aucune tâche disponible",
     }
   },
   ar: {
@@ -123,6 +125,7 @@ const resources = {
       "interesting_videos": "فيديوهات مثيرة للاهتمام",
       "educational_news": "أخبار تعليمية",
       "start_now": "ابدأ الآن",
+      "no_tasks":"لا توجد مهام",
     }
   }
 };

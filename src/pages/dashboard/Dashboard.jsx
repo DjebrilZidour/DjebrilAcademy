@@ -58,68 +58,59 @@ const TodoList = () => {
     const updatedList = todoList.filter((_, i) => i !== index);
     setTodoList(updatedList);
     if (updatedList.length === 0) {
-      localStorage.removeItem("todoList"); // Clear localStorage if no tasks left
+      localStorage.removeItem("todoList");
     }
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white shadow-xl rounded-lg border border-gray-300">
-      <h1 className="text-2xl font-bold text-center mb-6">{t('todo')}</h1>
-      <div className="flex flex-col items-center mb-4">
+    <div className="md:w-full max-w-lg mx-auto mt-16 p-8 bg-white rounded-lg shadow-md border border-gray-200 transition-all transform hover:scale-105 hover:shadow-lg">
+      <h1 className="text-3xl font-extrabold text-center text-gray-700 mb-8">{t('todo')}</h1>
+      <div className="flex flex-col items-center mb-6">
         <Input
           label={t('new_task')}
           type="text"
           value={typedTask}
           setValue={setTypedTask}
           placeholder={t('enter_task')}
-          className="w-full mb-4 px-3 py-2 border border-gray-400 rounded-lg"
+          className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
         />
         <Btn
           value={t('add_task')}
           onClick={addTodo}
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+          className="bg-blue-500 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition-colors"
         />
       </div>
-      <hr className="my-4" />
-      <div className="max-h-64 overflow-y-auto">
+      <hr className="my-6 border-gray-300" />
+      <div className="max-h-64 overflow-y-auto w-full transition-all transform hover:scale-100 hover:shadow-sm">
         {todoList.length === 0 ? (
-          <p className="text-center text-gray-500">{t('no_tasks')}</p>
+          <p className="text-center text-gray-400 italic">{t('no_tasks')}</p>
         ) : (
           todoList.map((element, i) => (
-            <ul key={i} className="flex justify-between items-center mb-3">
-              <li
-                className={`flex-1 ${
-                  element.isTaskDone ? "line-through text-gray-400" : ""
-                }`}
-              >
+            <div key={i} className="flex justify-between items-center bg-gray-50 mb-4 p-4 rounded-lg shadow hover:bg-gray-100 transition-all">
+              <span className={`flex-1 ${element.isTaskDone ? "line-through text-gray-400" : "text-gray-600 font-semibold"}`}>
                 {element.task}
-              </li>
+              </span>
               <div className="flex items-center gap-3">
                 <img
                   onClick={() => toggleTaskDone(i)}
-                  className="w-5 h-5 cursor-pointer"
-                  src={
-                    element.isTaskDone
-                      ? "https://cdn-icons-png.flaticon.com/128/7739/7739845.png"
-                      : "https://cdn-icons-png.flaticon.com/128/808/808569.png"
-                  }
+                  className="w-6 h-6 cursor-pointer transition-transform transform hover:scale-110"
+                  src={element.isTaskDone ? "https://cdn-icons-png.flaticon.com/128/7739/7739845.png" : "https://cdn-icons-png.flaticon.com/128/808/808569.png"}
                   alt={t('toggle_task_done')}
                 />
                 <img
                   onClick={() => deleteTask(i)}
-                  className="w-5 h-5 cursor-pointer"
+                  className="w-6 h-6 cursor-pointer transition-transform transform hover:scale-110"
                   src="https://cdn-icons-png.flaticon.com/128/594/594864.png"
                   alt={t('delete_task')}
                 />
               </div>
-            </ul>
+            </div>
           ))
         )}
       </div>
     </div>
   );
 };
-
 const Dashboard = () => {
   const { t } = useTranslation();
   const langDirection = i18n.language === 'ar' ? 'row-reverse' : 'row';
@@ -148,7 +139,7 @@ export const Default = () => {
   const { t } = useTranslation();
   const targetDate = new Date("2024-12-31T00:00:00");
   return (
-    <div className="flex md:gap-4 flex-col md:flex-row">
+    <div className="flex md:gap-4 flex-col-reverse md:w-5/6 ">
       <div className="flex justify-between items-start gap-4 mt-4 w-full h-full">
         <div className="flex flex-col justify-center items-center gap-2 border-2 rounded-3xl p-6 my-4">
           <h1 className="text-2xl">{t('still_for_2025')}</h1>
