@@ -448,3 +448,4 @@ export const fetchSemesterDetail = (module, sem, grade) => {
   }
   
 };
+
