@@ -30,6 +30,7 @@ const CourseTitles = (props) => {
 
 const SemesterDetail = () => {
   const { t } = useTranslation();
+  const { moduleName, semesterNumber, imgUrl, type, grade } = useParams(); 
   const modules = [
     {
       moduleName: "math",
@@ -42,7 +43,7 @@ const SemesterDetail = () => {
         "https://media.istockphoto.com/id/953006834/photo/science-math-chemistry-equations.jpg?s=612x612&w=0&k=20&c=kF7XAjZlhC1QgUOEZS7A6p6tMYAS1oF4nFLG5XQQgbE=",
     },
   ];
-  const { moduleName, semesterNumber, imgUrl, type, grade } = useParams(); // Extract params from URL
+ // Extract params from URL
   const moduleData = modules.find(
     (element) => element.moduleName === moduleName
   );
