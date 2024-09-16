@@ -30,7 +30,7 @@ const router = createBrowserRouter([
   { path: "/en", element: <Landing language="en" /> },
   { path: "/ar", element: <Landing language="ar" /> },
   { path: "/fr", element: <Landing language="fr" /> },
-  { path: "/", element: <Landing language="en" /> }, // Fallback to English
+  { path: "/", element: <Landing/> }, // Fallback to English
 
   // Auth routes
   { path: "/login", element: <Login /> },

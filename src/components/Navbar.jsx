@@ -4,6 +4,7 @@ import { getIsUserLogged } from "../utils/utils";
 import { useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import { t } from "i18next";
 
 const UserPopUp = (props) => {
   const navigate = useNavigate();
@@ -129,6 +130,7 @@ const Navbar = () => {
             <Link to="/">
               <img className=" p-1 h-12 w-12 bg-white rounded-full" src={Logo} />
             </Link>
+
             <Link to="/">
               <h1 className="md:text-3xl text-xl">DjEbRiL Academy</h1>
             </Link>
@@ -137,19 +139,19 @@ const Navbar = () => {
           <div className="flex justify-between items-center text-black-100  max-sm:flex-col max-sm:hidden ">
             <Link to="/">
               <li className="px-4 font-semibold text-black cursor-pointer hover:underline">
-                Home
+                {t("home")}
               </li>
             </Link>
 
             <Link to="/about">
               <li className="px-4 font-semibold text-black cursor-pointer hover:underline">
-                About
+                {t("about")}
               </li>
             </Link>
 
             <Link to="/dashboard/home">
               <li className="px-4 font-semibold text-black cursor-pointer hover:underline">
-                Dashboard
+                {t("dashboard")}
               </li>
             </Link>
             <li>
@@ -186,6 +188,7 @@ const Navbar = () => {
             )}
             </div>
           </div>
+
           <div className="flex sm:hidden gap-2 items-center justify-center">
           <LanguageSwitcher changeLanguage={i18n.changeLanguage} />
           <img

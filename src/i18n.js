@@ -43,6 +43,10 @@ const resources = {
       "start_now": "start now",
       "no_tasks":"No tasks available",
       "dashboard":"Dashboard",
+      "home": "Home",
+      "about": "About",
+   
+
     }
   },
   fr: {
@@ -86,6 +90,9 @@ const resources = {
       "start_now": "Commencez maintenant",
       "no_tasks":"Aucune tâche disponible",
       "dashboard":"Tableau de bord",
+      "home": "Accueil",
+      "about": "À propos",
+
     }
   },
   ar: {
@@ -129,6 +136,8 @@ const resources = {
       "start_now": "ابدأ الآن",
       "no_tasks":"لا توجد مهام",
       "dashboard":"لوحة التحكم",
+      "home": "الصفحة الرئيسية",
+      "about": "حول",
     }
   }
 };
