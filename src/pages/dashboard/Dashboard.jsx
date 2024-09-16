@@ -140,12 +140,12 @@ export const Default = () => {
   const targetDate = new Date("2024-12-31T00:00:00");
   return (
     <div className="flex md:gap-4 flex-col-reverse md:w-5/6 ">
-      <div className="flex justify-between items-start gap-4 mt-4 w-full h-full">
-        <div className="flex flex-col justify-center items-center gap-2 border-2 rounded-3xl p-6 my-4">
+     
+        <div className="flex flex-col justify-center items-center gap-2 border-2 rounded-3xl p-8 my-4 w-full">
           <h1 className="text-2xl">{t('still_for_2025')}</h1>
           <Countdown targetDate={targetDate} />
         </div>
-      </div>
+  
       <TodoList />
     </div>
   );
