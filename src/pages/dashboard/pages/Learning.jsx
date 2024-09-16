@@ -15,8 +15,8 @@ const {t}= useTranslation()
 
   return (
     <>
-      <div className="flex justify-end w-full">
-        <h1 className="text-3xl mr-4 uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full">
+      <div className="flex justify-end w-full ">
+        <h1 className="text-3xl m-4 uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full">
           {grade} AS
         </h1>
       </div>

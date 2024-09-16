@@ -20,7 +20,7 @@ const ResponsiveSideBar = () => {
         <Link to="/dashboard/vidéos">
           <img
             className="w-12 m-4"
-            src="https://cdn-icons-png.flaticon.com/128/5948/5948543.png"
+            src="https://cdn-icons-png.flaticon.com/128/2991/2991195.png"
           />
         </Link>
         <Link to="/dashboard/educational-news">

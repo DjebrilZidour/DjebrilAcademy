@@ -29,7 +29,7 @@ const SemesterPage = () => {
   return (
     <>
       <div className="flex justify-end w-full">
-        <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full mr-4">
+        <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full m-4">
           {grade} AS
         </h1>
       </div>

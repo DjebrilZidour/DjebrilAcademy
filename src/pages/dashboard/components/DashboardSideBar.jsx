@@ -82,7 +82,7 @@ const DashboardSideBar = () => {
           >
             <img
               className="w-12 mx-2 px-1"
-              src="https://cdn-icons-png.flaticon.com/128/5948/5948543.png"
+              src="https://cdn-icons-png.flaticon.com/128/2991/2991195.png"
               alt=""
             />
             <h2 className="capitalize">{t("interesting_videos")}</h2>
