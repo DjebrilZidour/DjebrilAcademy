@@ -57,7 +57,7 @@ const DashboardSideBar = () => {
               alt=""
             />
             <h1 className="text-3xl my-4 cursor-pointer" style={{ textAlign }}>
-              Dashboard
+              {t("dashboard")}
             </h1>
           </div>
         </Link>
