@@ -1,5 +1,5 @@
 import { useLocation } from "react-router";
-
+import { fetchExDetail } from "../../../api/ex"
 const ExPreview = ()=>{
 
 const {state} = useLocation()

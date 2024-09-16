@@ -286,4 +286,17 @@ const dataExBase = [
 ];
 export const fetchExDetail = (module, sem, grade ) => {
   const dataList = dataExBase.find((m)=>module === m.module)
+  if (grade == 1) {
+    const courseData =
+    dataList?.semesters1.length > 0 ? dataList.semesters1[sem] : [];
+  return courseData;
+  }else if(grade == 2){
+    const courseData =
+    dataList?.semesters2.length > 0 ? dataList.semesters2[sem] : [];
+  return courseData;
+  }else{
+    const courseData =
+    dataList?.semesters3.length > 0 ? dataList.semesters3[sem] : [];
+  return courseData;
+  }
 }

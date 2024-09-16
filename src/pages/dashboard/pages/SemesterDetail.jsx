@@ -2,7 +2,7 @@ import { useLocation } from "react-router";
 import { fetchSemesterDetail } from "../../../api";
 import Btn from "../../../components/Atomic/Btn";
 import { useNavigate } from "react-router";
-import CoursePreview from "./CoursePreview";
+
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 const CourseTitles = (props) => {
