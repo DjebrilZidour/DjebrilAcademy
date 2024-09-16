@@ -338,7 +338,7 @@ const dataTestBase = [
           exerciceImage: "",
           pdfUrl: "", exYear: "",
         },
-       ],
+      ],
       [
         {
           exerciceTitle: "exercice DEVOIRE math title sem 3",
@@ -415,18 +415,20 @@ const dataTestBase = [
       ],
     ],
   },
+
+  
   {
     module: "physics",
     semesters1: [
       [
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          exerciceTitle: "DEVOIR PHISICS title sem 1",
+          exerciceDetail: "DEVOIR PHISICS detail sem 1",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          exerciceTitle: "DEVOIR PHISICS title sem 1",
+          exerciceDetail: "DEVOIR PHISICS detail sem 1",
           pdfUrl: "", exYear: "",
 
         },
@@ -434,38 +436,39 @@ const dataTestBase = [
       [
         {
           exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceTitle: "DEVOIR PHISICS title sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceTitle: "DEVOIR PHISICS title sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceTitle: "DEVOIR PHISICS title sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
     ],
+
     semesters2: [
       [
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          exerciceTitle: "DEVOIR PHISICS title sem 1",
+          exerciceDetail: "DEVOIR PHISICS detail sem 1",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          exerciceTitle: "DEVOIR PHISICS title sem 1",
+          exerciceDetail: "DEVOIR PHISICS detail sem 1",
           pdfUrl: "", exYear: "",
 
         },
@@ -473,24 +476,24 @@ const dataTestBase = [
       [
         {
           exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceTitle: "DEVOIR PHISICS title sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceTitle: "DEVOIR PHISICS title sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceTitle: "DEVOIR PHISICS title sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
@@ -498,13 +501,13 @@ const dataTestBase = [
     semesters3: [
       [
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          exerciceTitle: "DEVOIR PHISICS title sem 1",
+          exerciceDetail: "DEVOIR PHISICS detail sem 1",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          exerciceTitle: "DEVOIR PHISICS title sem 1",
+          exerciceDetail: "DEVOIR PHISICS detail sem 1",
           pdfUrl: "", exYear: "",
 
         },
@@ -512,24 +515,24 @@ const dataTestBase = [
       [
         {
           exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceTitle: "DEVOIR PHISICS title sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceTitle: "DEVOIR PHISICS title sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          exerciceTitle: "DEVOIR PHISICS title sem 2",
+          exerciceDetail: "DEVOIR PHISICS detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
