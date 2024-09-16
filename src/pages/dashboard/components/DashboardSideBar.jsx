@@ -88,7 +88,7 @@ const DashboardSideBar = () => {
             <h2 className="capitalize">{t("interesting_videos")}</h2>
           </div>
         </Link>
-        <Link to="/dashboard/learning-progress">
+        <Link to="/dashboard/educational-news">
           <div
             style={{ flexDirection }}
             className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4"

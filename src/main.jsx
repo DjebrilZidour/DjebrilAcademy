@@ -21,6 +21,7 @@ import ExPreview from "./pages/dashboard/pages/ExPreview";
 import Grade from "./pages/dashboard/pages/Grade";
 import DashVd from "./pages/dashboard/pages/DashVd";
 import i18n from "./i18n";
+import EducationalNews from "./pages/dashboard/pages/EducationalNews";
 
 const isLogged = getIsUserLogged();
 
@@ -56,6 +57,7 @@ const router = createBrowserRouter([
       { path: "semesters", element: <SemesterPage /> },
       { path: "semester-detail", element: <SemesterDetail /> },
       { path: "vidéos", element: <DashVd /> },
+      {path:"educational-news", element: <EducationalNews />},
     ],
   },
 
