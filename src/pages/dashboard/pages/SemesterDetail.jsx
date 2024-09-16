@@ -63,7 +63,7 @@ const SemesterDetail = () => {
           style={{ backgroundImage: `url(${moduleData.imgUrl})` }}
           className="text-5xl text-white font-bold bg-cover py-4 w-4/5 h-full px-4 py-8 md:rounded-l-xl rounded-t-xl flex md:justify-start justify-center items-center"
         >
-          <h1 className="capitalize md:text-left text-center">{t(moduleName)}done </h1>
+          <h1 className="capitalize md:text-left text-center">{t(moduleName)}</h1>
         </div>
 
         <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-2/6 md:h-full px-4 py-2 md:py-8 md:rounded-r-xl flex justify-center gap-4 items-center flex-col">
