@@ -18,6 +18,7 @@ const modules = [
 const CoursePreview = () => {
   const {t}= useTranslation()
   const { moduleName, semesterNumber, idx, grade } = useParams(); // Extract from URL
+  const trans = "trimester_" + semesterNumber;
   const { state } = useLocation(); // Retrieve optional state data like imgUrl
  // Use a fallback if state.imgUrl is not available
  const moduleData = modules.find((element) => element.moduleName === moduleName);
@@ -39,7 +40,7 @@ const CoursePreview = () => {
           </div>
 
           <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-2/6 md:h-full px-4 py-2 md:py-8 rounded-tr-xl flex justify-center gap-4 items-center flex-col">
-            <h1 className="text-md">Triméstre {semesterNumber}</h1>
+            <h1 className="text-md capitalize">{t(trans)}</h1>
             <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full">
               {grade}AS
             </h1>
