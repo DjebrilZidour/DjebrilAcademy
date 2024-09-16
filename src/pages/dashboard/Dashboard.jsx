@@ -139,9 +139,9 @@ export const Default = () => {
   const { t } = useTranslation();
   const targetDate = new Date("2024-12-31T00:00:00");
   return (
-    <div className="flex md:gap-4 flex-col-reverse md:w-5/6 ">
+    <div className="flex md:gap-4 flex-col-reverse md:w-5/6 gap-8">
      
-        <div className="flex flex-col justify-center items-center gap-2 border-2 rounded-3xl p-8 my-4 w-full">
+        <div className="flex flex-col justify-center items-center gap-2 md:border-2 rounded-3xl md:p-8 my-4 ">
           <h1 className="text-2xl">{t('still_for_2025')}</h1>
           <Countdown targetDate={targetDate} />
         </div>
