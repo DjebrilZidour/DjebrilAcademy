@@ -19,7 +19,7 @@ const TodoList = () => {
   const [typedTask, setTypedTask] = useState("");
   const [todoList, setTodoList] = useState([]);
 
-  // Load tasks from localStorage when component mounts
+  // Load tasks from localStorage on component mount
   useEffect(() => {
     const storedTasks = JSON.parse(localStorage.getItem("todoList"));
     if (storedTasks) {
@@ -29,10 +29,12 @@ const TodoList = () => {
 
   // Update localStorage whenever todoList changes
   useEffect(() => {
-    localStorage.setItem("todoList", JSON.stringify(todoList));
+    if (todoList.length > 0) {
+      localStorage.setItem("todoList", JSON.stringify(todoList));
+    }
   }, [todoList]);
 
-  // Add task with taskDone status
+  // Add a task
   const addTodo = () => {
     if (typedTask.length < 4) {
       console.log(t('error_invalid_task'));
@@ -42,7 +44,7 @@ const TodoList = () => {
     }
   };
 
-  // Toggle task completion for individual tasks
+  // Toggle task completion
   const toggleTaskDone = (index) => {
     setTodoList(
       todoList.map((item, i) =>
@@ -53,53 +55,70 @@ const TodoList = () => {
 
   // Delete task
   const deleteTask = (index) => {
-    setTodoList(todoList.filter((_, i) => i !== index));
+    const updatedList = todoList.filter((_, i) => i !== index);
+    setTodoList(updatedList);
+    if (updatedList.length === 0) {
+      localStorage.removeItem("todoList"); // Clear localStorage if no tasks left
+    }
   };
 
   return (
-    <div className="border-2 rounded-3xl p-6 shadow-3xl px-16 h-auto max-h-96 w-96 overflow-auto">
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-3xl mb-4">{t('todo')}</h1>
+    <div className="max-w-md mx-auto mt-10 p-6 bg-white shadow-xl rounded-lg border border-gray-300">
+      <h1 className="text-2xl font-bold text-center mb-6">{t('todo')}</h1>
+      <div className="flex flex-col items-center mb-4">
         <Input
           label={t('new_task')}
           type="text"
           value={typedTask}
           setValue={setTypedTask}
+          placeholder={t('enter_task')}
+          className="w-full mb-4 px-3 py-2 border border-gray-400 rounded-lg"
         />
-        <Btn value={t('add_task')} onClick={addTodo} />
-        <hr className="border-1 border-black w-full rounded-3xl m-4" />
-        <div className="w-full">
-          {todoList.length === 0 ? (
-            <p className="text-center">{t('no_tasks')}</p>
-          ) : (
-            todoList.map((element, i) => (
-              <ul className="flex justify-between items-center gap-4 py-2" key={i}>
-                <li className={`flex-1 ${element.isTaskDone ? "line-through" : ""}`}>
-                  {element.task}
-                </li>
-                <div className="flex justify-between items-center gap-4">
-                  <img
-                    onClick={() => toggleTaskDone(i)}
-                    className="w-4 h-4 rounded-full cursor-pointer"
-                    src={element.isTaskDone ? "https://cdn-icons-png.flaticon.com/128/7739/7739845.png" : "https://cdn-icons-png.flaticon.com/128/808/808569.png"}
-                    alt={t('toggle_task_done')}
-                  />
-                  <img
-                    onClick={() => deleteTask(i)}
-                    className="w-4 h-4 rounded-full cursor-pointer"
-                    src="https://cdn-icons-png.flaticon.com/128/594/594864.png"
-                    alt={t('delete_task')}
-                  />
-                </div>
-              </ul>
-            ))
-          )}
-        </div>
+        <Btn
+          value={t('add_task')}
+          onClick={addTodo}
+          className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+        />
+      </div>
+      <hr className="my-4" />
+      <div className="max-h-64 overflow-y-auto">
+        {todoList.length === 0 ? (
+          <p className="text-center text-gray-500">{t('no_tasks')}</p>
+        ) : (
+          todoList.map((element, i) => (
+            <ul key={i} className="flex justify-between items-center mb-3">
+              <li
+                className={`flex-1 ${
+                  element.isTaskDone ? "line-through text-gray-400" : ""
+                }`}
+              >
+                {element.task}
+              </li>
+              <div className="flex items-center gap-3">
+                <img
+                  onClick={() => toggleTaskDone(i)}
+                  className="w-5 h-5 cursor-pointer"
+                  src={
+                    element.isTaskDone
+                      ? "https://cdn-icons-png.flaticon.com/128/7739/7739845.png"
+                      : "https://cdn-icons-png.flaticon.com/128/808/808569.png"
+                  }
+                  alt={t('toggle_task_done')}
+                />
+                <img
+                  onClick={() => deleteTask(i)}
+                  className="w-5 h-5 cursor-pointer"
+                  src="https://cdn-icons-png.flaticon.com/128/594/594864.png"
+                  alt={t('delete_task')}
+                />
+              </div>
+            </ul>
+          ))
+        )}
       </div>
     </div>
   );
 };
-
 
 const Dashboard = () => {
   const { t } = useTranslation();
