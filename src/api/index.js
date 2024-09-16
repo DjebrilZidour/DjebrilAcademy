@@ -434,17 +434,17 @@ export const fetchSemesterDetail = (module, sem, grade) => {
   const dataList = dataBase.find((m) => module === m.module);
  
   if (grade == 1) {
-    const courseData =
+    const exerciceData =
     dataList?.semesters1.length > 0 ? dataList.semesters1[sem] : [];
-  return courseData;
+  return exerciceData;
   }else if(grade == 2){
-    const courseData =
+    const exerciceData =
     dataList?.semesters2.length > 0 ? dataList.semesters2[sem] : [];
-  return courseData;
+  return exerciceData;
   }else{
-    const courseData =
+    const exerciceData =
     dataList?.semesters3.length > 0 ? dataList.semesters3[sem] : [];
-  return courseData;
+  return exerciceData;
   }
   
 };

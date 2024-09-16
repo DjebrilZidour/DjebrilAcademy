@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 const ExList = ()=>{
     const {moduleName, semesterNumber, grade}=useParams()
-    const exercices = fetchSemesterDetail(
+    const exercices = fetchExDetail (
         moduleName.toLowerCase(),
         semesterNumber - 1,
         grade

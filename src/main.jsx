@@ -22,7 +22,7 @@ import Grade from "./pages/dashboard/pages/Grade";
 import DashVd from "./pages/dashboard/pages/DashVd";
 import i18n from "./i18n";
 import EducationalNews from "./pages/dashboard/pages/EducationalNews";
-
+import ExList from "./pages/dashboard/pages/ExList";
 const isLogged = getIsUserLogged();
 
 const router = createBrowserRouter([
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       { path: "learning/:grade/choose", element: <Learning /> },
       { path: "learning/:grade/:type/subjects", element: <Subjects /> },
       { path: "learning/:grade/:type/subjects/:moduleName/trimesters", element: <SemesterPage /> },
-      { path: "exercice-preview/:moduleName/:semesterNumber/:grade", element: <ExPreview /> },
+      { path: "exercice-preview/:moduleName/:semesterNumber/:grade", element: <ExList /> },
       { path: "semester-detail/:moduleName/:type/:semesterNumber/:grade", element: <SemesterDetail /> },
       { path: "coursepreview/:moduleName/:semesterNumber/:idx/:grade", element: <CoursePreview /> },
       { path: "learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises/:exercise", element: <ExPreview /> },
