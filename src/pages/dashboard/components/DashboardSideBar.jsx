@@ -2,12 +2,13 @@ import { getIsUserLogged } from "../../../utils/utils";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import i18n from "../../../i18n";
-
+import { useTranslation } from "react-i18next";
 const DashboardSideBar = () => {
+  const { t } = useTranslation();
   let isUserLogged = getIsUserLogged();
   const [BarClosed, setBarState] = useState(false);
   const navigate = useNavigate();
-  
+
   // Dynamic styles based on language
   const [flexDirection, setFlexDirection] = useState("row");
   const [textAlign, setTextAlign] = useState("left");
@@ -37,9 +38,7 @@ const DashboardSideBar = () => {
         className="shadow-2xl rounded-2xl py-5 w-80 border-2 mt-6 h-full hidden"
         style={{ display: BarClosed ? "none" : "block" }}
       >
-        <div
-          className="flex justify-end items-center flex-end mx-4 rounded-full"
-        >
+        <div className="flex justify-end items-center flex-end mx-4 rounded-full">
           <img
             src="https://cdn-icons-png.flaticon.com/128/2985/2985161.png"
             alt=""
@@ -48,7 +47,10 @@ const DashboardSideBar = () => {
           />
         </div>
         <Link to="/dashboard/home">
-          <div style={{ flexDirection }} className="flex items-center justify-start border-b-2">
+          <div
+            style={{ flexDirection }}
+            className="flex items-center justify-start border-b-2"
+          >
             <img
               className="w-8 m-4 cursor-pointer"
               src="https://cdn-icons-png.flaticon.com/128/3917/3917711.png"
@@ -61,33 +63,42 @@ const DashboardSideBar = () => {
         </Link>
 
         <Link to="/dashboard/learning-grade">
-          <div style={{ flexDirection }} className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
+          <div
+            style={{ flexDirection }}
+            className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4"
+          >
             <img
               className="w-12 mx-2 px-1"
               src="https://cdn-icons-png.flaticon.com/128/4185/4185218.png"
               alt=""
             />
-            <h2>Learning</h2>
+            <h2 className="capitalize">{t("start_learning")}</h2>
           </div>
         </Link>
         <Link to="/dashboard/vidéos">
-          <div style={{ flexDirection }} className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
+          <div
+            style={{ flexDirection }}
+            className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4"
+          >
             <img
               className="w-12 mx-2 px-1"
               src="https://cdn-icons-png.flaticon.com/128/5948/5948543.png"
               alt=""
             />
-            <h2>Interesting vidéos</h2>
+            <h2 className="capitalize">{t("interesting_videos")}</h2>
           </div>
         </Link>
         <Link to="/dashboard/learning-progress">
-          <div style={{ flexDirection }} className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4">
+          <div
+            style={{ flexDirection }}
+            className="m-4 cursor-pointer flex justify-start items-center border-b-2 pb-4"
+          >
             <img
               className="w-12 mx-2 px-1"
               src="https://cdn-icons-png.flaticon.com/128/3208/3208799.png"
               alt=""
             />
-            <h2>Educational news</h2>
+            <h2 className="capitalize">{t("educational_news")}</h2>
           </div>
         </Link>
 
@@ -114,9 +125,7 @@ const DashboardSideBar = () => {
 
       <section style={{ display: BarClosed ? "block" : "none" }}>
         <div className="flex justify-center items-center gap-4 flex-col m-4 w-24 border-2 rounded-2xl py-4">
-          <div
-            className="flex items-center justify-end p-4 rounded-full cursor-pointer"
-          >
+          <div className="flex items-center justify-end p-4 rounded-full cursor-pointer">
             <img
               className="w-8"
               src="https://cdn-icons-png.flaticon.com/128/271/271228.png"

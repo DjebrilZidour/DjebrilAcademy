@@ -17,7 +17,7 @@ const SubjectCard = (props) => {
         alt="subject-picture"
       />
       <h1 className="text-3xl text-black capitalize">{t(props.subName.toLowerCase())}</h1>
-      <Btn onClick={onClick} value={"Start Learning"} />
+      <Btn onClick={onClick} value={t("start_now")} />
     </div>
   );
 };

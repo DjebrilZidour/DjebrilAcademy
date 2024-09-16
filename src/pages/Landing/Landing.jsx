@@ -60,14 +60,14 @@ const Landing = ({ language }) => {
       <section className="flex items-center justify-center font-sans w-full py-12 my-16">
         <div
           style={styles.container}
-          className=" flex items-center justify-center gap-16  md:mx-24 mx-8"
+          className=" flex items-center justify-center gap-16  md:mx-24 mx-4"
         >
           <div className="md:w-1/2">
             <div
               style={{ textAlign: textAlign }}
               className="mb-8 text-center lg:mx-0 md:text-left "
             >
-              <h2 className="capitalize md:text-4xl text-2xl md:w-92 text-center md:text-start">
+              <h2 className="capitalize md:text-4xl text-3xl md:w-92 text-center md:text-start">
                 {t("welcome")} <br />
                 <span className="text-green-400 text-4xl">
                   {t("welcomeName")}
@@ -98,7 +98,7 @@ const Landing = ({ language }) => {
               </p>
             </div>
 
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left flex justify-center md:justify-start items-center flex-col md:flex-row gap-8 md:gap-4">
               <Btn
                 value={t("get_course")}
                 onClick={() => {

@@ -4,21 +4,24 @@ import Btn from "../../../components/Atomic/Btn";
 import { useNavigate } from "react-router";
 import CoursePreview from "./CoursePreview";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const CourseTitles = (props) => {
-  const { moduleName, semesterNumber, imgUrl, grade } = useParams()
+  const { moduleName, semesterNumber, imgUrl, grade } = useParams();
   const { state } = useLocation();
-  const {type } = useParams();
+  const { type } = useParams();
   const navigate = useNavigate();
   const onClickCourse = () => {
-    navigate(`/dashboard/coursepreview/${moduleName}/${semesterNumber}/${props.idx}/${grade}`);
+    navigate(
+      `/dashboard/coursepreview/${moduleName}/${semesterNumber}/${props.idx}/${grade}`
+    );
   };
-  
-  
 
   return (
     <div className="border-2 border-black rounded-xl p-4 w-4/5">
       <div className="flex flex-col  items-center md:flex-row-reverse justify-center md:justify-between gap-4">
-        <h1 className="capitalize text-3xl md:text-left text-center">{props.title}</h1>
+        <h1 className="capitalize text-3xl md:text-left text-center">
+          {props.title}
+        </h1>
         <Btn value="access course" onClick={onClickCourse} />
       </div>
     </div>
@@ -26,6 +29,7 @@ const CourseTitles = (props) => {
 };
 
 const SemesterDetail = () => {
+  const { t } = useTranslation();
   const modules = [
     {
       moduleName: "math",
@@ -39,11 +43,19 @@ const SemesterDetail = () => {
     },
   ];
   const { moduleName, semesterNumber, imgUrl, type, grade } = useParams(); // Extract params from URL
-  const moduleData = modules.find((element) => element.moduleName === moduleName);
-  console.log(grade);
+  const moduleData = modules.find(
+    (element) => element.moduleName === moduleName
+  );
+
   // Fetch courses based on moduleName and semesterNumber
-  const courses = fetchSemesterDetail(moduleName.toLowerCase(), semesterNumber - 1, grade);
-console.log(courses);
+  const courses = fetchSemesterDetail(
+    moduleName.toLowerCase(),
+    semesterNumber - 1,
+    grade
+  );
+
+  const trans = "trimester_" + semesterNumber;
+
   return (
     <div className="w-full px-4 my-4">
       <div className="md:rounded-l-xl rounded-t-xl w-full flex md:flex-row flex-col justify-between mb-16 items-center h-64 drop-shadow-xl">
@@ -55,7 +67,7 @@ console.log(courses);
         </div>
 
         <div className="text-2xl font-bold bg-green-100 px-4 w-4/5 md:w-2/6 md:h-full px-4 py-2 md:py-8 md:rounded-r-xl flex justify-center gap-4 items-center flex-col">
-          <h1 className="text-md">Triméstre {semesterNumber}</h1>
+          <h1 className="text-md">{t(trans)}</h1>
           <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full">
             {grade}AS
           </h1>
