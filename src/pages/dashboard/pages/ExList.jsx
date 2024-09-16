@@ -1,15 +1,22 @@
 import { fetchExDetail } from "../../../api/ex";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { fetchTestDetail } from "../../../api/ex";
 const ExList = () => {
   const { t } = useTranslation();
   const { moduleName, semesterNumber, grade } = useParams();
-  const exercices = fetchExDetail(
+  const exams = fetchExDetail(
     moduleName.toLowerCase(),
     semesterNumber - 1,
     grade
   );
-  console.log(exercices);
+  const tests = fetchTestDetail(
+    moduleName.toLowerCase(),
+    semesterNumber - 1,
+    grade
+  );
+  console.log(exams);
+  console.log(tests);
   const trans = "trimester_" + semesterNumber;
   const modules = [
     {
@@ -32,7 +39,6 @@ const ExList = () => {
       <section className="w-full">
         <div className=" w-full px-4 my-4">
           <div className="  w-full flex md:flex-row flex-col md:justify-between mb-16 items-center h-16 drop-shadow-xl">
-
             <div
               style={{ backgroundImage: `url(${moduleData.imgUrl})` }}
               className="text-5xl text-white font-bold bg-cover py-4 md:w-3/5  w-64 h-full px-4 py-8 md:rounded-l-xl  flex md:justify-start justify-center items-center"
@@ -43,15 +49,12 @@ const ExList = () => {
             </div>
 
             <div className="flex justify-between items-center bg-green-100  md:w-2/5 w-64 h-16 p-2 md:rounded-r-xl ">
-
               <h1 className="text-md capitalize">{t(trans)}</h1>
 
               <h1 className="text-xl uppercase background border-black border-2 px-1 py-3 m-4 rounded-full">
                 {grade} AS
               </h1>
-
             </div>
-
           </div>
         </div>
       </section>

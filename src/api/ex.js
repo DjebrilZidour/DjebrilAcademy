@@ -416,7 +416,7 @@ const dataTestBase = [
     ],
   },
 
-  
+
   {
     module: "physics",
     semesters1: [
@@ -543,17 +543,33 @@ const dataTestBase = [
 export const fetchExDetail = (module, sem, grade) => {
   const dataList = dataExBase.find((m) => module === m.module)
   if (grade == 1) {
-    const courseData =
+    const examData =
       dataList?.semesters1.length > 0 ? dataList.semesters1[sem] : [];
-    return courseData;
+    return examData;
   } else if (grade == 2) {
-    const courseData =
+    const examData =
       dataList?.semesters2.length > 0 ? dataList.semesters2[sem] : [];
-    return courseData;
+    return examData;
   } else {
-    const courseData =
+    const examData =
       dataList?.semesters3.length > 0 ? dataList.semesters3[sem] : [];
-    return courseData;
+    return examData;
   }
 }
-export const fetchTestdetail = (module , sem ,grade)
+export const fetchTestDetail = (module , sem ,grade)=>{
+  const dataList = dataTestBase.find((m) => module === m.module)
+  if (grade == 1) {
+    const testData =
+      dataList?.semesters1.length > 0 ? dataList.semesters1[sem] : [];
+    return testData;
+  } else if (grade == 2) {
+    const testData =
+      dataList?.semesters2.length > 0 ? dataList.semesters2[sem] : [];
+    return testData;
+  } else {
+    const testData =
+      dataList?.semesters3.length > 0 ? dataList.semesters3[sem] : [];
+    return testData;
+  }
+}
+
