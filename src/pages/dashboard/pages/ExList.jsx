@@ -29,25 +29,30 @@ const ExList = () => {
   );
   return (
     <>
-      <section>
-        <div className="w-full px-4 my-4">
-        <div className="md:rounded-l-xl rounded-t-xl w-full flex md:flex-row flex-col justify-between mb-16 items-center h-64 drop-shadow-xl">
-          <div
-            style={{ backgroundImage: `url(${moduleData.imgUrl})` }}
-            className="text-5xl text-white font-bold bg-cover py-4 w-4/5 h-full px-4 py-8 md:rounded-l-xl rounded-t-xl flex md:justify-start justify-center items-center"
-          >
-            <h1 className="capitalize md:text-left text-center">
-              {t(moduleName)}
-            </h1>
-          </div>
+      <section className="w-full">
+        <div className=" w-full px-4 my-4">
+          <div className="  w-full flex md:flex-row flex-col md:justify-between mb-16 items-center h-16 drop-shadow-xl">
 
-          <div className="text-2xl bg-green-100 px-4 w-4/5 md:w-2/6 md:h-full px-4 py-2 md:py-8 md:rounded-r-xl flex justify-center gap-4 items-center flex-col">
-            <h1 className="text-md capitalize">{t(trans)}</h1>
-            <h1 className="text-3xl uppercase background border-black border-2 px-2 py-5 cursor-pointer rounded-full">
-              {grade}AS
-            </h1>
+            <div
+              style={{ backgroundImage: `url(${moduleData.imgUrl})` }}
+              className="text-5xl text-white font-bold bg-cover py-4 md:w-3/5  w-64 h-full px-4 py-8 md:rounded-l-xl  flex md:justify-start justify-center items-center"
+            >
+              <h1 className="capitalize md:text-left text-center">
+                {t(moduleName)}
+              </h1>
+            </div>
+
+            <div className="flex justify-between items-center bg-green-100  md:w-2/5 w-64 h-16 p-2 md:rounded-r-xl ">
+
+              <h1 className="text-md capitalize">{t(trans)}</h1>
+
+              <h1 className="text-xl uppercase background border-black border-2 px-1 py-3 m-4 rounded-full">
+                {grade} AS
+              </h1>
+
+            </div>
+
           </div>
-        </div>
         </div>
       </section>
     </>
