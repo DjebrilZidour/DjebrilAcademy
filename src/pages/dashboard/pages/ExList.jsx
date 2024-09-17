@@ -2,6 +2,7 @@ import { fetchExDetail } from "../../../api/ex";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { fetchTestDetail } from "../../../api/ex";
+import TestCard from "../components/TestCard";
 const ExList = () => {
   const { t } = useTranslation();
   const { moduleName, semesterNumber, grade } = useParams();
@@ -37,8 +38,8 @@ const ExList = () => {
   return (
     <>
       <section className="w-full">
-        <div className=" w-full px-4 my-4">
-          <div className="  w-full flex md:flex-row flex-col md:justify-between mb-16 items-center h-16 drop-shadow-xl">
+
+          <div className="  w-full flex md:flex-row flex-col md:justify-between mb-16 items-center h-16 drop-shadow-xl px-4 my-4">
             <div
               style={{ backgroundImage: `url(${moduleData.imgUrl})` }}
               className="text-5xl text-white font-bold bg-cover py-4 md:w-3/5  w-64 h-full px-4 py-8 md:rounded-l-xl  flex md:justify-start justify-center items-center"
@@ -56,7 +57,12 @@ const ExList = () => {
               </h1>
             </div>
           </div>
-        </div>
+          <div className="flex flex-col justify-center items-center ">
+            <h1>Devoirs</h1>
+            <div>
+                <TestCard />
+            </div>
+          </div>
       </section>
     </>
   );

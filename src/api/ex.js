@@ -5,63 +5,63 @@ const dataExBase = [
     semesters1: [
       [
         {
-          exerciceTitle: " EX مبادئ في الحسابيات",
-          exerciceDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: " EX مبادئ في الحسابيات",
+          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "https://drive.google.com/file/d/13r7y6yv2HNITtNUuLRO8T6YvbNJ_9LRr/preview",
           pdfId: "13r7y6yv2HNITtNUuLRO8T6YvbNJ_9LRr",
 
         },
         {
-          exerciceTitle: "exercice math title sem 1",
-          exerciceDetail: "exercice math detail sem 1",
+          examTitle: "exam math title sem 1",
+          examDetail: "exam math detail sem 1",
         }, {
-          exerciceTitle: "cours 1 de trimestre 1",
-          exerciceDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: "cours 1 de trimestre 1",
+          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "", exYear: "",
         }, {
-          exerciceTitle: "cours 1 de trimestre 1",
-          exerciceDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: "cours 1 de trimestre 1",
+          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "", exYear: "",
         }, {
-          exerciceTitle: "cours 1 de trimestre 1",
-          exerciceDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: "cours 1 de trimestre 1",
+          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "cour jdid",
-          exerciceDetail: " hani creto dok he breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: "cour jdid",
+          examDetail: " hani creto dok he breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "cou2",
-          exerciceDetail: "exercice math detail sem 2",
-          exerciceImage: "",
+          examTitle: "cou2",
+          examDetail: "exam math detail sem 2",
+          examImage: "",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice math detail sem 2",
-          exerciceImage: "",
+          examTitle: "exam math title sem 2",
+          examDetail: "exam math detail sem 2",
+          examImage: "",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "exercice math title sem 3",
-          exerciceDetail: "exercice math detail sem 3",
-          exerciceImage: "",
+          examTitle: "exam math title sem 3",
+          examDetail: "exam math detail sem 3",
+          examImage: "",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice math detail sem 2",
+          examTitle: "exam math title sem 2",
+          examDetail: "exam math detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
@@ -69,31 +69,31 @@ const dataExBase = [
     semesters2: [
       [
         {
-          exerciceTitle: "cour jdid fi 2eme annee trim 1",
-          exerciceDetail: " hani creto dok he breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: "cour jdid fi 2eme annee trim 1",
+          examDetail: " hani creto dok he breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "kolna 2eme",
-          exerciceDetail: "exercice math detail sem 2",
-          exerciceImage: "",
+          examTitle: "kolna 2eme",
+          examDetail: "exam math detail sem 2",
+          examImage: "",
           pdfUrl: "", exYear: "",
         },
 
       ],
       [
         {
-          exerciceTitle: "exercice math title sem 3",
-          exerciceDetail: "exercice math detail sem 3",
-          exerciceImage: "",
+          examTitle: "exam math title sem 3",
+          examDetail: "exam math detail sem 3",
+          examImage: "",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice math detail sem 2",
+          examTitle: "exam math title sem 2",
+          examDetail: "exam math detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
@@ -101,63 +101,63 @@ const dataExBase = [
     semesters3: [
       [
         {
-          exerciceTitle: " marhba f 3eme laeziz yaw andak lbaaac  ",
-          exerciceDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: " marhba f 3eme laeziz yaw andak lbaaac  ",
+          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "https://drive.google.com/file/d/13r7y6yv2HNITtNUuLRO8T6YvbNJ_9LRr/preview",
           pdfId: "13r7y6yv2HNITtNUuLRO8T6YvbNJ_9LRr",
 
         },
         {
-          exerciceTitle: "exercice math title sem 1",
-          exerciceDetail: "exercice math detail sem 1",
+          examTitle: "exam math title sem 1",
+          examDetail: "exam math detail sem 1",
         }, {
-          exerciceTitle: "cours 1 de trimestre 1",
-          exerciceDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: "cours 1 de trimestre 1",
+          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "", exYear: "",
         }, {
-          exerciceTitle: "cours 1 de trimestre 1",
-          exerciceDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: "cours 1 de trimestre 1",
+          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "", exYear: "",
         }, {
-          exerciceTitle: "cours 1 de trimestre 1",
-          exerciceDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: "cours 1 de trimestre 1",
+          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "cour jdid",
-          exerciceDetail: " hani creto dok he breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
+          examTitle: "cour jdid",
+          examDetail: " hani creto dok he breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
+          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice math detail sem 2",
-          exerciceImage: "",
+          examTitle: "exam math title sem 2",
+          examDetail: "exam math detail sem 2",
+          examImage: "",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice math detail sem 2",
-          exerciceImage: "",
+          examTitle: "exam math title sem 2",
+          examDetail: "exam math detail sem 2",
+          examImage: "",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "exercice math title sem 3",
-          exerciceDetail: "exercice math detail sem 3",
-          exerciceImage: "",
+          examTitle: "exam math title sem 3",
+          examDetail: "exam math detail sem 3",
+          examImage: "",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice math detail sem 2",
+          examTitle: "exam math title sem 2",
+          examDetail: "exam math detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
@@ -168,38 +168,38 @@ const dataExBase = [
     semesters1: [
       [
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          examTitle: "exam phisics title sem 1",
+          examDetail: "exam phisics detail sem 1",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          examTitle: "exam phisics title sem 1",
+          examDetail: "exam phisics detail sem 1",
           pdfUrl: "", exYear: "",
 
         },
       ],
       [
         {
-          exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam math title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam phisics title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam phisics title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam phisics title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
@@ -207,38 +207,38 @@ const dataExBase = [
     semesters2: [
       [
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          examTitle: "exam phisics title sem 1",
+          examDetail: "exam phisics detail sem 1",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          examTitle: "exam phisics title sem 1",
+          examDetail: "exam phisics detail sem 1",
           pdfUrl: "", exYear: "",
 
         },
       ],
       [
         {
-          exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam math title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam phisics title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam phisics title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam phisics title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
@@ -246,38 +246,38 @@ const dataExBase = [
     semesters3: [
       [
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          examTitle: "exam phisics title sem 1",
+          examDetail: "exam phisics detail sem 1",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 1",
-          exerciceDetail: "exercice phisics detail sem 1",
+          examTitle: "exam phisics title sem 1",
+          examDetail: "exam phisics detail sem 1",
           pdfUrl: "", exYear: "",
 
         },
       ],
       [
         {
-          exerciceTitle: "exercice math title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam math title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam phisics title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
       [
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam phisics title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
         {
-          exerciceTitle: "exercice phisics title sem 2",
-          exerciceDetail: "exercice phisics detail sem 2",
+          examTitle: "exam phisics title sem 2",
+          examDetail: "exam phisics detail sem 2",
           pdfUrl: "", exYear: "",
         },
       ],
@@ -353,7 +353,7 @@ const dataTestBase = [
     semesters3: [
       [
         {
-          exerciceTitle: " marhba f 3eme laeziz yaw andak lbaaac  devoirs ",
+          exerciceTitle: " marhba f 3eme laeziz yaw andak lbaaac  devoirs test math  ",
           exerciceDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
           exerciceImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
           pdfUrl: "https://drive.google.com/file/d/13r7y6yv2HNITtNUuLRO8T6YvbNJ_9LRr/preview",
@@ -501,7 +501,7 @@ const dataTestBase = [
     semesters3: [
       [
         {
-          exerciceTitle: "DEVOIR PHISICS title sem 1",
+          exerciceTitle: "DEVOIR PHISICS zid title sem 1",
           exerciceDetail: "DEVOIR PHISICS detail sem 1",
           pdfUrl: "", exYear: "",
         },
@@ -540,6 +540,7 @@ const dataTestBase = [
   }
 
 ];
+
 export const fetchExDetail = (module, sem, grade) => {
   const dataList = dataExBase.find((m) => module === m.module)
   if (grade == 1) {
