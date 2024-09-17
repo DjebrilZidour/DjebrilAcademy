@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { fetchTestDetail } from "../../../api/ex";
 import TestCard from "../components/TestCard";
+import ExamCard from "../components/ExamCard";
 const ExList = () => {
   const { t } = useTranslation();
   const { moduleName, semesterNumber, grade } = useParams();
@@ -61,6 +62,14 @@ const ExList = () => {
           <div className="flex justify-between items-center gap-4">
             {tests.map((test) => {
               return <TestCard exerciceTitle={test.exerciceTitle} />;
+            })}
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-4">
+        <h1 className="text-4xl underline">Exams</h1>
+          <div className="flex justify-between items-center gap-4">
+            {exams.map((exam) => {
+              return <ExamCard examTitle={exam.examTitle} />;
             })}
           </div>
         </div>
