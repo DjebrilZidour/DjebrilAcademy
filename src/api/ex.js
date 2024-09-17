@@ -4,38 +4,15 @@ const dataExBase = [
     module: "math",
     semesters1: [
       [
-        {
-          examTitle: " EX مبادئ في الحسابيات",
-          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
-          pdfUrl: "https://drive.google.com/file/d/13r7y6yv2HNITtNUuLRO8T6YvbNJ_9LRr/preview",
-          pdfId: "13r7y6yv2HNITtNUuLRO8T6YvbNJ_9LRr",
 
+        {
+          examTitle: "examen 1",
+          exYear: "2023/2024",
         },
         {
-          examTitle: "exam math title sem 1",
-          examDetail: "exam math detail sem 1",
-        }, {
-          examTitle: "cours 1 de trimestre 1",
-          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
-          pdfUrl: "", exYear: "",
-        }, {
-          examTitle: "cours 1 de trimestre 1",
-          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
-          pdfUrl: "", exYear: "",
-        }, {
-          examTitle: "cours 1 de trimestre 1",
-          examDetail: "So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
-          pdfUrl: "", exYear: "",
-        },
-        {
-          examTitle: "cour jdid",
-          examDetail: " hani creto dok he breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.",
-          examImage: "https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&w=800", pdfUrl: "", exYear: "",
-          pdfUrl: "", exYear: "",
+          examTitle: "examen 2",
+          pdfId: "",
+          exYear: "",
         },
       ],
       [
@@ -168,7 +145,7 @@ const dataExBase = [
     semesters1: [
       [
         {
-          examTitle:  "exam phisics title sem 1",
+          examTitle: "exam phisics title sem 1",
           examDetail: "exam phisics detail sem 1",
           pdfUrl: "", exYear: "",
         },
@@ -295,21 +272,21 @@ const dataTestBase = [
       [
         {
           exerciceTitle: "1",
-          pdfId:  "", 
+          pdfId: "",
           exYear: "",
-          
-        }, 
-         {
+
+        },
+        {
           exerciceTitle: "DEVOIRS 2 1AS TRIM 1",
-          
-        }, 
+
+        },
       ],
       [
-        
+
         {
           exerciceTitle: "DEVOIR math title sem 2",
-          
-         
+
+
           pdfUrl: "", exYear: "",
         },
       ],
@@ -320,10 +297,10 @@ const dataTestBase = [
           exerciceImage: "",
           pdfUrl: "", exYear: "",
         },
-       
+
       ],
     ],
-     //! 2 ANNÉE
+    //! 2 ANNÉE
     semesters2: [
       [
         {
@@ -348,10 +325,10 @@ const dataTestBase = [
           exerciceImage: "",
           pdfUrl: "", exYear: "",
         },
-     
+
       ],
     ],
-     //! 3 ANNÉE
+    //! 3 ANNÉE
     semesters3: [
       [
         {
@@ -559,7 +536,7 @@ export const fetchExDetail = (module, sem, grade) => {
     return examData;
   }
 }
-export const fetchTestDetail = (module , sem ,grade)=>{
+export const fetchTestDetail = (module, sem, grade) => {
   const dataList = dataTestBase.find((m) => module === m.module)
   if (grade == 1) {
     const testData =
