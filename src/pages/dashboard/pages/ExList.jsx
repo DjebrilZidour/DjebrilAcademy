@@ -43,7 +43,7 @@ const ExList = () => {
               style={{ backgroundImage: `url(${moduleData.imgUrl})` }}
               className="text-5xl text-white font-bold bg-cover py-4 md:w-3/5  w-64 h-full px-4 py-8 md:rounded-l-xl  flex md:justify-start justify-center items-center"
             >
-              <h1 className="capitalize md:text-left text-center">
+              <h1 className="text-xl md:text-5xl capitalize md:text-left text-center">
                 {t(moduleName)}
               </h1>
             </div>
