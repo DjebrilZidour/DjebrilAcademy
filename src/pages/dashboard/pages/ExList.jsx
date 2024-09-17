@@ -59,17 +59,17 @@ const ExList = () => {
         </div>
         <div className="flex flex-col justify-center items-center  gap-4">
           <h1 className="text-4xl underline">Devoirs</h1>
-          <div className="flex justify-between items-center gap-4">
+          <div className="flex justify-between items-center gap-4 flex-col md:flex-row">
             {tests.map((test) => {
-              return <TestCard exerciceTitle={test.exerciceTitle} />;
+              return <TestCard exerciceTitle={test.exerciceTitle} exYear={test.exYear} />;
             })}
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-4">
+        <div className="flex flex-col justify-center items-center gap-4 ">
         <h1 className="text-4xl underline">Exams</h1>
-          <div className="flex justify-between items-center gap-4">
+          <div className="flex justify-between items-center gap-4 flex-col md:flex-row">
             {exams.map((exam) => {
-              return <ExamCard examTitle={exam.examTitle} />;
+              return <ExamCard examTitle={exam.examTitle} exYear={exam.exYear} />;
             })}
           </div>
         </div>

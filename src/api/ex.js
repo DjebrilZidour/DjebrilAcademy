@@ -12,7 +12,7 @@ const dataExBase = [
         {
           examTitle: "examen 2",
           pdfId: "",
-          exYear: "",
+          exYear: "2023/2024",
         },
       ],
       [
@@ -273,11 +273,11 @@ const dataTestBase = [
         {
           exerciceTitle: "1",
           pdfId: "",
-          exYear: "",
+          exYear: "2023/2024",
 
         },
         {
-          exerciceTitle: "DEVOIRS 2 1AS TRIM 1",
+          exerciceTitle: "2",
 
         },
       ],

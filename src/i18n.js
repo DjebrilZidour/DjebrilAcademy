@@ -45,8 +45,7 @@ const resources = {
       "dashboard":"Dashboard",
       "home": "Home",
       "about": "About",
-   
-
+      "test":"test",
     }
   },
   fr: {
@@ -92,7 +91,7 @@ const resources = {
       "dashboard":"Tableau de bord",
       "home": "Accueil",
       "about": "À propos",
-
+      "test":"devoir",
     }
   },
   ar: {
@@ -138,6 +137,7 @@ const resources = {
       "dashboard":"لوحة التحكم",
       "home": "الصفحة الرئيسية",
       "about": "حول",
+      "test":"فرض",
     }
   }
 };
