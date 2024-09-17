@@ -168,7 +168,7 @@ const dataExBase = [
     semesters1: [
       [
         {
-          examTitle: "exam phisics title sem 1",
+          examTitle:  "exam phisics title sem 1",
           examDetail: "exam phisics detail sem 1",
           pdfUrl: "", exYear: "",
         },
@@ -294,20 +294,22 @@ const dataTestBase = [
     semesters1: [
       [
         {
-          exerciceTitle: "DEVOIRS 1",
-          exerciceDetail: "exercice math detail sem 1",
+          exerciceTitle: "1",
+          pdfId:  "", 
+          exYear: "",
+          
         }, 
          {
           exerciceTitle: "DEVOIRS 2 1AS TRIM 1",
-          exerciceDetail: "exercice math detail sem 1",
+          
         }, 
       ],
       [
         
         {
           exerciceTitle: "DEVOIR math title sem 2",
-          exerciceDetail: "exercice math detail sem 2",
-          exerciceImage: "",
+          
+         
           pdfUrl: "", exYear: "",
         },
       ],
