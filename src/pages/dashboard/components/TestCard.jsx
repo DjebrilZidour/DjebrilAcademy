@@ -5,7 +5,7 @@ const TestCard = (props)=>{
     return (
         <>
         <div className="rounded-lg w-36 bg-yellow-200 flex justify-center items-center cursor-pointer">
-            <h1> {t("test")} {exerciceTitle}</h1>
+            <h1 className="capitalize"> {t("test")} {exerciceTitle}</h1>
         </div>
         </>
     )

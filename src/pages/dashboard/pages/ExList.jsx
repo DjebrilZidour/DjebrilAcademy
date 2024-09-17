@@ -57,7 +57,8 @@ const ExList = () => {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center  gap-4">
+        
+        <div className="flex flex-col justify-center items-center  gap-4 mb-4">
           <h1 className="text-4xl underline">Devoirs</h1>
           <div className="flex justify-between items-center gap-4 flex-col md:flex-row">
             {tests.map((test) => {
