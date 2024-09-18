@@ -58,7 +58,7 @@ const router = createBrowserRouter([
       { path: "semesters", element: <SemesterPage /> },
       { path: "semester-detail", element: <SemesterDetail /> },
       {path: "test-preview/:moduleName/:semesterNumber/:idx/:grade" , element: <TePreview />},
-      {path: "exam-preview/:moduleName/:type/:semesterNumber/:idx/:grade" , element: <ExPreview /> },
+      {path: "exam-preview/:moduleName/:semesterNumber/:idx/:grade" , element: <ExPreview /> },
       { path: "vidéos", element: <DashVd /> },
       {path:"educational-news", element: <EducationalNews />},
     ],

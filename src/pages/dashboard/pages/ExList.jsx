@@ -6,7 +6,7 @@ import TestCard from "../components/TestCard";
 import ExamCard from "../components/ExamCard";
 const ExList = () => {
   const { t } = useTranslation();
-  const { moduleName, semesterNumber, grade , type} = useParams();
+  const { moduleName, semesterNumber, grade, type } = useParams();
   const exams = fetchExDetail(
     moduleName.toLowerCase(),
     semesterNumber - 1,
@@ -69,8 +69,8 @@ const ExList = () => {
                   exYear={test.exYear}
                   moduleName={moduleName}
                   semesterNumber={semesterNumber}
-                  type = {type}
-                  grade = {grade}
+                  type={type}
+                  grade={grade}
                 />
               );
             })}
@@ -79,9 +79,17 @@ const ExList = () => {
         <div className="flex flex-col justify-center items-center gap-4 ">
           <h1 className="text-4xl underline">Exams</h1>
           <div className="flex justify-between items-center gap-4 flex-col md:flex-row">
-            {exams.map((exam) => {
+            {exams.map((exam , idx) => {
               return (
-                <ExamCard examTitle={exam.examTitle} exYear={exam.exYear} />
+                <ExamCard
+                  idx={idx}
+                  examTitle={exam.examTitle}
+                  exYear={exam.exYear}
+                  moduleName={moduleName}
+                  semesterNumber={semesterNumber}
+                  type={type}
+                  grade={grade}
+                />
               );
             })}
           </div>
