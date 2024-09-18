@@ -16,7 +16,7 @@ const TestCard = (props)=>{
   className="w-36 rounded-lg cursor-pointer shadow-lg overflow-hidden"
 >
   <div className="bg-blue-500 text-white flex justify-center items-center p-2">
-    <h1 className="capitalize">2023/2024</h1>
+    <h1 className="capitalize">{exYear}</h1>
   </div>
   <div className="bg-green-200 text-center p-4">
     <h1 className="capitalize">{exerciceTitle}</h1>

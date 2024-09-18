@@ -8,13 +8,21 @@ const ExamCard = (props)=>{
     const {t} = useTranslation()
     return(
         <>
-        <div onClick={()=>{ navigate(
-                `/dashboard/exam-preview/${moduleName}/${semesterNumber}/${idx}/${grade}`
-              );}} className="rounded-lg w-36 bg-yellow-200 flex flex-col justify-center items-center cursor-pointer">
-            <p>{exYear}</p>
-            <h1 className="capitalize"> Examen {examTitle}</h1>
-            
-        </div>
+      <div
+  onClick={() => {
+    navigate(
+      `/dashboard/exam-preview/${moduleName}/${semesterNumber}/${idx}/${grade}`
+    );
+  }}
+  className="w-36 rounded-lg cursor-pointer shadow-lg overflow-hidden"
+>
+  <div className="bg-indigo-500 text-white flex justify-center items-center p-2">
+    <p>{exYear}</p>
+  </div>
+  <div className="bg-purple-200 text-center p-4">
+    <h1 className="capitalize">Examen {examTitle}</h1>
+  </div>
+</div>
         </>
     )
 }
