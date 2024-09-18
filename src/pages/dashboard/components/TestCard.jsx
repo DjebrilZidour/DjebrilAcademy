@@ -3,17 +3,25 @@ import { useNavigate } from "react-router";
 
 const TestCard = (props)=>{
     const navigate = useNavigate()
-    const {exerciceTitle , idx, moduleName, grade, semesterNumber} = props
+    const {exerciceTitle ,exYear, idx, moduleName, grade, semesterNumber} = props
     const {t} = useTranslation()
     return (
         <>
-        <div onClick={()=>{
-             navigate(
-                `/dashboard/test-preview/${moduleName}/${semesterNumber}/${idx}/${grade}`
-              );
-        }} className="rounded-lg w-36 bg-yellow-200 flex justify-center items-center cursor-pointer">
-            <h1 className="capitalize"> {t("test")} {exerciceTitle}</h1>
-        </div>
+      <div
+  onClick={() => {
+    navigate(
+      `/dashboard/test-preview/${moduleName}/${semesterNumber}/${idx}/${grade}`
+    );
+  }}
+  className="w-36 rounded-lg cursor-pointer shadow-lg overflow-hidden"
+>
+  <div className="bg-blue-500 text-white flex justify-center items-center p-2">
+    <h1 className="capitalize">2023/2024</h1>
+  </div>
+  <div className="bg-green-200 text-center p-4">
+    <h1 className="capitalize">{exerciceTitle}</h1>
+  </div>
+</div>
         </>
     )
 }
