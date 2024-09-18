@@ -23,6 +23,7 @@ import DashVd from "./pages/dashboard/pages/DashVd";
 import i18n from "./i18n";
 import EducationalNews from "./pages/dashboard/pages/EducationalNews";
 import ExList from "./pages/dashboard/pages/ExList";
+import TePreview from "./pages/dashboard/pages/TePreview";
 const isLogged = getIsUserLogged();
 
 const router = createBrowserRouter([
@@ -56,6 +57,8 @@ const router = createBrowserRouter([
       { path: "learning/:grade/:choice/subjects/:subject/trimesters/:trimester/exercises/:exercise", element: <ExPreview /> },
       { path: "semesters", element: <SemesterPage /> },
       { path: "semester-detail", element: <SemesterDetail /> },
+      {path: "test-preview/:moduleName/:semesterNumber/:idx/:grade" , element: <TePreview />},
+      {path: "exam-preview/:moduleName/:type/:semesterNumber/:idx/:grade" , element: <ExPreview /> },
       { path: "vidéos", element: <DashVd /> },
       {path:"educational-news", element: <EducationalNews />},
     ],
