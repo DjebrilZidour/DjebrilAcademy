@@ -19,7 +19,7 @@ const TestCard = (props)=>{
     <h1 className="capitalize">{exYear}</h1>
   </div>
   <div className="bg-green-200 text-center p-4">
-    <h1 className="capitalize">{exerciceTitle}</h1>
+    <h1 className="capitalize text-xl">{t("test")} {exerciceTitle}</h1>
   </div>
 </div>
         </>

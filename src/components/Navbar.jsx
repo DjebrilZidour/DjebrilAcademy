@@ -84,24 +84,54 @@ const Nav = (props)=>{
   const navigate = useNavigate()
   return(
     <div className="sm:hidden">
-
-      <div> 
-      <ul className=" text-xl w-48 flex flex-col items-center justify-start absolute   right-14 top-16 bg-white z-10 shadow-2xl rounded-2xl p-6   font-bold sm:hidden"  style={{ display: props.isNavOpened ? "block" : "none" ,}}>
-      <img
-        onClick={() => {
-          props.switchNavState(false);
+    <div>
+      <ul
+        className="text-xl w-56 flex flex-col items-center justify-start absolute right-10 top-16 bg-white z-10 shadow-lg rounded-lg p-6 font-bold sm:hidden"
+        style={{
+          display: props.isNavOpened ? "block" : "none",
         }}
-        className="w-6 absolute right-3 top-2 cursor-pointer"
-        src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png"
-        alt=""
-      />
-     <li className="cursor-pointer" onClick={()=>{navigate("/")}}>Home</li>
-      <li className="cursor-pointer" onClick={()=>{navigate("/about")}}>About</li>
-        <li className="cursor-pointer" onClick={()=>{navigate("/dashboard/home")}}>Dashboard</li>
+      >
+        {/* Close Icon */}
+        <img
+          onClick={() => {
+            props.switchNavState(false);
+          }}
+          className="w-6 absolute right-4 top-4 cursor-pointer hover:opacity-80 transition-opacity"
+          src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png"
+          alt="close menu"
+        />
+        
+        {/* Navigation Links */}
+        <li
+          className="cursor-pointer capitalize mt-6 text-gray-700 hover:text-indigo-600 transition-colors"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          {t("home")}
+        </li>
+        
+        <li
+          className="cursor-pointer capitalize mt-4 text-gray-700 hover:text-indigo-600 transition-colors"
+          onClick={() => {
+            navigate("/about");
+          }}
+        >
+          {t("about")}
+        </li>
+        
+        <li
+          className="cursor-pointer capitalize mt-4 text-gray-700 hover:text-indigo-600 transition-colors"
+          onClick={() => {
+            navigate("/dashboard/home");
+          }}
+        >
+          {t("dashboard")}
+        </li>
       </ul>
-      </div>
-     
     </div>
+  </div>
+  
   )
 }
 

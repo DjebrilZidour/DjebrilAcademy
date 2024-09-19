@@ -46,6 +46,7 @@ const resources = {
       "home": "Home",
       "about": "About",
       "test":"test",
+      "exam":"Exam"
     }
   },
   fr: {
@@ -92,6 +93,7 @@ const resources = {
       "home": "Accueil",
       "about": "À propos",
       "test":"devoir",
+      "exam":"Examen",
     }
   },
   ar: {
@@ -138,6 +140,7 @@ const resources = {
       "home": "الصفحة الرئيسية",
       "about": "حول",
       "test":"فرض",
+      "exam":"إختبار",
     }
   }
 };

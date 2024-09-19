@@ -20,7 +20,7 @@ const ExamCard = (props)=>{
     <p>{exYear}</p>
   </div>
   <div className="bg-purple-200 text-center p-4">
-    <h1 className="capitalize">Examen {examTitle}</h1>
+    <h1 className="capitalize">{t("exam")}{examTitle}</h1>
   </div>
 </div>
         </>

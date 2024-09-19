@@ -39,7 +39,7 @@ const ExList = () => {
   return (
     <>
       <section className="w-full">
-        <div className="  w-full flex md:flex-row flex-col md:justify-between mb-16 items-center h-16 drop-shadow-xl px-4 my-4">
+        <div className="  w-full flex md:flex-row flex-col md:justify-between mb-16 items-center h-16 drop-shadow-xl px-4 my-4 ">
           <div
             style={{ backgroundImage: `url(${moduleData.imgUrl})` }}
             className="text-5xl text-white font-bold bg-cover py-4 md:w-3/5  w-64 h-full px-4 py-8 md:rounded-l-xl  flex md:justify-start justify-center items-center"
@@ -60,7 +60,7 @@ const ExList = () => {
 
         <div className="flex flex-col justify-center items-center  gap-4 mb-4">
           <h1 className="text-4xl underline">Devoirs</h1>
-          <div className="flex justify-between items-center gap-4 flex-col md:flex-row">
+          <div className=" md:flex justify-between items-center gap-4  grid  grid-cols-2">
             {tests.map((test, idx) => {
               return (
                 <TestCard
@@ -78,7 +78,7 @@ const ExList = () => {
         </div>
         <div className="flex flex-col justify-center items-center gap-4 ">
           <h1 className="text-4xl underline">Exams</h1>
-          <div className="flex justify-between items-center gap-4 flex-col md:flex-row">
+          <div className="md:flex justify-between items-center gap-4  grid  grid-cols-2 flex-row-reverse">
             {exams.map((exam , idx) => {
               return (
                 <ExamCard
