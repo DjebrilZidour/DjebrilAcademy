@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PdfPreview = ({ pdfUrl, pdfId }) => {
+const PdfPreview = ({ pdfId }) => {
   const generateUrls = (pdfId) => {
     return {
       preview: `https://drive.google.com/file/d/${pdfId}/preview`,
@@ -41,7 +41,7 @@ const PdfPreview = ({ pdfUrl, pdfId }) => {
         >
           <iframe
             className=" border-none drop-shadow-xl"
-            src={pdfUrl}
+            src={url.preview}
             style={{
               width: "100%",
               height: "100%",

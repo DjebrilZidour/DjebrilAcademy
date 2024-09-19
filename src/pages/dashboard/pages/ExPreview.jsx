@@ -1,6 +1,7 @@
 import { useLocation } from "react-router";
 import { fetchExDetail } from "../../../api/ex"
 import { useParams } from "react-router";
+import PdfPreview from "../components/PdfPreview";
 const modules = [
   {
     moduleName: "math",

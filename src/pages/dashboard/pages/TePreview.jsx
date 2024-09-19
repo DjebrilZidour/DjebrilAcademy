@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import { fetchTestDetail } from "../../../api/ex"
+import PdfPreview from "../components/PdfPreview";
 const modules = [
     {
       moduleName: "math",
