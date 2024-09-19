@@ -14,7 +14,7 @@ const ExamCard = (props)=>{
       `/dashboard/exam-preview/${moduleName}/${semesterNumber}/${idx}/${grade}`
     );
   }}
-  className="w-36 rounded-lg cursor-pointer shadow-lg overflow-hidden"
+  className="w-36 max-h-24 rounded-lg cursor-pointer shadow-lg overflow-hidden"
 >
   <div className="bg-indigo-500 text-white flex justify-center items-center p-2">
     <p>{exYear}</p>
