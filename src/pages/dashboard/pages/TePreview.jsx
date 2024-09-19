@@ -23,6 +23,7 @@ const TePreview = ()=>{
     return (
         <>
         <h1>test {test.exerciceTitle}</h1>
+        <PdfPreview pdfId={test.pdfId} />
         </>
     )
 }

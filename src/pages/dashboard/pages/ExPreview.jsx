@@ -24,6 +24,7 @@ const ExPreview = ()=>{
 return(
     <>
         <h1 className="text-5xl">exam{exam.examTitle}</h1>
+        <PdfPreview pdfId={exam.pdfId} />
     </>
 )
 }

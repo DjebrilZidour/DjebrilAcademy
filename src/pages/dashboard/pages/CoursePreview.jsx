@@ -54,7 +54,7 @@ const CoursePreview = () => {
       </div>
 
       <div className="w-full my-12">
-        <PdfPreview pdfUrl={course.pdfUrl} pdfId={course.pdfId} />
+        <PdfPreview pdfId={course.pdfId} />
       </div>
     </>
   );
