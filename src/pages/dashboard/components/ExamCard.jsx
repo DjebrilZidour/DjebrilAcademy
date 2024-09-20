@@ -6,6 +6,8 @@ const ExamCard = (props)=>{
     const navigate = useNavigate()
     const {examTitle , exYear, idx, moduleName, grade, semesterNumber} = props
     const {t} = useTranslation()
+
+
     return(
         <>
       <div
@@ -20,7 +22,7 @@ const ExamCard = (props)=>{
     <p>{exYear}</p>
   </div>
   <div className="bg-purple-200 text-center p-4">
-    <h1 className="capitalize">{t("exam")}{examTitle}</h1>
+    <h1 className="capitalize text-xl">{t("exam")} {examTitle}</h1>
   </div>
 </div>
         </>

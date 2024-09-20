@@ -2,9 +2,12 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router";
 
 const TestCard = (props)=>{
+
     const navigate = useNavigate()
     const {exerciceTitle ,exYear, idx, moduleName, grade, semesterNumber} = props
     const {t} = useTranslation()
+
+    
     return (
         <>
       <div
