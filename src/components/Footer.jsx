@@ -18,9 +18,9 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-start justify center">
           <h1 className="text-2xl">CONTACT</h1>
-          <h1 className="text-lg">Tel: 0556 94 65 14</h1>
+          <h1 className="text-lg">Tel: 05555555</h1>
           <h1 className="text-lg">E-mail: XXXXXX@gmail.com</h1>
-          <h1 className="text-lg">Adress: bt 33C N1 SORECAL BAB EZZOUAR </h1>
+          <h1 className="text-lg">Adress: XXXXXXXXXXXXXX</h1>
           <div className="flex justify-center gap-4">
             <img
               className="w-8"
