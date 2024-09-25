@@ -53,7 +53,7 @@ const Footer = () => {
 
       <section className="text-center text-amber-700 mt-4">
         <h1>privarcy and terms of uses</h1>
-        <h1>all copyrights 2023®s</h1>
+        <h1>all copyrights 2024 ®</h1>
       </section>
     </footer>
   );
