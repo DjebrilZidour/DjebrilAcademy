@@ -100,21 +100,21 @@ const About = () => {
               <div className="p-6 bg-green-50 rounded-lg shadow-md">
                 <h4 className="text-xl font-semibold text-green-800">Prof1</h4>
                 <p className="mt-4 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae.
+                  Lorem ipsum dolor  consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae.
                 </p>
               </div>
               {/* Team Member 2 */}
               <div className="p-6 bg-green-50 rounded-lg shadow-md">
                 <h4 className="text-xl font-semibold text-green-800">Prof2</h4>
                 <p className="mt-4 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae.
+                  Lorem ipsum dolor  consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae.
                 </p>
               </div>
               {/* Team Member 3 */}
               <div className="p-6 bg-green-50 rounded-lg shadow-md">
                 <h4 className="text-xl font-semibold text-green-800">Prof3</h4>
                 <p className="mt-4 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae.
+                  Lorem ipsum dolor  consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae.
                 </p>
               </div>
             </div>
