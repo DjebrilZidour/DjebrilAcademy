@@ -228,18 +228,18 @@ const Landing = ({ language }) => {
         </h1>
         <div className="flex justify-center items-center md:gap-4 flex-col md:flex-row mx-4">
           <TeamCard
-            name="AYA BOUCENA"
-            description="description prof 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae ."
+            name="BOUCENA Aya "
+            description=" I'm a students who want to develop and upgrade her skills 'ENJOYING THE PROCESS'"
             img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
           <TeamCard
-            name="ADJAM ABDELMALEK"
-            description="description prof 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae ."
+            name="ADJAM Abdelmalek "
+            description="  every moment on djebril academy is a very beautiful memory "
             img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
           <TeamCard
-            name="DJEBRIL ZIDOUR"
-            description="description prof 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi labore doloribus deleniti repudiandae ."
+            name="ZIDOUR"
+            description=""
             img="https://images.pexels.com/photos/8720598/pexels-photo-8720598.jpeg?auto=compress&cs=tinysrgb&w=800"
           />
         </div>
