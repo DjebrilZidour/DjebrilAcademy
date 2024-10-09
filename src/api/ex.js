@@ -290,12 +290,7 @@ const dataExBase = [
           examImage: "",
           pdfUrl: "", exYear: "",
         },
-        {
-          examTitle: "exam math title sem 2",
-          examDetail: "exam math detail sem 2",
-          examImage: "",
-          pdfUrl: "", exYear: "",
-        },
+
       ],
       [
         {
@@ -304,11 +299,7 @@ const dataExBase = [
           examImage: "",
           pdfUrl: "", exYear: "",
         },
-        {
-          examTitle: "exam math title sem 2",
-          examDetail: "exam math detail sem 2",
-          pdfUrl: "", exYear: "",
-        },
+
       ],
     ],
     semesters2: [
