@@ -76,7 +76,8 @@ const ExList = () => {
             })}
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-4 ">
+
+        <div className="flex flex-col justify-center items-center gap-4 mb-4">
           <h1 className="text-4xl underline">Exams</h1>
           <div className="md:flex justify-between items-center gap-4  grid  grid-cols-2 ">
             {exams.map((exam , idx) => {
@@ -94,7 +95,8 @@ const ExList = () => {
             })}
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-4 ">
+
+        <div className="flex flex-col justify-center items-center gap-4 mb-4">
           <h1 className="text-4xl underline">Series</h1>
           <div className="md:flex justify-between items-center gap-4  grid  grid-cols-2 ">
             {exams.map((exam , idx) => {
