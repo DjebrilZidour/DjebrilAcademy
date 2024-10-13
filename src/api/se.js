@@ -1,1 +1,1 @@
-const SeriesDataBase = []
+const SeriesDataBase = [{}]
