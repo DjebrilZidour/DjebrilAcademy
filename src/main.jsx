@@ -24,6 +24,8 @@ import i18n from "./i18n";
 import EducationalNews from "./pages/dashboard/pages/EducationalNews";
 import ExList from "./pages/dashboard/pages/ExList";
 import TePreview from "./pages/dashboard/pages/TePreview";
+import FindMyTeacher from "./pages/findMyTeacher/FindMyTeacher";
+
 const isLogged = getIsUserLogged();
 
 const router = createBrowserRouter([
@@ -61,12 +63,13 @@ const router = createBrowserRouter([
       {path: "exam-preview/:moduleName/:semesterNumber/:idx/:grade" , element: <ExPreview /> },
       { path: "vidéos", element: <DashVd /> },
       {path:"educational-news", element: <EducationalNews />},
+      {path:"find-my-teacher", element: <FindMyTeacher />},
     ],
   },
 
   // Profile route
   { path: "/profile", element: <Profile /> },
-
+  {path:"find-my-teacher", element: <FindMyTeacher />},
   // About, subjects, and team routes
   { path: "/about", element: <About /> },
   { path: "/subjects", element: <Subjects /> },
