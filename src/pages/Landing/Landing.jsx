@@ -8,7 +8,9 @@ import { Link, useNavigate } from "react-router-dom";
 import i18n from "../../i18n";
 
 const Landing = ({ language }) => {
-  const [isMediumScreen, setIsMediumScreen] = useState(window.matchMedia("(min-width: 768px)").matches);
+  const [isMediumScreen, setIsMediumScreen] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -24,10 +26,10 @@ const Landing = ({ language }) => {
     };
 
     checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
+    window.addEventListener("resize", checkScreenSize);
 
     return () => {
-      window.removeEventListener('resize', checkScreenSize);
+      window.removeEventListener("resize", checkScreenSize);
     };
   }, []);
 
@@ -38,18 +40,18 @@ const Landing = ({ language }) => {
 
   const styles = {
     container: {
-      display: 'flex',
-      flexDirection: isMediumScreen ? langDirection : 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: '100%',
-      padding: '10px',
+      display: "flex",
+      flexDirection: isMediumScreen ? langDirection : "column",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100%",
+      padding: "10px",
     },
     item: {
-      margin: '10px',
-      padding: '10px',
-      backgroundColor: 'lightgray',
-    }
+      margin: "10px",
+      padding: "10px",
+      backgroundColor: "lightgray",
+    },
   };
 
   return (
@@ -63,35 +65,20 @@ const Landing = ({ language }) => {
           className=" flex items-center justify-center gap-16  md:mx-24 mx-4"
         >
           <div className="md:w-1/2">
-            <div
-              style={{ textAlign: textAlign }}
-              className="mb-8 text-center lg:mx-0 md:text-left "
-            >
-              <h2 className="capitalize md:text-4xl text-3xl md:w-92 text-center md:text-start">
+            <div className="mb-8 text-center lg:mx-0 md:text-left ">
+              <h2
+                className={`capitalize md:text-4xl text-3xl md:w-92 text-center md:${
+                  i18n.language === "fr" ? "text-start" : "text-end"
+                }`}
+              >
                 {t("welcome")} <br />
                 <span className="text-green-400 text-4xl">
                   {t("welcomeName")}
-                </span> <br />
-                <span style={{ display: displayYesAr }} className="text-3xl">
-                  {t("des2")}
-                </span>
-                <span
-                  style={{ display: displayYesAr }}
-                  className="text-red-400 text-3xl"
-                >
-                  {t("problems")}
-                </span>
+                </span>{" "}
                 {t("platform_desc")}
-                <span
-                  style={{ display: displayNoneAr }}
-                  className="text-red-400 md:text-4xl md:text-left text-center"
-                >
-                  {t("problems")}
-                </span>
-                <span style={{ display: displayNoneAr }} className="text-3xl">
-                  {t("des2")}
-                </span>
-              
+                <br />
+                <span className="text-3xl">{t("des2")}</span>
+                <span className="text-red-400 text-3xl">{t("problems")}</span>
               </h2>
               <p className="text-center md:text-start visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
                 PLATFORM FOR MATHELEM BRANCHE
@@ -100,15 +87,17 @@ const Landing = ({ language }) => {
 
             <div className="text-center md:text-left flex justify-center md:justify-start items-center flex-col md:flex-row gap-8 md:gap-4">
               <Btn
+                customeClasses={"px-6 py-4 rounded-xl text-white"}
                 value={t("get_course")}
                 onClick={() => {
                   navigate("/dashboard/learning-grade");
                 }}
               />
               <Link to="/about">
-                <button className="text-black font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200 px-4 ml-4">
-                  {t("learn_more")}
-                </button>
+                <Btn
+                  customeClasses={" px-6 py-4 bg-white text-black  rounded-xl"}
+                  value={t("learn_more")}
+                />
               </Link>
             </div>
           </div>
