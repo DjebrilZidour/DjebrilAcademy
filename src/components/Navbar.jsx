@@ -158,11 +158,11 @@ const Navbar = () => {
         <ul className="list-none flex justify-between items-center">
           <li className="flex justify-center items-center gap-2">
             <Link to="/">
-              <img className=" p-1 h-12 w-12 bg-white rounded-full" src={Logo} />
+              <img className=" p-1 h-14 w-14 bg-white rounded-3xl" src="https://i.ibb.co/ZKwqnHq/Screen-Shot-2024-10-17-at-10-14-14-PM.png" />
             </Link>
 
             <Link to="/">
-              <h1 className="md:text-3xl text-xl">DjEbRiL Academy</h1>
+              <h1 className="md:text-3xl text-xl">Djebril Academy</h1>
             </Link>
           </li>
           
